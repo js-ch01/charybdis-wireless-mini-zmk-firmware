@@ -151,7 +151,8 @@
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
-            layers = <0>;
+            layers = <0 2 1 3>;
+            timeout-ms = <39>;
         };
 
         combo_CapsWord {
