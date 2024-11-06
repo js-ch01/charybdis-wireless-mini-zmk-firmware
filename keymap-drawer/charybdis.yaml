@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - ''
-  - L_BASE L_EXTRA
+  - '&td_BA_EX'
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
   - RIGHT ALT
-  - {t: LEFT CONTROL, h: SCROLL}
+  - {t: LEFT CONTROL, h: EXTRAS}
   - Z
   - X
   - C
@@ -169,11 +169,11 @@ layers:
   - SPACE
   EXTRAS:
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - VOL UP
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -181,32 +181,32 @@ layers:
   - BT CLR
   - ''
   - ''
+  - VOL DN
+  - HOME
+  - UP
+  - END
+  - PG UP
   - ''
   - ''
   - ''
   - ''
-  - BRIGHTNESS INC
-  - ''
-  - PREV
-  - PLAY PAUSE
-  - STOP
-  - NEXT
-  - ''
-  - BOOT LDR
-  - PRINT SCREEN
   - ''
   - ''
-  - ''
-  - BRIGHTNESS DEC
+  - {type: held}
+  - MUTE
+  - LEFT
+  - DOWN
+  - RIGHT
+  - PG DN
   - ''
   - VOLUME DOWN
   - VOLUME UP
   - MUTE
   - ''
   - BOOT LDR
-  - ''
-  - ''
-  - {type: held}
+  - Q
+  - W
+  - E
   - ''
   - ''
   MOUSE:
@@ -318,7 +318,7 @@ layers:
   - LEFT ALT
   - LEFT META
   - ''
-  - {type: held}
+  - ''
   - UNDO
   - CUT
   - COPY
