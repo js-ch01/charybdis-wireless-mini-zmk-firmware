@@ -36,7 +36,7 @@ layers:
   - .
   - /
   - {t: BASE, h: toggle}
-  - SCROLL SNIPE
+  - SCROLL TRACKBALL
   - {t: BACK SPACE, h: NUM+SYM}
   - {t: DELETE, h: EXTRAS}
   - {t: RETURN, h: SLOW}
