@@ -187,18 +187,18 @@ layers:
   - ''
   - BRIGHTNESS INC
   - ''
-  - PREVIOUS
-  - PP
+  - PREV
+  - PLAY PAUSE
   - STOP
   - NEXT
   - ''
   - BOOT LDR
-  - ''
+  - PRINT SCREEN
   - ''
   - ''
   - ''
   - BRIGHTNESS DEC
-  - PRINT SCREEN
+  - ''
   - VOLUME DOWN
   - VOLUME UP
   - MUTE
@@ -222,7 +222,7 @@ layers:
   - ''
   - ''
   - ''
-  - TAB
+  - ''
   - BACK
   - MOVE L
   - MOVE D
@@ -264,7 +264,7 @@ layers:
   - ''
   - ''
   - ''
-  - TAB
+  - ''
   - BACK
   - MOVE L
   - MOVE D
