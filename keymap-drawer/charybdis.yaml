@@ -19,7 +19,7 @@ layers:
   - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - {t: J, h: LEFT SHIFT}
+  - {t: J, h: RIGHT SHIFT}
   - {t: K, h: LEFT CONTROL}
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
@@ -168,27 +168,27 @@ layers:
   - ENTER
   - SPACE
   EXTRAS:
-  - SLEEP
   - ''
   - ''
   - ''
   - ''
-  - BRIGHTNESS MAXIMUM
+  - ''
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - BT CLR
-  - LOCK
-  - POWER
+  - ''
+  - ''
   - ''
   - ''
   - ''
   - ''
   - BRIGHTNESS INC
-  - OUT TOG
+  - ''
   - PREVIOUS
-  - PLAY PAUSE
+  - PP
   - STOP
   - NEXT
   - ''
@@ -230,7 +230,7 @@ layers:
   - FWD
   - ''
   - RIGHT SHIFT
-  - RCTRL
+  - LCTRL
   - LEFT ALT
   - LEFT META
   - ''
@@ -272,7 +272,7 @@ layers:
   - FWD
   - ''
   - RIGHT SHIFT
-  - RCTRL
+  - LCTRL
   - LEFT ALT
   - LEFT META
   - ''
@@ -306,7 +306,7 @@ layers:
   - ''
   - ''
   - ''
-  - TAB
+  - ''
   - BACK
   - MOVE L
   - MOVE D
@@ -314,7 +314,7 @@ layers:
   - FWD
   - ''
   - RIGHT SHIFT
-  - RCTRL
+  - LEFT CONTROL
   - LEFT ALT
   - LEFT META
   - ''
