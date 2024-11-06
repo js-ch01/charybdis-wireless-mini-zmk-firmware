@@ -171,6 +171,18 @@
             bindings = <&tog 8>;
             key-positions = <36 37 38>;
         };
+
+        combo_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <7 19>;
+            layers = <0 1>;
+        };
+
+        combo_del {
+            bindings = <&kp DEL>;
+            key-positions = <8 20>;
+            layers = <0 1>;
+        };
     };
 
     macros {
