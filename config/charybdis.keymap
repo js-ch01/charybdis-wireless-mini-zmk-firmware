@@ -77,7 +77,7 @@
         tdtb: td_mouse_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&httl 9 7>, <&to 0>;
+            bindings = <&httl 9 1>, <&to 0>;
 
             tapping-term-ms = <200>;
         };
@@ -100,7 +100,7 @@
         td_bore: BASE_or_EXTRA {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&mo 6>, <&to 0>;
+            bindings = <&mo 7>, <&to 0>;
         };
 
         hm_shift_right: hm_shift_right {
@@ -187,28 +187,37 @@
 
         BASE {
             bindings = <
-&kp C_AC_SEARCH  &kp Q           &kp W           &kp E               &kp R                        &kp T           &kp Y         &kp U                         &kp I               &kp O           &kp P                   &to 4
-&trans           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G           &kp H         &hm_shift_right LEFT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L  &hm LEFT_WIN SEMICOLON  &trans
-&kp LA(LC(T))    &kp Z           &kp X           &kp C               &kp V                        &kp B           &kp N         &kp M                         &kp COMMA           &kp PERIOD      &kp FSLH                &to 5
-                                                 &tdtb2              &lt 1 BACKSPACE              &lt 2 DELETE    &lt 7 RETURN  &lt 3 SPACE
+&kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T           &kp Y         &kp U                         &kp I               &kp O           &kp P                   &to 5
+&trans              &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G           &kp H         &hm_shift_right LEFT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L  &hm LEFT_WIN SEMICOLON  &kp RIGHT_ALT
+&lt 8 LEFT_CONTROL  &kp Z           &kp X           &kp C               &kp V                        &kp B           &kp N         &kp M                         &kp COMMA           &kp PERIOD      &kp FSLH                &to 6
+                                                    &tdtb2              &lt 2 BACKSPACE              &lt 3 DELETE    &lt 1 RETURN  &lt 4 SPACE
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
+&kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
+&none    &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none       &none            &none      &none         &none          &none
+                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 4 SPACE
             >;
         };
 
         NUM {
             bindings = <
-&none    &none  &none  &none  &none          &none    &kp SLASH  &none   &none  &none  &none  &none
-&kp TAB  &none  &none  &none  &kp BACKSPACE  &none    &kp ASTRK  &none   &none  &none  &none  &none
-&none    &none  &none  &none  &none          &none    &kp DOT    &none   &none  &none  &none  &none
-                       &none  &none          &none    &kp N0     &trans
+&none    &none  &none  &none  &none          &none    &kp ASTERISK  &kp N7  &kp N8  &kp N9  &none  &none
+&kp TAB  &none  &none  &none  &kp BACKSPACE  &none    &kp SLASH     &kp N4  &kp N5  &kp N6  &none  &none
+&none    &none  &none  &none  &none          &none    &kp DOT       &kp N1  &kp N2  &kp N3  &none  &none
+                       &none  &none          &none    &kp N0        &trans
             >;
         };
 
         NAV {
             bindings = <
-&none   &none   &none   &none   &none   &none     &none    &kp LS(LC(H))   &kp LS(LC(J))  &kp LS(LC(K))  &kp LS(LC(L))    &none
-&trans  &trans  &trans  &trans  &trans  &trans    &VSplit  &kp LEFT_ARROW  &kp DOWN       &kp UP         &kp RIGHT_ARROW  &none
-&none   &none   &none   &none   &none   &none     &HSplit  &kp HOME        &kp PG_DN      &kp PG_UP      &kp END          &none
-                        &none   &none   &trans    &trans   &trans
+&none   &none      &none     &none             &none           &none     &kp INS  &kp HOME                &kp UP_ARROW   &kp END                  &kp PG_UP      &none
+&trans  &kp LWIN   &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &VSplit  &kp LEFT_ARROW          &kp DOWN       &kp UP                   &kp PAGE_DOWN  &none
+&none   &kp RMETA  &kp RALT  &kp RCTRL         &kp RSHFT       &none     &HSplit  &kp LG(LC(LEFT_ARROW))  &kp LG(LC(D))  &kp LG(LC(RIGHT_ARROW))  &trans         &none
+                             &none             &none           &trans    &trans   &trans
             >;
         };
 
@@ -248,21 +257,12 @@
             >;
         };
 
-        MOUSE {
-            bindings = <
-&none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
-&kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
-&none    &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none       &none            &none      &none         &none          &none
-                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 3 SPACE
-            >;
-        };
-
         SLOW {
             bindings = <
 &none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
 &kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
 &none    &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none       &none            &none      &none         &none          &none
-                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 3 SPACE
+                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 4 SPACE
             >;
         };
 
@@ -271,7 +271,25 @@
 &none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
 &kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
 &none    &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none       &none            &none      &none         &none          &none
-                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 3 SPACE
+                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 4 SPACE
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+            >;
+        };
+
+        CLEAN {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
             >;
         };
     };
