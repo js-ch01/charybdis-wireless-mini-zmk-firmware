@@ -184,7 +184,7 @@
         };
 
         combo_lbrc {
-            timeout-ms = <38>;
+            timeout-ms = <40>;
             key-positions = <14 14 15>;
             bindings = <&kp LEFT_BRACE>;
             layers = <0 1>;
@@ -330,13 +330,13 @@
 
         combo_win+grave {
             bindings = <&kp LG(GRAVE)>;
-            key-positions = <2 3>;
+            key-positions = <3 4>;
             layers = <0>;
         };
 
         combo_win+tlide {
             bindings = <&kp LG(LS(GRAVE))>;
-            key-positions = <2 1>;
+            key-positions = <2 3>;
             layers = <0>;
         };
 
@@ -364,7 +364,6 @@
             bindings = <&kp DQT>;
             key-positions = <14 3>;
             layers = <0 1>;
-            timeout-ms = <45>;
         };
 
         combo_sq {
