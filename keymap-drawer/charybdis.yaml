@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - {t: GAME, h: toggle}
+  - ''
   - L_BASE L_EXTRA
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
@@ -35,7 +35,7 @@ layers:
   - ','
   - .
   - /
-  - {t: BASE, h: toggle}
+  - ''
   - SCROLL SNIPE
   - {t: BACK SPACE, h: NUM+SYM}
   - {t: DELETE, h: EXTRAS}
@@ -45,7 +45,7 @@ layers:
   - {t: ▽, type: trans}
   - '`'
   - '~'
-  - LCTRL
+  - ^
   - '&'
   - '|'
   - '*'
@@ -71,7 +71,7 @@ layers:
   - '?'
   - '['
   - ']'
-  - _
+  - '"'
   - .
   - {t: '1', h: F1}
   - {t: '2', h: F2}
@@ -335,62 +335,111 @@ layers:
   - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  CLEAN:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  CLEAN: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', '', '']
 combos:
 - p: [1, 2]
-  k: ESCAPE
+  k: ESC
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [16, 15]
+  k: (
+  l: [BASE, NUM+SYM]
+- p: [19, 20]
+  k: )
   l: [BASE]
-- p: [17, 18]
-  k: CAPS WORD
+- p: [14, 16]
+  k: '['
+  l: [BASE, NUM+SYM]
+- p: [19, 21]
+  k: ']'
   l: [BASE]
-- p: [38, 39]
-  k: L_BASE L_EXTRA
-- p: [36, 37, 38]
-  k: {t: CLEAN, h: toggle}
+- p: [14, 14, 15]
+  k: '{'
+  l: [BASE, NUM+SYM]
+- p: [20, 21]
+  k: '}'
+  l: [BASE]
+- p: [26, 28]
+  k: <
+  l: [BASE, NUM+SYM]
+- p: [31, 33]
+  k: '>'
+  l: [BASE, NUM+SYM]
+- p: [24, 35]
+  k: {t: GAME, h: toggle}
+  l: [BASE, GAME]
 - p: [7, 19]
   k: BACK SPACE
-  l: [BASE, NUM+SYM]
+  l: [BASE, NAV, NUM+SYM, GAME]
 - p: [8, 20]
   k: DEL
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [25, 13]
+  k: Ctl+ Z
+  l: [BASE]
+- p: [26, 14]
+  k: Ctl+ X
+  l: [BASE]
+- p: [27, 15]
+  k: Ctl+ C
+  l: [BASE]
+- p: [28, 16]
+  k: Ctl+ V
+  l: [BASE]
+- p: [9, 21]
+  k: '&key_repeat'
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [36, 37, 38]
+  k: {t: CLEAN, h: toggle}
+  l: [BASE, CLEAN]
+- p: [3, 15]
+  k: SPACE
+  l: [BASE, NAV, NUM+SYM]
+- p: [4, 16]
+  k: ENTER
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [2, 14]
+  k: CAPSLOCK
+  l: [BASE]
+- p: [31, 19]
+  k: '0'
+  l: [BASE, NUM+SYM]
+- p: [32, 20]
+  k: '1'
+  l: [BASE, NUM+SYM]
+- p: [1, 13]
+  k: Ctl+ A
+  l: [BASE]
+- p: [33, 21]
+  k: '9'
+  l: [BASE, NUM+SYM]
+- p: [26, 27]
+  k: '='
+  l: [BASE, NUM+SYM]
+- p: [28, 27]
+  k: +
+  l: [BASE, NUM+SYM]
+- p: [38, 37]
+  k: Gui+ TAB
+  l: [BASE, NUM+SYM]
+- p: [3, 4]
+  k: Gui+ `
+  l: [BASE]
+- p: [2, 3]
+  k: Gui+Sft+ `
+  l: [BASE]
+- p: [31, 32]
+  k: '-'
+  l: [BASE]
+- p: [32, 33]
+  k: _
+  l: [BASE]
+- p: [1, 4]
+  k: Alt+ F4
+  l: [BASE]
+- p: [4, 5]
+  k: '"'
+  l: [BASE, NUM+SYM]
+- p: [21, 8]
+  k: ''''
   l: [BASE, NUM+SYM]
