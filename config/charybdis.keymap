@@ -223,8 +223,8 @@
 
         GAME {
             bindings = <
-&kp N1  &kp TAB    &kp Q  &kp W   &kp E      &kp R           &kp Y      &kp U      &kp I      &kp O    &kp P     &to 0
-&kp N2  &kp LCTRL  &kp A  &kp S   &kp D      &kp F           &kp H      &kp J      &kp K      &kp L    &kp SEMI  &none
+&kp N1  &kp TAB    &kp Q  &kp W   &kp E      &kp R           &kp Y      &kp U      &kp I      &kp O    &kp P     &trans
+&kp N2  &kp LCTRL  &kp A  &kp S   &kp D      &kp F           &kp H      &kp J      &kp K      &kp L    &kp SEMI  &trans
 &kp N3  &kp LSHFT  &kp Z  &kp X   &kp C      &kp V           &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                           &trans  &kp SPACE  &kp LEFT_ALT    &kp ENTER  &kp SPACE
             >;
@@ -232,10 +232,10 @@
 
         PHOTOS {
             bindings = <
-&trans          &kp LA(LC(LS(Z)))  &kp LA(LC(LS(E)))  &kp LA(LC(LS(A)))  &kp LA(LC(LS(S)))  &kp LA(LC(LS(B)))    &none   &none   &none  &none  &none  &trans
+&trans          &kp LA(LC(LS(Z)))  &kp LA(LC(LS(E)))  &kp LA(LC(LS(A)))  &kp LA(LC(LS(S)))  &kp LA(LC(LS(B)))    &none   &none   &none  &none  &none  &none
 &kp LC(LA(E))   &kp LEFT           &kp DOWN           &kp UP             &kp RIGHT          &kp LCTRL            &none   &none   &none  &none  &none  &none
-&kp LS(DELETE)  &kp LA(LS(A))      &kp LA(KP_N1)      &kp LA(KP_N2)      &kp LA(KP_N3)      &none                &none   &none   &none  &none  &none  &to 0
-                                                      &trans             &none              &trans               &trans  &trans
+&kp LS(DELETE)  &kp LA(LS(A))      &kp LA(KP_N1)      &kp LA(KP_N2)      &kp LA(KP_N3)      &none                &none   &none   &none  &none  &none  &none
+                                                      &trans             &trans             &trans               &trans  &trans
             >;
         };
 
