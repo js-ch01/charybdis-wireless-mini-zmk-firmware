@@ -1,6 +1,6 @@
 layers:
   BASE:
-  - SEARCH
+  - TAB
   - Q
   - W
   - E
@@ -12,77 +12,77 @@ layers:
   - O
   - P
   - {t: GAME, h: toggle}
-  - {t: TAB, h: WINDOW}
-  - {t: A, h: LEFT GUI}
+  - L_BASE L_EXTRA
+  - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
-  - {t: D, h: LCTRL}
+  - {t: D, h: LEFT CONTROL}
   - {t: F, h: LEFT SHIFT}
   - G
   - H
   - {t: J, h: LEFT SHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: LEFT META}
-  - DEL
-  - SHELL
+  - {t: K, h: LEFT CONTROL}
+  - {t: L, h: LEFT ALT}
+  - {t: ;, h: LEFT WIN}
+  - RIGHT ALT
+  - {t: LEFT CONTROL, h: SCROLL}
   - Z
-  - {t: X, h: MEH}
-  - {t: C, h: HYPER}
+  - X
+  - C
   - V
   - B
   - N
   - M
-  - {t: ',', h: HYPER}
-  - {t: ., h: MEH}
+  - ','
+  - .
   - /
-  - {t: PHOTOS, h: toggle}
-  - '&tdtb2'
-  - {t: BACK SPACE, h: NUM}
-  - {t: ESCAPE, h: NAV}
-  - {t: RETURN, h: MOUSE}
-  - {t: SPACE, h: SYM}
-  NUM:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - /
+  - {t: BASE, h: toggle}
+  - SCROLL SNIPE
+  - {t: BACK SPACE, h: NUM+SYM}
+  - {t: DELETE, h: EXTRAS}
+  - {t: RETURN, h: SLOW}
+  - {t: SPACE, h: NAV}
+  NUM+SYM:
+  - {t: ▽, type: trans}
+  - '`'
+  - '~'
+  - LCTRL
+  - '&'
+  - '|'
+  - '*'
   - {t: '7', h: F7}
   - {t: '8', h: F8}
   - {t: '9', h: F9}
-  - {t: '-', h: F10}
-  - ''
-  - TAB
-  - ''
-  - ''
-  - ''
-  - BACK SPACE
-  - ''
-  - '*'
+  - {t: +, h: F10}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - /
   - {t: '4', h: F4}
   - {t: '5', h: F5}
   - {t: '6', h: F6}
-  - {t: +, h: F11}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '-', h: F11}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - INS
+  - '?'
+  - '['
+  - ']'
+  - _
   - .
   - {t: '1', h: F1}
   - {t: '2', h: F2}
   - {t: '3', h: F3}
-  - {t: '=', h: F12}
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - '0'
+  - {t: \, h: F12}
+  - Gui+ Z
   - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
   NAV:
   - ''
   - ''
@@ -90,82 +90,40 @@ layers:
   - ''
   - ''
   - ''
+  - INS
+  - HOME
+  - UP ARROW
+  - END
+  - PG UP
   - ''
-  - PANE ◀
-  - PANE ▲
-  - PANE ▼
-  - PANE ▶
-  - ''
   - {t: ▽, type: trans}
+  - LWIN
+  - LALT
+  - LEFT CONTROL
+  - LEFT SHIFT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&VSplit'
+  - VSPLIT
   - LEFT
   - DOWN
   - UP
-  - RIGHT
+  - PAGE DOWN
   - ''
   - ''
+  - RMETA
+  - RALT
+  - RCTRL
+  - RSHFT
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&HSplit'
-  - HOME
-  - PG DN
-  - PG UP
-  - END
-  - ''
-  - ''
-  - ''
-  - {type: held}
+  - HSPLIT
+  - Gui+Ctl+ LEFT
+  - Gui+Ctl+ D
+  - Gui+Ctl+ RIGHT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  SYM:
-  - ''
-  - +
-  - '{'
-  - '}'
-  - '-'
-  - ':'
-  - \
-  - '`'
-  - $
-  - ^
-  - ''''
   - ''
   - ''
-  - {t: '!', h: LEFT META}
-  - {t: (, h: LEFT ALT}
-  - {t: ), h: LCTRL}
-  - {t: SPACE, h: LEFT SHIFT}
-  - '~'
-  - /
-  - {t: SPACE, h: LEFT SHIFT}
-  - {t: <, h: LCTRL}
-  - {t: '>', h: LEFT ALT}
-  - '#'
-  - ''
-  - ''
-  - '='
-  - '['
-  - ']'
-  - _
-  - ;
-  - '|'
-  - '*'
-  - '&'
-  - '%'
-  - '@'
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
   - {type: held}
   GAME:
   - '1'
@@ -174,83 +132,41 @@ layers:
   - W
   - E
   - R
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: BASE, h: toggle}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: ▽, type: trans}
   - '2'
   - LCTRL
   - A
   - S
   - D
   - F
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
   - '3'
   - LSHFT
   - Z
   - X
   - C
   - V
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
   - {t: ▽, type: trans}
   - SPACE
   - LEFT ALT
-  - ''
-  - ''
-  PHOTOS:
-  - {t: ▽, type: trans}
-  - TAG Z
-  - TAG E
-  - TAG A
-  - TAG S
-  - TAG B
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - FIT
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - LCTRL
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - SHRED
-  - SHOW TAGS
-  - REJECT
-  - PENDING
-  - ACCEPT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: BASE, h: toggle}
-  - {t: ▽, type: trans}
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ENTER
+  - SPACE
   EXTRAS:
   - SLEEP
   - ''
@@ -276,7 +192,7 @@ layers:
   - STOP
   - NEXT
   - ''
-  - '&bootloader'
+  - BOOT LDR
   - ''
   - ''
   - ''
@@ -287,19 +203,19 @@ layers:
   - VOLUME UP
   - MUTE
   - ''
-  - '&bootloader'
+  - BOOT LDR
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   MOUSE:
   - ''
-  - '&msc MOVE_LEFT'
-  - '&msc MOVE_UP'
-  - '&mmv MOVE_UP'
-  - '&msc MOVE_DOWN'
-  - '&msc MOVE_RIGHT'
+  - WHEEL L
+  - WHEEL D
+  - MOVE UP
+  - WHEEL U
+  - WHEEL R
   - ''
   - ''
   - ''
@@ -307,11 +223,11 @@ layers:
   - ''
   - ''
   - TAB
-  - '&mkp MB4'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&mkp MB5'
+  - BACK
+  - MOVE L
+  - MOVE D
+  - MOVE R
+  - FWD
   - ''
   - RIGHT SHIFT
   - RCTRL
@@ -323,25 +239,25 @@ layers:
   - CUT
   - COPY
   - PASTE
-  - '&mkp MCLK'
+  - M CLK
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - '&tdtb2'
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - {t: RETURN, type: held}
-  - {t: SPACE, h: SYM}
+  - SCROLL SNIPE
+  - L CLK
+  - R CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   SLOW:
   - ''
-  - '&msc MOVE_LEFT'
-  - '&msc MOVE_UP'
-  - '&mmv MOVE_UP'
-  - '&msc MOVE_DOWN'
-  - '&msc MOVE_RIGHT'
+  - WHEEL L
+  - WHEEL D
+  - MOVE UP
+  - WHEEL U
+  - WHEEL R
   - ''
   - ''
   - ''
@@ -349,11 +265,11 @@ layers:
   - ''
   - ''
   - TAB
-  - '&mkp MB4'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&mkp MB5'
+  - BACK
+  - MOVE L
+  - MOVE D
+  - MOVE R
+  - FWD
   - ''
   - RIGHT SHIFT
   - RCTRL
@@ -365,25 +281,25 @@ layers:
   - CUT
   - COPY
   - PASTE
-  - '&mkp MCLK'
+  - M CLK
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - '&tdtb2'
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - RETURN
-  - {t: SPACE, h: SYM}
+  - SCROLL SNIPE
+  - L CLK
+  - R CLK
+  - {type: held}
+  - {t: ▽, type: trans}
   SCROLL:
   - ''
-  - '&msc MOVE_LEFT'
-  - '&msc MOVE_UP'
-  - '&mmv MOVE_UP'
-  - '&msc MOVE_DOWN'
-  - '&msc MOVE_RIGHT'
+  - WHEEL L
+  - WHEEL D
+  - MOVE UP
+  - WHEEL U
+  - WHEEL R
   - ''
   - ''
   - ''
@@ -391,40 +307,90 @@ layers:
   - ''
   - ''
   - TAB
-  - '&mkp MB4'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&mkp MB5'
+  - BACK
+  - MOVE L
+  - MOVE D
+  - MOVE R
+  - FWD
   - ''
   - RIGHT SHIFT
   - RCTRL
   - LEFT ALT
   - LEFT META
   - ''
-  - ''
+  - {type: held}
   - UNDO
   - CUT
   - COPY
   - PASTE
-  - '&mkp MCLK'
+  - M CLK
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - '&tdtb2'
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - RETURN
-  - {t: SPACE, h: SYM}
+  - SCROLL SNIPE
+  - L CLK
+  - R CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  CLEAN:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
-- p: [8, 9]
-  k: DELETE
+- p: [1, 2]
+  k: ESCAPE
   l: [BASE]
 - p: [17, 18]
-  k: '&caps_word'
+  k: CAPS WORD
   l: [BASE]
 - p: [38, 39]
-  k: '&td_bore'
+  k: L_BASE L_EXTRA
+- p: [36, 37, 38]
+  k: {t: CLEAN, h: toggle}
+- p: [7, 19]
+  k: BACK SPACE
+  l: [BASE, NUM+SYM]
+- p: [8, 20]
+  k: DEL
+  l: [BASE, NUM+SYM]
