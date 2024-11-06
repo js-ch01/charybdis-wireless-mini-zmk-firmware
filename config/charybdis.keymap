@@ -75,7 +75,7 @@
         tdtb: td_mouse_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&httl 7 6>, <&to 0>;
+            bindings = <&httl 7 5>, <&to 0>;
 
             tapping-term-ms = <200>;
         };
@@ -83,7 +83,7 @@
         tdtb2: td_slow_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&httl 6 0>, <&to 7>;
+            bindings = <&httl 7 0>, <&to 0>;
         };
 
         httl: ht_two_layers {
@@ -206,7 +206,7 @@
 &kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T           &kp Y         &kp U                         &kp I               &kp O           &kp P                   &to 3
 &td_bore            &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G           &kp H         &hm_shift_right LEFT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L  &hm LEFT_WIN SEMICOLON  &kp RIGHT_ALT
 &lt 7 LEFT_CONTROL  &kp Z           &kp X           &kp C               &kp V                        &kp B           &kp N         &kp M                         &kp COMMA           &kp PERIOD      &kp FSLH                &to 0
-                                                    &tdtb               &lt 1 BACKSPACE              &lt 4 DELETE    &lt 6 RETURN  &lt 2 SPACE
+                                                    &tdtb2              &lt 1 BACKSPACE              &lt 4 DELETE    &lt 6 RETURN  &lt 2 SPACE
             >;
         };
 
