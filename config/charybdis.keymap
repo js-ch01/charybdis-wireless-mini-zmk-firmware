@@ -18,13 +18,13 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0 2 7>;
+        layers = <0 2 5>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <3>;
-        bindings = <&ib_toggle_layer 7>;
+        bindings = <&ib_toggle_layer 5>;
     };
 
     /* input config for snipe mode */
@@ -45,12 +45,12 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <9>;
+        layers = <7>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
-        bindings = <&ib_wheel_scaler 1 16>;
+        bindings = <&ib_wheel_scaler 1 8>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
