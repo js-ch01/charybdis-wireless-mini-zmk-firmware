@@ -324,13 +324,13 @@ layers:
   - COPY
   - PASTE
   - M CLK
-  - ''
+  - BACK
   - L CLK
   - M CLK
   - R CLK
+  - FWD
   - ''
-  - ''
-  - {t: ▽, type: trans}
+  - M CLK
   - L CLK
   - R CLK
   - {t: ▽, type: trans}
