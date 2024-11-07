@@ -296,9 +296,9 @@ layers:
   MOUSE:
   - ''
   - WHEEL L
-  - WHEEL D
-  - MOVE UP
   - WHEEL U
+  - MOVE UP
+  - WHEEL D
   - WHEEL R
   - ''
   - ''
@@ -338,9 +338,9 @@ layers:
   SLOW:
   - ''
   - WHEEL L
-  - WHEEL D
-  - MOVE UP
   - WHEEL U
+  - MOVE UP
+  - WHEEL D
   - WHEEL R
   - ''
   - ''
@@ -380,9 +380,9 @@ layers:
   SCROLL:
   - ''
   - WHEEL L
-  - WHEEL D
-  - MOVE UP
   - WHEEL U
+  - MOVE UP
+  - WHEEL D
   - WHEEL R
   - ''
   - ''
