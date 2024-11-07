@@ -131,16 +131,125 @@
             flavor = "tap-preferred";
         };
 
-        // lt: layer_tap { // Part of example config
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     flavor = "balanced";
-        //     tapping-term-ms = <240>;
-        //     quick-tap-ms = <150>;
-        //     bindings = 
-        //         <&mo>,
-        //         <&kp>;
-        // };
+         pipe_hold_double: pipe_hold_double {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PIPE_HOLD_DOUBLE";
+            bindings = <&double_pipe>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <230>;
+        };
+
+        amps_hold_double: amps_hold_double {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AMPS_HOLD_DOUBLE";
+            bindings = <&double_amp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        euqal_hold_double: euqal_hold_double {
+            compatible = "zmk,behavior-hold-tap";
+            label = "EUQAL_HOLD_DOUBLE";
+            bindings = <&double_equal>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        excl_hold_not_euqal: excl_hold_not_euqal {
+            compatible = "zmk,behavior-hold-tap";
+            label = "EXCL_HOLD_NOT_EUQAL";
+            bindings = <&not_equal>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        plus_hold_double: plus_hold_double {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PLUS_HOLD_DOUBLE";
+            bindings = <&double_plus>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        minus_hold_double: minus_hold_double {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MINUS_HOLD_DOUBLE";
+            bindings = <&double_mimus>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        gt_hold_gte: gt_hold_gte {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GT_HOLD_GTE";
+            bindings = <&gte>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        lt_hold_lte: lt_hold_lte {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_HOLD_LTE";
+            bindings = <&lte>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        under_hold_double: under_hold_double {
+            compatible = "zmk,behavior-hold-tap";
+            label = "UNDER_HOLD_DOUBLE";
+            bindings = <&double_underscore>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
+
+        ht_lpar_hold_lr: ht_lpar_hold_lr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_LPAR_HOLD_LR";
+            bindings = <&parenthesis_lr>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        ht_lbrace_hold_lr: ht_lbrace_hold_lr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_LBRACE_HOLD_LR";
+            bindings = <&braces_lr>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        ht_lbracket_hold_lr: ht_lbracket_hold_lr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_LBRACKET_HOLD_LR";
+            bindings = <&brackets_lr>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -383,6 +492,102 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT &kp SEMI &kp LS(S) &kp LS(P) &kp RET>;
+        };
+
+        double_pipe: double_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp PIPE &kp PIPE>;
+
+            label = "DOUBLE_PIPE";
+        };
+
+        double_amp: double_amp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp AMPS &kp AMPS>;
+
+            label = "DOUBLE_AMP";
+        };
+
+        double_equal: double_equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp EQUAL &kp EQUAL>;
+
+            label = "DOUBLE_EQUAL";
+        };
+
+        not_equal: not_equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp EXCL &kp EQUAL>;
+
+            label = "NOT_EQUAL";
+        };
+
+        double_plus: double_plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp PLUS &kp PLUS>;
+
+            label = "DOUBLE_PLUS";
+        };
+
+        double_mimus: double_mimus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp MINUS &kp MINUS>;
+
+            label = "DOUBLE_MIMUS";
+        };
+
+        gte: gte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp GT &kp EQUAL>;
+
+            label = "GTE";
+        };
+
+        lte: lte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp LT &kp EQUAL>;
+
+            label = "LTE";
+        };
+
+        double_underscore: double_underscore {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp UNDERSCORE &kp UNDERSCORE>;
+
+            label = "DOUBLE_UNDERSCORE";
+        };
+
+        parenthesis_lr: parenthesis_lr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp LPAR &kp RPAR>;
+
+            label = "PARENTHESIS_LR";
+        };
+
+        braces_lr: braces_lr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp LBRC &kp RBRC>;
+
+            label = "BRACES_LR";
+        };
+
+        brackets_lr: brackets_lr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp LBKT &kp RBKT>;
+
+            label = "BRACKETS_LR";
         };
     };
 
