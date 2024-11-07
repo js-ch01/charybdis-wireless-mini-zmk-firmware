@@ -35,7 +35,7 @@ layers:
   - ','
   - .
   - /
-  - ''
+  - {t: SCROLL UP, h: EXTRAS}
   - {t: TAB, h: SCROLL}
   - {t: BACK SPACE, h: NUM+SYM}
   - {t: DELETE, h: EXTRAS}
@@ -168,18 +168,18 @@ layers:
   - ENTER
   - SPACE
   EXTRAS:
-  - ''
+  - BOOT LDR
   - VOL UP
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - BT CLR
+  - '6'
+  - '7'
+  - '8'
+  - '9'
   - ''
+  - BOOT LDR
   - ''
   - VOL DN
   - HOME
@@ -203,7 +203,7 @@ layers:
   - VOLUME UP
   - MUTE
   - ''
-  - BOOT LDR
+  - ''
   - Gui+Ctl+ LEFT
   - Gui+Ctl+ D
   - Gui+Ctl+ RIGHT

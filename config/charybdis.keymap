@@ -598,7 +598,7 @@
             bindings = <
 &kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T           &kp Y         &kp U                          &kp I               &kp O           &kp P                   &none
 &tdtb2              &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G           &kp H         &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L  &hm LEFT_WIN SEMICOLON  &kp RIGHT_ALT
-&lt 4 LEFT_CONTROL  &kp Z           &kp X           &kp C               &kp V                        &kp B           &kp N         &kp M                          &kp COMMA           &kp PERIOD      &kp FSLH                &none
+&lt 4 LEFT_CONTROL  &kp Z           &kp X           &kp C               &kp V                        &kp B           &kp N         &kp M                          &kp COMMA           &kp PERIOD      &kp FSLH                &lt 4 K_SCROLL_UP
                                                     &lt 9 TAB           &lt 1 BACKSPACE              &lt 4 DELETE    &lt 1 RETURN  &lt 2 SPACE
             >;
         };
@@ -632,10 +632,10 @@
 
         EXTRAS {
             bindings = <
-&none  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1            &bt BT_SEL 2   &bt BT_CLR           &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_CLR  &none
-&none  &kp C_VOL_DN  &kp HOME      &kp UP                  &kp END        &kp PG_UP            &none         &none              &none            &none         &none       &none
-&none  &kp C_MUTE    &kp LEFT      &kp DOWN                &kp RIGHT      &kp PG_DN            &none         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &none       &bootloader
-                                   &kp LG(LC(LEFT_ARROW))  &kp LG(LC(D))  &kp LG(LC(RIGHT))    &none         &none
+&bootloader  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1            &bt BT_SEL 2   &bt BT_CLR           &kp N6  &kp N7             &kp N8           &kp N9      &none  &bootloader
+&none        &kp C_VOL_DN  &kp HOME      &kp UP                  &kp END        &kp PG_UP            &none   &none              &none            &none       &none  &none
+&none        &kp C_MUTE    &kp LEFT      &kp DOWN                &kp RIGHT      &kp PG_DN            &none   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE  &none  &none
+                                         &kp LG(LC(LEFT_ARROW))  &kp LG(LC(D))  &kp LG(LC(RIGHT))    &none   &none
             >;
         };
 
