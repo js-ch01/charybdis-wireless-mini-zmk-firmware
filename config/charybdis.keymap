@@ -131,7 +131,7 @@
             flavor = "tap-preferred";
         };
 
-         pipe_hold_double: pipe_hold_double {
+        pipe_hold_double: pipe_hold_double {
             compatible = "zmk,behavior-hold-tap";
             label = "PIPE_HOLD_DOUBLE";
             bindings = <&double_pipe>, <&kp>;
@@ -224,7 +224,7 @@
         ht_lpar_hold_lr: ht_lpar_hold_lr {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_LPAR_HOLD_LR";
-            bindings = <&parenthesis_lr>, <&kp>;
+            bindings = <&double_parenthesis_lr>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -234,7 +234,7 @@
         ht_lbrace_hold_lr: ht_lbrace_hold_lr {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_LBRACE_HOLD_LR";
-            bindings = <&braces_lr>, <&kp>;
+            bindings = <&double_braces_lr>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -244,7 +244,7 @@
         ht_lbracket_hold_lr: ht_lbracket_hold_lr {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_LBRACKET_HOLD_LR";
-            bindings = <&brackets_lr>, <&kp>;
+            bindings = <&double_brackets_lr>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -566,28 +566,28 @@
             label = "DOUBLE_UNDERSCORE";
         };
 
-        parenthesis_lr: parenthesis_lr {
+        double_parenthesis_lr: double_parenthesis_lr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap_time 5>, <&kp LPAR &kp RPAR>;
 
-            label = "PARENTHESIS_LR";
+            label = "DOUBLE_PARENTHESIS_LR";
         };
 
-        braces_lr: braces_lr {
+        double_braces_lr: double_braces_lr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap_time 5>, <&kp LBRC &kp RBRC>;
 
-            label = "BRACES_LR";
+            label = "DOUBLE_BRACES_LR";
         };
 
-        brackets_lr: brackets_lr {
+        double_brackets_lr: double_brackets_lr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap_time 5>, <&kp LBKT &kp RBKT>;
 
-            label = "BRACKETS_LR";
+            label = "DOUBLE_BRACKETS_LR";
         };
     };
 
