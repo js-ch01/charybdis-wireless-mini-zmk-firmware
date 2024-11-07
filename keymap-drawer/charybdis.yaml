@@ -54,7 +54,7 @@ layers:
   - {t: '9', h: F9}
   - {t: +, h: F10}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '{'
   - '!'
   - '@'
   - '#'
