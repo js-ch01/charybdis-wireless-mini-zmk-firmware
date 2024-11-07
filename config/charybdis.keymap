@@ -599,7 +599,7 @@
 &kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T           &kp Y         &kp U                          &kp I               &kp O           &kp P                   &none
 &tdtb2              &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G           &kp H         &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L  &hm LEFT_WIN SEMICOLON  &kp RIGHT_ALT
 &lt 4 LEFT_CONTROL  &kp Z           &kp X           &kp C               &kp V                        &kp B           &kp N         &kp M                          &kp COMMA           &kp PERIOD      &kp FSLH                &none
-                                                    &kp TAB             &lt 1 BACKSPACE              &lt 4 DELETE    &lt 1 RETURN  &lt 2 SPACE
+                                                    &lt 9 TAB           &lt 1 BACKSPACE              &lt 4 DELETE    &lt 1 RETURN  &lt 2 SPACE
             >;
         };
 

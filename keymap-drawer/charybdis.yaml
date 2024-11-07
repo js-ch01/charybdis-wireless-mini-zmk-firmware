@@ -36,7 +36,7 @@ layers:
   - .
   - /
   - ''
-  - TAB
+  - {t: TAB, h: SCROLL}
   - {t: BACK SPACE, h: NUM+SYM}
   - {t: DELETE, h: EXTRAS}
   - {t: RETURN, h: NUM+SYM}
@@ -52,7 +52,7 @@ layers:
   - {t: '7', h: F7}
   - {t: '8', h: F8}
   - {t: '9', h: F9}
-  - {t: +, h: F10}
+  - {t: +, h: F12}
   - {t: ▽, type: trans}
   - '{'
   - '!'
@@ -76,7 +76,7 @@ layers:
   - {t: '1', h: F1}
   - {t: '2', h: F2}
   - {t: '3', h: F3}
-  - {t: \, h: F12}
+  - {t: \, h: F10}
   - Gui+ Z
   - {t: ▽, type: trans}
   - {type: held}
@@ -414,7 +414,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - {type: held}
   - L CLK
   - R CLK
   - {t: ▽, type: trans}
