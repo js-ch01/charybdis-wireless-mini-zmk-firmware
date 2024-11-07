@@ -439,7 +439,7 @@ combos:
   l: [BASE]
 - p: [14, 14, 15]
   k: {t: '{', h: '&double_braces_lr'}
-  l: [BASE, NUM+SYM]
+  l: [BASE]
 - p: [20, 21]
   k: '}'
   l: [BASE]

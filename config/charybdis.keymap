@@ -294,7 +294,7 @@
             timeout-ms = <40>;
             key-positions = <14 14 15>;
             bindings = <&lbrace_hold_LR 0 LEFT_BRACE>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         combo_rbrc {
