@@ -307,14 +307,14 @@
         combo_lt {
             timeout-ms = <45>;
             key-positions = <26 28>;
-            bindings = <&kp LESS_THAN>;
+            bindings = <&lt_hold_lte 0 LESS_THAN>;
             layers = <0 1>;
         };
 
         combo_gt {
             timeout-ms = <45>;
             key-positions = <31 33>;
-            bindings = <&kp GREATER_THAN>;
+            bindings = <&gt_hold_gte 0 GREATER_THAN>;
             layers = <0 1>;
         };
 
@@ -415,14 +415,14 @@
         };
 
         combo_equal {
-            bindings = <&kp EQUAL>;
+            bindings = <&euqal_hold_double 0 EQUAL>;
             key-positions = <26 27>;
             timeout-ms = <45>;
             layers = <0 1>;
         };
 
         combo_plus {
-            bindings = <&kp PLUS>;
+            bindings = <&plus_hold_double 0 PLUS>;
             key-positions = <28 27>;
             timeout-ms = <45>;
             layers = <0 1>;
@@ -448,14 +448,14 @@
         };
 
         combo_minus2 {
-            bindings = <&kp MINUS>;
+            bindings = <&minus_hold_double 0 MINUS>;
             key-positions = <31 32>;
             timeout-ms = <45>;
             layers = <0>;
         };
 
         combo_underscore {
-            bindings = <&kp UNDERSCORE>;
+            bindings = <&under_hold_double 0 UNDERSCORE>;
             key-positions = <32 33>;
             timeout-ms = <45>;
             layers = <0>;
