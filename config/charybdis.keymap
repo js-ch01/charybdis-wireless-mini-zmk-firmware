@@ -221,9 +221,9 @@
             tapping-term-ms = <200>;
         };
 
-        ht_lpar_hold_lr: ht_lpar_hold_lr {
+        lpar_hold_LR: lpar_hold_LR {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_LPAR_HOLD_LR";
+            label = "LPAR_HOLD_LR";
             bindings = <&double_parenthesis_lr>, <&kp>;
 
             #binding-cells = <2>;
@@ -231,9 +231,9 @@
             flavor = "tap-preferred";
         };
 
-        ht_lbrace_hold_lr: ht_lbrace_hold_lr {
+        lbrace_hold_LR: lbrace_hold_LR {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_LBRACE_HOLD_LR";
+            label = "LBRACE_HOLD_LR";
             bindings = <&double_braces_lr>, <&kp>;
 
             #binding-cells = <2>;
@@ -241,9 +241,9 @@
             flavor = "tap-preferred";
         };
 
-        ht_lbracket_hold_lr: ht_lbracket_hold_lr {
+        lbracket_hold_LR: lbracket_hold_LR {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_LBRACKET_HOLD_LR";
+            label = "LBRACKET_HOLD_LR";
             bindings = <&double_brackets_lr>, <&kp>;
 
             #binding-cells = <2>;
@@ -265,7 +265,7 @@
         combo_lpar {
             timeout-ms = <38>;
             key-positions = <16 15>;
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&lpar_hold_LR 0 LEFT_PARENTHESIS>;
             layers = <0 1>;
         };
 
@@ -279,7 +279,7 @@
         combo_lbkt {
             timeout-ms = <38>;
             key-positions = <14 16>;
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&lbracket_hold_LR 0 LEFT_BRACKET>;
             layers = <0 1>;
         };
 
@@ -293,7 +293,7 @@
         combo_lbrc {
             timeout-ms = <40>;
             key-positions = <14 14 15>;
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&lbrace_hold_LR 0 LEFT_BRACE>;
             layers = <0 1>;
         };
 

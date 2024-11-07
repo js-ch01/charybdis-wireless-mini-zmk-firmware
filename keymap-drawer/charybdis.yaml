@@ -426,19 +426,19 @@ combos:
   k: ESC
   l: [BASE, NAV, NUM+SYM, GAME]
 - p: [16, 15]
-  k: (
+  k: {t: (, h: '&double_parenthesis_lr'}
   l: [BASE, NUM+SYM]
 - p: [19, 20]
   k: )
   l: [BASE]
 - p: [14, 16]
-  k: '['
+  k: {t: '[', h: '&double_brackets_lr'}
   l: [BASE, NUM+SYM]
 - p: [19, 21]
   k: ']'
   l: [BASE]
 - p: [14, 14, 15]
-  k: '{'
+  k: {t: '{', h: '&double_braces_lr'}
   l: [BASE, NUM+SYM]
 - p: [20, 21]
   k: '}'
