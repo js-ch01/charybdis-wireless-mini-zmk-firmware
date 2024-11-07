@@ -96,7 +96,7 @@ layers:
   - END
   - PG UP
   - ''
-  - {t: ▽, type: trans}
+  - SCROLL SNIPE
   - LWIN
   - LALT
   - LEFT CONTROL
@@ -306,7 +306,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - SCROLL SNIPE
   - BACK
   - MOVE L
   - MOVE D
@@ -330,7 +330,7 @@ layers:
   - ''
   - ''
   - ''
-  - SCROLL SNIPE
+  - {t: ▽, type: trans}
   - L CLK
   - R CLK
   - {t: ▽, type: trans}
@@ -348,7 +348,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - SCROLL SNIPE
   - BACK
   - MOVE L
   - MOVE D
@@ -372,7 +372,7 @@ layers:
   - ''
   - ''
   - ''
-  - SCROLL SNIPE
+  - {t: ▽, type: trans}
   - L CLK
   - R CLK
   - {type: held}
@@ -390,7 +390,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - SCROLL SNIPE
   - BACK
   - MOVE L
   - MOVE D
@@ -414,7 +414,7 @@ layers:
   - ''
   - ''
   - ''
-  - SCROLL SNIPE
+  - {t: ▽, type: trans}
   - L CLK
   - R CLK
   - {t: ▽, type: trans}
@@ -444,10 +444,10 @@ combos:
   k: '}'
   l: [BASE]
 - p: [26, 28]
-  k: <
+  k: {t: <, h: '&lte'}
   l: [BASE, NUM+SYM]
 - p: [31, 33]
-  k: '>'
+  k: {t: '>', h: '&gte'}
   l: [BASE, NUM+SYM]
 - p: [24, 35]
   k: {t: GAME, h: toggle}
@@ -498,10 +498,10 @@ combos:
   k: '9'
   l: [BASE, NUM+SYM]
 - p: [26, 27]
-  k: '='
+  k: {t: '=', h: '&double_equal'}
   l: [BASE, NUM+SYM]
 - p: [28, 27]
-  k: +
+  k: {t: +, h: '&double_plus'}
   l: [BASE, NUM+SYM]
 - p: [38, 37]
   k: Gui+ TAB
@@ -513,10 +513,10 @@ combos:
   k: Gui+Sft+ `
   l: [BASE]
 - p: [31, 32]
-  k: '-'
+  k: {t: '-', h: '&double_mimus'}
   l: [BASE]
 - p: [32, 33]
-  k: _
+  k: {t: _, h: '&double_underscore'}
   l: [BASE]
 - p: [1, 4]
   k: Alt+ F4
