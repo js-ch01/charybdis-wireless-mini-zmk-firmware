@@ -39,7 +39,7 @@ layers:
   - TAB
   - {t: BACK SPACE, h: NUM+SYM}
   - {t: DELETE, h: EXTRAS}
-  - {t: RETURN, h: SLOW}
+  - {t: RETURN, h: NUM+SYM}
   - {t: SPACE, h: NAV}
   NUM+SYM:
   - {t: ▽, type: trans}
@@ -375,7 +375,7 @@ layers:
   - {t: ▽, type: trans}
   - L CLK
   - R CLK
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SCROLL:
   - ''
