@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - ''
-  - '&td_BA_EX'
+  - SCROLL SNIPE
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -36,7 +36,7 @@ layers:
   - .
   - /
   - ''
-  - SCROLL SNIPE
+  - TAB
   - {t: BACK SPACE, h: NUM+SYM}
   - {t: DELETE, h: EXTRAS}
   - {t: RETURN, h: SLOW}
@@ -204,9 +204,9 @@ layers:
   - MUTE
   - ''
   - BOOT LDR
-  - Q
-  - W
-  - E
+  - Gui+Ctl+ LEFT
+  - Gui+Ctl+ D
+  - Gui+Ctl+ RIGHT
   - ''
   - ''
   MOUSE:
