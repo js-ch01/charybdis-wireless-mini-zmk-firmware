@@ -325,9 +325,9 @@ layers:
   - PASTE
   - M CLK
   - ''
-  - ''
-  - ''
-  - ''
+  - L CLK
+  - M CLK
+  - R CLK
   - ''
   - ''
   - {t: ▽, type: trans}
