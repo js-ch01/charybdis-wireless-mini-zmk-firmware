@@ -174,12 +174,12 @@ layers:
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - BT CLR
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - ''
   - BOOT LDR
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - BT CLR
   - ''
   - VOL DN
   - HOME
@@ -204,9 +204,9 @@ layers:
   - MUTE
   - ''
   - ''
-  - Gui+Ctl+ LEFT
-  - Gui+Ctl+ D
-  - Gui+Ctl+ RIGHT
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   '9':
@@ -296,9 +296,9 @@ layers:
   MOUSE:
   - ''
   - WHEEL L
-  - WHEEL U
-  - MOVE UP
   - WHEEL D
+  - MOVE UP
+  - WHEEL U
   - WHEEL R
   - ''
   - ''
@@ -319,11 +319,11 @@ layers:
   - LEFT META
   - ''
   - ''
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - WHEEL D
+  - L CLK
   - M CLK
+  - R CLK
+  - WHEEL U
   - BACK
   - L CLK
   - M CLK
