@@ -400,13 +400,13 @@
         };
 
         combo_num0 {
-            bindings = <&kp N0>;
+            bindings = <&mkp LCLK>;
             key-positions = <31 19>;
             layers = <0 1>;
         };
 
         combo_num1 {
-            bindings = <&kp N1>;
+            bindings = <&mkp MCLK>;
             key-positions = <32 20>;
             layers = <0 1>;
         };
@@ -418,7 +418,7 @@
         };
 
         combo_num9 {
-            bindings = <&kp N9>;
+            bindings = <&mkp RCLK>;
             key-positions = <33 21>;
             layers = <0 1>;
         };

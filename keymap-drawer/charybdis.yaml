@@ -306,7 +306,7 @@ layers:
   - ''
   - ''
   - ''
-  - SCROLL SNIPE
+  - L CLK
   - BACK
   - MOVE L
   - MOVE D
@@ -348,7 +348,7 @@ layers:
   - ''
   - ''
   - ''
-  - SCROLL SNIPE
+  - L CLK
   - BACK
   - MOVE L
   - MOVE D
@@ -390,7 +390,7 @@ layers:
   - ''
   - ''
   - ''
-  - SCROLL SNIPE
+  - L CLK
   - BACK
   - MOVE L
   - MOVE D
@@ -486,16 +486,16 @@ combos:
   k: CAPSLOCK
   l: [BASE]
 - p: [31, 19]
-  k: '0'
+  k: L CLK
   l: [BASE, NUM+SYM]
 - p: [32, 20]
-  k: '1'
+  k: M CLK
   l: [BASE, NUM+SYM]
 - p: [1, 13]
   k: Ctl+ A
   l: [BASE]
 - p: [33, 21]
-  k: '9'
+  k: R CLK
   l: [BASE, NUM+SYM]
 - p: [26, 27]
   k: {t: '=', h: '&double_equal'}
