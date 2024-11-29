@@ -668,19 +668,19 @@
 
         SLOW {
             bindings = <
-&none   &msc MOVE_LEFT  &msc MOVE_DOWN  &mmv MOVE_UP    &msc MOVE_UP     &msc MOVE_RIGHT    &none   &none            &none      &none         &none          &none
-&tdtb2  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none   &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
-&none   &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none   &none            &none      &none         &none          &none
-                                        &trans          &mkp LCLK        &mkp RCLK          &trans  &trans
+&none   &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none     &none            &none      &none         &none          &none
+&tdtb2  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none     &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
+&none   &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &mkp MB4  &mkp LCLK        &mkp MCLK  &mkp RCLK     &mkp MB5       &none
+                                        &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans    &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&none   &msc MOVE_LEFT  &msc MOVE_DOWN  &mmv MOVE_UP    &msc MOVE_UP     &msc MOVE_RIGHT    &none   &none            &none             &none         &none          &none
-&tdtb2  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none   &kp RIGHT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_META  &none
-&none   &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none   &none            &none             &none         &none          &none
-                                        &trans          &mkp LCLK        &mkp RCLK          &trans  &trans
+&none   &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none     &none            &none      &none         &none          &none
+&tdtb2  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none     &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
+&none   &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &mkp MB4  &mkp LCLK        &mkp MCLK  &mkp RCLK     &mkp MB5       &none
+                                        &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans    &trans
             >;
         };
 

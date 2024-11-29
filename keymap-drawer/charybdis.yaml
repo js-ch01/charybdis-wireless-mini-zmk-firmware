@@ -338,9 +338,9 @@ layers:
   SLOW:
   - ''
   - WHEEL L
-  - WHEEL U
-  - MOVE UP
   - WHEEL D
+  - MOVE UP
+  - WHEEL U
   - WHEEL R
   - ''
   - ''
@@ -361,18 +361,18 @@ layers:
   - LEFT META
   - ''
   - ''
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - WHEEL D
+  - L CLK
   - M CLK
+  - R CLK
+  - WHEEL U
+  - BACK
+  - L CLK
+  - M CLK
+  - R CLK
+  - FWD
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
+  - M CLK
   - L CLK
   - R CLK
   - {t: ▽, type: trans}
@@ -380,9 +380,9 @@ layers:
   SCROLL:
   - ''
   - WHEEL L
-  - WHEEL U
-  - MOVE UP
   - WHEEL D
+  - MOVE UP
+  - WHEEL U
   - WHEEL R
   - ''
   - ''
@@ -398,23 +398,23 @@ layers:
   - FWD
   - ''
   - RIGHT SHIFT
-  - LEFT CONTROL
+  - LCTRL
   - LEFT ALT
   - LEFT META
   - ''
   - ''
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - WHEEL D
+  - L CLK
   - M CLK
+  - R CLK
+  - WHEEL U
+  - BACK
+  - L CLK
+  - M CLK
+  - R CLK
+  - FWD
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
+  - {t: M CLK, type: held}
   - L CLK
   - R CLK
   - {t: ▽, type: trans}
