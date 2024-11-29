@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - ''
+  - RIGHT ALT
   - SCROLL SNIPE
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
@@ -23,7 +23,7 @@ layers:
   - {t: K, h: LEFT CONTROL}
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
-  - RIGHT ALT
+  - ENTER
   - {t: LEFT CONTROL, h: EXTRAS}
   - Z
   - X
@@ -35,11 +35,11 @@ layers:
   - ','
   - .
   - /
-  - {t: SCROLL UP, h: EXTRAS}
+  - {t: MUTE, h: EXTRAS}
   - {t: TAB, h: SCROLL}
   - {t: BACK SPACE, h: NUM+SYM}
   - {t: DELETE, h: EXTRAS}
-  - {t: RETURN, h: NUM+SYM}
+  - {t: LANG HANGEUL, h: NUM+SYM}
   - {t: SPACE, h: NAV}
   NUM+SYM:
   - {t: ▽, type: trans}
@@ -175,7 +175,7 @@ layers:
   - {t: BT, h: '2'}
   - BT CLR
   - BOOT LDR
-  - ''
+  - '&sys_reset'
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
