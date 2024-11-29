@@ -24,6 +24,7 @@
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <3>;
+
         /*bindings = <&ib_toggle_layer 7>;*/
     };
 
@@ -258,6 +259,17 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+        };
+
+        hm_mouse: hm_mouse {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_MOUSE";
+            bindings = <&mkp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
         };
     };
 
