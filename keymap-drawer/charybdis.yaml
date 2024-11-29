@@ -31,9 +31,9 @@ layers:
   - V
   - B
   - N
-  - M
-  - ','
-  - .
+  - {t: M, h: L CLK}
+  - {t: ',', h: M CLK}
+  - {t: ., h: R CLK}
   - /
   - {t: MUTE, h: EXTRAS}
   - {t: TAB, h: SCROLL}
@@ -438,7 +438,7 @@ combos:
   k: ']'
   l: [BASE]
 - p: [14, 14, 15]
-  k: {t: '{', h: '&double_braces_lr'}
+  k: '{'
   l: [BASE]
 - p: [20, 21]
   k: '}'
@@ -486,16 +486,16 @@ combos:
   k: CAPSLOCK
   l: [BASE]
 - p: [31, 19]
-  k: L CLK
+  k: '0'
   l: [BASE, NUM+SYM]
 - p: [32, 20]
-  k: M CLK
+  k: '1'
   l: [BASE, NUM+SYM]
 - p: [1, 13]
   k: Ctl+ A
   l: [BASE]
 - p: [33, 21]
-  k: R CLK
+  k: ENTER
   l: [BASE, NUM+SYM]
 - p: [26, 27]
   k: {t: '=', h: '&double_equal'}

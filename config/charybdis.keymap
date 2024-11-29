@@ -314,7 +314,7 @@
         combo_lbrc {
             timeout-ms = <40>;
             key-positions = <14 14 15>;
-            bindings = <&lbrace_hold_LR 0 LEFT_BRACE>;
+            bindings = <&kp LBRC>;
             layers = <0>;
         };
 
@@ -412,13 +412,13 @@
         };
 
         combo_num0 {
-            bindings = <&mkp LCLK>;
+            bindings = <&kp N0>;
             key-positions = <31 19>;
             layers = <0 1>;
         };
 
         combo_num1 {
-            bindings = <&mkp MCLK>;
+            bindings = <&kp NUMBER_1>;
             key-positions = <32 20>;
             layers = <0 1>;
         };
@@ -430,7 +430,7 @@
         };
 
         combo_num9 {
-            bindings = <&mkp RCLK>;
+            bindings = <&kp ENTER>;
             key-positions = <33 21>;
             layers = <0 1>;
         };
@@ -617,9 +617,9 @@
 
         BASE {
             bindings = <
-&kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T           &kp Y               &kp U                          &kp I               &kp O           &kp P                   &kp RIGHT_ALT
-&mkp LCLK           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G           &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L  &hm LEFT_WIN SEMICOLON  &kp ENTER
-&lt_mousekp 4 RCLK  &kp Z           &kp X           &kp C               &kp V                        &kp B           &kp N               &kp M                          &kp COMMA           &kp PERIOD      &kp FSLH                &lt 4 C_MUTE
+&kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T           &kp Y               &kp U                          &kp I                 &kp O               &kp P                   &kp RIGHT_ALT
+&mkp LCLK           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G           &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K    &hm LEFT_ALT L      &hm LEFT_WIN SEMICOLON  &kp ENTER
+&lt_mousekp 4 RCLK  &kp Z           &kp X           &kp C               &kp V                        &kp B           &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &kp FSLH                &lt 4 C_MUTE
                                                     &lt 9 TAB           &lt 1 BACKSPACE              &lt 4 DELETE    &lt 1 LANG_HANGEUL  &lt 2 SPACE
             >;
         };
