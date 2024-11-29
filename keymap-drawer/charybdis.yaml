@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - RIGHT ALT
-  - SCROLL SNIPE
+  - L CLK
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
   - ENTER
-  - {t: LEFT CONTROL, h: EXTRAS}
+  - {t: R CLK, h: EXTRAS}
   - Z
   - X
   - C
