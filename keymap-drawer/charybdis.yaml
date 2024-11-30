@@ -52,7 +52,7 @@ layers:
   - {t: '7', h: F7}
   - {t: '8', h: F8}
   - {t: '9', h: F9}
-  - {t: +, h: F12}
+  - {t: +, h: DEV TOOLS}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '!'
@@ -96,13 +96,12 @@ layers:
   - END
   - PG UP
   - ''
-  - SCROLL SNIPE
+  - '&tdtb2'
   - LWIN
   - LALT
   - LEFT CONTROL
   - LEFT SHIFT
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - LEFT
   - DOWN
@@ -317,7 +316,7 @@ layers:
   - RIGHT SHIFT
   - LCTRL
   - LEFT ALT
-  - LCMD
+  - LEFT META
   - ''
   - ''
   - WHEEL D
