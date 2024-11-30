@@ -95,12 +95,6 @@
             tapping-term-ms = <200>;
         };
 
-        td_BA_EX: BASE_or_EXTRA {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&mo 4>, <&to 0>;
-        };
-
         hm_shift_right: hm_shift_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HM_SHIFT_RIGHT";
@@ -313,8 +307,8 @@
 
         combo_lbrc {
             timeout-ms = <40>;
-            key-positions = <14 15>;
-            bindings = <&kp LBRC>;
+            key-positions = <14 14 15>;
+            bindings = <&lbrace_hold_LR 0 LEFT_BRACE>;
             layers = <0>;
         };
 
@@ -381,8 +375,8 @@
             layers = <0>;
         };
 
-        combo_repeat {
-            bindings = <&key_repeat>;
+        combo_enter2 {
+            bindings = <&kp ENTER>;
             key-positions = <9 21>;
             layers = <0 2 1 3>;
         };
@@ -430,7 +424,7 @@
         };
 
         combo_num9 {
-            bindings = <&kp ENTER>;
+            bindings = <&kp N9>;
             key-positions = <33 21>;
             layers = <0 1>;
         };
@@ -490,7 +484,7 @@
 
         combo_dq {
             bindings = <&kp DQT>;
-            key-positions = <4 5>;
+            key-positions = <3 14>;
             layers = <0 1>;
         };
 
@@ -503,18 +497,6 @@
     };
 
     macros {
-        VSplit: VSplit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp SEMI &kp LS(V) &kp LS(S) &kp LS(P) &kp RET>;
-        };
-
-        HSplit: HSplit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp SEMI &kp LS(S) &kp LS(P) &kp RET>;
-        };
-
         double_pipe: double_pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -626,10 +608,10 @@
 
         NUM+SYM {
             bindings = <
-&trans          &kp GRAVE        &kp TILDE     &kp CARET  &amps_hold_double 0 AMPS  &pipe_hold_double 0 PIPE    &kp ASTERISK  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm F12 PLUS       &trans
-&kp LEFT_BRACE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR                &kp PERCENT                 &kp SLASH     &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 MINUS      &trans
-&trans          &kp INS          &kp QUESTION  &kp LBKT   &kp RBKT                  &kp DQT                     &kp DOT       &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F10 BACKSLASH  &kp LG(Z)
-                                               &trans     &trans                    &trans                      &trans        &kp N0
+&trans  &kp GRAVE        &kp TILDE     &kp CARET  &amps_hold_double 0 AMPS  &pipe_hold_double 0 PIPE    &kp ASTERISK  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm F12 PLUS       &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR                &kp PERCENT                 &kp SLASH     &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 MINUS      &trans
+&trans  &kp INS          &kp QUESTION  &kp LBKT   &kp RBKT                  &kp DQT                     &kp N0        &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F10 BACKSLASH  &trans
+                                       &trans     &trans                    &trans                      &trans        &kp N0
             >;
         };
 
