@@ -54,7 +54,7 @@
         bindings = <&ib_wheel_scaler 1 32>;
     };
 
-    /* input config for mouse scroll mode hori*/
+    /* input config for mouse scroll mode hori
 
     trackball_scroll_listener_horizontal {
         compatible = "zmk,input-behavior-listener";
@@ -62,8 +62,11 @@
         layers = <10>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_WHEEL>;
-        bindings = <&ib_wheel_scaler 2 4>;
+        y-input-code = <INPUT_REL_WHEEL>;
+        bindings = <&ib_wheel_scaler 1 4>;
     };
+    test
+    */
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
 
