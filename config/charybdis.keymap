@@ -601,7 +601,7 @@
             bindings = <
 &kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T           &kp Y               &kp U                          &kp I                 &kp O               &kp P                   &kp RIGHT_ALT
 &mkp LCLK           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G           &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K    &hm LEFT_ALT L      &hm LEFT_WIN SEMICOLON  &mkp LCLK
-&lt_mousekp 3 RCLK  &kp Z           &kp X           &kp C               &kp V                        &kp B           &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &kp FSLH                &lt 3 C_MUTE
+&lt_mousekp 3 RCLK  &lt 5 Z         &kp X           &kp C               &kp V                        &kp B           &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &lt 5 SLASH             &lt 3 C_MUTE
                                                     &lt 9 TAB           &lt 1 BACKSPACE              &lt 3 DELETE    &lt 1 LANG_HANGEUL  &lt 2 SPACE
             >;
         };
@@ -642,11 +642,11 @@
             >;
         };
 
-        layer5 {
+        NUMBER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
         };
