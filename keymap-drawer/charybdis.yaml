@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - RIGHT ALT
-  - L CLK
+  - {t: A, h: EXTRAS}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -23,9 +23,9 @@ layers:
   - {t: K, h: LEFT CONTROL}
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
-  - ENTER
+  - L CLK
   - {t: R CLK, h: EXTRAS}
-  - Z
+  - {t: Z, h: NUMBER}
   - X
   - C
   - V
@@ -34,11 +34,11 @@ layers:
   - {t: M, h: L CLK}
   - {t: ',', h: M CLK}
   - {t: ., h: R CLK}
-  - /
+  - {t: /, h: NUMBER}
   - {t: MUTE, h: EXTRAS}
   - {t: TAB, h: SCROLL}
   - {t: BACK SPACE, h: NUM+SYM}
-  - {t: DELETE, h: EXTRAS}
+  - L CLK
   - {t: LANG HANGEUL, h: NUM+SYM}
   - {t: SPACE, h: NAV}
   NUM+SYM:
@@ -54,7 +54,7 @@ layers:
   - {t: '9', h: F9}
   - {t: +, h: F12}
   - {t: ▽, type: trans}
-  - '{'
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -72,12 +72,12 @@ layers:
   - '['
   - ']'
   - '"'
-  - .
+  - '0'
   - {t: '1', h: F1}
   - {t: '2', h: F2}
   - {t: '3', h: F3}
   - {t: \, h: F10}
-  - Gui+ Z
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -102,22 +102,22 @@ layers:
   - LEFT CONTROL
   - LEFT SHIFT
   - {t: ▽, type: trans}
-  - VSPLIT
+  - {t: ▽, type: trans}
   - LEFT
   - DOWN
   - RIGHT
   - PAGE DOWN
   - ''
   - ''
-  - RMETA
-  - RALT
-  - RCTRL
-  - RSHFT
   - ''
-  - HSPLIT
-  - Gui+Ctl+ LEFT
-  - Gui+Ctl+ D
-  - Gui+Ctl+ RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - Gui+ PG UP
+  - ''
+  - Gui+ PG DN
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -125,48 +125,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  GAME:
-  - '1'
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: ▽, type: trans}
-  - '2'
-  - LCTRL
-  - A
-  - S
-  - D
-  - F
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - {t: ▽, type: trans}
-  - '3'
-  - LSHFT
-  - Z
-  - X
-  - C
-  - V
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - RSHFT
-  - {t: ▽, type: trans}
-  - SPACE
-  - LEFT ALT
-  - ENTER
-  - SPACE
   EXTRAS:
   - BOOT LDR
   - VOL UP
@@ -180,7 +138,7 @@ layers:
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - BT CLR
-  - ''
+  - {type: held}
   - VOL DN
   - HOME
   - UP
@@ -192,7 +150,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - MUTE
   - LEFT
   - DOWN
@@ -209,49 +167,91 @@ layers:
   - ''
   - ''
   - ''
-  '9':
+  GAME:
+  - '1'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BACK SPACE
+  - '2'
+  - LCTRL
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ENTER
+  - '3'
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - N
+  - L CLK
+  - M CLK
+  - R CLK
+  - {t: /, h: NUMBER}
+  - RSHFT
+  - {t: '`', h: NUMBER}
+  - SPACE
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - SPACE
+  NUMBER:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - T
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - G
+  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - '1'
+  - '2'
+  - '3'
+  - B
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '10':
+  layer6:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -324,11 +324,11 @@ layers:
   - M CLK
   - R CLK
   - WHEEL U
-  - BACK
+  - WHEEL D
   - L CLK
   - M CLK
   - R CLK
-  - FWD
+  - WHEEL U
   - ''
   - M CLK
   - L CLK
@@ -366,11 +366,11 @@ layers:
   - M CLK
   - R CLK
   - WHEEL U
-  - BACK
+  - WHEEL D
   - L CLK
   - M CLK
   - R CLK
-  - FWD
+  - WHEEL U
   - ''
   - M CLK
   - L CLK
@@ -408,11 +408,11 @@ layers:
   - M CLK
   - R CLK
   - WHEEL U
-  - BACK
+  - WHEEL D
   - L CLK
   - M CLK
   - R CLK
-  - FWD
+  - WHEEL U
   - ''
   - {t: M CLK, type: held}
   - L CLK
@@ -454,7 +454,7 @@ combos:
   l: [BASE, GAME]
 - p: [7, 19]
   k: BACK SPACE
-  l: [BASE, NAV, NUM+SYM, GAME]
+  l: [BASE, NAV, NUM+SYM]
 - p: [8, 20]
   k: DEL
   l: [BASE, NAV, NUM+SYM, GAME]
@@ -471,32 +471,32 @@ combos:
   k: Ctl+ V
   l: [BASE]
 - p: [9, 21]
-  k: '&key_repeat'
+  k: ENTER
   l: [BASE, NAV, NUM+SYM, GAME]
 - p: [36, 37, 38]
   k: {t: CLEAN, h: toggle}
   l: [BASE, CLEAN]
 - p: [3, 15]
   k: SPACE
-  l: [BASE, NAV, NUM+SYM]
+  l: [BASE, NAV, NUM+SYM, NUMBER]
 - p: [4, 16]
   k: ENTER
-  l: [BASE, NAV, NUM+SYM, GAME]
+  l: [BASE, NAV, NUM+SYM, GAME, NUMBER]
 - p: [2, 14]
   k: CAPSLOCK
   l: [BASE]
 - p: [31, 19]
   k: '0'
-  l: [BASE, NUM+SYM]
+  l: [BASE, NUM+SYM, NUMBER]
 - p: [32, 20]
   k: '1'
-  l: [BASE, NUM+SYM]
+  l: [BASE, NUM+SYM, NUMBER]
 - p: [1, 13]
   k: Ctl+ A
   l: [BASE]
 - p: [33, 21]
-  k: ENTER
-  l: [BASE, NUM+SYM]
+  k: '9'
+  l: [BASE, NUM+SYM, NUMBER]
 - p: [26, 27]
   k: {t: '=', h: '&double_equal'}
   l: [BASE, NUM+SYM]
@@ -504,7 +504,7 @@ combos:
   k: {t: +, h: '&double_plus'}
   l: [BASE, NUM+SYM]
 - p: [38, 37]
-  k: Gui+ TAB
+  k: Gui+ A
   l: [BASE, NUM+SYM]
 - p: [3, 4]
   k: Gui+ `
@@ -521,7 +521,7 @@ combos:
 - p: [1, 4]
   k: Alt+ F4
   l: [BASE]
-- p: [4, 5]
+- p: [3, 14]
   k: '"'
   l: [BASE, NUM+SYM]
 - p: [21, 8]
