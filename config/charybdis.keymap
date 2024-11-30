@@ -14,6 +14,7 @@
 
 / {
     /* input config for mouse move mode */
+
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
@@ -28,6 +29,7 @@
     };
 
     /* input config for snipe mode */
+
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
@@ -40,6 +42,7 @@
     };
 
     /* input config for mouse scroll mode */
+
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
@@ -52,6 +55,7 @@
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
+
     ib_wheel_scaler: ib_wheel_scaler {
         compatible = "zmk,input-behavior-scaler";
         #binding-cells = <2>;
@@ -60,6 +64,7 @@
     };
 
     /* adjust cooldown waiting period for mouse key layer after activated */
+
     ib_toggle_layer: ib_toggle_layer {
         compatible = "zmk,input-behavior-tog-layer";
         #binding-cells = <1>;
@@ -260,6 +265,13 @@
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        scroll_dance: scroll_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SCROLL_DANCE";
+            #binding-cells = <0>;
+            bindings = <&lt 9 T>, <&mo 11>;
+        };
     };
 
     combos {
@@ -377,9 +389,9 @@
         };
 
         combo_clean {
-            bindings = <&tog 10>;
+            bindings = <&tog 11>;
             key-positions = <36 37 38>;
-            layers = <0 10>;
+            layers = <0 11>;
         };
 
         combo_space {
@@ -594,7 +606,7 @@
 
         BASE {
             bindings = <
-&kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T        &kp Y               &kp U                          &kp I                 &kp O               &kp P                   &kp RIGHT_ALT
+&kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T        &kp Y               &kp U                          &kp I                 &kp O               &kp P                   &scroll_dance
 &lt 3 A             &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G        &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K    &hm LEFT_ALT L      &hm LEFT_WIN SEMICOLON  &mkp LCLK
 &lt_mousekp 3 RCLK  &lt 5 Z         &kp X           &kp C               &kp V                        &kp B        &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &lt 5 SLASH             &lt 3 C_MUTE
                                                     &lt 9 TAB           &lt 1 BACKSPACE              &mkp LCLK    &lt 1 LANG_HANGEUL  &lt 2 SPACE
@@ -624,7 +636,7 @@
 &bootloader  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR    &bootloader  &sys_reset         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR
 &none        &kp C_VOL_DN  &kp HOME      &kp UP        &kp END       &kp PG_UP     &none        &none              &none            &none         &none         &none
 &none        &kp C_MUTE    &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN     &none        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &none         &none
-                                         &none         &none         &none         &none        &none
+                                         &none         &none         &none         &kp RALT     &none
             >;
         };
 
@@ -674,6 +686,15 @@
         };
 
         SCROLL {
+            bindings = <
+&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
+&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
+&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
+                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
+            >;
+        };
+
+        SCROLL_HORI {
             bindings = <
 &none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
 &mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
