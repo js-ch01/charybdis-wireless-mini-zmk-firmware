@@ -49,7 +49,7 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <9>
+        layers = <9>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
