@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - SCROLL_HORI
-  - {t: A, h: SLOW}
+  - {t: DEL, h: SLOW}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
