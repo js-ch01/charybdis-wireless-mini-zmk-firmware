@@ -313,7 +313,7 @@
 
         combo_lbrc {
             timeout-ms = <40>;
-            key-positions = <14 14 15>;
+            key-positions = <14 15>;
             bindings = <&kp LBRC>;
             layers = <0>;
         };
