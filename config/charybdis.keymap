@@ -95,12 +95,6 @@
             tapping-term-ms = <200>;
         };
 
-        td_BA_EX: BASE_or_EXTRA {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&mo 4>, <&to 0>;
-        };
-
         hm_shift_right: hm_shift_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HM_SHIFT_RIGHT";
@@ -280,7 +274,7 @@
             timeout-ms = <39>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
-            layers = <0 2 1 3>;
+            layers = <0 2 1 4>;
         };
 
         combo_lpar {
@@ -340,21 +334,21 @@
         };
 
         combo_game_layer {
-            bindings = <&tog 3>;
+            bindings = <&tog 4>;
             key-positions = <24 35>;
-            layers = <0 3>;
+            layers = <0 4>;
         };
 
         combo_bspc {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 19>;
-            layers = <0 2 1 3>;
+            layers = <0 2 1>;
         };
 
         combo_del {
             bindings = <&kp DEL>;
             key-positions = <8 20>;
-            layers = <0 2 1 3>;
+            layers = <0 2 1 4>;
         };
 
         combo_ctrl_z {
@@ -381,10 +375,10 @@
             layers = <0>;
         };
 
-        combo_repeat {
-            bindings = <&key_repeat>;
+        combo_enter2 {
+            bindings = <&kp ENTER>;
             key-positions = <9 21>;
-            layers = <0 2 1 3>;
+            layers = <0 2 1 4>;
         };
 
         combo_clean {
@@ -402,7 +396,7 @@
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <4 16>;
-            layers = <0 2 1 3>;
+            layers = <0 2 1 4>;
         };
 
         combo_caps {
@@ -430,7 +424,7 @@
         };
 
         combo_num9 {
-            bindings = <&kp ENTER>;
+            bindings = <&kp N9>;
             key-positions = <33 21>;
             layers = <0 1>;
         };
@@ -449,8 +443,8 @@
             layers = <0 1>;
         };
 
-        combo_wintab {
-            bindings = <&kp LG(TAB)>;
+        combo_meta+A {
+            bindings = <&kp LG(A)>;
             key-positions = <38 37>;
             timeout-ms = <45>;
             layers = <0 1>;
@@ -490,7 +484,7 @@
 
         combo_dq {
             bindings = <&kp DQT>;
-            key-positions = <4 5>;
+            key-positions = <3 14>;
             layers = <0 1>;
         };
 
@@ -503,18 +497,6 @@
     };
 
     macros {
-        VSplit: VSplit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp SEMI &kp LS(V) &kp LS(S) &kp LS(P) &kp RET>;
-        };
-
-        HSplit: HSplit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp SEMI &kp LS(S) &kp LS(P) &kp RET>;
-        };
-
         double_pipe: double_pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -617,37 +599,28 @@
 
         BASE {
             bindings = <
-&kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T           &kp Y               &kp U                          &kp I                 &kp O               &kp P                   &kp RIGHT_ALT
-&mkp LCLK           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G           &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K    &hm LEFT_ALT L      &hm LEFT_WIN SEMICOLON  &kp ENTER
-&lt_mousekp 4 RCLK  &kp Z           &kp X           &kp C               &kp V                        &kp B           &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &kp FSLH                &lt 4 C_MUTE
-                                                    &lt 9 TAB           &lt 1 BACKSPACE              &lt 4 DELETE    &lt 1 LANG_HANGEUL  &lt 2 SPACE
+&kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T        &kp Y               &kp U                          &kp I                 &kp O               &kp P                   &kp RIGHT_ALT
+&mkp LCLK           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G        &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K    &hm LEFT_ALT L      &hm LEFT_WIN SEMICOLON  &mkp LCLK
+&lt_mousekp 3 RCLK  &lt 5 Z         &kp X           &kp C               &kp V                        &kp B        &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &lt 5 SLASH             &lt 3 C_MUTE
+                                                    &lt 9 TAB           &lt 1 BACKSPACE              &mkp LCLK    &lt 1 LANG_HANGEUL  &lt 2 SPACE
             >;
         };
 
         NUM+SYM {
             bindings = <
-&trans          &kp GRAVE        &kp TILDE     &kp CARET  &amps_hold_double 0 AMPS  &pipe_hold_double 0 PIPE    &kp ASTERISK  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm F12 PLUS       &trans
-&kp LEFT_BRACE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR                &kp PERCENT                 &kp SLASH     &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 MINUS      &trans
-&trans          &kp INS          &kp QUESTION  &kp LBKT   &kp RBKT                  &kp DQT                     &kp DOT       &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F10 BACKSLASH  &kp LG(Z)
-                                               &trans     &trans                    &trans                      &trans        &kp N0
+&trans  &kp GRAVE        &kp TILDE     &kp CARET  &amps_hold_double 0 AMPS  &pipe_hold_double 0 PIPE    &kp ASTERISK  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm F12 PLUS       &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR                &kp PERCENT                 &kp SLASH     &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 MINUS      &trans
+&trans  &kp INS          &kp QUESTION  &kp LBKT   &kp RBKT                  &kp DQT                     &kp N0        &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F10 BACKSLASH  &trans
+                                       &trans     &trans                    &trans                      &trans        &kp N0
             >;
         };
 
         NAV {
             bindings = <
-&none   &none      &none     &none             &none           &none     &kp INS  &kp HOME                &kp UP_ARROW   &kp END                  &kp PG_UP      &none
-&tdtb2  &kp LWIN   &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &VSplit  &kp LEFT_ARROW          &kp DOWN       &kp RIGHT                &kp PAGE_DOWN  &none
-&none   &kp RMETA  &kp RALT  &kp RCTRL         &kp RSHFT       &none     &HSplit  &kp LG(LC(LEFT_ARROW))  &kp LG(LC(D))  &kp LG(LC(RIGHT_ARROW))  &trans         &none
-                             &none             &none           &trans    &trans   &trans
-            >;
-        };
-
-        GAME {
-            bindings = <
-&kp N1  &kp TAB    &kp Q  &kp W   &kp E      &kp R           &kp Y      &kp U      &kp I      &kp O    &kp P     &trans
-&kp N2  &kp LCTRL  &kp A  &kp S   &kp D      &kp F           &kp H      &kp J      &kp K      &kp L    &kp SEMI  &trans
-&kp N3  &kp LSHFT  &kp Z  &kp X   &kp C      &kp V           &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                          &trans  &kp SPACE  &kp LEFT_ALT    &kp ENTER  &kp SPACE
+&none   &none     &none     &none             &none           &none     &kp INS  &kp HOME        &kp UP_ARROW  &kp END        &kp PG_UP      &none
+&tdtb2  &kp LWIN  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp PAGE_DOWN  &none
+&none   &none     &none     &none             &none           &none     &trans   &kp LG(PG_UP)   &none         &kp LG(PG_DN)  &trans         &none
+                            &none             &none           &trans    &trans   &trans
             >;
         };
 
@@ -660,16 +633,25 @@
             >;
         };
 
-        layer_9 {
+        GAME {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&kp N1  &kp TAB    &kp Q  &kp W        &kp E      &kp R           &kp Y   &kp U      &kp I      &kp O      &kp P        &kp BACKSPACE
+&kp N2  &kp LCTRL  &kp A  &kp S        &kp D      &kp F           &kp H   &kp J      &kp K      &kp L      &kp SEMI     &kp ENTER
+&kp N3  &kp LSHFT  &kp Z  &kp X        &kp C      &kp V           &kp N   &mkp LCLK  &mkp MCLK  &mkp RCLK  &lt 5 SLASH  &kp RSHFT
+                          &lt 5 GRAVE  &kp SPACE  &kp LEFT_ALT    &trans  &kp SPACE
             >;
         };
 
-        layer_10 {
+        NUMBER {
+            bindings = <
+&trans  &trans  &kp N7  &kp N8  &kp N9  &kp T     &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &kp G     &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp B     &kp N0  &kp N1  &kp N2  &kp N3  &trans  &trans
+                        &kp N0  &trans  &trans    &trans  &trans
+            >;
+        };
+
+        layer6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -680,28 +662,28 @@
 
         MOUSE {
             bindings = <
-&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none     &none            &none      &none         &none          &none
-&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none     &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
-&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &mkp MB4  &mkp LCLK        &mkp MCLK  &mkp RCLK     &mkp MB5       &none
-                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans    &trans
+&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
+&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
+&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
+                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
             >;
         };
 
         SLOW {
             bindings = <
-&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none     &none            &none      &none         &none          &none
-&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none     &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
-&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &mkp MB4  &mkp LCLK        &mkp MCLK  &mkp RCLK     &mkp MB5       &none
-                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans    &trans
+&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
+&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
+&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
+                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none     &none            &none      &none         &none          &none
-&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none     &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
-&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &mkp MB4  &mkp LCLK        &mkp MCLK  &mkp RCLK     &mkp MB5       &none
-                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans    &trans
+&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
+&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
+&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
+                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
             >;
         };
 
