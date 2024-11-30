@@ -443,8 +443,8 @@
             layers = <0 1>;
         };
 
-        combo_wintab {
-            bindings = <&kp LG(TAB)>;
+        combo_meta+A {
+            bindings = <&kp LG(A)>;
             key-positions = <38 37>;
             timeout-ms = <45>;
             layers = <0 1>;
@@ -618,8 +618,8 @@
         NAV {
             bindings = <
 &none   &none      &none     &none             &none           &none     &kp INS  &kp HOME                &kp UP_ARROW   &kp END                  &kp PG_UP      &none
-&tdtb2  &kp LWIN   &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &VSplit  &kp LEFT_ARROW          &kp DOWN       &kp RIGHT                &kp PAGE_DOWN  &none
-&none   &kp RMETA  &kp RALT  &kp RCTRL         &kp RSHFT       &none     &HSplit  &kp LG(LC(LEFT_ARROW))  &kp LG(LC(D))  &kp LG(LC(RIGHT_ARROW))  &trans         &none
+&tdtb2  &kp LWIN   &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans   &kp LEFT_ARROW          &kp DOWN       &kp RIGHT                &kp PAGE_DOWN  &none
+&none   &kp RMETA  &kp RALT  &kp RCTRL         &kp RSHFT       &none     &trans   &kp LG(LC(LEFT_ARROW))  &kp LG(LC(D))  &kp LG(LC(RIGHT_ARROW))  &trans         &none
                              &none             &none           &trans    &trans   &trans
             >;
         };
@@ -642,7 +642,7 @@
             >;
         };
 
-        layer_9 {
+        layer5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -651,7 +651,7 @@
             >;
         };
 
-        layer_10 {
+        layer6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -662,28 +662,28 @@
 
         MOUSE {
             bindings = <
-&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none     &none            &none      &none         &none          &none
-&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none     &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
-&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &mkp MB4  &mkp LCLK        &mkp MCLK  &mkp RCLK     &mkp MB5       &none
-                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans    &trans
+&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
+&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
+&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
+                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
             >;
         };
 
         SLOW {
             bindings = <
-&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none     &none            &none      &none         &none          &none
-&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none     &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
-&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &mkp MB4  &mkp LCLK        &mkp MCLK  &mkp RCLK     &mkp MB5       &none
-                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans    &trans
+&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
+&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
+&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
+                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none     &none            &none      &none         &none          &none
-&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none     &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
-&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &mkp MB4  &mkp LCLK        &mkp MCLK  &mkp RCLK     &mkp MB5       &none
-                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans    &trans
+&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
+&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
+&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
+                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
             >;
         };
 
