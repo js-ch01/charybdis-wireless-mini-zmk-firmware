@@ -67,7 +67,6 @@
     };
     test
     */
-
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
 
     ib_wheel_scaler: ib_wheel_scaler {
@@ -622,7 +621,7 @@
             bindings = <
 &lt 7 TAB           &kp Q           &kp W           &kp E               &kp R                        &kp T        &kp Y               &kp U                          &kp I                 &kp O               &kp P                   &mo 10
 &lt 8 DEL           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G        &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K    &hm LEFT_ALT L      &hm LEFT_WIN SEMICOLON  &mkp LCLK
-&lt_mousekp 9 RCLK  &lt 5 Z         &kp X           &kp C               &kp V                        &kp B        &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &lt 5 SLASH             &lt 3 C_MUTE
+&lt_mousekp 3 RCLK  &lt 5 Z         &kp X           &kp C               &kp V                        &kp B        &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &lt 5 SLASH             &lt 3 C_MUTE
                                                     &lt 7 TAB           &lt 1 BACKSPACE              &mkp LCLK    &lt 1 LANG_HANGEUL  &lt 2 SPACE
             >;
         };
@@ -647,10 +646,10 @@
 
         EXTRAS {
             bindings = <
-&bootloader  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR    &bootloader  &sys_reset         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR
-&none        &kp C_VOL_DN  &kp HOME      &kp UP        &kp END       &kp PG_UP     &none        &none              &none            &none         &none         &none
-&none        &kp C_MUTE    &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN     &none        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &none         &none
-                                         &none         &none         &none         &kp RALT     &none
+&bootloader  &kp C_VOL_UP  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR         &bootloader  &sys_reset         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR
+&none        &kp C_VOL_DN  &kp HOME      &kp UP        &kp END       &kp PG_UP          &none        &none              &none            &none         &none         &none
+&none        &kp C_MUTE    &kp LEFT      &kp DOWN      &kp RIGHT     &kp PRINTSCREEN    &none        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &none         &none
+                                         &none         &none         &none              &kp RALT     &none
             >;
         };
 

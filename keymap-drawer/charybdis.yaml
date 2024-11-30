@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
   - L CLK
-  - {t: R CLK, h: SCROLL}
+  - {t: R CLK, h: EXTRAS}
   - {t: Z, h: NUMBER}
   - X
   - C
@@ -150,18 +150,18 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - MUTE
   - LEFT
   - DOWN
   - RIGHT
-  - PG DN
+  - PRINT SCREEN
   - ''
   - VOLUME DOWN
   - VOLUME UP
   - MUTE
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -402,7 +402,7 @@ layers:
   - LEFT ALT
   - LEFT META
   - ''
-  - {type: held}
+  - ''
   - WHEEL D
   - L CLK
   - M CLK
