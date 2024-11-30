@@ -1,6 +1,6 @@
 layers:
   BASE:
-  - TAB
+  - {t: TAB, h: MOUSE}
   - Q
   - W
   - E
@@ -11,8 +11,8 @@ layers:
   - I
   - O
   - P
-  - '&scroll_dance'
-  - {t: A, h: EXTRAS}
+  - SCROLL_HORI
+  - {t: A, h: SLOW}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -138,7 +138,7 @@ layers:
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - BT CLR
-  - {type: held}
+  - ''
   - VOL DN
   - HOME
   - UP
@@ -150,7 +150,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - MUTE
   - LEFT
   - DOWN
@@ -294,7 +294,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MOUSE:
-  - ''
+  - {type: held}
   - WHEEL L
   - WHEEL D
   - MOVE UP
@@ -348,7 +348,7 @@ layers:
   - ''
   - ''
   - ''
-  - L CLK
+  - {t: L CLK, type: held}
   - BACK
   - MOVE L
   - MOVE D
@@ -431,7 +431,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - L CLK
   - BACK
   - MOVE L
