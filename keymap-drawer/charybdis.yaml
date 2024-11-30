@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - RIGHT ALT
-  - L CLK
+  - {t: A, h: EXTRAS}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -138,7 +138,7 @@ layers:
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - BT CLR
-  - ''
+  - {type: held}
   - VOL DN
   - HOME
   - UP
@@ -150,7 +150,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - MUTE
   - LEFT
   - DOWN
@@ -478,25 +478,25 @@ combos:
   l: [BASE, CLEAN]
 - p: [3, 15]
   k: SPACE
-  l: [BASE, NAV, NUM+SYM]
+  l: [BASE, NAV, NUM+SYM, NUMBER]
 - p: [4, 16]
   k: ENTER
-  l: [BASE, NAV, NUM+SYM, GAME]
+  l: [BASE, NAV, NUM+SYM, GAME, NUMBER]
 - p: [2, 14]
   k: CAPSLOCK
   l: [BASE]
 - p: [31, 19]
   k: '0'
-  l: [BASE, NUM+SYM]
+  l: [BASE, NUM+SYM, NUMBER]
 - p: [32, 20]
   k: '1'
-  l: [BASE, NUM+SYM]
+  l: [BASE, NUM+SYM, NUMBER]
 - p: [1, 13]
   k: Ctl+ A
   l: [BASE]
 - p: [33, 21]
   k: '9'
-  l: [BASE, NUM+SYM]
+  l: [BASE, NUM+SYM, NUMBER]
 - p: [26, 27]
   k: {t: '=', h: '&double_equal'}
   l: [BASE, NUM+SYM]
