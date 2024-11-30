@@ -56,7 +56,7 @@
 
     /* input config for mouse scroll mode hori*/
 
-    trackball_scroll_listener {
+    trackball_scroll_listener_horizontal {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         layers = <10>;
