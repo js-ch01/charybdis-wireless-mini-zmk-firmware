@@ -102,6 +102,7 @@ layers:
   - LEFT CONTROL
   - LEFT SHIFT
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - LEFT
   - DOWN
@@ -316,7 +317,7 @@ layers:
   - RIGHT SHIFT
   - LCTRL
   - LEFT ALT
-  - LEFT META
+  - LCMD
   - ''
   - ''
   - WHEEL D
