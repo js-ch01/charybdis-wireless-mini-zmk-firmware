@@ -599,10 +599,10 @@
 
         BASE {
             bindings = <
-&kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T           &kp Y               &kp U                          &kp I                 &kp O               &kp P                   &kp RIGHT_ALT
-&mkp LCLK           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G           &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K    &hm LEFT_ALT L      &hm LEFT_WIN SEMICOLON  &mkp LCLK
-&lt_mousekp 3 RCLK  &lt 5 Z         &kp X           &kp C               &kp V                        &kp B           &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &lt 5 SLASH             &lt 3 C_MUTE
-                                                    &lt 9 TAB           &lt 1 BACKSPACE              &lt 3 DELETE    &lt 1 LANG_HANGEUL  &lt 2 SPACE
+&kp TAB             &kp Q           &kp W           &kp E               &kp R                        &kp T        &kp Y               &kp U                          &kp I                 &kp O               &kp P                   &kp RIGHT_ALT
+&mkp LCLK           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G        &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K    &hm LEFT_ALT L      &hm LEFT_WIN SEMICOLON  &mkp LCLK
+&lt_mousekp 3 RCLK  &lt 5 Z         &kp X           &kp C               &kp V                        &kp B        &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &lt 5 SLASH             &lt 3 C_MUTE
+                                                    &lt 9 TAB           &lt 1 BACKSPACE              &mkp LCLK    &lt 1 LANG_HANGEUL  &lt 2 SPACE
             >;
         };
 
@@ -635,10 +635,10 @@
 
         GAME {
             bindings = <
-&kp N1  &kp TAB    &kp Q  &kp W        &kp E      &kp R           &kp Y      &kp U      &kp I      &kp O      &kp P        &kp BACKSPACE
-&kp N2  &kp LCTRL  &kp A  &kp S        &kp D      &kp F           &kp H      &kp J      &kp K      &kp L      &kp SEMI     &kp ENTER
-&kp N3  &kp LSHFT  &kp Z  &kp X        &kp C      &kp V           &kp N      &mkp LCLK  &mkp MCLK  &mkp RCLK  &lt 5 SLASH  &kp RSHFT
-                          &lt 5 GRAVE  &kp SPACE  &kp LEFT_ALT    &mkp LCLK  &kp SPACE
+&kp N1  &kp TAB    &kp Q  &kp W        &kp E      &kp R           &kp Y   &kp U      &kp I      &kp O      &kp P        &kp BACKSPACE
+&kp N2  &kp LCTRL  &kp A  &kp S        &kp D      &kp F           &kp H   &kp J      &kp K      &kp L      &kp SEMI     &kp ENTER
+&kp N3  &kp LSHFT  &kp Z  &kp X        &kp C      &kp V           &kp N   &mkp LCLK  &mkp MCLK  &mkp RCLK  &lt 5 SLASH  &kp RSHFT
+                          &lt 5 GRAVE  &kp SPACE  &kp LEFT_ALT    &trans  &kp SPACE
             >;
         };
 
