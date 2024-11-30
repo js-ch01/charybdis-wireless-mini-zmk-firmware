@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - SCROLL_HORI
-  - {t: DEL, h: SCROLL}
+  - {t: DEL, h: EXTRAS}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
   - L CLK
-  - {t: R CLK, h: EXTRAS}
+  - {t: R CLK, h: SCROLL}
   - {t: Z, h: NUMBER}
   - X
   - C
@@ -138,7 +138,7 @@ layers:
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - BT CLR
-  - ''
+  - {type: held}
   - VOL DN
   - HOME
   - UP
@@ -150,7 +150,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - MUTE
   - LEFT
   - DOWN
@@ -390,7 +390,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: L CLK, type: held}
+  - L CLK
   - BACK
   - MOVE L
   - MOVE D
@@ -402,7 +402,7 @@ layers:
   - LEFT ALT
   - LEFT META
   - ''
-  - ''
+  - {type: held}
   - WHEEL D
   - L CLK
   - M CLK
