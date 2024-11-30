@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
   - L CLK
-  - {t: R CLK, h: EXTRAS}
+  - {t: R CLK, h: SCROLL}
   - {t: Z, h: NUMBER}
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - {t: ., h: R CLK}
   - {t: /, h: NUMBER}
   - {t: MUTE, h: EXTRAS}
-  - {t: TAB, h: SCROLL}
+  - {t: TAB, h: MOUSE}
   - {t: BACK SPACE, h: NUM+SYM}
   - L CLK
   - {t: LANG HANGEUL, h: NUM+SYM}
@@ -150,7 +150,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - MUTE
   - LEFT
   - DOWN
@@ -161,7 +161,7 @@ layers:
   - VOLUME UP
   - MUTE
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -402,7 +402,7 @@ layers:
   - LEFT ALT
   - LEFT META
   - ''
-  - ''
+  - {type: held}
   - WHEEL D
   - L CLK
   - M CLK
@@ -414,7 +414,7 @@ layers:
   - R CLK
   - WHEEL U
   - ''
-  - {t: M CLK, type: held}
+  - M CLK
   - L CLK
   - R CLK
   - {t: ▽, type: trans}
