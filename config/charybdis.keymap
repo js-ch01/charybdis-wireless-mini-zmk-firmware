@@ -1,12 +1,10 @@
 #include <behaviors/mouse_keys.dtsi>
+#include <behaviors/mouse_keys.dtsi>
+#include "macros.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/ext_power.h>
-#include "macros.dtsi"
 
 &sk { release-after-ms = <1700>; };
 
@@ -28,6 +26,7 @@
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <3>;
+
         // bindings = <&ib_toggle_layer 7>;
     };
 
@@ -505,7 +504,6 @@
             layers = <0>;
         };
 
-
         combo_dq {
             bindings = <&kp DQT>;
             key-positions = <3 14>;
@@ -620,11 +618,12 @@
 
     keymap {
         compatible = "zmk,keymap";
+
         BASE {
             bindings = <
 &lt 7 TAB           &kp Q           &kp W           &kp E               &kp R                        &kp T        &kp Y               &kp U                          &kp I                 &kp O               &kp P                   &mo 10
-&lt 9 DEL           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G        &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K    &hm LEFT_ALT L      &hm LEFT_WIN SEMICOLON  &mkp LCLK
-&lt_mousekp 3 RCLK  &lt 5 Z         &kp X           &kp C               &kp V                        &kp B        &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &lt 5 SLASH             &lt 3 C_MUTE
+&lt 3 DEL           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G        &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K    &hm LEFT_ALT L      &hm LEFT_WIN SEMICOLON  &mkp LCLK
+&lt_mousekp 9 RCLK  &lt 5 Z         &kp X           &kp C               &kp V                        &kp B        &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &lt 5 SLASH             &lt 3 C_MUTE
                                                     &lt 7 TAB           &lt 1 BACKSPACE              &mkp LCLK    &lt 1 LANG_HANGEUL  &lt 2 SPACE
             >;
         };
