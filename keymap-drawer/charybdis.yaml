@@ -208,7 +208,7 @@ layers:
   - SPACE
   - LEFT ALT
   - {t: ▽, type: trans}
-  - SPACE
+  - M
   NUMBER:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -569,3 +569,6 @@ combos:
 - p: [21, 8]
   k: ''''
   l: [BASE, NUM+SYM]
+- p: [31, 34]
+  k: {t: TRACKBALL, h: toggle}
+  l: [BASE, TRACKBALL, TRACKBALL_SLOW]
