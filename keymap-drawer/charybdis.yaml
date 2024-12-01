@@ -55,10 +55,10 @@ layers:
   - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - _
+  - '='
   - +
   - '-'
-  - '='
+  - LEFT SHIFT
   - '|'
   - /
   - '4'
@@ -67,7 +67,7 @@ layers:
   - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - INS
+  - _
   - '`'
   - '~'
   - ''''
