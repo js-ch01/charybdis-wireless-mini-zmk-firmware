@@ -95,7 +95,7 @@
             #binding-cells = <0>;
             bindings = <&lt 7 TAB>, <&mo 9>;
 
-            tapping-term-ms = <280>;
+            tapping-term-ms = <230>;
         };
 
         ht_mo_to: ht_moL_toL {
