@@ -14,7 +14,6 @@
 // };
 
 / {
-
     trackball_auto_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
@@ -24,7 +23,6 @@
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <3>;
-
         bindings = <&ib_toggle_layer 8>;
     };
 
@@ -40,7 +38,6 @@
         scale-multiplier = <1>;
         scale-divisor = <3>;
     };
-
 
     // input config for snipe mode
 
@@ -65,7 +62,6 @@
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
-
         bindings = <&ib_wheel_scaler 1 14>;
     };
 
@@ -90,7 +86,7 @@
         td_tb: td_mouse_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&ht_mo_to 9 7>, <&to 0>;
+            bindings = <&ht_mo_to 10 7>, <&to 0>;
 
             tapping-term-ms = <200>;
         };
@@ -99,7 +95,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MOUSE_SCROLL";
             #binding-cells = <0>;
-            bindings = <&lt 7 TAB>, <&mo 9>;
+            bindings = <&lt 7 TAB>, <&mo 10>;
 
             tapping-term-ms = <280>;
         };
@@ -390,9 +386,9 @@
         };
 
         combo_clean {
-            bindings = <&tog 10>;
+            bindings = <&tog 11>;
             key-positions = <36 37 38>;
-            layers = <0 10>;
+            layers = <0 11>;
         };
 
         combo_space {
@@ -608,8 +604,8 @@
         BASE {
             bindings = <
 &lt 7 TAB       &kp Q              &kp W              &kp E                  &kp R                      &kp T        &kp Y               &kp U                       &kp I                  &kp O              &kp P                      &kp BSPC
-&lt 3 DEL       &ht_hm LEFT_WIN A  &ht_hm LEFT_ALT S  &ht_hm LEFT_CONTROL D  &ht_hm_lshft LEFT_SHIFT F  &kp G        &kp H               &ht_hm_rshft RIGHT_SHIFT J  &ht_hm LEFT_CONTROL K  &ht_hm LEFT_ALT L  &ht_hm LEFT_WIN SEMICOLON  &mkp LCLK
-&lt_mkp 3 RCLK  &lt 5 Z            &kp X              &lt 9 C                &kp V                      &kp B        &kp N               &ht_mkp LCLK M              &ht_mkp MCLK COMMA     &ht_mkp RCLK DOT   &lt 5 SLASH                &lt 3 C_MUTE
+&lt_mkp 3 MCLK  &ht_hm LEFT_WIN A  &ht_hm LEFT_ALT S  &ht_hm LEFT_CONTROL D  &ht_hm_lshft LEFT_SHIFT F  &kp G        &kp H               &ht_hm_rshft RIGHT_SHIFT J  &ht_hm LEFT_CONTROL K  &ht_hm LEFT_ALT L  &ht_hm LEFT_WIN SEMICOLON  &mkp LCLK
+&lt_mkp 3 RCLK  &lt 5 Z            &kp X              &lt 10 C               &kp V                      &kp B        &kp N               &ht_mkp LCLK M              &ht_mkp MCLK COMMA     &ht_mkp RCLK DOT   &lt 5 SLASH                &lt 3 C_MUTE
                                                       &td_ms                 &lt 1 BACKSPACE            &mkp LCLK    &lt 1 LANG_HANGEUL  &lt 2 SPACE
             >;
         };
@@ -679,19 +675,28 @@
 
         TRACKBALL {
             bindings = <
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 10  &trans
+                        &mkp RCLK  &trans  &mkp LCLK    &trans  &trans
+            >;
+        };
+
+        TRACKBALL_SLOW {
+            bindings = <
 &trans  &trans  &trans  &trans     &trans     &trans       &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans     &trans     &trans       &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans       &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 9   &trans
+&trans  &trans  &trans  &trans     &trans     &trans       &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 10  &trans
                         &mkp RCLK  &mkp MCLK  &mkp LCLK    &trans  &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&none  &none  &none  &none         &none           &none        &none   &none   &none  &none  &none  &none
-&none  &none  &none  &none         &none           &none        &none   &none   &none  &none  &none  &none
-&none  &none  &none  &trans        &kp LEFT_SHIFT  &none        &none   &none   &none  &none  &none  &none
-                     &msc MOVE_UP  &msc MOVE_DOWN  &mkp LCLK    &trans  &trans
+&none  &none  &none  &none   &none           &none        &none   &none   &none  &none           &none  &none
+&none  &none  &none  &none   &none           &none        &none   &none   &none  &none           &none  &none
+&none  &none  &none  &trans  &kp LEFT_SHIFT  &none        &none   &none   &none  &kp LEFT_SHIFT  &none  &none
+                     &trans  &trans          &mkp LCLK    &trans  &trans
             >;
         };
 
