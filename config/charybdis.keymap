@@ -171,16 +171,6 @@
             flavor = "tap-preferred";
         };
 
-        excl_hold_not_euqal: excl_hold_not_euqal {
-            compatible = "zmk,behavior-hold-tap";
-            label = "EXCL_HOLD_NOT_EUQAL";
-            bindings = <&not_equal>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
         plus_hold_double: plus_hold_double {
             compatible = "zmk,behavior-hold-tap";
             label = "PLUS_HOLD_DOUBLE";
@@ -281,11 +271,11 @@
             flavor = "tap-preferred";
         };
 
-        scroll_dance: scroll_dance {
+        td_mouse_scroll: td_mouse_scroll2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "SCROLL_DANCE";
+            label = "TD_MOUSE_SCROLL";
             #binding-cells = <0>;
-            bindings = <&lt 9 T>, <&mo 11>;
+            bindings = <&lt 7 TAB>, <&mo 9>;
         };
     };
 
@@ -330,7 +320,7 @@
         combo_lbrc {
             timeout-ms = <40>;
             key-positions = <14 15>;
-            bindings = <&kp LBRC>;
+            bindings = <&lbrace_hold_LR 0 LEFT_BRACE>;
             layers = <0>;
         };
 
