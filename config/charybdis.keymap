@@ -70,7 +70,6 @@
 
     test
     */
-
     // define a resolution down scaler only for INPUT_REL_WHEEL
 
     ib_wheel_scaler: ib_wheel_scaler {
@@ -271,7 +270,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MOUSE_SCROLL";
             #binding-cells = <0>;
-            bindings = <&lt 7 TAB>, <&mo 9>;
+            bindings = <&lt 7 B>, <&lt 9 A>;
         };
     };
 
