@@ -90,7 +90,7 @@
         tdtb: td_mouse_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&httl 9 7>, <&to 0>;
+            bindings = <&ht_mo_to 9 7>, <&to 0>;
 
             tapping-term-ms = <200>;
         };
@@ -98,10 +98,10 @@
         tdtb2: td_slow_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&httl 9 0>, <&to 0>;
+            bindings = <&ht_mo_to 9 0>, <&to 0>;
         };
 
-        httl: ht_two_layers {
+        ht_mo_to: ht_mo_to {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&to>;
 
@@ -110,9 +110,9 @@
             tapping-term-ms = <200>;
         };
 
-        hm_shift_right: hm_shift_right {
+        ht_hm_shift_right: ht_hm_shift_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM_SHIFT_RIGHT";
+            label = "HT_HM_SHIFT_RIGHT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -120,9 +120,9 @@
             tapping-term-ms = <155>;
         };
 
-        hm_shift_left: hm_shift_left {
+        ht_hm_shift_left: hm_shift_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_SHIFT_LEFTd";
+            label = "HM_SHIFT_LEFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -130,9 +130,9 @@
             flavor = "tap-preferred";
         };
 
-        hm: homerow_mod {
+        ht_hm: homerow_mod {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM";
+            label = "Homerow Mod";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -611,18 +611,18 @@
 
         BASE {
             bindings = <
-&lt 7 TAB           &kp Q           &kp W           &kp E               &kp R                        &kp T        &kp Y               &kp U                          &kp I                 &kp O               &kp P                   &mo 10
-&lt 3 DEL           &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm_shift_left LEFT_SHIFT F  &kp G        &kp H               &hm_shift_right RIGHT_SHIFT J  &hm LEFT_CONTROL K    &hm LEFT_ALT L      &hm LEFT_WIN SEMICOLON  &mkp LCLK
-&lt_mousekp 9 RCLK  &lt 5 Z         &kp X           &kp C               &kp V                        &kp B        &kp N               &hm_mouse LCLK M               &hm_mouse MCLK COMMA  &hm_mouse RCLK DOT  &lt 5 SLASH             &lt 3 C_MUTE
-                                                    &lt 7 TAB           &lt 1 BACKSPACE              &mkp LCLK    &lt 1 LANG_HANGEUL  &lt 2 SPACE
+&lt 7 TAB           &kp Q              &kp W              &kp E                  &kp R                           &kp T        &kp Y               &kp U                             &kp I                  &kp O               &kp P                      &mo 10
+&lt 3 DEL           &ht_hm LEFT_WIN A  &ht_hm LEFT_ALT S  &ht_hm LEFT_CONTROL D  &ht_hm_shift_left LEFT_SHIFT F  &kp G        &kp H               &ht_hm_shift_right RIGHT_SHIFT J  &ht_hm LEFT_CONTROL K  &ht_hm LEFT_ALT L   &ht_hm LEFT_WIN SEMICOLON  &mkp LCLK
+&lt_mousekp 9 RCLK  &lt 5 Z            &kp X              &kp C                  &kp V                           &kp B        &kp N               &hm_mouse LCLK M                  &hm_mouse MCLK COMMA   &hm_mouse RCLK DOT  &lt 5 SLASH                &lt 3 C_MUTE
+                                                          &lt 7 TAB              &lt 1 BACKSPACE                 &mkp LCLK    &lt 1 LANG_HANGEUL  &lt 2 SPACE
             >;
         };
 
         NUM+SYM {
             bindings = <
-&trans  &kp GRAVE        &kp TILDE     &kp CARET  &amps_hold_double 0 AMPS  &pipe_hold_double 0 PIPE    &kp ASTERISK  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm F12 PLUS       &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR                &kp PERCENT                 &kp SLASH     &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 MINUS      &trans
-&trans  &kp INS          &kp QUESTION  &kp LBKT   &kp RBKT                  &kp DQT                     &kp N0        &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F10 BACKSLASH  &trans
+&trans  &kp GRAVE        &kp TILDE     &kp CARET  &amps_hold_double 0 AMPS  &pipe_hold_double 0 PIPE    &kp ASTERISK  &ht_hm F7 N7  &ht_hm F8 N8  &ht_hm F9 N9  &ht_hm F12 PLUS       &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR                &kp PERCENT                 &kp SLASH     &ht_hm F4 N4  &ht_hm F5 N5  &ht_hm F6 N6  &ht_hm F11 MINUS      &trans
+&trans  &kp INS          &kp QUESTION  &kp LBKT   &kp RBKT                  &kp DQT                     &kp N0        &ht_hm F1 N1  &ht_hm F2 N2  &ht_hm F3 N3  &ht_hm F10 BACKSLASH  &trans
                                        &trans     &trans                    &trans                      &trans        &kp N0
             >;
         };
