@@ -26,8 +26,6 @@
         bindings = <&ib_toggle_layer 8>;
     };
 
-    // input config for mouse move mode
-
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
@@ -49,7 +47,7 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
-        scale-divisor = <14>;
+        scale-divisor = <10>;
     };
 
     // input config for mouse scroll mode
