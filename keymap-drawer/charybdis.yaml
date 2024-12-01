@@ -27,7 +27,7 @@ layers:
   - {t: R CLK, h: SCROLL}
   - {t: Z, h: NUMBER}
   - X
-  - C
+  - {t: C, h: SCROLL}
   - V
   - B
   - N
