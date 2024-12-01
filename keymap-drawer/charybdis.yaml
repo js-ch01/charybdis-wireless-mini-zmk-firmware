@@ -306,7 +306,7 @@ layers:
   - ''
   - ''
   - ''
-  - L CLK
+  - {t: ▽, type: trans}
   - BACK
   - MOVE L
   - MOVE D
@@ -318,7 +318,7 @@ layers:
   - LEFT ALT
   - LEFT META
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - WHEEL D
   - L CLK
   - M CLK
@@ -372,7 +372,7 @@ layers:
   - R CLK
   - SCROLL
   - {t: ▽, type: trans}
-  - R CLK
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
@@ -414,7 +414,7 @@ layers:
   - R CLK
   - SCROLL
   - {t: ▽, type: trans}
-  - R CLK
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
@@ -569,3 +569,6 @@ combos:
 - p: [21, 8]
   k: ''''
   l: [BASE, NUM+SYM]
+- p: [31, 34]
+  k: {t: TRACKBALL, h: toggle}
+  l: [BASE, TRACKBALL, TRACKBALL_SLOW]

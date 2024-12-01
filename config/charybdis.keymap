@@ -95,7 +95,7 @@
             #binding-cells = <0>;
             bindings = <&lt 7 TAB>, <&mo 9>;
 
-            tapping-term-ms = <280>;
+            tapping-term-ms = <230>;
         };
 
         ht_mo_to: ht_moL_toL {
@@ -495,6 +495,12 @@
             key-positions = <21 8>;
             layers = <0 1>;
             timeout-ms = <45>;
+        };
+
+        combo_toggle_Trackball {
+            bindings = <&tog 8>;
+            key-positions = <31 34>;
+            layers = <0 8 9>;
         };
     };
 
