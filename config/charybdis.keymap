@@ -20,14 +20,13 @@
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         layers = <0>;
-        layers = <0>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <3>;
 
-        // bindings = <&ib_toggle_layer 7>;
+        bindings = <&ib_toggle_layer 8>;
     };
 
     // input config for snipe mode
@@ -35,12 +34,12 @@
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <5 8>;
+        layers = <5 7>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
-        scale-divisor = <4>;
+        scale-divisor = <14>;
     };
 
     // input config for mouse scroll mode
@@ -53,23 +52,10 @@
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
+
         bindings = <&ib_wheel_scaler 1 14>;
     };
 
-    // input config for mouse scroll mode hori
-    /*
-    trackball_scroll_listener_horizontal {
-        compatible = "zmk,input-behavior-listener";
-        device = <&vtrackball>;
-        layers = <10>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_WHEEL>;
-        y-input-code = <INPUT_REL_WHEEL>;
-        bindings = <&ib_wheel_scaler 1 4>;
-    };
-
-    test
-    */
     // define a resolution down scaler only for INPUT_REL_WHEEL
 
     ib_wheel_scaler: ib_wheel_scaler {
