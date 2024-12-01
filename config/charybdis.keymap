@@ -99,7 +99,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MOUSE_SCROLL";
             #binding-cells = <0>;
-            bindings = <&lt 7 B>, <&mo 9>;
+            bindings = <&lt 7 TAB>, <&mo 9>;
 
             tapping-term-ms = <280>;
         };
@@ -681,7 +681,7 @@
             bindings = <
 &trans  &trans  &trans  &trans     &trans     &trans       &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans     &trans     &trans       &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &mo 9      &trans     &trans       &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 9   &trans
+&trans  &trans  &trans  &trans     &trans     &trans       &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 9   &trans
                         &mkp RCLK  &mkp MCLK  &mkp LCLK    &trans  &trans
             >;
         };
