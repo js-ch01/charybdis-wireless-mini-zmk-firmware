@@ -1,6 +1,6 @@
 layers:
   BASE:
-  - {t: TAB, h: MOUSEKEY}
+  - ESC
   - Q
   - W
   - E
@@ -55,11 +55,11 @@ layers:
   - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '!'
+  - '='
   - '`'
   - '~'
-  - +
-  - '-'
+  - ''''
+  - '"'
   - /
   - '4'
   - '5'
@@ -68,10 +68,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - INS
-  - '?'
+  - +
+  - '-'
+  - _
   - '|'
-  - ''''
-  - '"'
   - '0'
   - '1'
   - '2'
@@ -294,7 +294,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MOUSEKEY:
-  - {type: held}
+  - {t: ▽, type: trans}
   - WHEEL L
   - WHEEL D
   - MOVE UP
@@ -485,10 +485,10 @@ combos:
 - p: [20, 21]
   k: '}'
   l: [BASE]
-- p: [26, 28]
+- p: [14, 15, 16]
   k: {t: <, h: '&lte'}
   l: [BASE, NUM+SYM]
-- p: [31, 33]
+- p: [19, 20, 21]
   k: {t: '>', h: '&gte'}
   l: [BASE, NUM+SYM]
 - p: [24, 35]
@@ -539,36 +539,12 @@ combos:
 - p: [33, 21]
   k: '9'
   l: [BASE, NUM+SYM, NUMBER]
-- p: [26, 27]
-  k: {t: '=', h: '&double_equal'}
-  l: [BASE, NUM+SYM]
-- p: [28, 27]
-  k: {t: +, h: '&double_plus'}
-  l: [BASE, NUM+SYM]
 - p: [38, 37]
   k: Gui+ A
   l: [BASE, NUM+SYM]
-- p: [3, 4]
-  k: Gui+ `
-  l: [BASE]
-- p: [2, 3]
-  k: Gui+Sft+ `
-  l: [BASE]
-- p: [31, 32]
-  k: {t: '-', h: '&double_mimus'}
-  l: [BASE]
-- p: [32, 33]
-  k: {t: _, h: '&double_underscore'}
-  l: [BASE]
 - p: [1, 4]
   k: Alt+ F4
   l: [BASE]
-- p: [3, 14]
-  k: '"'
-  l: [BASE, NUM+SYM]
-- p: [21, 8]
-  k: ''''
-  l: [BASE, NUM+SYM]
 - p: [31, 34]
   k: {t: TRACKBALL, h: toggle}
   l: [BASE, TRACKBALL, TRACKBALL_SLOW]
