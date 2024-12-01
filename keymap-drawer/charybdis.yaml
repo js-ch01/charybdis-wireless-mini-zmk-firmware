@@ -208,7 +208,7 @@ layers:
   - SPACE
   - LEFT ALT
   - {t: ▽, type: trans}
-  - SPACE
+  - M
   NUMBER:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
