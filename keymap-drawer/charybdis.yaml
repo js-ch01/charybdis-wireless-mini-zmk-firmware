@@ -36,7 +36,7 @@ layers:
   - {t: ., h: R CLK}
   - {t: /, h: NUMBER}
   - {t: MUTE, h: EXTRAS}
-  - {t: TAB, h: MOUSE}
+  - '&td_ms'
   - {t: BACK SPACE, h: NUM+SYM}
   - L CLK
   - {t: LANG HANGEUL, h: NUM+SYM}
@@ -96,7 +96,7 @@ layers:
   - END
   - PG UP
   - ''
-  - '&tdtb2'
+  - ''
   - LWIN
   - LALT
   - LEFT CONTROL
@@ -120,8 +120,8 @@ layers:
   - Gui+ PG DN
   - {t: ▽, type: trans}
   - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -518,14 +518,14 @@ combos:
 - p: [36, 37, 38]
   k: {t: CLEAN, h: toggle}
   l: [BASE, CLEAN]
-- p: [3, 15]
+- p: [4, 16]
   k: SPACE
   l: [BASE, NAV, NUM+SYM, NUMBER]
-- p: [4, 16]
+- p: [2, 14]
   k: ENTER
   l: [BASE, NAV, NUM+SYM, GAME, NUMBER]
-- p: [2, 14]
-  k: CAPSLOCK
+- p: [15, 3]
+  k: DEL
   l: [BASE]
 - p: [31, 19]
   k: '0'
