@@ -91,11 +91,11 @@
             tapping-term-ms = <200>;
         };
 
-        td_ms: td_mouse_scroll2 {
+        td_ms: td_mouseL_slow {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_MOUSE_SCROLL";
+            label = "TD_MOUSEL_SLOW";
             #binding-cells = <0>;
-            bindings = <&lt 7 TAB>, <&mo 10>;
+            bindings = <&lt 7 TAB>, <&mo 9>;
 
             tapping-term-ms = <280>;
         };
