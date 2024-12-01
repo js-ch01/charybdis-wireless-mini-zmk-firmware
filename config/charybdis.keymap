@@ -616,8 +616,8 @@
 
         NUM+SYM {
             bindings = <
-&trans  &kp GRAVE        &kp TILDE     &kp CARET  &amps_d 0 AMPS  &pipe_d 0 PIPE    &kp ASTERISK  &ht_hm F7 N7  &ht_hm F8 N8  &ht_hm F9 N9  &ht_hm F12 PLUS       &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR      &kp PERCENT       &kp SLASH     &ht_hm F4 N4  &ht_hm F5 N5  &ht_hm F6 N6  &ht_hm F11 MINUS      &trans
+&trans  &kp GRAVE        &kp TILDE     &kp CARET  &trans          &pipe_d 0 PIPE    &kp ASTERISK  &ht_hm F7 N7  &ht_hm F8 N8  &ht_hm F9 N9  &ht_hm F12 PLUS       &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp LEFT_SHIFT  &kp PERCENT       &kp SLASH     &ht_hm F4 N4  &ht_hm F5 N5  &ht_hm F6 N6  &ht_hm F11 MINUS      &trans
 &trans  &kp INS          &kp QUESTION  &kp LBKT   &kp RBKT        &kp DQT           &kp N0        &ht_hm F1 N1  &ht_hm F2 N2  &ht_hm F3 N3  &ht_hm F10 BACKSLASH  &trans
                                        &trans     &trans          &trans            &trans        &kp N0
             >;
