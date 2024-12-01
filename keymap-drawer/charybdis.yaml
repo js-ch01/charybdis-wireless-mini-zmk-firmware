@@ -4,7 +4,7 @@ layers:
   - Q
   - W
   - E
-  - R
+  - {t: R, h: NUM+SYM}
   - T
   - Y
   - U
@@ -27,7 +27,7 @@ layers:
   - {t: R CLK, h: EXTRAS}
   - {t: Z, h: NUMBER}
   - X
-  - {t: C, h: SCROLL}
+  - C
   - V
   - B
   - N
@@ -46,7 +46,7 @@ layers:
   - '`'
   - '~'
   - ^
-  - {t: '&', h: '&double_amp'}
+  - {type: held}
   - {t: '|', h: '&double_pipe'}
   - '*'
   - {t: '7', h: F7}
@@ -58,7 +58,7 @@ layers:
   - '!'
   - '@'
   - '#'
-  - $
+  - LEFT SHIFT
   - '%'
   - /
   - {t: '4', h: F4}
@@ -79,7 +79,7 @@ layers:
   - {t: \, h: F10}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
@@ -447,14 +447,14 @@ layers:
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT SHIFT
   - {type: held}
-  - LEFT SHIFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - LEFT SHIFT
-  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
