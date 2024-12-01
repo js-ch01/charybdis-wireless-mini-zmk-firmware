@@ -20,6 +20,7 @@
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         layers = <0>;
+        layers = <0>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -99,7 +100,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MOUSE_SCROLL";
             #binding-cells = <0>;
-            bindings = <&lt 7 B>, <&mo 9>;
+            bindings = <&lt 7 TAB>, <&mo 9>;
 
             tapping-term-ms = <280>;
         };
@@ -390,9 +391,9 @@
         };
 
         combo_clean {
-            bindings = <&tog 11>;
+            bindings = <&tog 10>;
             key-positions = <36 37 38>;
-            layers = <0 11>;
+            layers = <0 10>;
         };
 
         combo_space {
@@ -607,9 +608,9 @@
 
         BASE {
             bindings = <
-&lt 7 TAB       &kp Q              &kp W              &kp E                  &kp R                      &kp T        &kp Y               &kp U                       &kp I                  &kp O              &kp P                      &mo 10
+&lt 7 TAB       &kp Q              &kp W              &kp E                  &kp R                      &kp T        &kp Y               &kp U                       &kp I                  &kp O              &kp P                      &kp BSPC
 &lt 3 DEL       &ht_hm LEFT_WIN A  &ht_hm LEFT_ALT S  &ht_hm LEFT_CONTROL D  &ht_hm_lshft LEFT_SHIFT F  &kp G        &kp H               &ht_hm_rshft RIGHT_SHIFT J  &ht_hm LEFT_CONTROL K  &ht_hm LEFT_ALT L  &ht_hm LEFT_WIN SEMICOLON  &mkp LCLK
-&lt_mkp 9 RCLK  &lt 5 Z            &kp X              &lt 9 C                &kp V                      &kp B        &kp N               &ht_mkp LCLK M              &ht_mkp MCLK COMMA     &ht_mkp RCLK DOT   &lt 5 SLASH                &lt 3 C_MUTE
+&lt_mkp 3 RCLK  &lt 5 Z            &kp X              &lt 9 C                &kp V                      &kp B        &kp N               &ht_mkp LCLK M              &ht_mkp MCLK COMMA     &ht_mkp RCLK DOT   &lt 5 SLASH                &lt 3 C_MUTE
                                                       &td_ms                 &lt 1 BACKSPACE            &mkp LCLK    &lt 1 LANG_HANGEUL  &lt 2 SPACE
             >;
         };
@@ -625,10 +626,10 @@
 
         NAV {
             bindings = <
-&none  &none     &none     &none             &none           &none     &kp INS  &kp HOME        &kp UP_ARROW  &kp END        &kp PG_UP      &none
-&none  &kp LWIN  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp PAGE_DOWN  &none
-&none  &none     &none     &none             &none           &none     &trans   &kp LG(PG_UP)   &none         &kp LG(PG_DN)  &trans         &none
-                           &trans            &trans          &trans    &trans   &trans
+&none  &none     &none     &none             &none           &none     &kp INS             &kp HOME        &kp UP_ARROW  &kp END        &kp PG_UP            &none
+&none  &kp LWIN  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans              &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp PAGE_DOWN        &none
+&none  &none     &none     &none             &none           &none     &kp LA(LEFT_ARROW)  &kp LG(PG_UP)   &none         &kp LG(PG_DN)  &kp LA(RIGHT_ARROW)  &none
+                           &trans            &trans          &trans    &trans              &trans
             >;
         };
 
@@ -668,7 +669,7 @@
             >;
         };
 
-        MOUSE {
+        MOUSEKEY {
             bindings = <
 &none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
 &mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
@@ -677,30 +678,21 @@
             >;
         };
 
-        SLOW {
+        TRACKBALL {
             bindings = <
-&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
-&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
-&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
-                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
+&trans  &trans  &trans  &trans     &trans     &trans       &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans       &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans       &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 9   &trans
+                        &mkp RCLK  &mkp MCLK  &mkp LCLK    &trans  &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
-                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
-            >;
-        };
-
-        SCROLL_HORI {
-            bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
-                                           &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
+&none  &none  &none  &none         &none           &none        &none   &none   &none  &none  &none  &none
+&none  &none  &none  &none         &none           &none        &none   &none   &none  &none  &none  &none
+&none  &none  &none  &trans        &kp LEFT_SHIFT  &none        &none   &none   &none  &none  &none  &none
+                     &mwh MOVE_UP  &mwh MOVE_DOWN  &mkp LCLK    &trans  &trans
             >;
         };
 

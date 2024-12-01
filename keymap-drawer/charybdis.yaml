@@ -379,28 +379,28 @@ layers:
   - {t: ▽, type: trans}
   SCROLL:
   - ''
-  - WHEEL L
-  - WHEEL D
-  - MOVE UP
-  - WHEEL U
-  - WHEEL R
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - L CLK
-  - BACK
-  - MOVE L
-  - MOVE D
-  - MOVE R
-  - FWD
   - ''
-  - RIGHT SHIFT
-  - LCTRL
-  - LEFT ALT
-  - LEFT META
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - {type: held}
   - WHEEL D
@@ -421,28 +421,28 @@ layers:
   - {t: ▽, type: trans}
   SCROLL_HORI:
   - ''
-  - WHEEL L
-  - WHEEL D
-  - MOVE UP
-  - WHEEL U
-  - WHEEL R
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
   - ''
   - ''
   - {type: held}
-  - L CLK
-  - BACK
-  - MOVE L
-  - MOVE D
-  - MOVE R
-  - FWD
   - ''
-  - RIGHT SHIFT
-  - LCTRL
-  - LEFT ALT
-  - LEFT META
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - WHEEL D
@@ -461,8 +461,8 @@ layers:
   - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  CLEAN: ['', '', '', '', '', A, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-    '', '']
+  CLEAN: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', '', '']
 combos:
 - p: [1, 2]
   k: ESC
