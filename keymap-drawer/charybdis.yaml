@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - BSPC
-  - {t: DEL, h: EXTRAS}
+  - {t: M CLK, h: EXTRAS}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -373,7 +373,49 @@ layers:
   - SCROLL
   - {t: ▽, type: trans}
   - R CLK
+  - {t: ▽, type: trans}
+  - L CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  TRACKBALL_SLOW:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L CLK
   - M CLK
+  - R CLK
+  - SCROLL
+  - {t: ▽, type: trans}
+  - R CLK
+  - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -411,11 +453,11 @@ layers:
   - ''
   - ''
   - ''
+  - LEFT SHIFT
   - ''
   - ''
-  - ''
-  - WHEEL D
-  - WHEEL U
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
