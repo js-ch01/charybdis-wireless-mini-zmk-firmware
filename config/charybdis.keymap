@@ -13,8 +13,19 @@
 //     chosen { zmk,matrix_transform = &default_transform; };
 // };
 
-/ {
-    // input config for mouse move mode
+/ 
+    trackball_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&vtrackball>;
+        layers = <0 8>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+        scale-multiplier = <1>;
+        scale-divisor = <3>;
+
+        bindings = <&ib_toggle_layer 8>;
+    };
 
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
@@ -29,12 +40,13 @@
         bindings = <&ib_toggle_layer 8>;
     };
 
+
     // input config for snipe mode
 
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <5 7>;
+        layers = <9>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -47,7 +59,7 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <9>;
+        layers = <10>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
@@ -148,7 +160,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            flavor = "tap-preferredm";
         };
 
         euqal_d: euqal_hold_double {
