@@ -97,13 +97,13 @@
             tapping-term-ms = <200>;
         };
 
-        td_tb2: td_slow_scroll {
+        td_tb2: td_1slow_scroll_2toL {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&ht_mo_to 9 0>, <&to 0>;
         };
 
-        ht_mo_to: ht_momentL_toL {
+        ht_mo_to: ht_moL_toL {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&to>;
 
@@ -631,10 +631,10 @@
 
         NAV {
             bindings = <
-&none    &none     &none     &none             &none           &none     &kp INS  &kp HOME        &kp UP_ARROW  &kp END        &kp PG_UP      &none
-&td_tb2  &kp LWIN  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp PAGE_DOWN  &none
-&none    &none     &none     &none             &none           &none     &trans   &kp LG(PG_UP)   &none         &kp LG(PG_DN)  &trans         &none
-                             &none             &none           &trans    &trans   &trans
+&none  &none     &none     &none             &none           &none     &kp INS  &kp HOME        &kp UP_ARROW  &kp END        &kp PG_UP      &none
+&none  &kp LWIN  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp PAGE_DOWN  &none
+&none  &none     &none     &none             &none           &none     &trans   &kp LG(PG_UP)   &none         &kp LG(PG_DN)  &trans         &none
+                           &trans            &trans          &trans    &trans   &trans
             >;
         };
 
