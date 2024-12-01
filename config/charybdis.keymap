@@ -16,6 +16,7 @@
 
 / {
     // input config for mouse move mode
+
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
@@ -30,6 +31,7 @@
     };
 
     // input config for snipe mode
+
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
@@ -42,6 +44,7 @@
     };
 
     // input config for mouse scroll mode
+
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
@@ -54,6 +57,7 @@
     };
 
     // input config for mouse scroll mode hori
+
     trackball_scroll_listener_horizontal {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
@@ -63,10 +67,12 @@
         y-input-code = <INPUT_REL_WHEEL>;
         bindings = <&ib_wheel_scaler 1 4>;
     };
+
     test
     */
 
     // define a resolution down scaler only for INPUT_REL_WHEEL
+
     ib_wheel_scaler: ib_wheel_scaler {
         compatible = "zmk,input-behavior-scaler";
         #binding-cells = <2>;
@@ -75,6 +81,7 @@
     };
 
     // adjust cooldown waiting period for mouse key layer after activated
+
     ib_toggle_layer: ib_toggle_layer {
         compatible = "zmk,input-behavior-tog-layer";
         #binding-cells = <1>;
@@ -82,7 +89,7 @@
     };
 
     behaviors {
-        tdtb: td_mouse_scroll {
+        td_tb: td_mouse_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&ht_mo_to 9 7>, <&to 0>;
@@ -90,13 +97,13 @@
             tapping-term-ms = <200>;
         };
 
-        tdtb2: td_slow_scroll {
+        td_tb2: td_slow_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&ht_mo_to 9 0>, <&to 0>;
         };
 
-        ht_mo_to: ht_mo_to {
+        ht_mo_to: ht_momentL_toL {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&to>;
 
@@ -105,9 +112,9 @@
             tapping-term-ms = <200>;
         };
 
-        ht_hm_shift_right: ht_hm_shift_right {
+        ht_hm_rshft: hm_Rshift {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_HM_SHIFT_RIGHT";
+            label = "ht_hm_rshft";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -115,9 +122,9 @@
             tapping-term-ms = <155>;
         };
 
-        ht_hm_shift_left: hm_shift_left {
+        ht_hm_lshft: hm_Lshift {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_HM_SHIFT_LEFT";
+            label = "ht_hm_lshft";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -136,9 +143,9 @@
             flavor = "tap-preferred";
         };
 
-        pipe_hold_double: pipe_hold_double {
+        pipe_d: pipe_hold_double {
             compatible = "zmk,behavior-hold-tap";
-            label = "PIPE_HOLD_DOUBLE";
+            label = "PIPE_D";
             bindings = <&double_pipe>, <&kp>;
 
             #binding-cells = <2>;
@@ -146,9 +153,9 @@
             tapping-term-ms = <230>;
         };
 
-        amps_hold_double: amps_hold_double {
+        amps_d: amps_hold_double {
             compatible = "zmk,behavior-hold-tap";
-            label = "AMPS_HOLD_DOUBLE";
+            label = "AMPS_D";
             bindings = <&double_amp>, <&kp>;
 
             #binding-cells = <2>;
@@ -156,9 +163,9 @@
             flavor = "tap-preferred";
         };
 
-        euqal_hold_double: euqal_hold_double {
+        euqal_d: euqal_hold_double {
             compatible = "zmk,behavior-hold-tap";
-            label = "EUQAL_HOLD_DOUBLE";
+            label = "EUQAL_D";
             bindings = <&double_equal>, <&kp>;
 
             #binding-cells = <2>;
@@ -166,9 +173,9 @@
             flavor = "tap-preferred";
         };
 
-        plus_hold_double: plus_hold_double {
+        plus_d: plus_hold_double {
             compatible = "zmk,behavior-hold-tap";
-            label = "PLUS_HOLD_DOUBLE";
+            label = "PLUS_D";
             bindings = <&double_plus>, <&kp>;
 
             #binding-cells = <2>;
@@ -176,9 +183,9 @@
             flavor = "tap-preferred";
         };
 
-        minus_hold_double: minus_hold_double {
+        minus_d: minus_hold_double {
             compatible = "zmk,behavior-hold-tap";
-            label = "MINUS_HOLD_DOUBLE";
+            label = "MINUS_D";
             bindings = <&double_mimus>, <&kp>;
 
             #binding-cells = <2>;
@@ -186,9 +193,9 @@
             flavor = "tap-preferred";
         };
 
-        gt_hold_gte: gt_hold_gte {
+        gt_gte: gt_hold_gte {
             compatible = "zmk,behavior-hold-tap";
-            label = "GT_HOLD_GTE";
+            label = "GT_GTE";
             bindings = <&gte>, <&kp>;
 
             #binding-cells = <2>;
@@ -196,9 +203,9 @@
             flavor = "tap-preferred";
         };
 
-        lt_hold_lte: lt_hold_lte {
+        lt_lte: lt_hold_lte {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_HOLD_LTE";
+            label = "LT_LTE";
             bindings = <&lte>, <&kp>;
 
             #binding-cells = <2>;
@@ -206,9 +213,9 @@
             flavor = "tap-preferred";
         };
 
-        under_hold_double: under_hold_double {
+        under_d: under_hold_double {
             compatible = "zmk,behavior-hold-tap";
-            label = "UNDER_HOLD_DOUBLE";
+            label = "UNDER_D";
             bindings = <&double_underscore>, <&kp>;
 
             #binding-cells = <2>;
@@ -216,9 +223,9 @@
             tapping-term-ms = <200>;
         };
 
-        lpar_hold_LR: lpar_hold_LR {
+        lpar_lr: lpar_hold_lr {
             compatible = "zmk,behavior-hold-tap";
-            label = "LPAR_HOLD_LR";
+            label = "LPAR_LR";
             bindings = <&double_parenthesis_lr>, <&kp>;
 
             #binding-cells = <2>;
@@ -226,9 +233,9 @@
             flavor = "tap-preferred";
         };
 
-        lbrace_hold_LR: lbrace_hold_LR {
+        lbrace_lr: lbrace_hold_lr {
             compatible = "zmk,behavior-hold-tap";
-            label = "LBRACE_HOLD_LR";
+            label = "LBRACE_LR";
             bindings = <&double_braces_lr>, <&kp>;
 
             #binding-cells = <2>;
@@ -236,9 +243,9 @@
             flavor = "tap-preferred";
         };
 
-        lbracket_hold_LR: lbracket_hold_LR {
+        lbracket_lr: lbracket_hold_lr {
             compatible = "zmk,behavior-hold-tap";
-            label = "LBRACKET_HOLD_LR";
+            label = "LBRACKET_LR";
             bindings = <&double_brackets_lr>, <&kp>;
 
             #binding-cells = <2>;
@@ -246,7 +253,7 @@
             flavor = "tap-preferred";
         };
 
-        lt_mousekp: lt_mousekp {
+        lt_mkp: lt_moL_mouseKP {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_MOUSEKP";
             bindings = <&mo>, <&mkp>;
@@ -255,9 +262,9 @@
             tapping-term-ms = <200>;
         };
 
-        hm_mouse: hm_mouse {
+        ht_mkp: ht_mouseKP_KP {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM_MOUSE";
+            label = "HT_MOUSEKP";
             bindings = <&mkp>, <&kp>;
 
             #binding-cells = <2>;
@@ -266,7 +273,7 @@
             flavor = "tap-preferred";
         };
 
-        td_mouse_scroll: td_mouse_scroll2 {
+        td_ms: td_mouse_scroll2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MOUSE_SCROLL";
             #binding-cells = <0>;
@@ -287,7 +294,7 @@
         combo_lpar {
             timeout-ms = <38>;
             key-positions = <16 15>;
-            bindings = <&lpar_hold_LR 0 LEFT_PARENTHESIS>;
+            bindings = <&lpar_lr 0 LEFT_PARENTHESIS>;
             layers = <0 1>;
         };
 
@@ -301,7 +308,7 @@
         combo_lbkt {
             timeout-ms = <38>;
             key-positions = <14 16>;
-            bindings = <&lbracket_hold_LR 0 LEFT_BRACKET>;
+            bindings = <&lbracket_lr 0 LEFT_BRACKET>;
             layers = <0 1>;
         };
 
@@ -315,7 +322,7 @@
         combo_lbrc {
             timeout-ms = <40>;
             key-positions = <14 15>;
-            bindings = <&lbrace_hold_LR 0 LEFT_BRACE>;
+            bindings = <&lbrace_lr 0 LEFT_BRACE>;
             layers = <0>;
         };
 
@@ -329,14 +336,14 @@
         combo_lt {
             timeout-ms = <45>;
             key-positions = <26 28>;
-            bindings = <&lt_hold_lte 0 LESS_THAN>;
+            bindings = <&lt_lte 0 LESS_THAN>;
             layers = <0 1>;
         };
 
         combo_gt {
             timeout-ms = <45>;
             key-positions = <31 33>;
-            bindings = <&gt_hold_gte 0 GREATER_THAN>;
+            bindings = <&gt_gte 0 GREATER_THAN>;
             layers = <0 1>;
         };
 
@@ -437,14 +444,14 @@
         };
 
         combo_equal {
-            bindings = <&euqal_hold_double 0 EQUAL>;
+            bindings = <&euqal_d 0 EQUAL>;
             key-positions = <26 27>;
             timeout-ms = <45>;
             layers = <0 1>;
         };
 
         combo_plus {
-            bindings = <&plus_hold_double 0 PLUS>;
+            bindings = <&plus_d 0 PLUS>;
             key-positions = <28 27>;
             timeout-ms = <45>;
             layers = <0 1>;
@@ -470,14 +477,14 @@
         };
 
         combo_minus2 {
-            bindings = <&minus_hold_double 0 MINUS>;
+            bindings = <&minus_d 0 MINUS>;
             key-positions = <31 32>;
             timeout-ms = <45>;
             layers = <0>;
         };
 
         combo_underscore {
-            bindings = <&under_hold_double 0 UNDERSCORE>;
+            bindings = <&under_d 0 UNDERSCORE>;
             key-positions = <32 33>;
             timeout-ms = <45>;
             layers = <0>;
@@ -606,28 +613,28 @@
 
         BASE {
             bindings = <
-&lt 7 TAB           &kp Q              &kp W              &kp E                  &kp R                           &kp T        &kp Y               &kp U                             &kp I                  &kp O               &kp P                      &mo 10
-&lt 3 DEL           &ht_hm LEFT_WIN A  &ht_hm LEFT_ALT S  &ht_hm LEFT_CONTROL D  &ht_hm_shift_left LEFT_SHIFT F  &kp G        &kp H               &ht_hm_shift_right RIGHT_SHIFT J  &ht_hm LEFT_CONTROL K  &ht_hm LEFT_ALT L   &ht_hm LEFT_WIN SEMICOLON  &mkp LCLK
-&lt_mousekp 9 RCLK  &lt 5 Z            &kp X              &kp C                  &kp V                           &kp B        &kp N               &hm_mouse LCLK M                  &hm_mouse MCLK COMMA   &hm_mouse RCLK DOT  &lt 5 SLASH                &lt 3 C_MUTE
-                                                          &lt 7 TAB              &lt 1 BACKSPACE                 &mkp LCLK    &lt 1 LANG_HANGEUL  &lt 2 SPACE
+&lt 7 TAB       &kp Q              &kp W              &kp E                  &kp R                      &kp T        &kp Y               &kp U                       &kp I                  &kp O              &kp P                      &mo 10
+&lt 3 DEL       &ht_hm LEFT_WIN A  &ht_hm LEFT_ALT S  &ht_hm LEFT_CONTROL D  &ht_hm_lshft LEFT_SHIFT F  &kp G        &kp H               &ht_hm_rshft RIGHT_SHIFT J  &ht_hm LEFT_CONTROL K  &ht_hm LEFT_ALT L  &ht_hm LEFT_WIN SEMICOLON  &mkp LCLK
+&lt_mkp 9 RCLK  &lt 5 Z            &kp X              &kp C                  &kp V                      &kp B        &kp N               &ht_mkp LCLK M              &ht_mkp MCLK COMMA     &ht_mkp RCLK DOT   &lt 5 SLASH                &lt 3 C_MUTE
+                                                      &lt 7 TAB              &lt 1 BACKSPACE            &mkp LCLK    &lt 1 LANG_HANGEUL  &lt 2 SPACE
             >;
         };
 
         NUM+SYM {
             bindings = <
-&trans  &kp GRAVE        &kp TILDE     &kp CARET  &amps_hold_double 0 AMPS  &pipe_hold_double 0 PIPE    &kp ASTERISK  &ht_hm F7 N7  &ht_hm F8 N8  &ht_hm F9 N9  &ht_hm F12 PLUS       &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR                &kp PERCENT                 &kp SLASH     &ht_hm F4 N4  &ht_hm F5 N5  &ht_hm F6 N6  &ht_hm F11 MINUS      &trans
-&trans  &kp INS          &kp QUESTION  &kp LBKT   &kp RBKT                  &kp DQT                     &kp N0        &ht_hm F1 N1  &ht_hm F2 N2  &ht_hm F3 N3  &ht_hm F10 BACKSLASH  &trans
-                                       &trans     &trans                    &trans                      &trans        &kp N0
+&trans  &kp GRAVE        &kp TILDE     &kp CARET  &amps_d 0 AMPS  &pipe_d 0 PIPE    &kp ASTERISK  &ht_hm F7 N7  &ht_hm F8 N8  &ht_hm F9 N9  &ht_hm F12 PLUS       &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR      &kp PERCENT       &kp SLASH     &ht_hm F4 N4  &ht_hm F5 N5  &ht_hm F6 N6  &ht_hm F11 MINUS      &trans
+&trans  &kp INS          &kp QUESTION  &kp LBKT   &kp RBKT        &kp DQT           &kp N0        &ht_hm F1 N1  &ht_hm F2 N2  &ht_hm F3 N3  &ht_hm F10 BACKSLASH  &trans
+                                       &trans     &trans          &trans            &trans        &kp N0
             >;
         };
 
         NAV {
             bindings = <
-&none   &none     &none     &none             &none           &none     &kp INS  &kp HOME        &kp UP_ARROW  &kp END        &kp PG_UP      &none
-&tdtb2  &kp LWIN  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp PAGE_DOWN  &none
-&none   &none     &none     &none             &none           &none     &trans   &kp LG(PG_UP)   &none         &kp LG(PG_DN)  &trans         &none
-                            &none             &none           &trans    &trans   &trans
+&none    &none     &none     &none             &none           &none     &kp INS  &kp HOME        &kp UP_ARROW  &kp END        &kp PG_UP      &none
+&td_tb2  &kp LWIN  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp PAGE_DOWN  &none
+&none    &none     &none     &none             &none           &none     &trans   &kp LG(PG_UP)   &none         &kp LG(PG_DN)  &trans         &none
+                             &none             &none           &trans    &trans   &trans
             >;
         };
 
