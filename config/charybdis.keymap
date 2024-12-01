@@ -19,7 +19,7 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0 2 7>;
+        layers = <0>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -688,8 +688,8 @@
 
         SCROLL {
             bindings = <
-&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
-&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
 &none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
                                            &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
             >;
@@ -697,8 +697,8 @@
 
         SCROLL_HORI {
             bindings = <
-&none      &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none         &none            &none      &none         &none           &none
-&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
 &none      &msc MOVE_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_DOWN     &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
                                            &mkp MCLK       &mkp LCLK        &mkp RCLK          &trans        &trans
             >;
@@ -706,7 +706,7 @@
 
         CLEAN {
             bindings = <
-&none  &none  &none  &none  &none  &kp A    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
                      &none  &none  &none    &none  &none
