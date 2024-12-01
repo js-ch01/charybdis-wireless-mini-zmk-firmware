@@ -29,7 +29,7 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <4>;
+        layers = <4 7>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -47,7 +47,7 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
-        scale-divisor = <10>;
+        scale-divisor = <7>;
     };
 
     // input config for mouse scroll mode
