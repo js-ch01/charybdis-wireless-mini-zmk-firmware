@@ -684,10 +684,10 @@
 
         TRACKBALL_SLOW {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans       &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans       &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans       &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 10  &trans
-                        &mkp RCLK  &mkp MCLK  &mkp LCLK    &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 10  &trans
+                        &mkp RCLK  &trans  &mkp LCLK    &trans  &trans
             >;
         };
 
