@@ -1,6 +1,6 @@
 layers:
   BASE:
-  - {t: TAB, h: MOUSE}
+  - {t: TAB, h: MOUSEKEY}
   - Q
   - W
   - E
@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - SCROLL_HORI
+  - BSPC
   - {t: DEL, h: EXTRAS}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
   - L CLK
-  - {t: R CLK, h: SCROLL}
+  - {t: R CLK, h: EXTRAS}
   - {t: Z, h: NUMBER}
   - X
   - {t: C, h: SCROLL}
@@ -114,11 +114,11 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - Alt+ LEFT
   - Gui+ PG UP
   - ''
   - Gui+ PG DN
-  - {t: ▽, type: trans}
+  - Alt+ RIGHT
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -293,7 +293,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  MOUSE:
+  MOUSEKEY:
   - {type: held}
   - WHEEL L
   - WHEEL D
@@ -330,51 +330,51 @@ layers:
   - R CLK
   - WHEEL U
   - ''
+  - R CLK
   - M CLK
   - L CLK
-  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SLOW:
-  - ''
-  - WHEEL L
-  - WHEEL D
-  - MOVE UP
-  - WHEEL U
-  - WHEEL R
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - L CLK
-  - BACK
-  - MOVE L
-  - MOVE D
-  - MOVE R
-  - FWD
-  - ''
-  - RIGHT SHIFT
-  - LCTRL
-  - LEFT ALT
-  - LEFT META
-  - ''
-  - ''
-  - WHEEL D
+  TRACKBALL:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - L CLK
   - M CLK
   - R CLK
-  - WHEEL U
-  - WHEEL D
-  - L CLK
-  - M CLK
+  - SCROLL
+  - {t: ▽, type: trans}
   - R CLK
-  - WHEEL U
-  - ''
   - M CLK
   - L CLK
-  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SCROLL:
@@ -402,42 +402,11 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
-  - WHEEL D
-  - L CLK
-  - M CLK
-  - R CLK
-  - WHEEL U
-  - WHEEL D
-  - L CLK
-  - M CLK
-  - R CLK
-  - WHEEL U
-  - ''
-  - M CLK
-  - L CLK
-  - R CLK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  SCROLL_HORI:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - ''
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - LEFT SHIFT
   - ''
   - ''
   - ''
@@ -446,19 +415,8 @@ layers:
   - ''
   - ''
   - WHEEL D
-  - L CLK
-  - M CLK
-  - R CLK
   - WHEEL U
-  - WHEEL D
   - L CLK
-  - M CLK
-  - R CLK
-  - WHEEL U
-  - ''
-  - M CLK
-  - L CLK
-  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   CLEAN: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
