@@ -15,7 +15,7 @@
 
 / {
 
-    trackball_listener {
+    trackball_auto_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         layers = <0 8>;
@@ -33,14 +33,12 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0 8>;
+        layers = <4>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <3>;
-
-        bindings = <&ib_toggle_layer 8>;
     };
 
 
