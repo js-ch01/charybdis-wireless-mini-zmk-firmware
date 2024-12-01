@@ -496,6 +496,12 @@
             layers = <0 1>;
             timeout-ms = <45>;
         };
+
+        combo_toggle_Trackball {
+            bindings = <&tog 8>;
+            key-positions = <31 34>;
+            layers = <0 8 9>;
+        };
     };
 
     macros {
