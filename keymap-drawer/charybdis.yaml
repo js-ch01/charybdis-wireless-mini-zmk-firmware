@@ -27,7 +27,7 @@ layers:
   - {t: R CLK, h: EXTRAS}
   - {t: Z, h: NUMBER}
   - X
-  - C
+  - {t: C, h: SCROLL}
   - V
   - B
   - N
@@ -447,14 +447,14 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - LEFT SHIFT
   - {type: held}
+  - LEFT SHIFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT SHIFT
+  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
