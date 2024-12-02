@@ -43,8 +43,8 @@ layers:
   - {t: SPACE, h: NAV}
   NUM+SYM:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ESCAPE
+  - PRINT SCREEN
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
