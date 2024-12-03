@@ -306,7 +306,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - L CLK
   - BACK
   - MOVE L
   - MOVE D
