@@ -43,7 +43,7 @@ layers:
   - {t: SPACE, h: NAV}
   NUM+SYM:
   - {t: ▽, type: trans}
-  - ESCAPE
+  - {t: ▽, type: trans}
   - PRINT SCREEN
   - {t: ▽, type: trans}
   - {type: held}
@@ -530,3 +530,21 @@ combos:
 - p: [31, 34]
   k: {t: TRACKBALL, h: toggle}
   l: [BASE, TRACKBALL, TRACKBALL_SLOW]
+- p: [25, 26]
+  k: ENTER
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [34, 33]
+  k: ENTER
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [28, 26]
+  k: DELETE
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [31, 33]
+  k: DELETE
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [28, 27]
+  k: ESCAPE
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [31, 32]
+  k: ESCAPE
+  l: [BASE, NAV, NUM+SYM, GAME]
