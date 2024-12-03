@@ -36,7 +36,7 @@ layers:
   - {t: ., h: R CLK}
   - {t: /, h: NUMBER}
   - {t: MUTE, h: FUNC}
-  - '&td_ms'
+  - {t: TAB, h: MOUSEKEY}
   - {t: BACK SPACE, h: NUM+SYM}
   - L CLK
   - {t: LANG HANGEUL, h: NUM+SYM}
@@ -330,7 +330,7 @@ layers:
   - R CLK
   - WHEEL U
   - ''
-  - R CLK
+  - {t: R CLK, type: held}
   - M CLK
   - L CLK
   - {t: ▽, type: trans}
