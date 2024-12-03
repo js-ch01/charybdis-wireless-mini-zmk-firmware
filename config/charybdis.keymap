@@ -261,20 +261,6 @@
             layers = <0>;
         };
 
-        combo_lt {
-            timeout-ms = <45>;
-            key-positions = <14 15 16>;
-            bindings = <&lt_lte 0 LESS_THAN>;
-            layers = <0 1>;
-        };
-
-        combo_gt {
-            timeout-ms = <45>;
-            key-positions = <19 20 21>;
-            bindings = <&gt_gte 0 GREATER_THAN>;
-            layers = <0 1>;
-        };
-
         combo_game_layer {
             bindings = <&tog 4>;
             key-positions = <24 35>;
@@ -293,27 +279,9 @@
             layers = <0 2 1 4>;
         };
 
-        combo_ctrl_z {
-            bindings = <&kp LC(Z)>;
-            key-positions = <25 13>;
-            layers = <0>;
-        };
-
-        combo_ctrl_x {
-            bindings = <&kp LC(X)>;
-            key-positions = <26 14>;
-            layers = <0>;
-        };
-
         combo_copy {
             bindings = <&kp LC(C)>;
             key-positions = <27 15>;
-            layers = <0>;
-        };
-
-        combo_paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <28 16>;
             layers = <0>;
         };
 
@@ -357,12 +325,6 @@
             bindings = <&kp NUMBER_1>;
             key-positions = <32 20>;
             layers = <0 1 5>;
-        };
-
-        combo_ctrl+a {
-            bindings = <&kp LC(A)>;
-            key-positions = <1 13>;
-            layers = <0>;
         };
 
         combo_num9 {
