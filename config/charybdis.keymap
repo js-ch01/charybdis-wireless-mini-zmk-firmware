@@ -138,56 +138,6 @@
             flavor = "tap-preferred";
         };
 
-        pipe_d: pipe_hold_double {
-            compatible = "zmk,behavior-hold-tap";
-            label = "PIPE_D";
-            bindings = <&double_pipe>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <230>;
-        };
-
-        amps_d: amps_hold_double {
-            compatible = "zmk,behavior-hold-tap";
-            label = "AMPS_D";
-            bindings = <&double_amp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        euqal_d: euqal_hold_double {
-            compatible = "zmk,behavior-hold-tap";
-            label = "EUQAL_D";
-            bindings = <&double_equal>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        plus_d: plus_hold_double {
-            compatible = "zmk,behavior-hold-tap";
-            label = "PLUS_D";
-            bindings = <&double_plus>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        minus_d: minus_hold_double {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MINUS_D";
-            bindings = <&double_mimus>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
         gt_gte: gt_hold_gte {
             compatible = "zmk,behavior-hold-tap";
             label = "GT_GTE";
@@ -206,16 +156,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-        };
-
-        under_d: under_hold_double {
-            compatible = "zmk,behavior-hold-tap";
-            label = "UNDER_D";
-            bindings = <&double_underscore>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
         };
 
         lpar_lr: lpar_hold_lr {
@@ -452,52 +392,12 @@
     };
 
     macros {
-        double_pipe: double_pipe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap_time 5>, <&kp PIPE &kp PIPE>;
-
-            label = "DOUBLE_PIPE";
-        };
-
-        double_amp: double_amp {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap_time 5>, <&kp AMPS &kp AMPS>;
-
-            label = "DOUBLE_AMP";
-        };
-
-        double_equal: double_equal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap_time 5>, <&kp EQUAL &kp EQUAL>;
-
-            label = "DOUBLE_EQUAL";
-        };
-
         not_equal: not_equal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap_time 5>, <&kp EXCL &kp EQUAL>;
 
             label = "NOT_EQUAL";
-        };
-
-        double_plus: double_plus {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap_time 5>, <&kp PLUS &kp PLUS>;
-
-            label = "DOUBLE_PLUS";
-        };
-
-        double_mimus: double_mimus {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap_time 5>, <&kp MINUS &kp MINUS>;
-
-            label = "DOUBLE_MIMUS";
         };
 
         gte: gte {
@@ -514,14 +414,6 @@
             bindings = <&macro_tap_time 5>, <&kp LT &kp EQUAL>;
 
             label = "LTE";
-        };
-
-        double_underscore: double_underscore {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap_time 5>, <&kp UNDERSCORE &kp UNDERSCORE>;
-
-            label = "DOUBLE_UNDERSCORE";
         };
 
         double_parenthesis_lr: double_parenthesis_lr {
