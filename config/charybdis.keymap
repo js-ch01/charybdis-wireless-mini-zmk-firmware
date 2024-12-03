@@ -261,20 +261,6 @@
             layers = <0>;
         };
 
-        combo_lt {
-            timeout-ms = <45>;
-            key-positions = <14 15 16>;
-            bindings = <&lt_lte 0 LESS_THAN>;
-            layers = <0 1>;
-        };
-
-        combo_gt {
-            timeout-ms = <45>;
-            key-positions = <19 20 21>;
-            bindings = <&gt_gte 0 GREATER_THAN>;
-            layers = <0 1>;
-        };
-
         combo_game_layer {
             bindings = <&tog 4>;
             key-positions = <24 35>;
@@ -287,40 +273,10 @@
             layers = <0 2 1>;
         };
 
-        combo_del_right {
-            bindings = <&kp DEL>;
-            key-positions = <8 20>;
-            layers = <0 2 1 4>;
-        };
-
-        combo_ctrl_z {
-            bindings = <&kp LC(Z)>;
-            key-positions = <25 13>;
-            layers = <0>;
-        };
-
-        combo_ctrl_x {
-            bindings = <&kp LC(X)>;
-            key-positions = <26 14>;
-            layers = <0>;
-        };
-
         combo_copy {
             bindings = <&kp LC(C)>;
             key-positions = <27 15>;
             layers = <0>;
-        };
-
-        combo_paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <28 16>;
-            layers = <0>;
-        };
-
-        combo_enter2 {
-            bindings = <&kp ENTER>;
-            key-positions = <9 21>;
-            layers = <0 2 1 4>;
         };
 
         combo_clean {
@@ -335,18 +291,6 @@
             layers = <0 2 1 5>;
         };
 
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <2 14>;
-            layers = <0 2 1 4 5>;
-        };
-
-        combo_del_left {
-            bindings = <&kp DEL>;
-            key-positions = <15 3>;
-            layers = <0>;
-        };
-
         combo_num0 {
             bindings = <&kp N0>;
             key-positions = <31 19>;
@@ -357,12 +301,6 @@
             bindings = <&kp NUMBER_1>;
             key-positions = <32 20>;
             layers = <0 1 5>;
-        };
-
-        combo_ctrl+a {
-            bindings = <&kp LC(A)>;
-            key-positions = <1 13>;
-            layers = <0>;
         };
 
         combo_num9 {
@@ -389,17 +327,57 @@
             key-positions = <31 34>;
             layers = <0 8 9>;
         };
+
+        combo_enterL {
+            bindings = <&kp ENTER>;
+            key-positions = <25 26>;
+            layers = <0 2 1 4>;
+        };
+
+        combo_enterR {
+            bindings = <&kp ENTER>;
+            key-positions = <34 33>;
+            layers = <0 2 1 4>;
+        };
+
+        combo_delL {
+            bindings = <&kp DELETE>;
+            key-positions = <28 26>;
+            layers = <0 2 1 4>;
+        };
+
+        combo_delR {
+            bindings = <&kp DELETE>;
+            key-positions = <31 33>;
+            layers = <0 2 1 4>;
+        };
+
+        combo_escL {
+            bindings = <&kp ESCAPE>;
+            key-positions = <28 27>;
+            layers = <0 2 1 4>;
+        };
+
+        combo_escR {
+            bindings = <&kp ESCAPE>;
+            key-positions = <31 32>;
+            layers = <0 2 1 4>;
+        };
+
+        combo_mb4 {
+            bindings = <&mkp MB4>;
+            key-positions = <27 26>;
+            layers = <0 2 1 4>;
+        };
+
+        combo_mb5 {
+            bindings = <&mkp MB5>;
+            key-positions = <32 33>;
+            layers = <0 2 1 4>;
+        };
     };
 
     macros {
-        not_equal: not_equal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap_time 5>, <&kp EXCL &kp EQUAL>;
-
-            label = "NOT_EQUAL";
-        };
-
         gte: gte {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -455,10 +433,10 @@
 
         NUM+SYM {
             bindings = <
-&trans  &kp ESCAPE  &kp PRINTSCREEN  &trans     &trans            &trans               &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS   &trans
-&trans  &kp EQUAL   &kp PLUS         &kp MINUS  &kp LEFT_SHIFT    &kp PIPE             &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
-&trans  &kp UNDER   &kp GRAVE        &kp TILDE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &kp N0        &kp N1  &kp N2  &kp N3  &kp BSLH   &trans
-                                     &trans     &trans            &trans               &trans        &kp N0
+&trans  &trans     &kp PRINTSCREEN  &trans     &trans            &trans               &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS   &trans
+&trans  &kp EQUAL  &kp PLUS         &kp MINUS  &kp LEFT_SHIFT    &kp PIPE             &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
+&trans  &kp UNDER  &kp GRAVE        &kp TILDE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &kp N0        &kp N1  &kp N2  &kp N3  &kp BSLH   &trans
+                                    &trans     &trans            &trans               &trans        &kp N0
             >;
         };
 

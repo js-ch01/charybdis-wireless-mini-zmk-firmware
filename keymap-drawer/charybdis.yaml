@@ -43,7 +43,7 @@ layers:
   - {t: SPACE, h: NAV}
   NUM+SYM:
   - {t: ▽, type: trans}
-  - ESCAPE
+  - {t: ▽, type: trans}
   - PRINT SCREEN
   - {t: ▽, type: trans}
   - {type: held}
@@ -306,7 +306,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - L CLK
   - BACK
   - MOVE L
   - MOVE D
@@ -485,57 +485,27 @@ combos:
 - p: [20, 21]
   k: '}'
   l: [BASE]
-- p: [14, 15, 16]
-  k: {t: <, h: '&lte'}
-  l: [BASE, NUM+SYM]
-- p: [19, 20, 21]
-  k: {t: '>', h: '&gte'}
-  l: [BASE, NUM+SYM]
 - p: [24, 35]
   k: {t: GAME, h: toggle}
   l: [BASE, GAME]
 - p: [7, 19]
   k: BACK SPACE
   l: [BASE, NAV, NUM+SYM]
-- p: [8, 20]
-  k: DEL
-  l: [BASE, NAV, NUM+SYM, GAME]
-- p: [25, 13]
-  k: Ctl+ Z
-  l: [BASE]
-- p: [26, 14]
-  k: Ctl+ X
-  l: [BASE]
 - p: [27, 15]
   k: Ctl+ C
   l: [BASE]
-- p: [28, 16]
-  k: Ctl+ V
-  l: [BASE]
-- p: [9, 21]
-  k: ENTER
-  l: [BASE, NAV, NUM+SYM, GAME]
 - p: [36, 37, 38]
   k: {t: CLEAN, h: toggle}
   l: [BASE, CLEAN]
 - p: [4, 16]
   k: SPACE
   l: [BASE, NAV, NUM+SYM, NUMBER]
-- p: [2, 14]
-  k: ENTER
-  l: [BASE, NAV, NUM+SYM, GAME, NUMBER]
-- p: [15, 3]
-  k: DEL
-  l: [BASE]
 - p: [31, 19]
   k: '0'
   l: [BASE, NUM+SYM, NUMBER]
 - p: [32, 20]
   k: '1'
   l: [BASE, NUM+SYM, NUMBER]
-- p: [1, 13]
-  k: Ctl+ A
-  l: [BASE]
 - p: [33, 21]
   k: '9'
   l: [BASE, NUM+SYM, NUMBER]
@@ -548,3 +518,27 @@ combos:
 - p: [31, 34]
   k: {t: TRACKBALL, h: toggle}
   l: [BASE, TRACKBALL, TRACKBALL_SLOW]
+- p: [25, 26]
+  k: ENTER
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [34, 33]
+  k: ENTER
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [28, 26]
+  k: DELETE
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [31, 33]
+  k: DELETE
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [28, 27]
+  k: ESCAPE
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [31, 32]
+  k: ESCAPE
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [27, 26]
+  k: BACK
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [32, 33]
+  k: FWD
+  l: [BASE, NAV, NUM+SYM, GAME]
