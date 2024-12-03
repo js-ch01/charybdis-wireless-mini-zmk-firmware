@@ -127,46 +127,46 @@ layers:
   - {type: held}
   EXTRAS:
   - BOOT LDR
-  - VOL UP
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - BT CLR
+  - {t: ▽, type: trans}
+  - HOME
+  - UP ARROW
+  - END
+  - PG UP
   - BOOT LDR
-  - '&sys_reset'
+  - ZMK Studio
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - BT CLR
   - ''
-  - VOL DN
-  - HOME
-  - UP
-  - END
-  - PG UP
-  - ZMK Studio
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN ARROW
+  - RIGHT
+  - PAGE DOWN
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
   - ''
   - ''
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - BT CLR
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
   - MUTE
-  - LEFT
-  - DOWN
-  - RIGHT
-  - PRINT SCREEN
-  - ''
-  - VOLUME DOWN
-  - VOLUME UP
-  - MUTE
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RALT
-  - ''
+  - VOL DN
+  - VOL UP
+  - VOL UP
+  - VOL DN
   GAME:
   - '1'
   - TAB
@@ -250,7 +250,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '0'
   FUNC:
   - {t: ▽, type: trans}
   - PRINT SCREEN
@@ -295,11 +295,11 @@ layers:
   - APP
   MOUSEKEY:
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - WHEEL L
-  - WHEEL D
   - MOVE UP
-  - WHEEL U
   - WHEEL R
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -319,11 +319,11 @@ layers:
   - LEFT META
   - ''
   - {t: ▽, type: trans}
-  - WHEEL D
+  - WHEEL U
   - L CLK
   - M CLK
   - R CLK
-  - WHEEL U
+  - WHEEL D
   - WHEEL D
   - L CLK
   - M CLK
