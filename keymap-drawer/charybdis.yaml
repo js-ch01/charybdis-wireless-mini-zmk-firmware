@@ -491,27 +491,15 @@ combos:
 - p: [7, 19]
   k: BACK SPACE
   l: [BASE, NAV, NUM+SYM]
-- p: [8, 20]
-  k: DEL
-  l: [BASE, NAV, NUM+SYM, GAME]
 - p: [27, 15]
   k: Ctl+ C
   l: [BASE]
-- p: [9, 21]
-  k: ENTER
-  l: [BASE, NAV, NUM+SYM, GAME]
 - p: [36, 37, 38]
   k: {t: CLEAN, h: toggle}
   l: [BASE, CLEAN]
 - p: [4, 16]
   k: SPACE
   l: [BASE, NAV, NUM+SYM, NUMBER]
-- p: [2, 14]
-  k: ENTER
-  l: [BASE, NAV, NUM+SYM, GAME, NUMBER]
-- p: [15, 3]
-  k: DEL
-  l: [BASE]
 - p: [31, 19]
   k: '0'
   l: [BASE, NUM+SYM, NUMBER]

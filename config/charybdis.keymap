@@ -366,14 +366,6 @@
     };
 
     macros {
-        not_equal: not_equal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap_time 5>, <&kp EXCL &kp EQUAL>;
-
-            label = "NOT_EQUAL";
-        };
-
         gte: gte {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
