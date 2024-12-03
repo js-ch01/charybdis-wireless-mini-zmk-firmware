@@ -536,3 +536,9 @@ combos:
 - p: [31, 32]
   k: ESCAPE
   l: [BASE, NAV, NUM+SYM, GAME]
+- p: [27, 26]
+  k: BACK
+  l: [BASE, NAV, NUM+SYM, GAME]
+- p: [32, 33]
+  k: FWD
+  l: [BASE, NAV, NUM+SYM, GAME]

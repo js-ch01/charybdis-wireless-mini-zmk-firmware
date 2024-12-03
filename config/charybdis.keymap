@@ -363,6 +363,18 @@
             key-positions = <31 32>;
             layers = <0 2 1 4>;
         };
+
+        combo_mb4 {
+            bindings = <&mkp MB4>;
+            key-positions = <27 26>;
+            layers = <0 2 1 4>;
+        };
+
+        combo_mb5 {
+            bindings = <&mkp MB5>;
+            key-positions = <32 33>;
+            layers = <0 2 1 4>;
+        };
     };
 
     macros {
