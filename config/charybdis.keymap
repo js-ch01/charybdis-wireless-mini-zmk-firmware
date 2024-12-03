@@ -273,22 +273,10 @@
             layers = <0 2 1>;
         };
 
-        combo_del_right {
-            bindings = <&kp DEL>;
-            key-positions = <8 20>;
-            layers = <0 2 1 4>;
-        };
-
         combo_copy {
             bindings = <&kp LC(C)>;
             key-positions = <27 15>;
             layers = <0>;
-        };
-
-        combo_enter2 {
-            bindings = <&kp ENTER>;
-            key-positions = <9 21>;
-            layers = <0 2 1 4>;
         };
 
         combo_clean {
@@ -301,18 +289,6 @@
             bindings = <&kp SPACE>;
             key-positions = <4 16>;
             layers = <0 2 1 5>;
-        };
-
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <2 14>;
-            layers = <0 2 1 4 5>;
-        };
-
-        combo_del_left {
-            bindings = <&kp DEL>;
-            key-positions = <15 3>;
-            layers = <0>;
         };
 
         combo_num0 {
