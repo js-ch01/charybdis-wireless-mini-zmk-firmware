@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - BSPC
-  - {t: M CLK, h: FUNC}
+  - {t: M CLK, h: EXTRAS}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -23,8 +23,8 @@ layers:
   - {t: K, h: LEFT CONTROL}
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
-  - {t: ENTER, h: FUNC}
-  - {t: R CLK, h: EXTRAS}
+  - {t: ENTER, h: EXTRAS}
+  - {t: R CLK, h: FUNC}
   - {t: Z, h: NUMBER}
   - X
   - {t: C, h: SCROLL}
@@ -35,7 +35,7 @@ layers:
   - {t: ',', h: M CLK}
   - {t: ., h: R CLK}
   - {t: /, h: NUMBER}
-  - {t: MUTE, h: EXTRAS}
+  - {t: MUTE, h: FUNC}
   - {t: TAB, h: MOUSEKEY}
   - {t: BACK SPACE, h: NUM+SYM}
   - L CLK
@@ -127,46 +127,46 @@ layers:
   - {type: held}
   EXTRAS:
   - BOOT LDR
-  - VOL UP
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - BT CLR
-  - BOOT LDR
-  - '&sys_reset'
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - BT CLR
-  - ''
-  - VOL DN
+  - {t: ▽, type: trans}
   - HOME
-  - UP
+  - UP ARROW
   - END
   - PG UP
+  - BOOT LDR
   - ZMK Studio
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - BT CLR
   - {type: held}
-  - MUTE
+  - {t: ▽, type: trans}
   - LEFT
-  - DOWN
+  - DOWN ARROW
   - RIGHT
-  - PRINT SCREEN
+  - PAGE DOWN
+  - {t: ▽, type: trans}
   - ''
-  - VOLUME DOWN
-  - VOLUME UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - BT CLR
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
   - MUTE
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RALT
-  - ''
+  - VOL DN
+  - VOL UP
+  - VOL UP
+  - VOL DN
   GAME:
   - '1'
   - TAB
@@ -250,7 +250,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '0'
   FUNC:
   - {t: ▽, type: trans}
   - PRINT SCREEN
@@ -264,7 +264,7 @@ layers:
   - F9
   - DEV TOOLS
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - SLCK
   - F4
   - F5
@@ -276,7 +276,7 @@ layers:
   - F6
   - F11
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - PAUSE BREAK
   - F1
   - F2
@@ -295,11 +295,11 @@ layers:
   - APP
   MOUSEKEY:
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - WHEEL L
-  - WHEEL D
   - MOVE UP
-  - WHEEL U
   - WHEEL R
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -319,11 +319,11 @@ layers:
   - LEFT META
   - ''
   - {t: ▽, type: trans}
-  - WHEEL D
+  - WHEEL U
   - L CLK
   - M CLK
   - R CLK
-  - WHEEL U
+  - WHEEL D
   - WHEEL D
   - L CLK
   - M CLK
