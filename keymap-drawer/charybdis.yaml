@@ -43,10 +43,10 @@ layers:
   - {t: SPACE, h: NAV}
   NUM+SYM:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PRINT SCREEN
-  - {t: ▽, type: trans}
-  - {type: held}
+  - {t: LEFT META, h: sticky}
+  - {t: LEFT ALT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: LEFT SHIFT, h: sticky, type: held}
   - {t: ▽, type: trans}
   - '*'
   - '7'
