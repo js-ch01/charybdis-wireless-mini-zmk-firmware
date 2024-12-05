@@ -323,49 +323,49 @@
         combo_enterL {
             bindings = <&kp ENTER>;
             key-positions = <25 26>;
-            layers = <0 1 2 4>;        
+            layers = <0 1 2 4>;
         };
 
         combo_enterR {
             bindings = <&kp ENTER>;
             key-positions = <34 33>;
-            layers = <0 1 2 4>;        
+            layers = <0 1 2 4>;
         };
 
         combo_delL {
             bindings = <&kp DELETE>;
             key-positions = <28 26>;
-            layers = <0 1 2 4>;        
+            layers = <0 1 2 4>;
         };
 
         combo_delR {
             bindings = <&kp DELETE>;
             key-positions = <31 33>;
-            layers = <0 1 2 4>;        
+            layers = <0 1 2 4>;
         };
 
         combo_escL {
             bindings = <&kp ESCAPE>;
             key-positions = <28 27>;
-            layers = <0 1 2 4>;        
+            layers = <0 1 2 4>;
         };
 
         combo_escR {
             bindings = <&kp ESCAPE>;
             key-positions = <31 32>;
-            layers = <0 1 2 4>;        
+            layers = <0 1 2 4>;
         };
 
         combo_mb4 {
             bindings = <&mkp MB4>;
             key-positions = <27 26>;
-            layers = <0 1 2 4>;        
+            layers = <0 1 2 4>;
         };
 
         combo_mb5 {
             bindings = <&mkp MB5>;
             key-positions = <32 33>;
-            layers = <0 1 2 4>;        
+            layers = <0 1 2 4>;
         };
     };
 
@@ -425,10 +425,10 @@
 
         NUM+SYM {
             bindings = <
-&trans  &trans     &kp PRINTSCREEN  &trans     &trans            &trans               &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS   &trans
-&trans  &kp EQUAL  &kp PLUS         &kp MINUS  &kp LEFT_SHIFT    &kp PIPE             &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
-&trans  &kp UNDER  &kp GRAVE        &kp TILDE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &kp N0        &kp N1  &kp N2  &kp N3  &kp BSLH   &trans
-                                    &trans     &trans            &trans               &trans        &kp N0
+&trans  &sk LEFT_META  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT    &trans               &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS   &trans
+&trans  &kp EQUAL      &kp PLUS      &kp MINUS  &kp LEFT_SHIFT    &kp PIPE             &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
+&trans  &kp UNDER      &kp GRAVE     &kp TILDE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &kp N0        &kp N1  &kp N2  &kp N3  &kp BSLH   &trans
+                                     &trans     &trans            &trans               &trans        &kp N0
             >;
         };
 
