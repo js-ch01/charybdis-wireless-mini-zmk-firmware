@@ -212,50 +212,43 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <39>;
-            key-positions = <1 2>;
-            bindings = <&kp ESC>;
-            layers = <0 2 1 4>;
-        };
-
         combo_lpar {
-            timeout-ms = <38>;
+            timeout-ms = <45>;
             key-positions = <16 15>;
             bindings = <&lpar_lr 0 LEFT_PARENTHESIS>;
             layers = <0 1>;
         };
 
         combo_rpar {
-            timeout-ms = <33>;
+            timeout-ms = <45>;
             key-positions = <19 20>;
             bindings = <&kp RPAR>;
             layers = <0>;
         };
 
         combo_lbkt {
-            timeout-ms = <38>;
+            timeout-ms = <45>;
             key-positions = <14 16>;
             bindings = <&lbracket_lr 0 LEFT_BRACKET>;
             layers = <0 1>;
         };
 
         combo_rbkt {
-            timeout-ms = <33>;
+            timeout-ms = <45>;
             key-positions = <19 21>;
             bindings = <&kp RBKT>;
             layers = <0>;
         };
 
         combo_lbrc {
-            timeout-ms = <40>;
+            timeout-ms = <45>;
             key-positions = <14 15>;
             bindings = <&lbrace_lr 0 LEFT_BRACE>;
             layers = <0>;
         };
 
         combo_rbrc {
-            timeout-ms = <33>;
+            timeout-ms = <45>;
             key-positions = <20 21>;
             bindings = <&kp RIGHT_BRACE>;
             layers = <0>;
@@ -270,7 +263,7 @@
         combo_bspc {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 19>;
-            layers = <0 2 1>;
+            layers = <0 1 2>;
         };
 
         combo_copy {
@@ -288,7 +281,7 @@
         combo_space {
             bindings = <&kp SPACE>;
             key-positions = <4 16>;
-            layers = <0 2 1 5>;
+            layers = <0 1 2 5>;
         };
 
         combo_num0 {
@@ -312,7 +305,6 @@
         combo_meta+a {
             bindings = <&kp LG(A)>;
             key-positions = <38 37>;
-            timeout-ms = <45>;
             layers = <0 1>;
         };
 
@@ -331,49 +323,49 @@
         combo_enterL {
             bindings = <&kp ENTER>;
             key-positions = <25 26>;
-            layers = <0 2 1 4>;
+            layers = <0 1 2 4>;        
         };
 
         combo_enterR {
             bindings = <&kp ENTER>;
             key-positions = <34 33>;
-            layers = <0 2 1 4>;
+            layers = <0 1 2 4>;        
         };
 
         combo_delL {
             bindings = <&kp DELETE>;
             key-positions = <28 26>;
-            layers = <0 2 1 4>;
+            layers = <0 1 2 4>;        
         };
 
         combo_delR {
             bindings = <&kp DELETE>;
             key-positions = <31 33>;
-            layers = <0 2 1 4>;
+            layers = <0 1 2 4>;        
         };
 
         combo_escL {
             bindings = <&kp ESCAPE>;
             key-positions = <28 27>;
-            layers = <0 2 1 4>;
+            layers = <0 1 2 4>;        
         };
 
         combo_escR {
             bindings = <&kp ESCAPE>;
             key-positions = <31 32>;
-            layers = <0 2 1 4>;
+            layers = <0 1 2 4>;        
         };
 
         combo_mb4 {
             bindings = <&mkp MB4>;
             key-positions = <27 26>;
-            layers = <0 2 1 4>;
+            layers = <0 1 2 4>;        
         };
 
         combo_mb5 {
             bindings = <&mkp MB5>;
             key-positions = <32 33>;
-            layers = <0 2 1 4>;
+            layers = <0 1 2 4>;        
         };
     };
 

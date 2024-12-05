@@ -464,9 +464,6 @@ layers:
   CLEAN: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '', '']
 combos:
-- p: [1, 2]
-  k: ESC
-  l: [BASE, NAV, NUM+SYM, GAME]
 - p: [16, 15]
   k: {t: (, h: '&double_parenthesis_lr'}
   l: [BASE, NUM+SYM]
@@ -490,7 +487,7 @@ combos:
   l: [BASE, GAME]
 - p: [7, 19]
   k: BACK SPACE
-  l: [BASE, NAV, NUM+SYM]
+  l: [BASE, NUM+SYM, NAV]
 - p: [27, 15]
   k: Ctl+ C
   l: [BASE]
@@ -499,7 +496,7 @@ combos:
   l: [BASE, CLEAN]
 - p: [4, 16]
   k: SPACE
-  l: [BASE, NAV, NUM+SYM, NUMBER]
+  l: [BASE, NUM+SYM, NAV, NUMBER]
 - p: [31, 19]
   k: '0'
   l: [BASE, NUM+SYM, NUMBER]
@@ -520,25 +517,25 @@ combos:
   l: [BASE, TRACKBALL, TRACKBALL_SLOW]
 - p: [25, 26]
   k: ENTER
-  l: [BASE, NAV, NUM+SYM, GAME]
+  l: [BASE, NUM+SYM, NAV, GAME]
 - p: [34, 33]
   k: ENTER
-  l: [BASE, NAV, NUM+SYM, GAME]
+  l: [BASE, NUM+SYM, NAV, GAME]
 - p: [28, 26]
   k: DELETE
-  l: [BASE, NAV, NUM+SYM, GAME]
+  l: [BASE, NUM+SYM, NAV, GAME]
 - p: [31, 33]
   k: DELETE
-  l: [BASE, NAV, NUM+SYM, GAME]
+  l: [BASE, NUM+SYM, NAV, GAME]
 - p: [28, 27]
   k: ESCAPE
-  l: [BASE, NAV, NUM+SYM, GAME]
+  l: [BASE, NUM+SYM, NAV, GAME]
 - p: [31, 32]
   k: ESCAPE
-  l: [BASE, NAV, NUM+SYM, GAME]
+  l: [BASE, NUM+SYM, NAV, GAME]
 - p: [27, 26]
   k: BACK
-  l: [BASE, NAV, NUM+SYM, GAME]
+  l: [BASE, NUM+SYM, NAV, GAME]
 - p: [32, 33]
   k: FWD
-  l: [BASE, NAV, NUM+SYM, GAME]
+  l: [BASE, NUM+SYM, NAV, GAME]
