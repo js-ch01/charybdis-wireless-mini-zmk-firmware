@@ -14,23 +14,36 @@
     chosen { zmk,matrix_transform = &default_transform; };
 };
 
+#define BASE 0
+#define SYM 1
+#define NAV 2
+#define EXT 3
+#define GAME 4
+#define NUM 5
+#define FUNC 6
+#define MSE 7
+#define TRAC 8
+#define SLOW 9
+#define SCR 10
+#define CLEAN 11
+
 / {
     trackball_auto_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0 8>;
+        layers = <BASE TRAC>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <3>;
-        bindings = <&ib_toggle_layer 8>;
+        bindings = <&ib_toggle_layer TRAC>;
     };
 
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <4 7>;
+        layers = <GAME MSE>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -43,7 +56,7 @@
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <9>;
+        layers = <SLOW>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -56,7 +69,7 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <11>;
+        layers = <SCR>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
@@ -64,16 +77,15 @@
         bindings = <&ib_wheel_scaler 1 32>;
     };
 
-    // input config for mouse horizontal scroll mode
+    // input config for mouse scroll mode (horizontal)
 
     trackball_h_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <10>;
+        layers = <SCR>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_MISC>;
-        // x-invert;
         bindings = <&ib_h_wheel_scaler 1 32>;
     };
 
