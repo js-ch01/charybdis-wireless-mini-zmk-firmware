@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    charybdis_physical_layout: charybdis_physical_layout { // todo
+    charybdis_physical_layout: charybdis_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Charybdis 3x6";
 
