@@ -28,7 +28,7 @@ layers:
   - {t: Z, h: NUMBER}
   - X
   - {t: C, h: TRACKBALL SCROLL}
-  - V
+  - {t: V, h: TRACKBALL SCROLL H}
   - B
   - N
   - {t: M, h: L CLK}
@@ -448,12 +448,54 @@ layers:
   - ''
   - ''
   - {type: held}
-  - LEFT SHIFT
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
   - ''
-  - LEFT SHIFT
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  TRACKBALL SCROLL H:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - {t: ▽, type: trans}
