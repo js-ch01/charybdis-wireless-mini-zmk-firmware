@@ -14,37 +14,37 @@
     chosen { zmk,matrix_transform = &default_transform; };
 };
 
-#define BASE 0
-#define SYM 1
-#define NAV 2
-#define EXT 3
-#define GAME 4
-#define NUM 5
-#define FUNC 6
-#define MSE 7
-#define TRAC 8
-#define SLOW 9
-#define SCR 10
-#define SCRH 11
-#define CLEAN 12
+#define LBASE 0
+#define LSYM 1
+#define LNAV 2
+#define LEXT 3
+#define LGAME 4
+#define LNUM 5
+#define LFUNC 6
+#define LMSE 7
+#define LTRAC 8
+#define LSLOW 9
+#define LSCR 10
+#define LSCRH 11
+#define LCLN 12
 
 / {
     trackball_auto_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <BASE TRAC>;
+        layers = <LBASE LTRAC>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <3>;
-        bindings = <&ib_toggle_layer TRAC>;
+        bindings = <&ib_toggle_layer LTRAC>;
     };
 
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <GAME MSE>;
+        layers = <LGAME LMSE>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -57,7 +57,7 @@
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <SLOW>;
+        layers = <LSLOW>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -70,7 +70,7 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <SCR>;
+        layers = <LSCR>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
@@ -83,7 +83,7 @@
     trackball_h_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <SCRH>;
+        layers = <LSCRH>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_MISC>;
