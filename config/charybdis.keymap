@@ -25,7 +25,8 @@
 #define TRAC 8
 #define SLOW 9
 #define SCR 10
-#define CLEAN 11
+#define SCRH 11
+#define CLEAN 12
 
 / {
     trackball_auto_listener {
@@ -82,7 +83,7 @@
     trackball_h_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <SCR>;
+        layers = <SCRH>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_MISC>;
