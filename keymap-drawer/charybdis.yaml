@@ -4,7 +4,7 @@ layers:
   - Q
   - W
   - E
-  - {t: R, h: NUM+SYM}
+  - {t: R, h: SYM+NUM}
   - T
   - Y
   - U
@@ -24,10 +24,10 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
   - {t: ENTER, h: EXTRAS}
-  - {t: R CLK, h: FUNC}
+  - {t: R CLK, h: FUNCTION}
   - {t: Z, h: NUMBER}
   - X
-  - {t: C, h: SCROLL}
+  - {t: C, h: TRACKBALL SCROLL}
   - V
   - B
   - N
@@ -35,13 +35,13 @@ layers:
   - {t: ',', h: M CLK}
   - {t: ., h: R CLK}
   - {t: /, h: NUMBER}
-  - {t: MUTE, h: FUNC}
-  - {t: TAB, h: MOUSEKEY}
-  - {t: BACK SPACE, h: NUM+SYM}
+  - {t: MUTE, h: FUNCTION}
+  - {t: TAB, h: MOUSE}
+  - {t: BACK SPACE, h: SYM+NUM}
   - L CLK
-  - {t: LANG HANGEUL, h: NUM+SYM}
-  - {t: SPACE, h: NAV}
-  NUM+SYM:
+  - {t: LANG HANGEUL, h: SYM+NUM}
+  - {t: SPACE, h: NAVI}
+  SYM+NUM:
   - {t: ▽, type: trans}
   - {t: LEFT META, h: sticky}
   - {t: LEFT ALT, h: sticky}
@@ -83,7 +83,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
-  NAV:
+  NAVI:
   - ''
   - ''
   - ''
@@ -251,7 +251,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
-  FUNC:
+  FUNCTION:
   - {t: ▽, type: trans}
   - PRINT SCREEN
   - F7
@@ -293,7 +293,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - APP
-  MOUSEKEY:
+  MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - WHEEL L
@@ -370,14 +370,14 @@ layers:
   - L CLK
   - M CLK
   - R CLK
-  - SCROLL
+  - TRACKBALL SCROLL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  TRACKBALL_SLOW:
+  TRACKBALL SLOW:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -412,14 +412,14 @@ layers:
   - L CLK
   - M CLK
   - R CLK
-  - SCROLL
+  - TRACKBALL SCROLL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SCROLL:
+  TRACKBALL SCROLL:
   - ''
   - ''
   - ''
@@ -466,13 +466,13 @@ layers:
 combos:
 - p: [16, 15]
   k: {t: (, h: '&double_parenthesis_lr'}
-  l: [BASE, NUM+SYM]
+  l: [BASE, SYM+NUM]
 - p: [19, 20]
   k: )
   l: [BASE]
 - p: [14, 16]
   k: {t: '[', h: '&double_brackets_lr'}
-  l: [BASE, NUM+SYM]
+  l: [BASE, SYM+NUM]
 - p: [19, 21]
   k: ']'
   l: [BASE]
@@ -485,57 +485,57 @@ combos:
 - p: [24, 35]
   k: {t: GAME, h: toggle}
   l: [BASE, GAME]
-- p: [7, 19]
-  k: BACK SPACE
-  l: [BASE, NUM+SYM, NAV]
-- p: [27, 15]
-  k: Ctl+ C
-  l: [BASE]
 - p: [36, 37, 38]
   k: {t: CLEAN, h: toggle}
   l: [BASE, CLEAN]
+- p: [7, 19]
+  k: BACK SPACE
+  l: [BASE, SYM+NUM, NAVI]
+- p: [27, 15]
+  k: Ctl+ C
+  l: [BASE]
 - p: [4, 16]
   k: SPACE
-  l: [BASE, NUM+SYM, NAV, NUMBER]
+  l: [BASE, SYM+NUM, NAVI, NUMBER]
 - p: [31, 19]
   k: '0'
-  l: [BASE, NUM+SYM, NUMBER]
+  l: [BASE, SYM+NUM, NUMBER]
 - p: [32, 20]
   k: '1'
-  l: [BASE, NUM+SYM, NUMBER]
+  l: [BASE, SYM+NUM, NUMBER]
 - p: [33, 21]
   k: '9'
-  l: [BASE, NUM+SYM, NUMBER]
+  l: [BASE, SYM+NUM, NUMBER]
 - p: [38, 37]
   k: Gui+ A
-  l: [BASE, NUM+SYM]
+  l: [BASE, SYM+NUM]
 - p: [1, 4]
   k: Alt+ F4
   l: [BASE]
-- p: [31, 34]
-  k: {t: TRACKBALL, h: toggle}
-  l: [BASE, TRACKBALL, TRACKBALL_SLOW]
 - p: [25, 26]
   k: ENTER
-  l: [BASE, NUM+SYM, NAV, GAME]
+  l: [BASE, SYM+NUM, NAVI, GAME]
 - p: [34, 33]
   k: ENTER
-  l: [BASE, NUM+SYM, NAV, GAME]
+  l: [BASE, SYM+NUM, NAVI, GAME]
 - p: [28, 26]
   k: DELETE
-  l: [BASE, NUM+SYM, NAV, GAME]
+  l: [BASE, SYM+NUM, NAVI, GAME]
 - p: [31, 33]
   k: DELETE
-  l: [BASE, NUM+SYM, NAV, GAME]
+  l: [BASE, SYM+NUM, NAVI, GAME]
 - p: [28, 27]
   k: ESCAPE
-  l: [BASE, NUM+SYM, NAV, GAME]
+  l: [BASE, SYM+NUM, NAVI, GAME]
 - p: [31, 32]
   k: ESCAPE
-  l: [BASE, NUM+SYM, NAV, GAME]
+  l: [BASE, SYM+NUM, NAVI, GAME]
 - p: [27, 26]
   k: BACK
-  l: [BASE, NUM+SYM, NAV, GAME]
+  l: [BASE, SYM+NUM, NAVI, GAME]
 - p: [32, 33]
   k: FWD
-  l: [BASE, NUM+SYM, NAV, GAME]
+  l: [BASE, SYM+NUM, NAVI, GAME]
+- p: [31, 34]
+  k: {t: TRACKBALL, h: toggle}
+  l: [BASE, TRACKBALL, TRACKBALL SLOW]
