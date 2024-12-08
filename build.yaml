@@ -10,7 +10,7 @@ include:
   #   keymap: qwerty
   #   format: bt
   #   artifact-name: charybdis_qwerty_right
-  #   snippet: studio-rpc-usb-uart # zmk stduio
+  #   snippet: studio-rpc-usb-uart
 
   # QWERTY Dongle
   - board: nice_nano_v2
@@ -29,7 +29,7 @@ include:
     keymap: qwerty
     format: dongle
     artifact-name: charybdis_qwerty_dongle_wiht_studio
-    snippet: studio-rpc-usb-uart # zmk studio
+    snippet: studio-rpc-usb-uart
 
   # Firmware Reset
   # - board: nice_nano_v2
