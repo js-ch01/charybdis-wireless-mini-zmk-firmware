@@ -127,13 +127,13 @@ layers:
   - {type: held}
   EXTRAS:
   - BOOT LDR
-  - {t: ▽, type: trans}
+  - '&sys_reset'
   - HOME
   - UP ARROW
   - END
   - PG UP
   - BOOT LDR
-  - ZMK Studio
+  - OUT TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -151,7 +151,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - OUT TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
