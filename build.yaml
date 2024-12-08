@@ -29,7 +29,7 @@ include:
     keymap: qwerty
     format: dongle
     artifact-name: charybdis_qwerty_dongle
-    snippet: studio-rpc-usb-uart
+    #snippet: studio-rpc-usb-uart
 
   # Firmware Reset
   # - board: nice_nano_v2
