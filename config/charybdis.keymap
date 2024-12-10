@@ -1,10 +1,9 @@
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/ext_power.h>
 
 // / {
 //     chosen { zmk,matrix_transform = &default_transform; };
@@ -513,9 +512,9 @@
 
         trackball_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans     &trans           &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans     &trans           &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &mkp LCLK  &lt_mkp 10 MCLK  &lt_mkp 11 RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
                         &trans  &trans  &mkp LCLK    &trans  &trans
             >;
         };
