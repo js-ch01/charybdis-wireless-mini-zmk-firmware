@@ -115,7 +115,7 @@
         td_tb: td_mouse_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&ht_mo_to 10 7>, <&to 0>;
+            bindings = <&ht_mo_to 10 7>, <&trans>;
 
             tapping-term-ms = <200>;
         };
@@ -521,10 +521,10 @@
 
         trackball_toggle_layer {
             bindings = <
-&to 0  &to 0  &to 0  &to 0  &to 0  &to 0        &to 0  &to 0      &to 0            &to 0            &to 0  &to 0
-&to 0  &to 0  &to 0  &to 0  &to 0  &to 0        &to 0  &to 0      &to 0            &to 0            &to 0  &to 0
-&to 0  &to 0  &to 0  &to 0  &to 0  &to 0        &to 0  &mkp LCLK  &lt_mkp 10 MCLK  &lt_mkp 11 RCLK  &to 0  &to 0
-                     &to 0  &to 0  &mkp LCLK    &to 0  &to 0
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans      &trans            &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans      &trans            &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &mkp LCLK  &lt_mkp 10 MCLK  &lt_mkp 11 RCLK  &trans  &trans
+                     &trans  &trans  &mkp LCLK    &trans  &trans
             >;
         };
 
