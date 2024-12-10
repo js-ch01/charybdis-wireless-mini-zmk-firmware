@@ -20,6 +20,7 @@ manifest:
       revision: main
   self:
     path: config
+
 # manifest:
 #   remotes:
 #     - name: zmkfirmware
