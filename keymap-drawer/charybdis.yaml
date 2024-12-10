@@ -368,8 +368,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
-  - {t: M CLK, h: scroll}
-  - {t: R CLK, h: scroll_horizontal}
+  - M CLK
+  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
