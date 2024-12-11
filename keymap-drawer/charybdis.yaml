@@ -378,47 +378,47 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball_toggle:
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - L CLK
   - {t: M CLK, h: scroll}
   - {t: R CLK, h: scroll_horizontal}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - L CLK
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   scroll:
   - ''
   - ''
