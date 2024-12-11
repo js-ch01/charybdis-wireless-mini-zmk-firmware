@@ -112,23 +112,6 @@
     };
 
     behaviors {
-        td_tb: td_mouse_scroll {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&ht_mo_to 10 7>, <&trans>;
-
-            tapping-term-ms = <200>;
-        };
-
-        td_ms: td_mouseL_slow {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_MOUSEL_SLOW";
-            #binding-cells = <0>;
-            bindings = <&lt 7 TAB>, <&mo 9>;
-
-            tapping-term-ms = <230>;
-        };
-
         ht_mo_to: ht_moL_toL {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&to>;
@@ -296,22 +279,10 @@
             layers = <0 12>;
         };
 
-        combo_bspc {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <7 19>;
-            layers = <0 1 2 8>;
-        };
-
         combo_copy {
             bindings = <&kp LC(C)>;
             key-positions = <27 15>;
             layers = <0 8>;
-        };
-
-        combo_space {
-            bindings = <&kp SPACE>;
-            key-positions = <4 16>;
-            layers = <0 1 2 5 8>;
         };
 
         combo_num0 {
