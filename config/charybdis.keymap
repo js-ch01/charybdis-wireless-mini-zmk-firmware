@@ -220,6 +220,16 @@
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        mm_test: mm_test {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_TEST";
+            bindings = <&kp A>, <&kp B>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
     };
 
     combos {
