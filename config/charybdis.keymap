@@ -327,7 +327,7 @@
         };
 
         combo_num9 {
-            bindings = <&kp N9>;
+            bindings = <&kp NUMBER_2>;
             key-positions = <33 21>;
             layers = <0 1 5 8>;
         };
@@ -521,10 +521,10 @@
 
         trackball_toggle_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans      &trans            &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans      &trans            &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &mkp LCLK  &lt_mkp 10 MCLK  &lt_mkp 11 RCLK  &trans  &trans
-                     &trans  &trans  &mkp LCLK    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans     &trans           &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans     &trans           &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &mkp LCLK  &lt_mkp 10 MCLK  &lt_mkp 11 RCLK  &trans  &trans
+                        &trans  &trans  &mkp LCLK    &trans  &trans
             >;
         };
 

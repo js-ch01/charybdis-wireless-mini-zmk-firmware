@@ -546,7 +546,7 @@ combos:
   k: '1'
   l: [base, sym+num, number, trackball]
 - p: [33, 21]
-  k: '9'
+  k: '2'
   l: [base, sym+num, number, trackball]
 - p: [38, 37]
   k: Gui+ A
