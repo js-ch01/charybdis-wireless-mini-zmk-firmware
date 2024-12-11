@@ -273,12 +273,6 @@
             layers = <0 4>;
         };
 
-        combo_clean_layer {
-            bindings = <&tog 0>;
-            key-positions = <36 37 38>;
-            layers = <0>;
-        };
-
         combo_copy {
             bindings = <&kp LC(C)>;
             key-positions = <27 15>;

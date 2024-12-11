@@ -503,8 +503,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  clean: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-    '', '', '']
 combos:
 - p: [16, 15]
   k: {t: (, h: '&double_parenthesis_lr'}
@@ -527,18 +525,9 @@ combos:
 - p: [24, 35]
   k: {t: game, h: toggle}
   l: [base, game]
-- p: [36, 37, 38]
-  k: {t: clean, h: toggle}
-  l: [base, clean]
-- p: [7, 19]
-  k: BACK SPACE
-  l: [base, sym+num, navigation, trackball]
 - p: [27, 15]
   k: Ctl+ C
   l: [base, trackball]
-- p: [4, 16]
-  k: SPACE
-  l: [base, sym+num, navigation, number, trackball]
 - p: [31, 19]
   k: '0'
   l: [base, sym+num, number, trackball]
