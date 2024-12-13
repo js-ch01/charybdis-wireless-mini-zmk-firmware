@@ -1,6 +1,6 @@
 layers:
   base:
-  - CAPSLOCK
+  - '&langhold'
   - Q
   - W
   - E
