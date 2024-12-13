@@ -1,6 +1,6 @@
 layers:
   base:
-  - ESC
+  - CAPSLOCK
   - Q
   - W
   - E
@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - BSPC
+  - RIGHT ALT
   - {t: M CLK, h: extra}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
@@ -39,7 +39,7 @@ layers:
   - {t: TAB, h: mousekey}
   - {t: BACK SPACE, h: sym+num}
   - L CLK
-  - {t: LANG HANGEUL, h: sym+num}
+  - LANG HANGEUL
   - {t: SPACE, h: navigation}
   sym+num:
   - {t: ▽, type: trans}
