@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - RIGHT ALT
+  - '&LANGHOLD2'
   - {t: M CLK, h: extra}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
