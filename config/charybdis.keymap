@@ -505,8 +505,8 @@
         mousekey_layer {
             bindings = <
 &trans     &trans          &msc MOVE_LEFT  &mmv MOVE_UP    &msc MOVE_RIGHT  &trans          &none         &none            &none      &none         &none           &none
-&mkp LCLK  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5        &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
-&trans     &msc MOVE_DOWN  &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc MOVE_UP    &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
+&mkp LCLK  &msc MOVE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc MOVE_UP    &none         &kp RIGHT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META   &none
+&trans     &mkp MB4        &mkp LCLK       &mkp MCLK       &mkp RCLK        &mkp MB5        &msc MOVE_UP  &mkp LCLK        &mkp MCLK  &mkp RCLK     &msc MOVE_DOWN  &none
                                            &mkp RCLK       &mkp MCLK        &mkp LCLK       &trans        &trans
             >;
         };

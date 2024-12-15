@@ -307,11 +307,11 @@ layers:
   - ''
   - ''
   - L CLK
-  - BACK
+  - WHEEL U
   - MOVE L
   - MOVE D
   - MOVE R
-  - FWD
+  - WHEEL D
   - ''
   - RIGHT SHIFT
   - LCTRL
@@ -319,11 +319,11 @@ layers:
   - LEFT META
   - ''
   - {t: ▽, type: trans}
-  - WHEEL U
+  - BACK
   - L CLK
   - M CLK
   - R CLK
-  - WHEEL D
+  - FWD
   - WHEEL D
   - L CLK
   - M CLK
