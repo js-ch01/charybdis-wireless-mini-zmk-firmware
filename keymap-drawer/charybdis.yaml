@@ -39,7 +39,7 @@ layers:
   - {t: TAB, h: mousekey}
   - {t: BACK SPACE, h: sym+num}
   - L CLK
-  - LANG HANGEUL
+  - {t: ENTER, h: sym+num}
   - {t: SPACE, h: navigation}
   sym+num:
   - {t: ▽, type: trans}
