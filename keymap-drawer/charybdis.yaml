@@ -4,7 +4,7 @@ layers:
   - Q
   - W
   - E
-  - {t: R, h: sym+num}
+  - R
   - T
   - Y
   - U
@@ -46,7 +46,7 @@ layers:
   - {t: LEFT META, h: sticky}
   - {t: LEFT ALT, h: sticky}
   - {t: LCTRL, h: sticky}
-  - {t: LEFT SHIFT, h: sticky, type: held}
+  - {t: LEFT SHIFT, h: sticky}
   - {t: ▽, type: trans}
   - '*'
   - '7'
@@ -79,7 +79,7 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
