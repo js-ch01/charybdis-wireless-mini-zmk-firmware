@@ -543,12 +543,6 @@ combos:
 - p: [1, 4]
   k: Alt+ F4
   l: [base, trackball]
-- p: [13, 14]
-  k: ENTER
-  l: [base, sym+num, navigation, game, trackball]
-- p: [21, 22]
-  k: ENTER
-  l: [base, sym+num, navigation, game, trackball]
 - p: [28, 26]
   k: DELETE
   l: [base, sym+num, navigation, game, trackball]
@@ -573,3 +567,12 @@ combos:
 - p: [20, 15]
   k: LANG HANJA
   l: [base, game]
+- p: [16, 28]
+  k: Ctl+ V
+  l: [base, trackball]
+- p: [16, 15, 14]
+  k: {t: <, h: '&lte'}
+  l: [base, sym+num]
+- p: [19, 20, 21]
+  k: '>'
+  l: [base]

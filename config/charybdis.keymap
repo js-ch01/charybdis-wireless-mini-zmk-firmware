@@ -319,18 +319,6 @@
             layers = <0 8>;
         };
 
-        combo_enterL {
-            bindings = <&kp ENTER>;
-            key-positions = <13 14>;
-            layers = <0 1 2 4 8>;
-        };
-
-        combo_enterR {
-            bindings = <&kp ENTER>;
-            key-positions = <21 22>;
-            layers = <0 1 2 4 8>;
-        };
-
         combo_delL {
             bindings = <&kp DELETE>;
             key-positions = <28 26>;
@@ -377,6 +365,26 @@
             bindings = <&kp LANG_HANJA>;
             key-positions = <20 15>;
             layers = <0 4>;
+        };
+
+        combo_paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <16 28>;
+            layers = <0 8>;
+        };
+
+        combo_lt {
+            bindings = <&lt_lte 0 LT>;
+            key-positions = <16 15 14>;
+            timeout-ms = <46>;
+            layers = <0 1>;
+        };
+
+        combo_gt {
+            bindings = <&kp GT>;
+            key-positions = <19 20 21>;
+            timeout-ms = <45>;
+            layers = <0>;
         };
     };
 
