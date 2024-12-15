@@ -381,7 +381,7 @@
         };
 
         combo_gt {
-            bindings = <&kp GT>;
+            bindings = <&gt_gte 0 GT>;
             key-positions = <19 20 21>;
             timeout-ms = <45>;
             layers = <0>;

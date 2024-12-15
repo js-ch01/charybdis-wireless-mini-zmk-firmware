@@ -574,5 +574,5 @@ combos:
   k: {t: <, h: '&lte'}
   l: [base, sym+num]
 - p: [19, 20, 21]
-  k: '>'
+  k: {t: '>', h: '&gte'}
   l: [base]
