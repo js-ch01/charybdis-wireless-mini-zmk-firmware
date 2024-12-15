@@ -561,10 +561,10 @@ combos:
 - p: [36, 37]
   k: {t: scroll, h: toggle}
   l: [base, trackball, trackball_toggle, scroll]
-- p: [16, 19]
+- p: [40, 39]
   k: LANG HANGEUL
   l: [base, game]
-- p: [20, 15]
+- p: [18, 30]
   k: LANG HANJA
   l: [base, game]
 - p: [16, 28]

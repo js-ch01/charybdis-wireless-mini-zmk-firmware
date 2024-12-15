@@ -357,13 +357,13 @@
 
         combo_kor {
             bindings = <&kp LANG_HANGEUL>;
-            key-positions = <16 19>;
+            key-positions = <40 39>;
             layers = <0 4>;
         };
 
         combo_eng {
             bindings = <&kp LANG_HANJA>;
-            key-positions = <20 15>;
+            key-positions = <18 30>;
             layers = <0 4>;
         };
 
