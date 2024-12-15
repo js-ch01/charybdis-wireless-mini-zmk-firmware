@@ -366,6 +366,18 @@
             key-positions = <36 37>;
             layers = <0 8 9 10>;
         };
+
+        combo_kor {
+            bindings = <&kp LANG_HANGEUL>;
+            key-positions = <16 19>;
+            layers = <0 4>;
+        };
+
+        combo_eng {
+            bindings = <&kp LANG_HANJA>;
+            key-positions = <20 15>;
+            layers = <0 4>;
+        };
     };
 
     macros {
