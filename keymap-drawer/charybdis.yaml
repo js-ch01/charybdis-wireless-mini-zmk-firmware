@@ -11,8 +11,8 @@ layers:
   - I
   - O
   - P
-  - PRINT SCREEN
-  - {t: M CLK, h: extra}
+  - VOL UP
+  - {t: M CLK, h: base}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -23,7 +23,7 @@ layers:
   - {t: K, h: LEFT CONTROL}
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
-  - {t: ENTER, h: extra}
+  - {t: VOL DN, h: base}
   - {t: R CLK, h: function}
   - {t: Z, h: number}
   - X
@@ -38,8 +38,8 @@ layers:
   - {t: MUTE, h: function}
   - L CLK
   - {t: BACK SPACE, h: sym+num}
-  - {t: TAB, h: mousekey}
-  - {t: ENTER, h: sym+num}
+  - {t: TAB, h: trackball}
+  - {t: ENTER, h: function}
   - {t: SPACE, h: navigation}
   sym+num:
   - {t: ▽, type: trans}
@@ -125,90 +125,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  extra:
-  - BOOT LDR
-  - OUT TOG
-  - HOME
-  - UP ARROW
-  - END
-  - PG UP
-  - BOOT LDR
-  - OUT BLE
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - BT CLR
-  - {type: held}
-  - {t: ▽, type: trans}
-  - LEFT
-  - DOWN ARROW
-  - RIGHT
-  - PAGE DOWN
-  - ZMK Studio
-  - OUT USB
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - MUTE
-  - VOL DN
-  - VOL UP
-  - VOL UP
-  - VOL DN
-  game:
-  - '1'
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - BACK SPACE
-  - '2'
-  - LCTRL
-  - A
-  - S
-  - D
-  - F
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ENTER
-  - '3'
-  - LSHFT
-  - Z
-  - X
-  - C
-  - V
-  - N
-  - L CLK
-  - M CLK
-  - R CLK
-  - {t: /, h: number}
-  - RSHFT
-  - {t: '`', h: number}
-  - SPACE
-  - LEFT ALT
-  - {t: ▽, type: trans}
-  - M
   number:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -277,7 +193,7 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - {type: held}
-  - PAUSE BREAK
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -293,6 +209,48 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - APP
+  game:
+  - '1'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BACK SPACE
+  - '2'
+  - LCTRL
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ENTER
+  - '3'
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - N
+  - L CLK
+  - M CLK
+  - R CLK
+  - {t: /, h: number}
+  - RSHFT
+  - {t: '`', h: number}
+  - SPACE
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - M
   mousekey:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -332,7 +290,7 @@ layers:
   - ''
   - L CLK
   - M CLK
-  - {t: R CLK, type: held}
+  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball:
@@ -374,7 +332,7 @@ layers:
   - {t: ▽, type: trans}
   - L CLK
   - M CLK
-  - R CLK
+  - {t: R CLK, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball_toggle:
@@ -551,13 +509,13 @@ combos:
   l: [base, trackball]
 - p: [31, 33]
   k: DELETE
-  l: [base, sym+num, navigation, game, trackball]
+  l: [base, sym+num, navigation, mousekey, trackball]
 - p: [28, 27]
   k: ESCAPE
-  l: [base, sym+num, navigation, game, trackball]
+  l: [base, sym+num, navigation, mousekey, trackball]
 - p: [31, 32]
   k: ESCAPE
-  l: [base, sym+num, navigation, game, trackball]
+  l: [base, sym+num, navigation, mousekey, trackball]
 - p: [31, 34]
   k: {t: trackball_toggle, h: toggle}
   l: [base, trackball, trackball_toggle]
@@ -565,14 +523,14 @@ combos:
   k: {t: scroll, h: toggle}
   l: [base, trackball, trackball_toggle, scroll]
 - p: [24, 35]
-  k: {t: game, h: toggle}
-  l: [base, game]
+  k: {t: mousekey, h: toggle}
+  l: [base, mousekey]
 - p: [40, 39]
   k: LANG HANGEUL
-  l: [base, game]
+  l: [base, mousekey]
 - p: [18, 30]
   k: LANG HANJA
-  l: [base, game]
+  l: [base, mousekey]
 - p: [16, 4]
   k: SPACE
   l: [base, trackball]
