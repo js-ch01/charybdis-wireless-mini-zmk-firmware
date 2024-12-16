@@ -38,7 +38,7 @@ layers:
   - MUTE
   - L CLK
   - {t: BACK SPACE, h: sym+num}
-  - {t: TAB, h: trackball}
+  - {t: TAB, h: mousekey}
   - {t: ENTER, h: function}
   - {t: SPACE, h: navigation}
   sym+num:
@@ -290,7 +290,7 @@ layers:
   - ''
   - L CLK
   - M CLK
-  - R CLK
+  - {t: R CLK, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball:
@@ -332,7 +332,7 @@ layers:
   - {t: ▽, type: trans}
   - L CLK
   - M CLK
-  - {t: R CLK, type: held}
+  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball_toggle:
