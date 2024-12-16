@@ -27,6 +27,8 @@
 &caps_word {
 };
 
+&lt { quick-tap-ms = <220>; };
+
 / {
     trackball_auto_listener {
         compatible = "zmk,input-behavior-listener";
