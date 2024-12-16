@@ -15,16 +15,14 @@
 #define LBASE 0
 #define LSYM 1
 #define LNAV 2
-#define LEXT 3
-#define LGAME 4
-#define LNUM 5
-#define LFUNC 6
-#define LMSE 7
-#define LTRAC 8
-#define LTOG 9
-#define LSCR 10
-#define LSCRH 11
-#define LCLN 12
+#define LNUM 3
+#define LFUNC 4
+#define LGAME 5
+#define LMSE 6
+#define LTRAC 7
+#define LTOG 8
+#define LSCR 9
+#define LSCRH 10
 
 &caps_word {
 };
