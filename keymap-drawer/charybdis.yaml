@@ -522,11 +522,17 @@ combos:
 - p: [20, 21]
   k: '}'
   l: [base]
-- p: [24, 35]
-  k: {t: game, h: toggle}
-  l: [base, game]
+- p: [16, 15, 14]
+  k: {t: <, h: '&lte'}
+  l: [base, sym+num]
+- p: [19, 20, 21]
+  k: {t: '>', h: '&gte'}
+  l: [base]
 - p: [27, 15]
   k: Ctl+ C
+  l: [base, trackball]
+- p: [16, 28]
+  k: Ctl+ V
   l: [base, trackball]
 - p: [31, 19]
   k: '0'
@@ -558,21 +564,15 @@ combos:
 - p: [36, 37]
   k: {t: scroll, h: toggle}
   l: [base, trackball, trackball_toggle, scroll]
+- p: [24, 35]
+  k: {t: game, h: toggle}
+  l: [base, game]
 - p: [40, 39]
   k: LANG HANGEUL
   l: [base, game]
 - p: [18, 30]
   k: LANG HANJA
   l: [base, game]
-- p: [16, 28]
-  k: Ctl+ V
-  l: [base, trackball]
-- p: [16, 15, 14]
-  k: {t: <, h: '&lte'}
-  l: [base, sym+num]
-- p: [19, 20, 21]
-  k: {t: '>', h: '&gte'}
-  l: [base]
 - p: [16, 4]
   k: SPACE
   l: [base, trackball]
