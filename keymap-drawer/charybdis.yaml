@@ -169,7 +169,7 @@ layers:
   - '0'
   function:
   - BOOT LDR
-  - OUT BLE
+  - OUT TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -181,11 +181,11 @@ layers:
   - DEV TOOLS
   - {t: ▽, type: trans}
   - ZMK Studio
-  - OUT USB
-  - F4
-  - F5
-  - F6
-  - F11
+  - RIGHT META
+  - RIGHT ALT
+  - RIGHT CONTROL
+  - RIGHT SHIFT
+  - {t: ▽, type: trans}
   - SCROLLLOCK
   - F4
   - F5
@@ -194,10 +194,10 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F10
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - PAUSE BREAK
   - F1
   - F2
