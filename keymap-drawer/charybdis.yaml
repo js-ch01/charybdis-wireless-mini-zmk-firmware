@@ -36,9 +36,9 @@ layers:
   - {t: ., h: R CLK}
   - {t: /, h: number}
   - {t: MUTE, h: function}
+  - L CLK
   - {t: TAB, h: mousekey}
   - {t: BACK SPACE, h: sym+num}
-  - L CLK
   - {t: ENTER, h: sym+num}
   - {t: SPACE, h: navigation}
   sym+num:
@@ -79,8 +79,8 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - '0'
   navigation:
@@ -330,8 +330,8 @@ layers:
   - R CLK
   - WHEEL U
   - ''
-  - {t: R CLK, type: held}
-  - M CLK
+  - R CLK
+  - {t: M CLK, type: held}
   - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -581,3 +581,6 @@ combos:
   l: [base, trackball]
 - p: [7, 19]
   k: BACK SPACE
+- p: [2, 14]
+  k: CAPS WORD
+  l: [base, trackball]
