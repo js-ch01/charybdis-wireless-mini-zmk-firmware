@@ -464,7 +464,7 @@
 &kp ESC         &kp Q              &kp W              &kp E                  &kp R                      &kp T        &kp Y        &kp U                       &kp I                  &kp O              &kp P                      &kp PRINTSCREEN
 &lt 3 TAB       &ht_hm LEFT_WIN A  &ht_hm LEFT_ALT S  &ht_hm LEFT_CONTROL D  &ht_hm_lshft LEFT_SHIFT F  &kp G        &kp H        &ht_hm_rshft RIGHT_SHIFT J  &ht_hm LEFT_CONTROL K  &ht_hm LEFT_ALT L  &ht_hm LEFT_WIN SEMICOLON  &lt 3 ENTER
 &lt_mkp 6 MCLK  &lt 5 Z            &kp X              &lt 10 C               &lt 11 V                   &kp B        &kp N        &ht_mkp LCLK M              &ht_mkp MCLK COMMA     &ht_mkp RCLK DOT   &lt 5 SLASH                &lt 6 C_MUTE
-                                                      &mkp LCLK              &lt 1 BACKSPACE            &lt 7 TAB    &lt 1 ENTER  &lt 2 SPACE
+                                                      &mkp LCLK              &lt 1 BACKSPACE            &lt 7 TAB    &lt 6 ENTER  &lt 2 SPACE
             >;
         };
 
@@ -515,10 +515,10 @@
 
         function_layer {
             bindings = <
-&trans  &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12    &kp PRINTSCREEN  &kp F7     &kp F8  &kp F9  &kp F12  &trans
-&trans  &kp SLCK         &kp F4  &kp F5  &kp F6  &kp F11    &kp SCROLLLOCK   &kp F4     &kp F5  &kp F6  &kp F11  &trans
-&trans  &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10    &kp PAUSE_BREAK  &kp F1     &kp F2  &kp F3  &kp F10  &trans
-                                 &trans  &trans  &trans     &trans           &kp K_APP
+&bootloader  &out OUT_BLE     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR    &kp PRINTSCREEN  &kp F7     &kp F8  &kp F9  &kp F12  &trans
+&trans       &out OUT_USB     &kp F4        &kp F5        &kp F6        &kp F11       &kp SCROLLLOCK   &kp F4     &kp F5  &kp F6  &kp F11  &trans
+&trans       &kp PAUSE_BREAK  &kp F1        &kp F2        &kp F3        &kp F10       &kp PAUSE_BREAK  &kp F1     &kp F2  &kp F3  &kp F10  &trans
+                                            &trans        &trans        &trans        &trans           &kp K_APP
             >;
         };
 
