@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - VOL UP
-  - {t: M CLK, h: base}
+  - M CLK
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -23,8 +23,8 @@ layers:
   - {t: K, h: LEFT CONTROL}
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
-  - {t: VOL DN, h: base}
-  - {t: R CLK, h: function}
+  - VOL DN
+  - R CLK
   - {t: Z, h: number}
   - X
   - {t: C, h: scroll}
@@ -35,7 +35,7 @@ layers:
   - {t: ',', h: M CLK}
   - {t: ., h: R CLK}
   - {t: /, h: number}
-  - {t: MUTE, h: function}
+  - MUTE
   - L CLK
   - {t: BACK SPACE, h: sym+num}
   - {t: TAB, h: trackball}
@@ -192,7 +192,7 @@ layers:
   - F6
   - F11
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -207,7 +207,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - APP
   game:
   - '1'
