@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - PRINT SCREEN
-  - {t: M CLK, h: extra}
+  - {t: TAB, h: extra}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
   - {t: ENTER, h: extra}
-  - {t: R CLK, h: function}
+  - {t: M CLK, h: function}
   - {t: Z, h: number}
   - X
   - {t: C, h: scroll}
