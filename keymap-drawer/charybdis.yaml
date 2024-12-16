@@ -36,9 +36,9 @@ layers:
   - {t: ., h: R CLK}
   - {t: /, h: number}
   - {t: MUTE, h: function}
-  - {t: TAB, h: mousekey}
-  - {t: BACK SPACE, h: sym+num}
   - L CLK
+  - {t: BACK SPACE, h: sym+num}
+  - {t: TAB, h: mousekey}
   - {t: ENTER, h: sym+num}
   - {t: SPACE, h: navigation}
   sym+num:
@@ -330,9 +330,9 @@ layers:
   - R CLK
   - WHEEL U
   - ''
-  - {t: R CLK, type: held}
-  - M CLK
   - L CLK
+  - M CLK
+  - {t: R CLK, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball:
@@ -372,9 +372,9 @@ layers:
   - R CLK
   - scroll
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - L CLK
+  - M CLK
+  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball_toggle:
@@ -414,9 +414,9 @@ layers:
   - {t: R CLK, h: scroll_horizontal}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - L CLK
+  - M CLK
+  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   scroll:
@@ -581,3 +581,6 @@ combos:
   l: [base, trackball]
 - p: [7, 19]
   k: BACK SPACE
+- p: [2, 14]
+  k: CAPS WORD
+  l: [base, trackball]
