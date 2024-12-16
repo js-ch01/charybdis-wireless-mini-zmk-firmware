@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - PRINT SCREEN
-  - {t: TAB, h: extra}
+  - {t: M CLK, h: extra}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
   - {t: ENTER, h: extra}
-  - {t: M CLK, h: function}
+  - {t: R CLK, h: function}
   - {t: Z, h: number}
   - X
   - {t: C, h: scroll}
@@ -252,20 +252,20 @@ layers:
   - {t: ▽, type: trans}
   - '0'
   function:
-  - {t: ▽, type: trans}
+  - BOOT LDR
+  - OUT BLE
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - BT CLR
   - PRINT SCREEN
   - F7
   - F8
   - F9
   - DEV TOOLS
-  - PRINT SCREEN
-  - F7
-  - F8
-  - F9
-  - DEV TOOLS
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SLCK
+  - ZMK Studio
+  - OUT USB
   - F4
   - F5
   - F6
