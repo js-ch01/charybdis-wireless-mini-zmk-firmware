@@ -370,7 +370,7 @@ layers:
   - L CLK
   - M CLK
   - R CLK
-  - {t: ▽, type: trans}
+  - scroll
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
