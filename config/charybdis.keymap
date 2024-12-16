@@ -283,15 +283,29 @@
             layers = <0>;
         };
 
-        combo_game_layer {
-            bindings = <&tog 4>;
-            key-positions = <24 35>;
-            layers = <0 4>;
+        combo_lt {
+            bindings = <&lt_lte 0 LT>;
+            key-positions = <16 15 14>;
+            timeout-ms = <46>;
+            layers = <0 1>;
+        };
+
+        combo_gt {
+            bindings = <&gt_gte 0 GT>;
+            key-positions = <19 20 21>;
+            timeout-ms = <45>;
+            layers = <0>;
         };
 
         combo_copy {
             bindings = <&kp LC(C)>;
             key-positions = <27 15>;
+            layers = <0 8>;
+        };
+
+        combo_paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <16 28>;
             layers = <0 8>;
         };
 
@@ -307,7 +321,7 @@
             layers = <0 1 5 8>;
         };
 
-        combo_num9 {
+        combo_num2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <33 21>;
             layers = <0 1 5 8>;
@@ -325,7 +339,7 @@
             layers = <0 8>;
         };
 
-        combo_delR {
+        combo_del {
             bindings = <&kp DELETE>;
             key-positions = <31 33>;
             layers = <0 1 2 4 8>;
@@ -349,10 +363,16 @@
             layers = <0 8 9>;
         };
 
-        combo_scroll_layer {
+        combo_toggle_scroll {
             bindings = <&tog 10>;
             key-positions = <36 37>;
             layers = <0 8 9 10>;
+        };
+
+        combo_toggle_game {
+            bindings = <&tog 4>;
+            key-positions = <24 35>;
+            layers = <0 4>;
         };
 
         combo_kor {
@@ -361,30 +381,10 @@
             layers = <0 4>;
         };
 
-        combo_eng {
+        combo_eng_hanja {
             bindings = <&kp LANG_HANJA>;
             key-positions = <18 30>;
             layers = <0 4>;
-        };
-
-        combo_paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <16 28>;
-            layers = <0 8>;
-        };
-
-        combo_lt {
-            bindings = <&lt_lte 0 LT>;
-            key-positions = <16 15 14>;
-            timeout-ms = <46>;
-            layers = <0 1>;
-        };
-
-        combo_gt {
-            bindings = <&gt_gte 0 GT>;
-            key-positions = <19 20 21>;
-            timeout-ms = <45>;
-            layers = <0>;
         };
 
         combo_space {
