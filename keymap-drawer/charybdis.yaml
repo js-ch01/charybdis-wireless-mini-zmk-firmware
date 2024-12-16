@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - RIGHT ALT
+  - '&test_wa'
   - {t: M CLK, h: extra}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
@@ -543,9 +543,6 @@ combos:
 - p: [1, 4]
   k: Alt+ F4
   l: [base, trackball]
-- p: [28, 26]
-  k: DELETE
-  l: [base, sym+num, navigation, game, trackball]
 - p: [31, 33]
   k: DELETE
   l: [base, sym+num, navigation, game, trackball]
@@ -576,3 +573,11 @@ combos:
 - p: [19, 20, 21]
   k: {t: '>', h: '&gte'}
   l: [base]
+- p: [16, 4]
+  k: SPACE
+  l: [base, trackball]
+- p: [3, 15]
+  k: ENTER
+  l: [base, trackball]
+- p: [7, 19]
+  k: BACK SPACE
