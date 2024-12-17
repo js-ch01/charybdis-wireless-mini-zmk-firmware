@@ -49,29 +49,29 @@ layers:
   - {t: LEFT SHIFT, h: sticky}
   - {t: ▽, type: trans}
   - '*'
-  - '7'
-  - '8'
-  - '9'
-  - +
+  - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '='
-  - +
   - '-'
-  - '&'
+  - {t: ▽, type: trans}
+  - LEFT
+  - '~'
+  - +
+  - '='
+  - '"'
   - '|'
   - /
   - ^
   - '%'
   - $
-  - '-'
+  - +
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - _
+  - RIGHT
   - '`'
-  - '~'
+  - '-'
+  - _
   - ''''
-  - '"'
+  - '&'
   - '?'
   - '!'
   - '@'
@@ -128,41 +128,41 @@ layers:
   number:
   - Y
   - {t: ▽, type: trans}
-  - '7'
-  - '8'
-  - '9'
+  - KP 7
+  - KP 8
+  - KP 9
   - T
-  - {t: ▽, type: trans}
+  - '*'
   - '7'
   - '8'
   - '9'
-  - {t: ▽, type: trans}
+  - '-'
   - {t: ▽, type: trans}
   - H
   - {t: ▽, type: trans}
-  - '4'
-  - '5'
-  - '6'
+  - KP 4
+  - KP 5
+  - KP 6
   - G
-  - {t: ▽, type: trans}
+  - /
   - '4'
   - '5'
   - '6'
-  - {t: ▽, type: trans}
+  - +
   - {t: ▽, type: trans}
   - N
   - {type: held}
-  - '1'
-  - '2'
-  - '3'
+  - KP 1
+  - KP 2
+  - KP 3
   - B
-  - '0'
+  - .
   - '1'
   - '2'
   - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '0'
+  - KP 0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
