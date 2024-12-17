@@ -265,11 +265,11 @@ layers:
   - ''
   - ''
   - L CLK
-  - WHEEL U
+  - '&msc SCRL_UP'
   - MOVE L
   - MOVE D
   - MOVE R
-  - WHEEL D
+  - '&msc SCRL_DOWN'
   - ''
   - RIGHT SHIFT
   - LCTRL
@@ -288,9 +288,9 @@ layers:
   - R CLK
   - WHEEL U
   - ''
-  - L CLK
-  - M CLK
-  - {t: R CLK, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball:
@@ -331,7 +331,7 @@ layers:
   - scroll
   - {t: ▽, type: trans}
   - L CLK
-  - M CLK
+  - {t: ▽, type: trans}
   - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -373,7 +373,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
-  - M CLK
+  - {t: ▽, type: trans}
   - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
