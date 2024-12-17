@@ -488,10 +488,10 @@
 
         number_layer {
             bindings = <
-&trans  &trans  &kp N7  &kp N8  &kp N9  &kp T     &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &kp G     &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &kp B     &kp N0  &kp N1  &kp N2  &kp N3  &trans  &trans
-                        &kp N0  &trans  &trans    &trans  &kp N0
+&kp Y  &trans  &kp N7  &kp N8  &kp N9  &kp T     &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&kp H  &trans  &kp N4  &kp N5  &kp N6  &kp G     &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&kp N  &trans  &kp N1  &kp N2  &kp N3  &kp B     &kp N0  &kp N1  &kp N2  &kp N3  &trans  &trans
+                       &kp N0  &trans  &trans    &trans  &kp N0
             >;
         };
 
