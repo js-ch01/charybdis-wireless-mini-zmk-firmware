@@ -160,7 +160,7 @@
             quick-tap-ms = <220>;
         };
 
-        gt_gte: gt_hold_gte {
+        ht_gt_gte: gt_hold_gte {
             compatible = "zmk,behavior-hold-tap";
             label = "GT_GTE";
             bindings = <&gte>, <&kp>;
@@ -168,9 +168,10 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            quick-tap-ms = <200>;
         };
 
-        lt_lte: lt_hold_lte {
+        ht_lt_lte: lt_hold_lte {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_LTE";
             bindings = <&lte>, <&kp>;
@@ -178,36 +179,40 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            quick-tap-ms = <200>;
         };
 
-        lpar_lr: lpar_hold_lr {
+        ht_lpar_lr: lpar_hold_lr {
             compatible = "zmk,behavior-hold-tap";
             label = "LPAR_LR";
-            bindings = <&double_parenthesis_lr>, <&kp>;
+            bindings = <&parenthesis_lr>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            quick-tap-ms = <200>;
         };
 
-        lbrace_lr: lbrace_hold_lr {
+        ht_lbrace_lr: lbrace_hold_lr {
             compatible = "zmk,behavior-hold-tap";
             label = "LBRACE_LR";
-            bindings = <&double_braces_lr>, <&kp>;
+            bindings = <&braces_lr>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            quick-tap-ms = <200>;
         };
 
-        lbracket_lr: lbracket_hold_lr {
+        ht_lbracket_lr: lbracket_hold_lr {
             compatible = "zmk,behavior-hold-tap";
             label = "LBRACKET_LR";
-            bindings = <&double_brackets_lr>, <&kp>;
+            bindings = <&brackets_lr>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            quick-tap-ms = <200>;
         };
 
         lt_mkp: lt_moL_mouseKP {
@@ -239,6 +244,28 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
+
+        ht_pipe_double: ht_pipe_double {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_PIPE_DOUBLE";
+            bindings = <&double_pipe>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
+        };
+
+        ht_amp_double: ht_amp_double {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_AMP_DOUBLE";
+            bindings = <&double_amp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
+        };
     };
 
     combos {
@@ -247,7 +274,7 @@
         combo_lpar {
             timeout-ms = <46>;
             key-positions = <16 15>;
-            bindings = <&lpar_lr 0 LEFT_PARENTHESIS>;
+            bindings = <&ht_lpar_lr 0 LEFT_PARENTHESIS>;
             layers = <0 1 7>;
         };
 
@@ -261,7 +288,7 @@
         combo_lbkt {
             timeout-ms = <45>;
             key-positions = <14 16>;
-            bindings = <&lbracket_lr 0 LEFT_BRACKET>;
+            bindings = <&ht_lbracket_lr 0 LEFT_BRACKET>;
             layers = <0 1 7>;
         };
 
@@ -275,7 +302,7 @@
         combo_lbrc {
             timeout-ms = <45>;
             key-positions = <14 15>;
-            bindings = <&lbrace_lr 0 LEFT_BRACE>;
+            bindings = <&ht_lbrace_lr 0 LEFT_BRACE>;
             layers = <0 1 7>;
         };
 
@@ -287,14 +314,14 @@
         };
 
         combo_lt {
-            bindings = <&lt_lte 0 LT>;
+            bindings = <&ht_lt_lte 0 LT>;
             key-positions = <16 15 14>;
             timeout-ms = <46>;
             layers = <0 1 7>;
         };
 
         combo_gt {
-            bindings = <&gt_gte 0 GT>;
+            bindings = <&ht_gt_gte 0 GT>;
             key-positions = <19 20 21>;
             timeout-ms = <45>;
             layers = <0 7>;
@@ -438,28 +465,44 @@
             label = "LTE";
         };
 
-        double_parenthesis_lr: double_parenthesis_lr {
+        parenthesis_lr: parenthesis_lr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap_time 5>, <&kp LPAR &kp RPAR>;
 
-            label = "DOUBLE_PARENTHESIS_LR";
+            label = "PARENTHESIS_LR";
         };
 
-        double_braces_lr: double_braces_lr {
+        braces_lr: braces_lr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap_time 5>, <&kp LBRC &kp RBRC>;
 
-            label = "DOUBLE_BRACES_LR";
+            label = "BRACES_LR";
         };
 
-        double_brackets_lr: double_brackets_lr {
+        brackets_lr: brackets_lr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap_time 5>, <&kp LBKT &kp RBKT>;
 
-            label = "DOUBLE_BRACKETS_LR";
+            label = "BRACKETS_LR";
+        };
+
+        double_pipe: double_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp PIPE &kp PIPE>;
+
+            label = "DOUBLE_PIPE";
+        };
+
+        double_amp: double_amp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp AMPS &kp AMPS>;
+
+            label = "DOUBLE_AMP";
         };
     };
 
@@ -477,10 +520,10 @@
 
         sym_layer {
             bindings = <
-&trans          &sk LEFT_META  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT     &trans      &kp ASTERISK  &kp ASTERISK  &trans       &trans      &kp MINUS      &trans
-&kp LEFT_ARROW  &kp TILDE      &kp PLUS      &kp EQUAL  &kp DOUBLE_QUOTES  &kp PIPE    &kp SLASH     &kp CARET     &kp PERCENT  &kp DOLLAR  &kp PLUS       &trans
-&kp RIGHT       &kp GRAVE      &kp MINUS     &kp UNDER  &kp SINGLE_QUOTE   &kp AMPS    &kp QUESTION  &kp EXCL      &kp AT       &kp HASH    &kp BACKSLASH  &trans
-                                             &trans     &trans             &trans      &trans        &trans
+&trans          &sk LEFT_META  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT     &trans                    &kp ASTERISK  &kp ASTERISK  &trans       &trans      &kp MINUS      &trans
+&kp LEFT_ARROW  &kp TILDE      &kp PLUS      &kp EQUAL  &kp DOUBLE_QUOTES  &ht_pipe_double 0 PIPE    &kp SLASH     &kp CARET     &kp PERCENT  &kp DOLLAR  &kp PLUS       &trans
+&kp RIGHT       &kp GRAVE      &kp MINUS     &kp UNDER  &kp SINGLE_QUOTE   &ht_amp_double 0 AMPS     &kp QUESTION  &kp EXCL      &kp AT       &kp HASH    &kp BACKSLASH  &trans
+                                             &trans     &trans             &trans                    &trans        &trans
             >;
         };
 
