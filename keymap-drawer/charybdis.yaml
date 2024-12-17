@@ -185,7 +185,7 @@ layers:
   - RIGHT ALT
   - RIGHT CONTROL
   - RIGHT SHIFT
-  - {t: ▽, type: trans}
+  - KP NUMLOCK
   - SCROLLLOCK
   - F4
   - F5
