@@ -114,11 +114,11 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+ LEFT
-  - Gui+ PG UP
-  - ''
-  - Gui+ PG DN
-  - Alt+ RIGHT
+  - Alt+Gui+ LEFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+Gui+ RIGHT
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -513,9 +513,6 @@ combos:
 - p: [28, 27]
   k: ESCAPE
   l: [base, sym, navigation, mousekey, trackball, trackball_toggle]
-- p: [31, 32]
-  k: ESCAPE
-  l: [base, sym, navigation, mousekey, trackball, trackball_toggle]
 - p: [31, 34]
   k: {t: trackball_toggle, h: toggle}
   l: [base, trackball, trackball_toggle]
@@ -543,3 +540,9 @@ combos:
 - p: [2, 14]
   k: CAPS WORD
   l: [base, trackball, sym, trackball_toggle]
+- p: [31, 32]
+  k: Alt+ LEFT
+  l: [base, trackball, trackball_toggle, mousekey]
+- p: [32, 33]
+  k: Alt+ RIGHT
+  l: [base, trackball, trackball_toggle, mousekey]
