@@ -332,7 +332,7 @@ layers:
   - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
-  - R CLK
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball_toggle:
@@ -374,7 +374,7 @@ layers:
   - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
-  - R CLK
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   scroll:

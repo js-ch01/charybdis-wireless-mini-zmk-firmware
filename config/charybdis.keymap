@@ -574,19 +574,19 @@
 
         trackball_layer {
             bindings = <
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 9   &trans
-                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 9   &trans
+                        &mkp LCLK  &trans  &trans    &trans  &trans
             >;
         };
 
         trackball_toggle_layer {
             bindings = <
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans     &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans     &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &mkp LCLK  &lt_mkp 9 MCLK  &lt_mkp 10 RCLK  &trans  &trans
-                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans     &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans     &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans    &trans  &mkp LCLK  &lt_mkp 9 MCLK  &lt_mkp 10 RCLK  &trans  &trans
+                        &mkp LCLK  &trans  &trans    &trans  &trans
             >;
         };
 
