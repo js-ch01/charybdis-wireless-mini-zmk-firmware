@@ -59,7 +59,7 @@ layers:
   - +
   - '='
   - '"'
-  - '|'
+  - {t: '|', h: '&double_pipe'}
   - /
   - ^
   - '%'
@@ -71,7 +71,7 @@ layers:
   - '-'
   - _
   - ''''
-  - '&'
+  - {t: '&', h: '&double_amp'}
   - '?'
   - '!'
   - '@'
@@ -463,19 +463,19 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [16, 15]
-  k: {t: (, h: '&double_parenthesis_lr'}
+  k: {t: (, h: '&parenthesis_lr'}
   l: [base, sym, trackball]
 - p: [19, 20]
   k: )
   l: [base, trackball]
 - p: [14, 16]
-  k: {t: '[', h: '&double_brackets_lr'}
+  k: {t: '[', h: '&brackets_lr'}
   l: [base, sym, trackball]
 - p: [19, 21]
   k: ']'
   l: [base, trackball]
 - p: [14, 15]
-  k: {t: '{', h: '&double_braces_lr'}
+  k: {t: '{', h: '&braces_lr'}
   l: [base, sym, trackball]
 - p: [20, 21]
   k: '}'
