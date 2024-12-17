@@ -37,11 +37,11 @@ layers:
   - {t: /, h: number}
   - MUTE
   - L CLK
-  - {t: BACK SPACE, h: sym+num}
+  - {t: BACK SPACE, h: sym}
   - {t: TAB, h: mousekey}
   - {t: ENTER, h: function}
   - {t: SPACE, h: navigation}
-  sym+num:
+  sym:
   - {t: ▽, type: trans}
   - {t: LEFT META, h: sticky}
   - {t: LEFT ALT, h: sticky}
@@ -49,29 +49,29 @@ layers:
   - {t: LEFT SHIFT, h: sticky}
   - {t: ▽, type: trans}
   - '*'
-  - '7'
-  - '8'
-  - '9'
-  - +
+  - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '='
-  - +
   - '-'
-  - '&'
+  - {t: ▽, type: trans}
+  - LEFT
+  - '~'
+  - +
+  - '='
+  - '"'
   - '|'
   - /
   - ^
   - '%'
   - $
-  - '-'
+  - +
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - _
+  - RIGHT
   - '`'
-  - '~'
+  - '-'
+  - _
   - ''''
-  - '"'
+  - '&'
   - '?'
   - '!'
   - '@'
@@ -114,11 +114,11 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+ LEFT
-  - Gui+ PG UP
-  - ''
-  - Gui+ PG DN
-  - Alt+ RIGHT
+  - Alt+Gui+ LEFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+Gui+ RIGHT
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -128,41 +128,41 @@ layers:
   number:
   - Y
   - {t: ▽, type: trans}
-  - '7'
-  - '8'
-  - '9'
+  - KP 7
+  - KP 8
+  - KP 9
   - T
-  - {t: ▽, type: trans}
+  - '*'
   - '7'
   - '8'
   - '9'
-  - {t: ▽, type: trans}
+  - '-'
   - {t: ▽, type: trans}
   - H
   - {t: ▽, type: trans}
-  - '4'
-  - '5'
-  - '6'
+  - KP 4
+  - KP 5
+  - KP 6
   - G
-  - {t: ▽, type: trans}
+  - /
   - '4'
   - '5'
   - '6'
-  - {t: ▽, type: trans}
+  - +
   - {t: ▽, type: trans}
   - N
   - {type: held}
-  - '1'
-  - '2'
-  - '3'
+  - KP 1
+  - KP 2
+  - KP 3
   - B
-  - '0'
+  - .
   - '1'
   - '2'
   - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '0'
+  - KP 0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -181,11 +181,11 @@ layers:
   - DEV TOOLS
   - {t: ▽, type: trans}
   - CAPSLOCK
-  - RIGHT META
+  - KP NUM
   - RIGHT ALT
   - RIGHT CONTROL
-  - RIGHT SHIFT
-  - KP NUMLOCK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - SCROLLLOCK
   - F4
   - F5
@@ -464,25 +464,25 @@ layers:
 combos:
 - p: [16, 15]
   k: {t: (, h: '&double_parenthesis_lr'}
-  l: [base, sym+num, trackball]
+  l: [base, sym, trackball]
 - p: [19, 20]
   k: )
   l: [base, trackball]
 - p: [14, 16]
   k: {t: '[', h: '&double_brackets_lr'}
-  l: [base, sym+num, trackball]
+  l: [base, sym, trackball]
 - p: [19, 21]
   k: ']'
   l: [base, trackball]
 - p: [14, 15]
   k: {t: '{', h: '&double_braces_lr'}
-  l: [base, sym+num, trackball]
+  l: [base, sym, trackball]
 - p: [20, 21]
   k: '}'
   l: [base, trackball]
 - p: [16, 15, 14]
   k: {t: <, h: '&lte'}
-  l: [base, sym+num, trackball]
+  l: [base, sym, trackball]
 - p: [19, 20, 21]
   k: {t: '>', h: '&gte'}
   l: [base, trackball]
@@ -494,13 +494,13 @@ combos:
   l: [base, trackball]
 - p: [31, 19]
   k: '0'
-  l: [base, sym+num, number, trackball, trackball_toggle]
+  l: [base, sym, number, trackball, trackball_toggle]
 - p: [32, 20]
   k: '1'
-  l: [base, sym+num, number, trackball, trackball_toggle]
+  l: [base, sym, number, trackball, trackball_toggle]
 - p: [33, 21]
   k: '2'
-  l: [base, sym+num, number, trackball, trackball_toggle]
+  l: [base, sym, number, trackball, trackball_toggle]
 - p: [38, 37]
   k: Gui+ A
   l: [base, trackball, trackball_toggle]
@@ -509,13 +509,10 @@ combos:
   l: [base, trackball, trackball_toggle]
 - p: [31, 33]
   k: DELETE
-  l: [base, sym+num, navigation, mousekey, trackball]
+  l: [base, sym, navigation, mousekey, trackball]
 - p: [28, 27]
   k: ESCAPE
-  l: [base, sym+num, navigation, mousekey, trackball, trackball_toggle]
-- p: [31, 32]
-  k: ESCAPE
-  l: [base, sym+num, navigation, mousekey, trackball, trackball_toggle]
+  l: [base, sym, navigation, mousekey, trackball, trackball_toggle]
 - p: [31, 34]
   k: {t: trackball_toggle, h: toggle}
   l: [base, trackball, trackball_toggle]
@@ -533,13 +530,19 @@ combos:
   l: [base, mousekey, trackball, trackball_toggle]
 - p: [16, 4]
   k: SPACE
-  l: [base, trackball, sym+num, trackball_toggle]
+  l: [base, trackball, sym, trackball_toggle]
 - p: [3, 15]
   k: ENTER
-  l: [base, trackball, sym+num, trackball_toggle]
+  l: [base, trackball, sym, trackball_toggle]
 - p: [7, 19]
   k: BACK SPACE
-  l: [base, sym+num, trackball, trackball_toggle]
+  l: [base, sym, trackball, trackball_toggle]
 - p: [2, 14]
   k: CAPS WORD
-  l: [base, trackball, sym+num, trackball_toggle]
+  l: [base, trackball, sym, trackball_toggle]
+- p: [31, 32]
+  k: Alt+ LEFT
+  l: [base, trackball, trackball_toggle, mousekey]
+- p: [32, 33]
+  k: Alt+ RIGHT
+  l: [base, trackball, trackball_toggle, mousekey]
