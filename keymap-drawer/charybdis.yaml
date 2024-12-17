@@ -193,9 +193,9 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - ZMK Studio
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Alt+ 8
+  - Gui+Alt+ -
+  - Alt+Gui+ =
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAUSE BREAK
