@@ -546,3 +546,6 @@ combos:
 - p: [32, 33]
   k: Alt+ RIGHT
   l: [base, trackball, trackball_toggle, mousekey]
+- p: [8, 20]
+  k: TAB
+  l: [base, sym, trackball, trackball_toggle]
