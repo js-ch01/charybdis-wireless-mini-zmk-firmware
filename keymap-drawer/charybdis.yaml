@@ -166,7 +166,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SPACE
+  - '0'
   function:
   - BOOT LDR
   - OUT TOG
@@ -193,8 +193,8 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - ZMK Studio
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BRI DN
+  - BRI UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

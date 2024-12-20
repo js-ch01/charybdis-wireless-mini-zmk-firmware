@@ -640,10 +640,10 @@
 
         number_layer {
             bindings = <
-&kp Y  &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp T     &kp ASTERISK  &kp N7     &kp N8  &kp N9  &kp MINUS  &trans
-&kp H  &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp G     &kp SLASH     &kp N4     &kp N5  &kp N6  &kp PLUS   &trans
-&kp N  &trans          &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp B     &kp N0        &kp N1     &kp N2  &kp N3  &kp DOT    &trans
-                                        &kp KP_N0        &trans           &trans    &trans        &kp SPACE
+&kp Y  &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp T     &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp MINUS  &trans
+&kp H  &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp G     &kp SLASH     &kp N4  &kp N5  &kp N6  &kp PLUS   &trans
+&kp N  &trans          &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp B     &kp N0        &kp N1  &kp N2  &kp N3  &kp DOT    &trans
+                                        &kp KP_N0        &trans           &trans    &trans        &kp N0
             >;
         };
 
@@ -651,7 +651,7 @@
             bindings = <
 &bootloader     &out OUT_TOG  &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2  &ht_bt_none BT_CLR    &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12  &trans
 &kp CAPSLOCK    &kp KP_NUM    &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp K_APP     &trans                &kp SCROLLLOCK   &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&studio_unlock  &trans        &trans         &trans             &trans        &trans                &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+&studio_unlock  &kp C_BRI_DN  &kp C_BRI_UP   &trans             &trans        &trans                &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                              &trans             &trans        &trans                &trans           &trans
             >;
         };
