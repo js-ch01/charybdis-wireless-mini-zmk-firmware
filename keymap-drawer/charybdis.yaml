@@ -531,7 +531,7 @@ combos:
 - p: [16, 4]
   k: SPACE
   l: [base, trackball, sym, trackball_toggle]
-- p: [3, 15]
+- p: [27, 26]
   k: ENTER
   l: [base, trackball, sym, trackball_toggle]
 - p: [7, 19]
@@ -540,16 +540,16 @@ combos:
 - p: [2, 14]
   k: CAPS WORD
   l: [base, trackball, sym, trackball_toggle]
-- p: [31, 32]
+- p: [18, 19]
   k: Alt+ LEFT
   l: [base, trackball, trackball_toggle, mousekey]
-- p: [32, 33]
+- p: [30, 31]
   k: Alt+ RIGHT
   l: [base, trackball, trackball_toggle, mousekey]
 - p: [8, 20]
   k: TAB
   l: [base, sym, trackball, trackball_toggle]
-- p: [21, 22]
+- p: [33, 32]
   k: ENTER
   l: [base, sym, trackball, trackball_toggle, navigation, number]
 - p: [3, 4]
@@ -558,3 +558,9 @@ combos:
 - p: [3, 2]
   k: Sft+ R
   l: [base, trackball, trackball_toggle]
+- p: [32, 31]
+  k: ESCAPE
+  l: [base, sym, trackball, trackball_toggle, navigation, number]
+- p: [26, 28]
+  k: DEL
+  l: [base, sym, trackball, trackball_toggle, navigation, number]

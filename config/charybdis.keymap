@@ -410,13 +410,13 @@
             layers = <0 7 8>;
         };
 
-        combo_del {
+        combo_delR {
             bindings = <&kp DELETE>;
             key-positions = <31 33>;
             layers = <0 1 2 6 7>;
         };
 
-        combo_esc {
+        combo_escL {
             bindings = <&kp ESCAPE>;
             key-positions = <28 27>;
             layers = <0 1 2 6 7 8>;
@@ -460,7 +460,7 @@
 
         combo_enterL {
             bindings = <&kp ENTER>;
-            key-positions = <3 15>;
+            key-positions = <27 26>;
             layers = <0 7 1 8>;
         };
 
@@ -478,13 +478,13 @@
 
         combo_back {
             bindings = <&kp LA(LEFT_ARROW)>;
-            key-positions = <31 32>;
+            key-positions = <18 19>;
             layers = <0 7 8 6>;
         };
 
         combo_forward {
             bindings = <&kp LA(RIGHT)>;
-            key-positions = <32 33>;
+            key-positions = <30 31>;
             layers = <0 7 8 6>;
         };
 
@@ -496,22 +496,34 @@
 
         combo_enterR {
             bindings = <&kp ENTER>;
-            key-positions = <21 22>;
+            key-positions = <33 32>;
             layers = <0 1 7 8 2 3>;
         };
 
-        combo_T {
+        combo_kor_T {
             bindings = <&kp LS(T)>;
             key-positions = <3 4>;
             timeout-ms = <50>;
             layers = <0 7 8>;
         };
 
-        combo_R {
+        combo_kor_R {
             bindings = <&kp LS(R)>;
             key-positions = <3 2>;
             timeout-ms = <50>;
             layers = <0 7 8>;
+        };
+
+        combo_escR {
+            bindings = <&kp ESCAPE>;
+            key-positions = <32 31>;
+            layers = <0 1 7 8 2 3>;
+        };
+
+        combo_delL {
+            bindings = <&kp DEL>;
+            key-positions = <26 28>;
+            layers = <0 1 7 8 2 3>;
         };
     };
 
