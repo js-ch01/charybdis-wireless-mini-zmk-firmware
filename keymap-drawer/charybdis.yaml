@@ -3,7 +3,7 @@ layers:
   - ESC
   - Q
   - W
-  - E
+  - {t: E, h: LEFT SHIFT}
   - R
   - T
   - Y
@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - VOL UP
-  - M CLK
+  - {t: M CLK, h: mousekey}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -38,8 +38,8 @@ layers:
   - MUTE
   - L CLK
   - {t: BACK SPACE, h: sym}
-  - {t: TAB, h: mousekey}
-  - {t: ENTER, h: function}
+  - {t: TAB, h: function}
+  - {t: ESCAPE, h: function}
   - {t: SPACE, h: navigation}
   sym:
   - {t: ▽, type: trans}
@@ -114,11 +114,11 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+Gui+ LEFT
+  - '-'
+  - _
+  - +
+  - '='
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+Gui+ RIGHT
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -127,7 +127,7 @@ layers:
   - {type: held}
   number:
   - Y
-  - {t: ▽, type: trans}
+  - KP NUMLOCK
   - KP 7
   - KP 8
   - KP 9
@@ -193,9 +193,9 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - ZMK Studio
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Alt+ 8
+  - Gui+Alt+ -
+  - Alt+Gui+ =
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAUSE BREAK
@@ -206,8 +206,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - APP
   game:
   - '1'
@@ -254,9 +254,9 @@ layers:
   mousekey:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - WHEEL L
+  - '&msc SCRL_LEFT'
   - MOVE UP
-  - WHEEL R
+  - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -264,7 +264,7 @@ layers:
   - ''
   - ''
   - ''
-  - L CLK
+  - {type: held}
   - '&msc SCRL_UP'
   - MOVE L
   - MOVE D
@@ -277,20 +277,20 @@ layers:
   - LEFT META
   - ''
   - {t: ▽, type: trans}
-  - BACK
+  - {t: ▽, type: trans}
   - L CLK
   - M CLK
   - R CLK
-  - FWD
+  - {t: ▽, type: trans}
   - WHEEL D
   - L CLK
   - M CLK
   - R CLK
   - WHEEL U
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - L CLK
+  - M CLK
+  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball:
@@ -332,7 +332,7 @@ layers:
   - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
-  - R CLK
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball_toggle:
@@ -368,13 +368,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
-  - {t: M CLK, h: scroll}
-  - {t: R CLK, h: scroll_horizontal}
-  - {t: ▽, type: trans}
+  - M CLK
+  - R CLK
+  - scroll
   - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
-  - R CLK
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   scroll:
@@ -546,3 +546,9 @@ combos:
 - p: [32, 33]
   k: Alt+ RIGHT
   l: [base, trackball, trackball_toggle, mousekey]
+- p: [8, 20]
+  k: TAB
+  l: [base, sym, trackball, trackball_toggle]
+- p: [21, 22]
+  k: ENTER
+  l: [base, sym, trackball, trackball_toggle]
