@@ -39,7 +39,7 @@ layers:
   - {t: TAB, h: function}
   - {t: BACK SPACE, h: sym}
   - L CLK
-  - {t: ESCAPE, h: function}
+  - {t: scroll, h: function}
   - {t: SPACE, h: navigation}
   sym:
   - {t: ▽, type: trans}
@@ -166,7 +166,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SPACE
+  - '0'
   function:
   - BOOT LDR
   - OUT TOG
@@ -193,8 +193,8 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - ZMK Studio
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BRI DN
+  - BRI UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -464,34 +464,34 @@ layers:
 combos:
 - p: [16, 15]
   k: {t: (, h: '&parenthesis_lr'}
-  l: [base, sym, trackball]
+  l: [base, sym, trackball, trackball_toggle, navigation]
 - p: [19, 20]
   k: )
-  l: [base, trackball]
+  l: [base, trackball, sym, trackball_toggle]
 - p: [14, 16]
   k: {t: '[', h: '&brackets_lr'}
-  l: [base, sym, trackball]
+  l: [base, sym, trackball, trackball_toggle]
 - p: [19, 21]
   k: ']'
-  l: [base, trackball]
+  l: [base, trackball, trackball_toggle, sym]
 - p: [14, 15]
   k: {t: '{', h: '&braces_lr'}
-  l: [base, sym, trackball]
+  l: [base, sym, trackball, trackball_toggle]
 - p: [20, 21]
   k: '}'
-  l: [base, trackball]
+  l: [base, trackball, sym, trackball_toggle]
 - p: [16, 15, 14]
   k: {t: <, h: '&lte'}
-  l: [base, sym, trackball]
+  l: [base, sym, trackball, trackball_toggle]
 - p: [19, 20, 21]
   k: {t: '>', h: '&gte'}
-  l: [base, trackball]
+  l: [base, trackball, trackball_toggle, sym]
 - p: [27, 15]
   k: Ctl+ C
-  l: [base, trackball]
+  l: [base, trackball, trackball_toggle]
 - p: [16, 28]
   k: Ctl+ V
-  l: [base, trackball]
+  l: [base, trackball, trackball_toggle]
 - p: [31, 19]
   k: '0'
   l: [base, sym, number, trackball, trackball_toggle]
@@ -501,27 +501,33 @@ combos:
 - p: [33, 21]
   k: '2'
   l: [base, sym, number, trackball, trackball_toggle]
-- p: [38, 37]
-  k: {t: scroll_horizontal, h: scroll_horizontal}
-  l: [base, trackball, trackball_toggle]
 - p: [1, 4]
   k: Alt+ F4
   l: [base, trackball, trackball_toggle]
-- p: [31, 33]
-  k: DELETE
-  l: [base, sym, navigation, mousekey, trackball]
 - p: [28, 27]
   k: ESCAPE
   l: [base, sym, navigation, mousekey, trackball, trackball_toggle]
+- p: [26, 28]
+  k: DEL
+  l: [base, sym, trackball, trackball_toggle, navigation, number]
+- p: [27, 26]
+  k: ENTER
+  l: [base, trackball, sym, trackball_toggle]
+- p: [26, 25]
+  k: '`'
+  l: [base, sym, trackball, trackball_toggle, navigation]
 - p: [31, 34]
   k: {t: trackball_toggle, h: toggle}
   l: [base, trackball, trackball_toggle]
-- p: [36, 37]
-  k: {t: scroll, h: scroll}
-  l: [base, trackball, trackball_toggle, scroll]
 - p: [24, 35]
   k: {t: mousekey, h: toggle}
   l: [base, game]
+- p: [36, 37]
+  k: {t: scroll, h: scroll}
+  l: [base, trackball, trackball_toggle, scroll]
+- p: [38, 37]
+  k: {t: scroll_horizontal, h: scroll_horizontal}
+  l: [base, trackball, trackball_toggle, scroll_horizontal]
 - p: [40, 39]
   k: LANG HANGEUL
   l: [base, mousekey, trackball, trackball_toggle]
@@ -531,27 +537,21 @@ combos:
 - p: [16, 4]
   k: SPACE
   l: [base, trackball, sym, trackball_toggle]
-- p: [27, 26]
-  k: ENTER
+- p: [2, 14]
+  k: CAPS WORD
   l: [base, trackball, sym, trackball_toggle]
 - p: [7, 19]
   k: BACK SPACE
   l: [base, sym, trackball, trackball_toggle]
-- p: [2, 14]
-  k: CAPS WORD
-  l: [base, trackball, sym, trackball_toggle]
-- p: [18, 19]
-  k: Alt+ LEFT
-  l: [base, trackball, trackball_toggle, mousekey]
-- p: [30, 31]
-  k: Alt+ RIGHT
-  l: [base, trackball, trackball_toggle, mousekey]
 - p: [8, 20]
   k: TAB
   l: [base, sym, trackball, trackball_toggle]
-- p: [33, 32]
-  k: ENTER
-  l: [base, sym, trackball, trackball_toggle, navigation]
+- p: [30, 31]
+  k: Alt+ RIGHT
+  l: [base, trackball, trackball_toggle, mousekey]
+- p: [18, 19]
+  k: Alt+ LEFT
+  l: [base, trackball, trackball_toggle, mousekey]
 - p: [3, 4]
   k: Sft+ T
   l: [base, trackball, trackball_toggle]
@@ -561,9 +561,12 @@ combos:
 - p: [32, 31]
   k: ESCAPE
   l: [base, sym, trackball, trackball_toggle, navigation]
-- p: [26, 28]
-  k: DEL
-  l: [base, sym, trackball, trackball_toggle, navigation, number]
-- p: [26, 25]
+- p: [31, 33]
+  k: DELETE
+  l: [base, sym, trackball, trackball_toggle]
+- p: [33, 32]
+  k: ENTER
+  l: [base, sym, trackball, trackball_toggle]
+- p: [33, 34]
   k: '`'
-  l: [base, sym, trackball, trackball_toggle, navigation]
+  l: [base, sym, trackball, trackball_toggle]
