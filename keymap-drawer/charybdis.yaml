@@ -114,11 +114,11 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+Gui+ LEFT
+  - '-'
+  - _
+  - +
+  - '='
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+Gui+ RIGHT
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
