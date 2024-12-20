@@ -3,7 +3,7 @@ layers:
   - ESC
   - Q
   - W
-  - E
+  - {t: E, h: LEFT SHIFT}
   - R
   - T
   - Y
@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - VOL UP
-  - M CLK
+  - {t: M CLK, h: mousekey}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -38,7 +38,7 @@ layers:
   - MUTE
   - L CLK
   - {t: BACK SPACE, h: sym}
-  - {t: TAB, h: mousekey}
+  - {t: TAB, h: function}
   - {t: ESCAPE, h: function}
   - {t: SPACE, h: navigation}
   sym:
@@ -127,7 +127,7 @@ layers:
   - {type: held}
   number:
   - Y
-  - {t: ▽, type: trans}
+  - KP NUMLOCK
   - KP 7
   - KP 8
   - KP 9
@@ -206,8 +206,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - APP
   game:
   - '1'
@@ -254,9 +254,9 @@ layers:
   mousekey:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - WHEEL L
+  - '&msc SCRL_LEFT'
   - MOVE UP
-  - WHEEL R
+  - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -264,7 +264,7 @@ layers:
   - ''
   - ''
   - ''
-  - L CLK
+  - {type: held}
   - '&msc SCRL_UP'
   - MOVE L
   - MOVE D
@@ -277,20 +277,20 @@ layers:
   - LEFT META
   - ''
   - {t: ▽, type: trans}
-  - BACK
+  - {t: ▽, type: trans}
   - L CLK
   - M CLK
   - R CLK
-  - FWD
+  - {t: ▽, type: trans}
   - WHEEL D
   - L CLK
   - M CLK
   - R CLK
   - WHEEL U
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - L CLK
+  - M CLK
+  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball:
@@ -368,9 +368,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
-  - {t: M CLK, h: scroll}
-  - {t: R CLK, h: scroll_horizontal}
-  - {t: ▽, type: trans}
+  - M CLK
+  - R CLK
+  - scroll
   - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
