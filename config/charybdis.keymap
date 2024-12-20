@@ -285,6 +285,28 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        ht_plus_double: ht_plus_double {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_PLUS_DOUBLE";
+            bindings = <&double_plus>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
+        };
+
+        ht_minus_double: ht_minus_double {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MINUS_DOUBLE";
+            bindings = <&double_minus>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
+        };
     };
 
     combos {
@@ -542,6 +564,22 @@
 
             label = "DOUBLE_AMP";
         };
+
+        double_plus: hold_plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp PLUS &kp PLUS>;
+
+            label = "HOLD_PLUS";
+        };
+
+        double_minus: double_minus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 5>, <&kp MINUS &kp MINUS>;
+
+            label = "DOUBLE_MINUS";
+        };
     };
 
     keymap {
@@ -558,10 +596,10 @@
 
         sym_layer {
             bindings = <
-&trans          &sk LEFT_META  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT     &trans                    &kp ASTERISK  &kp ASTERISK  &trans       &trans      &kp MINUS      &trans
-&kp LEFT_ARROW  &kp TILDE      &kp PLUS      &kp EQUAL  &kp DOUBLE_QUOTES  &ht_pipe_double 0 PIPE    &kp SLASH     &kp CARET     &kp PERCENT  &kp DOLLAR  &kp PLUS       &trans
-&kp RIGHT       &kp GRAVE      &kp MINUS     &kp UNDER  &kp SINGLE_QUOTE   &ht_amp_double 0 AMPS     &kp QUESTION  &kp EXCL      &kp AT       &kp HASH    &kp BACKSLASH  &trans
-                                             &trans     &trans             &trans                    &trans        &trans
+&trans          &sk LEFT_META  &sk LEFT_ALT   &sk LCTRL  &sk LEFT_SHIFT     &trans                    &kp ASTERISK  &kp ASTERISK  &trans       &trans      &kp MINUS      &trans
+&kp LEFT_ARROW  &kp TILDE      &double_plus   &kp EQUAL  &kp DOUBLE_QUOTES  &ht_pipe_double 0 PIPE    &kp SLASH     &kp CARET     &kp PERCENT  &kp DOLLAR  &kp PLUS       &trans
+&kp RIGHT       &kp GRAVE      &double_minus  &kp UNDER  &kp SINGLE_QUOTE   &ht_amp_double 0 AMPS     &kp QUESTION  &kp EXCL      &kp AT       &kp HASH    &kp BACKSLASH  &trans
+                                              &trans     &trans             &trans                    &trans        &trans
             >;
         };
 
