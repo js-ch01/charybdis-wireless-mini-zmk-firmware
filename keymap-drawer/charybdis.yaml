@@ -56,7 +56,7 @@ layers:
   - {t: ▽, type: trans}
   - LEFT
   - '~'
-  - '&double_plus'
+  - {t: +, h: '&double_plus'}
   - '='
   - '"'
   - {t: '|', h: '&double_pipe'}
@@ -68,7 +68,7 @@ layers:
   - {t: ▽, type: trans}
   - RIGHT
   - '`'
-  - '&double_minus'
+  - {t: '-', h: '&double_minus'}
   - _
   - ''''
   - {t: '&', h: '&double_amp'}
