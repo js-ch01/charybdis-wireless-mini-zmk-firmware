@@ -464,34 +464,34 @@ layers:
 combos:
 - p: [16, 15]
   k: {t: (, h: '&parenthesis_lr'}
-  l: [base, sym, trackball]
+  l: [base, sym, trackball, trackball_toggle, navigation]
 - p: [19, 20]
   k: )
-  l: [base, trackball]
+  l: [base, trackball, sym, trackball_toggle]
 - p: [14, 16]
   k: {t: '[', h: '&brackets_lr'}
-  l: [base, sym, trackball]
+  l: [base, sym, trackball, trackball_toggle]
 - p: [19, 21]
   k: ']'
-  l: [base, trackball]
+  l: [base, trackball, trackball_toggle, sym]
 - p: [14, 15]
   k: {t: '{', h: '&braces_lr'}
-  l: [base, sym, trackball]
+  l: [base, sym, trackball, trackball_toggle]
 - p: [20, 21]
   k: '}'
-  l: [base, trackball]
+  l: [base, trackball, sym, trackball_toggle]
 - p: [16, 15, 14]
   k: {t: <, h: '&lte'}
-  l: [base, sym, trackball]
+  l: [base, sym, trackball, trackball_toggle]
 - p: [19, 20, 21]
   k: {t: '>', h: '&gte'}
-  l: [base, trackball]
+  l: [base, trackball, trackball_toggle, sym]
 - p: [27, 15]
   k: Ctl+ C
-  l: [base, trackball]
+  l: [base, trackball, trackball_toggle]
 - p: [16, 28]
   k: Ctl+ V
-  l: [base, trackball]
+  l: [base, trackball, trackball_toggle]
 - p: [31, 19]
   k: '0'
   l: [base, sym, number, trackball, trackball_toggle]
@@ -527,7 +527,7 @@ combos:
   l: [base, trackball, trackball_toggle, scroll]
 - p: [38, 37]
   k: {t: scroll_horizontal, h: scroll_horizontal}
-  l: [base, trackball, trackball_toggle]
+  l: [base, trackball, trackball_toggle, scroll_horizontal]
 - p: [40, 39]
   k: LANG HANGEUL
   l: [base, mousekey, trackball, trackball_toggle]
@@ -563,7 +563,7 @@ combos:
   l: [base, sym, trackball, trackball_toggle, navigation]
 - p: [31, 33]
   k: DELETE
-  l: [base, sym, navigation, mousekey, trackball]
+  l: [base, sym, trackball, trackball_toggle]
 - p: [33, 32]
   k: ENTER
-  l: [base, sym, trackball, trackball_toggle, navigation]
+  l: [base, sym, trackball, trackball_toggle]
