@@ -398,22 +398,10 @@
             layers = <0 1 3 7 8>;
         };
 
-        combo_hold+tog_scrollH {
-            bindings = <&ht_mo_tog 10 10>;
-            key-positions = <38 37>;
-            layers = <0 7 8>;
-        };
-
         combo_altF4 {
             bindings = <&kp LA(F4)>;
             key-positions = <1 4>;
             layers = <0 7 8>;
-        };
-
-        combo_delR {
-            bindings = <&kp DELETE>;
-            key-positions = <31 33>;
-            layers = <0 1 2 6 7>;
         };
 
         combo_escL {
@@ -422,10 +410,34 @@
             layers = <0 1 2 6 7 8>;
         };
 
+        combo_delL {
+            bindings = <&kp DEL>;
+            key-positions = <26 28>;
+            layers = <0 1 7 8 2 3>;
+        };
+
+        combo_enterL {
+            bindings = <&kp ENTER>;
+            key-positions = <27 26>;
+            layers = <0 7 1 8>;
+        };
+
+        combo_graveL {
+            bindings = <&kp GRAVE>;
+            key-positions = <26 25>;
+            layers = <0 1 7 8 2>;
+        };
+
         combo_toggle_Trackball {
             bindings = <&tog 8>;
             key-positions = <31 34>;
             layers = <0 7 8>;
+        };
+
+        combo_toggle_game {
+            bindings = <&tog 6>;
+            key-positions = <24 35>;
+            layers = <0 5>;
         };
 
         combo_hold+tog_scroll {
@@ -434,10 +446,10 @@
             layers = <0 7 8 9>;
         };
 
-        combo_toggle_game {
-            bindings = <&tog 6>;
-            key-positions = <24 35>;
-            layers = <0 5>;
+        combo_hold+tog_scrollH {
+            bindings = <&ht_mo_tog 10 10>;
+            key-positions = <38 37>;
+            layers = <0 7 8>;
         };
 
         combo_kor {
@@ -458,9 +470,9 @@
             layers = <0 7 1 8>;
         };
 
-        combo_enterL {
-            bindings = <&kp ENTER>;
-            key-positions = <27 26>;
+        combo_caps {
+            bindings = <&caps_word>;
+            key-positions = <2 14>;
             layers = <0 7 1 8>;
         };
 
@@ -470,16 +482,10 @@
             layers = <0 1 7 8>;
         };
 
-        combo_caps {
-            bindings = <&caps_word>;
-            key-positions = <2 14>;
-            layers = <0 7 1 8>;
-        };
-
-        combo_back {
-            bindings = <&kp LA(LEFT_ARROW)>;
-            key-positions = <18 19>;
-            layers = <0 7 8 6>;
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <8 20>;
+            layers = <0 1 7 8>;
         };
 
         combo_forward {
@@ -488,16 +494,10 @@
             layers = <0 7 8 6>;
         };
 
-        combo_tab {
-            bindings = <&kp TAB>;
-            key-positions = <8 20>;
-            layers = <0 1 7 8>;
-        };
-
-        combo_enterR {
-            bindings = <&kp ENTER>;
-            key-positions = <33 32>;
-            layers = <0 1 7 8 2>;
+        combo_back {
+            bindings = <&kp LA(LEFT_ARROW)>;
+            key-positions = <18 19>;
+            layers = <0 7 8 6>;
         };
 
         combo_kor_T {
@@ -520,15 +520,15 @@
             layers = <0 1 7 8 2>;
         };
 
-        combo_delL {
-            bindings = <&kp DEL>;
-            key-positions = <26 28>;
-            layers = <0 1 7 8 2 3>;
+        combo_delR {
+            bindings = <&kp DELETE>;
+            key-positions = <31 33>;
+            layers = <0 1 2 6 7>;
         };
 
-        combo_graveL {
-            bindings = <&kp GRAVE>;
-            key-positions = <26 25>;
+        combo_enterR {
+            bindings = <&kp ENTER>;
+            key-positions = <33 32>;
             layers = <0 1 7 8 2>;
         };
     };
