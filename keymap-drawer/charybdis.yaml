@@ -36,9 +36,9 @@ layers:
   - {t: ., h: R CLK}
   - {t: /, h: number}
   - MUTE
-  - L CLK
-  - {t: BACK SPACE, h: sym}
   - {t: TAB, h: function}
+  - {t: BACK SPACE, h: sym}
+  - L CLK
   - {t: ESCAPE, h: function}
   - {t: SPACE, h: navigation}
   sym:
@@ -204,9 +204,9 @@ layers:
   - F3
   - F10
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   game:
