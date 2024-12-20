@@ -39,7 +39,7 @@ layers:
   - L CLK
   - {t: BACK SPACE, h: sym}
   - {t: TAB, h: mousekey}
-  - {t: ENTER, h: function}
+  - {t: ESCAPE, h: function}
   - {t: SPACE, h: navigation}
   sym:
   - {t: ▽, type: trans}
