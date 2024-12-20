@@ -3,7 +3,7 @@ layers:
   - ESC
   - Q
   - W
-  - {t: E, h: LEFT SHIFT}
+  - E
   - R
   - T
   - Y
@@ -288,9 +288,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - L CLK
-  - M CLK
   - R CLK
+  - M CLK
+  - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball:
@@ -330,9 +330,9 @@ layers:
   - R CLK
   - scroll
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - L CLK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball_toggle:
@@ -372,9 +372,9 @@ layers:
   - R CLK
   - scroll
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - L CLK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   scroll:
@@ -552,3 +552,6 @@ combos:
 - p: [21, 22]
   k: ENTER
   l: [base, sym, trackball, trackball_toggle, navigation, number]
+- p: [3, 4]
+  k: Sft+ T
+  l: [base, trackball, trackball_toggle]
