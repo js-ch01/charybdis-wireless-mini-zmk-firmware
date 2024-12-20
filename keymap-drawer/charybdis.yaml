@@ -549,3 +549,6 @@ combos:
 - p: [8, 20]
   k: TAB
   l: [base, sym, trackball, trackball_toggle]
+- p: [21, 22]
+  k: ENTER
+  l: [base, sym, trackball, trackball_toggle]
