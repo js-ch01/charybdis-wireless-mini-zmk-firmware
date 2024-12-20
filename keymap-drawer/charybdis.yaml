@@ -3,7 +3,7 @@ layers:
   - ESC
   - Q
   - W
-  - {t: E, h: LEFT SHIFT}
+  - E
   - R
   - T
   - Y
@@ -36,9 +36,9 @@ layers:
   - {t: ., h: R CLK}
   - {t: /, h: number}
   - MUTE
-  - L CLK
-  - {t: BACK SPACE, h: sym}
   - {t: TAB, h: function}
+  - {t: BACK SPACE, h: sym}
+  - L CLK
   - {t: ESCAPE, h: function}
   - {t: SPACE, h: navigation}
   sym:
@@ -173,7 +173,7 @@ layers:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
-  - BT CLR
+  - '&ht_bt_none BT_CLR'
   - PRINT SCREEN
   - F7
   - F8
@@ -184,7 +184,7 @@ layers:
   - KP NUM
   - RIGHT ALT
   - RIGHT CONTROL
-  - {t: ▽, type: trans}
+  - APP
   - {t: ▽, type: trans}
   - SCROLLLOCK
   - F4
@@ -193,9 +193,9 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - ZMK Studio
-  - Gui+Alt+ 8
-  - Gui+Alt+ -
-  - Alt+Gui+ =
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAUSE BREAK
@@ -204,11 +204,11 @@ layers:
   - F3
   - F10
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - APP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   game:
   - '1'
   - TAB
@@ -282,15 +282,15 @@ layers:
   - M CLK
   - R CLK
   - {t: ▽, type: trans}
-  - WHEEL D
-  - L CLK
-  - M CLK
-  - R CLK
-  - WHEEL U
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
-  - L CLK
-  - M CLK
   - R CLK
+  - M CLK
+  - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball:
@@ -330,9 +330,9 @@ layers:
   - R CLK
   - scroll
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - L CLK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   trackball_toggle:
@@ -372,9 +372,9 @@ layers:
   - R CLK
   - scroll
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - L CLK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   scroll:
@@ -551,4 +551,7 @@ combos:
   l: [base, sym, trackball, trackball_toggle]
 - p: [21, 22]
   k: ENTER
-  l: [base, sym, trackball, trackball_toggle]
+  l: [base, sym, trackball, trackball_toggle, navigation, number]
+- p: [3, 4]
+  k: Sft+ T
+  l: [base, trackball, trackball_toggle]
