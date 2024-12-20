@@ -156,17 +156,17 @@ layers:
   - KP 2
   - KP 3
   - B
-  - .
+  - '0'
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - .
   - {t: ▽, type: trans}
   - KP 0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '0'
+  - SPACE
   function:
   - BOOT LDR
   - OUT TOG
