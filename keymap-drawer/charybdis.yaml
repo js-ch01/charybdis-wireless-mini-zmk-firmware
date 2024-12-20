@@ -555,3 +555,6 @@ combos:
 - p: [3, 4]
   k: Sft+ T
   l: [base, trackball, trackball_toggle]
+- p: [3, 2]
+  k: Sft+ R
+  l: [base, trackball, trackball_toggle]
