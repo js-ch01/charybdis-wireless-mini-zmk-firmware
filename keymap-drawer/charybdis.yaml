@@ -513,8 +513,8 @@ combos:
 - p: [27, 26]
   k: ENTER
   l: [base, trackball, sym, trackball_toggle]
-- p: [26, 25]
-  k: '`'
+- p: [14, 3]
+  k: ''''
   l: [base, sym, trackball, trackball_toggle, navigation]
 - p: [31, 34]
   k: {t: trackball_toggle, h: toggle}
@@ -567,6 +567,6 @@ combos:
 - p: [33, 32]
   k: ENTER
   l: [base, sym, trackball, trackball_toggle]
-- p: [33, 34]
-  k: '`'
+- p: [8, 21]
+  k: '"'
   l: [base, sym, trackball, trackball_toggle]

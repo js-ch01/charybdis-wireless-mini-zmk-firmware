@@ -422,9 +422,9 @@
             layers = <0 7 1 8>;
         };
 
-        combo_graveL {
-            bindings = <&kp GRAVE>;
-            key-positions = <26 25>;
+        combo_sqtL {
+            bindings = <&kp SQT>;
+            key-positions = <14 3>;
             layers = <0 1 7 8 2>;
         };
 
@@ -533,9 +533,9 @@
             layers = <0 1 7 8>;
         };
 
-        combo_graveR {
-            bindings = <&kp GRAVE>;
-            key-positions = <33 34>;
+        combo_sqtR {
+            bindings = <&kp DQT>;
+            key-positions = <8 21>;
             layers = <0 1 7 8>;
         };
     };
