@@ -356,14 +356,14 @@
 
         combo_lt {
             bindings = <&ht_lte_lt 0 LT>;
-            key-positions = <16 15 14>;
+            key-positions = <14 3>;
             timeout-ms = <46>;
             layers = <0 1 7 8>;
         };
 
         combo_gt {
             bindings = <&ht_gte_gt 0 GT>;
-            key-positions = <19 20 21>;
+            key-positions = <21 8>;
             timeout-ms = <45>;
             layers = <0 7 8 1>;
         };
@@ -424,7 +424,7 @@
 
         combo_sqtL {
             bindings = <&kp SQT>;
-            key-positions = <14 3>;
+            key-positions = <3 16>;
             layers = <0 1 7 8 2>;
         };
 
@@ -535,7 +535,7 @@
 
         combo_sqtR {
             bindings = <&kp DQT>;
-            key-positions = <8 21>;
+            key-positions = <8 19>;
             layers = <0 1 7 8>;
         };
 
@@ -640,10 +640,10 @@
 
         sym_layer {
             bindings = <
-&trans          &trans     &sk EXCLAMATION           &sk AT     &sk HASH                &trans                   &trans     &kp N7        &kp N8  &kp N9        &trans         &trans
-&kp LEFT_ARROW  &kp TILDE  &ht_plus_double 0 PLUS    &kp EQUAL  &ht_pipe_double 0 PIPE  &kp PERCENT              &kp SLASH  &kp N4        &kp N5  &kp N6        &kp STAR       &trans
-&kp RIGHT       &kp GRAVE  &ht_minus_double 0 MINUS  &kp UNDER  &ht_amp_double 0 AMPS   &ht_amp_double 0 AMPS    &kp SPACE  &kp NUMBER_1  &kp N2  &kp NUMBER_3  &kp BACKSLASH  &trans
-                                                     &trans     &trans                  &trans                   &trans     &kp N0
+&trans          &trans     &sk EXCLAMATION           &sk AT     &sk HASH                &trans          &trans     &kp N7        &kp N8  &kp N9        &trans         &trans
+&kp LEFT_ARROW  &kp TILDE  &ht_plus_double 0 PLUS    &kp EQUAL  &ht_pipe_double 0 PIPE  &kp PERCENT     &kp SLASH  &kp N4        &kp N5  &kp N6        &kp STAR       &trans
+&kp RIGHT       &kp GRAVE  &ht_minus_double 0 MINUS  &kp UNDER  &ht_amp_double 0 AMPS   &kp QUESTION    &kp SPACE  &kp NUMBER_1  &kp N2  &kp NUMBER_3  &kp BACKSLASH  &trans
+                                                     &trans     &trans                  &trans          &trans     &kp N0
             >;
         };
 

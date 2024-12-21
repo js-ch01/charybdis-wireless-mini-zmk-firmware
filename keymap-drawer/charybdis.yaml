@@ -71,7 +71,7 @@ layers:
   - {t: '-', h: '&double_minus'}
   - _
   - {t: '&', h: '&double_amp'}
-  - {t: '&', h: '&double_amp'}
+  - '?'
   - SPACE
   - '1'
   - '2'
@@ -480,10 +480,10 @@ combos:
 - p: [20, 21]
   k: '}'
   l: [base, trackball, sym, trackball_toggle]
-- p: [16, 15, 14]
+- p: [14, 3]
   k: {t: <, h: '&lte'}
   l: [base, sym, trackball, trackball_toggle]
-- p: [19, 20, 21]
+- p: [21, 8]
   k: {t: '>', h: '&gte'}
   l: [base, trackball, trackball_toggle, sym]
 - p: [27, 15]
@@ -513,7 +513,7 @@ combos:
 - p: [27, 26]
   k: ENTER
   l: [base, trackball, sym, trackball_toggle]
-- p: [14, 3]
+- p: [3, 16]
   k: ''''
   l: [base, sym, trackball, trackball_toggle, navigation]
 - p: [31, 34]
@@ -567,7 +567,7 @@ combos:
 - p: [33, 32]
   k: ENTER
   l: [base, sym, trackball, trackball_toggle]
-- p: [8, 21]
+- p: [8, 19]
   k: '"'
   l: [base, sym, trackball, trackball_toggle]
 - p: [15, 28]
