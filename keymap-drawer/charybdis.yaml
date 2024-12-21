@@ -156,11 +156,11 @@ layers:
   - KP 2
   - KP 3
   - B
-  - '0'
+  - .
   - '1'
   - '2'
   - '3'
-  - .
+  - '0'
   - {t: ▽, type: trans}
   - KP 0
   - {t: ▽, type: trans}
