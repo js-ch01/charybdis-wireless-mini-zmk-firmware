@@ -48,10 +48,10 @@ layers:
   - {t: '@', h: sticky}
   - {t: '#', h: sticky}
   - {t: ▽, type: trans}
-  - '*'
-  - '*'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT
@@ -59,12 +59,12 @@ layers:
   - {t: +, h: '&double_plus'}
   - '='
   - {t: '|', h: '&double_pipe'}
-  - {t: '|', h: '&double_pipe'}
-  - /
-  - ^
   - '%'
-  - $
-  - +
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - '*'
   - {t: ▽, type: trans}
   - RIGHT
   - '`'
@@ -72,17 +72,17 @@ layers:
   - _
   - {t: '&', h: '&double_amp'}
   - {t: '&', h: '&double_amp'}
-  - '?'
-  - '!'
-  - '@'
-  - '#'
+  - SPACE
+  - '1'
+  - '2'
+  - '3'
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '0'
   navigation:
   - ''
   - ''
