@@ -538,6 +538,18 @@
             key-positions = <8 21>;
             layers = <0 1 7 8>;
         };
+
+        combo_caret {
+            bindings = <&kp CARET>;
+            key-positions = <15 28>;
+            layers = <0 1 7 8>;
+        };
+
+        combo_dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <31 20>;
+            layers = <0 1 7 8>;
+        };
     };
 
     macros {
@@ -628,10 +640,10 @@
 
         sym_layer {
             bindings = <
-&trans          &sk LEFT_META  &sk LEFT_ALT              &sk LCTRL  &sk LEFT_SHIFT          &trans                    &kp ASTERISK  &kp ASTERISK  &trans       &trans      &kp MINUS      &trans
-&kp LEFT_ARROW  &kp TILDE      &ht_plus_double 0 PLUS    &kp EQUAL  &ht_pipe_double 0 PIPE  &ht_pipe_double 0 PIPE    &kp SLASH     &kp CARET     &kp PERCENT  &kp DOLLAR  &kp PLUS       &trans
-&kp RIGHT       &kp GRAVE      &ht_minus_double 0 MINUS  &kp UNDER  &ht_amp_double 0 AMPS   &ht_amp_double 0 AMPS     &kp QUESTION  &kp EXCL      &kp AT       &kp HASH    &kp BACKSLASH  &trans
-                                                         &trans     &trans                  &trans                    &trans        &trans
+&trans          &trans     &sk EXCLAMATION           &sk AT     &sk HASH                &trans                    &kp ASTERISK  &kp ASTERISK  &trans       &trans      &trans         &trans
+&kp LEFT_ARROW  &kp TILDE  &ht_plus_double 0 PLUS    &kp EQUAL  &ht_pipe_double 0 PIPE  &ht_pipe_double 0 PIPE    &kp SLASH     &kp CARET     &kp PERCENT  &kp DOLLAR  &kp PLUS       &trans
+&kp RIGHT       &kp GRAVE  &ht_minus_double 0 MINUS  &kp UNDER  &ht_amp_double 0 AMPS   &ht_amp_double 0 AMPS     &kp QUESTION  &kp EXCL      &kp AT       &kp HASH    &kp BACKSLASH  &trans
+                                                     &trans     &trans                  &trans                    &trans        &trans
             >;
         };
 

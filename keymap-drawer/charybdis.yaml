@@ -43,16 +43,16 @@ layers:
   - {t: SPACE, h: navigation}
   sym:
   - {t: ▽, type: trans}
-  - {t: LEFT META, h: sticky}
-  - {t: LEFT ALT, h: sticky}
-  - {t: LCTRL, h: sticky}
-  - {t: LEFT SHIFT, h: sticky}
+  - {t: ▽, type: trans}
+  - {t: '!', h: sticky}
+  - {t: '@', h: sticky}
+  - {t: '#', h: sticky}
   - {t: ▽, type: trans}
   - '*'
   - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '-'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT
   - '~'
@@ -569,4 +569,10 @@ combos:
   l: [base, sym, trackball, trackball_toggle]
 - p: [8, 21]
   k: '"'
+  l: [base, sym, trackball, trackball_toggle]
+- p: [15, 28]
+  k: ^
+  l: [base, sym, trackball, trackball_toggle]
+- p: [31, 20]
+  k: $
   l: [base, sym, trackball, trackball_toggle]
