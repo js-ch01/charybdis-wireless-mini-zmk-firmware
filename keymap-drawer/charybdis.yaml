@@ -25,7 +25,7 @@ layers:
   - {t: ;, h: LEFT WIN}
   - VOL DN
   - R CLK
-  - {t: Z, h: number}
+  - {t: Z, h: function}
   - X
   - {t: C, h: scroll}
   - {t: V, h: scroll_horizontal}
@@ -34,12 +34,12 @@ layers:
   - {t: M, h: L CLK}
   - {t: ',', h: M CLK}
   - {t: ., h: R CLK}
-  - {t: /, h: number}
+  - {t: /, h: function}
   - MUTE
-  - {t: TAB, h: function}
+  - {t: TAB, h: number}
   - {t: BACK SPACE, h: sym}
   - L CLK
-  - {t: scroll, h: function}
+  - {t: scroll, h: number}
   - {t: SPACE, h: navigation}
   sym:
   - {t: ▽, type: trans}
@@ -90,7 +90,7 @@ layers:
   - ''
   - ''
   - ''
-  - INS
+  - {t: ▽, type: trans}
   - HOME
   - UP ARROW
   - END
@@ -151,22 +151,22 @@ layers:
   - +
   - {t: ▽, type: trans}
   - N
-  - {type: held}
+  - KP 0
   - KP 1
   - KP 2
   - KP 3
   - B
-  - '0'
+  - SPACE
   - '1'
   - '2'
   - '3'
+  - .
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '0'
-  - {t: ▽, type: trans}
-  - KP 0
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   function:
   - BOOT LDR
   - OUT TOG
@@ -193,9 +193,9 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - ZMK Studio
+  - {type: held}
   - BRI DN
   - BRI UP
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAUSE BREAK
@@ -204,7 +204,7 @@ layers:
   - F3
   - F10
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
