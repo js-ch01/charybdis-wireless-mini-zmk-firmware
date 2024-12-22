@@ -499,7 +499,7 @@ combos:
   k: '1'
   l: [base, sym_num, number, trackball, trackball_toggle]
 - p: [33, 21]
-  k: '2'
+  k: {t: +, h: '&double_plus'}
   l: [base, sym_num, number, trackball, trackball_toggle]
 - p: [1, 4]
   k: Alt+ F4
@@ -577,8 +577,11 @@ combos:
   k: $
   l: [base, sym_num, trackball, trackball_toggle]
 - p: [26, 14]
-  k: Ctl+ X
+  k: {t: +, h: '&double_plus'}
   l: [base, trackball, trackball_toggle]
 - p: [13, 25]
-  k: Ctl+ Z
+  k: {t: '-', h: '&double_minus'}
   l: [base, trackball, trackball_toggle]
+- p: [22, 34]
+  k: {t: '-', h: '&double_minus'}
+  l: [base, sym_num, number, trackball, trackball_toggle]
