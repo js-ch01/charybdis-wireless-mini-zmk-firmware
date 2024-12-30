@@ -24,6 +24,7 @@
 #define LTOG 8
 #define LSCR 9
 #define LSCRH 10
+
 //test
 
 &caps_word {
@@ -137,7 +138,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <160>;
-            quick-tap-ms = <155>;
+            quick-tap-ms = <220>;
         };
 
         ht_hm_lshft: hm_Lshift {
