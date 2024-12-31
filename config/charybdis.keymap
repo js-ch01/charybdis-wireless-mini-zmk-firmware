@@ -454,7 +454,7 @@
             layers = <0 7 8 10>;
         };
 
-        combo_kor {
+        combo_kor_eng {
             bindings = <&kp LANG_HANGEUL>;
             key-positions = <40 39>;
             layers = <0 6 7 8>;
@@ -569,6 +569,12 @@
             bindings = <&ht_minus_double 0 MINUS>;
             key-positions = <22 34>;
             layers = <0 1 3 7 8>;
+        };
+
+        combo_kor {
+            bindings = <&kp F13>;
+            key-positions = <21 22>;
+            layers = <0 6 7 8>;
         };
     };
 
