@@ -572,7 +572,7 @@
         };
 
         combo_kor {
-            bindings = <&kp F13>;
+            bindings = <&kp F20>;
             key-positions = <21 22>;
             layers = <0 6 7 8>;
         };

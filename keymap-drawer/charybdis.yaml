@@ -586,5 +586,5 @@ combos:
   k: {t: '-', h: '&double_minus'}
   l: [base, sym_num, number, trackball, trackball_toggle]
 - p: [21, 22]
-  k: F13
+  k: F20
   l: [base, mousekey, trackball, trackball_toggle]
