@@ -583,7 +583,7 @@ combos:
   k: {t: '-', h: '&double_minus'}
   l: [base, trackball, trackball_toggle]
 - p: [22, 34]
-  k: {t: '-', h: '&double_minus'}
+  k: F15
   l: [base, sym_num, number, trackball, trackball_toggle]
 - p: [21, 22]
   k: F15
