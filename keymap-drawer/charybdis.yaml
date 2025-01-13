@@ -114,10 +114,10 @@ layers:
   - ''
   - ''
   - ''
-  - '-'
-  - _
-  - +
-  - '='
+  - {t: ▽, type: trans}
+  - VOL DN
+  - VOL UP
+  - MUTE
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
