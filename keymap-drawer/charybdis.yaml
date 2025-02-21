@@ -39,7 +39,7 @@ layers:
   - {t: TAB, h: function}
   - {t: BACK SPACE, h: sym_num}
   - L CLK
-  - {t: scroll, h: function}
+  - {t: RIGHT ALT, h: function}
   - {t: SPACE, h: navigation}
   sym_num:
   - {t: ▽, type: trans}
@@ -498,9 +498,6 @@ combos:
 - p: [32, 20]
   k: '1'
   l: [base, sym_num, number, trackball, trackball_toggle]
-- p: [33, 21]
-  k: {t: +, h: '&double_plus'}
-  l: [base, sym_num, number, trackball, trackball_toggle]
 - p: [1, 4]
   k: Alt+ F4
   l: [base, trackball, trackball_toggle]
@@ -528,12 +525,6 @@ combos:
 - p: [38, 37]
   k: {t: scroll_horizontal, h: scroll_horizontal}
   l: [base, trackball, trackball_toggle, scroll_horizontal]
-- p: [40, 39]
-  k: LANG HANGEUL
-  l: [base, mousekey, trackball, trackball_toggle]
-- p: [18, 30]
-  k: LANG HANJA
-  l: [base, mousekey, trackball, trackball_toggle]
 - p: [16, 4]
   k: SPACE
   l: [base, trackball, sym_num, trackball_toggle]
@@ -553,10 +544,10 @@ combos:
   k: Alt+ LEFT
   l: [base, trackball, trackball_toggle, mousekey]
 - p: [3, 4]
-  k: Sft+ T
+  k: Gui+ `
   l: [base, trackball, trackball_toggle]
 - p: [3, 2]
-  k: Sft+ R
+  k: Ctl+Gui+ `
   l: [base, trackball, trackball_toggle]
 - p: [32, 31]
   k: ESCAPE
@@ -576,15 +567,3 @@ combos:
 - p: [31, 20]
   k: $
   l: [base, sym_num, trackball, trackball_toggle]
-- p: [26, 14]
-  k: {t: +, h: '&double_plus'}
-  l: [base, trackball, trackball_toggle]
-- p: [13, 25]
-  k: {t: '-', h: '&double_minus'}
-  l: [base, trackball, trackball_toggle]
-- p: [22, 34]
-  k: F15
-  l: [base, sym_num, number, trackball, trackball_toggle]
-- p: [21, 22]
-  k: F15
-  l: [base, mousekey, trackball, trackball_toggle]
