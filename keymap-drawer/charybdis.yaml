@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
   - VOL DN
-  - R CLK
+  - LCTRL
   - {t: Z, h: number}
   - X
   - {t: C, h: scroll}
