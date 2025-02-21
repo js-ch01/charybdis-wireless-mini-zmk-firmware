@@ -567,3 +567,6 @@ combos:
 - p: [31, 20]
   k: $
   l: [base, sym_num, trackball, trackball_toggle]
+- p: [40, 39]
+  k: {t: scroll, h: toggle}
+  l: [base, trackball, trackball_toggle, scroll]
