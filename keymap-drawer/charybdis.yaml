@@ -126,6 +126,48 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  game:
+  - '1'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - VOL UP
+  - '2'
+  - LCTRL
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - VOL DN
+  - '3'
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - N
+  - L CLK
+  - M CLK
+  - R CLK
+  - {t: /, h: number}
+  - MUTE
+  - {t: '`', h: number}
+  - SPACE
+  - LEFT ALT
+  - M
+  - SPACE
   number:
   - Y
   - KP NUMLOCK
@@ -210,48 +252,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  game:
-  - '1'
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - VOL UP
-  - '2'
-  - LCTRL
-  - A
-  - S
-  - D
-  - F
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - VOL DN
-  - '3'
-  - LSHFT
-  - Z
-  - X
-  - C
-  - V
-  - N
-  - L CLK
-  - M CLK
-  - R CLK
-  - {t: /, h: number}
-  - MUTE
-  - {t: '`', h: number}
-  - SPACE
-  - LEFT ALT
-  - M
-  - SPACE
   trackball:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
