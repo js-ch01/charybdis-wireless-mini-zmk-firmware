@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: charybdis}
 layers:
   base:
   - ESC
@@ -114,7 +115,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - PRINT SCREEN
   - VOL DN
   - VOL UP
   - MUTE
