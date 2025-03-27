@@ -14,9 +14,9 @@
 #define LBASE 0
 #define LSYM 1
 #define LNAV 2
-#define LNUM 3
-#define LFUNC 4
-#define LGAME 5
+#define LGAME 3
+#define LNUM 4
+#define LFUNC 5
 #define LMSE 6
 #define LTRAC 7
 #define LTOG 8
