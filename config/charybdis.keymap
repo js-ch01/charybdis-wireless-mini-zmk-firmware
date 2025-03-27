@@ -648,7 +648,7 @@
             bindings = <
 &kp N1  &kp TAB    &kp Q  &kp W        &kp E      &kp R           &kp Y  &kp U      &kp I      &kp O      &kp P        &kp C_VOL_UP
 &kp N2  &kp LCTRL  &kp A  &kp S        &kp D      &kp F           &kp H  &kp J      &kp K      &kp L      &kp SEMI     &kp C_VOL_DN
-&kp N3  &kp LSHFT  &kp Z  &kp X        &kp C      &kp V           &kp N  &mkp LCLK  &mkp MCLK  &mkp RCLK  &lt 4 SLASH  &kp C_MUTE
+&kp N3  &kp LSHFT  &kp Z  &kp X        &kp C      &kp V           &kp N  &mkp LCLK  &mkp MCLK  &mkp RCLK  &lt 4 SLASH  &kp RALT
                           &lt 4 GRAVE  &kp SPACE  &kp LEFT_ALT    &kp M  &kp SPACE
             >;
         };

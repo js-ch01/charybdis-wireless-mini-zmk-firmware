@@ -162,7 +162,7 @@ layers:
   - M CLK
   - R CLK
   - {t: /, h: number}
-  - MUTE
+  - RALT
   - {t: '`', h: number}
   - SPACE
   - LEFT ALT
