@@ -518,7 +518,7 @@ combos:
   k: {t: trackball_toggle, h: toggle}
   l: [base, trackball, trackball_toggle]
 - p: [24, 35]
-  k: {t: mousekey, h: toggle}
+  k: {t: game, h: toggle}
   l: [base, game]
 - p: [36, 37]
   k: {t: scroll, h: scroll}
