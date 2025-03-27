@@ -222,7 +222,7 @@ layers:
   - I
   - O
   - P
-  - BACK SPACE
+  - VOL UP
   - '2'
   - LCTRL
   - A
@@ -234,7 +234,7 @@ layers:
   - K
   - L
   - ;
-  - ENTER
+  - VOL DN
   - '3'
   - LSHFT
   - Z
@@ -246,54 +246,12 @@ layers:
   - M CLK
   - R CLK
   - {t: /, h: number}
-  - RSHFT
+  - MUTE
   - {t: '`', h: number}
   - SPACE
   - LEFT ALT
-  - {t: ▽, type: trans}
   - M
-  mousekey:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&msc SCRL_LEFT'
-  - MOVE UP
-  - '&msc SCRL_RIGHT'
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - '&msc SCRL_UP'
-  - MOVE L
-  - MOVE D
-  - MOVE R
-  - '&msc SCRL_DOWN'
-  - ''
-  - RIGHT SHIFT
-  - LCTRL
-  - LEFT ALT
-  - LEFT META
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - L CLK
-  - M CLK
-  - R CLK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - R CLK
-  - M CLK
-  - L CLK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - SPACE
   trackball:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -333,6 +291,48 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - L CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  mousekey:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - MOVE UP
+  - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - '&msc SCRL_UP'
+  - MOVE L
+  - MOVE D
+  - MOVE R
+  - '&msc SCRL_DOWN'
+  - ''
+  - RIGHT SHIFT
+  - LCTRL
+  - LEFT ALT
+  - LEFT META
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L CLK
+  - M CLK
+  - R CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - R CLK
+  - M CLK
   - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -552,13 +552,13 @@ combos:
   l: [base, trackball, trackball_toggle]
 - p: [32, 31]
   k: ESCAPE
-  l: [base, sym_num, trackball, trackball_toggle, navigation]
+  l: [base, sym_num, mousekey, trackball_toggle, navigation]
 - p: [31, 33]
   k: DELETE
-  l: [base, sym_num, trackball, trackball_toggle]
+  l: [base, sym_num, trackball, trackball_toggle, game]
 - p: [33, 32]
   k: ENTER
-  l: [base, sym_num, trackball, trackball_toggle]
+  l: [base, sym_num, trackball, trackball_toggle, game]
 - p: [8, 19]
   k: '"'
   l: [base, sym_num, trackball, trackball_toggle]
