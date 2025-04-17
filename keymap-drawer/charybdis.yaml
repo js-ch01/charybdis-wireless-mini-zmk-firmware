@@ -162,7 +162,7 @@ layers:
   - M CLK
   - R CLK
   - {t: /, h: number}
-  - MUTE
+  - RALT
   - {t: '`', h: number}
   - SPACE
   - LEFT ALT
@@ -252,48 +252,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  trackball:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - L CLK
-  - M CLK
-  - R CLK
-  - scroll
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - L CLK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   mousekey:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -333,6 +291,48 @@ layers:
   - ''
   - R CLK
   - M CLK
+  - L CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  trackball:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L CLK
+  - M CLK
+  - R CLK
+  - scroll
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -552,7 +552,7 @@ combos:
   l: [base, trackball, trackball_toggle]
 - p: [32, 31]
   k: ESCAPE
-  l: [base, sym_num, mousekey, trackball_toggle, navigation]
+  l: [base, sym_num, trackball, trackball_toggle, navigation]
 - p: [31, 33]
   k: DELETE
   l: [base, sym_num, trackball, trackball_toggle, game]
