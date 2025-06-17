@@ -26,7 +26,7 @@ layers:
   - {t: ;, h: LEFT WIN}
   - VOL DN
   - LCTRL
-  - {t: Z, h: number}
+  - {t: Z, h: function}
   - X
   - {t: C, h: scroll}
   - {t: V, h: scroll_horizontal}
@@ -35,7 +35,7 @@ layers:
   - {t: M, h: L CLK}
   - {t: ',', h: M CLK}
   - {t: ., h: R CLK}
-  - {t: /, h: number}
+  - {t: /, h: function}
   - MUTE
   - {t: TAB, h: function}
   - {t: BACK SPACE, h: sym_num}
@@ -161,9 +161,9 @@ layers:
   - L CLK
   - M CLK
   - R CLK
-  - {t: /, h: number}
+  - {t: /, h: function}
   - RALT
-  - {t: '`', h: number}
+  - {t: '`', h: function}
   - SPACE
   - LEFT ALT
   - M
@@ -194,7 +194,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - N
-  - {t: KP 0, type: held}
+  - KP 0
   - KP 1
   - KP 2
   - KP 3
@@ -236,7 +236,7 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - ZMK Studio
-  - {t: ▽, type: trans}
+  - {type: held}
   - RALT
   - RCTRL
   - {t: ▽, type: trans}
@@ -247,7 +247,7 @@ layers:
   - F3
   - F10
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -462,6 +462,48 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  game2:
+  - '1'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - VOL UP
+  - '2'
+  - LCTRL
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - VOL DN
+  - '3'
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - N
+  - L CLK
+  - M CLK
+  - R CLK
+  - {t: /, h: function}
+  - RALT
+  - {t: '`', h: function}
+  - SPACE
+  - LEFT ALT
+  - M
+  - SPACE
 combos:
 - p: [16, 15]
   k: {t: (, h: '&parenthesis_lr'}
@@ -495,10 +537,10 @@ combos:
   l: [base, trackball, trackball_toggle]
 - p: [31, 19]
   k: '0'
-  l: [base, sym_num, number, trackball, trackball_toggle]
+  l: [base, sym_num, function, trackball, trackball_toggle]
 - p: [32, 20]
   k: '1'
-  l: [base, sym_num, number, trackball, trackball_toggle]
+  l: [base, sym_num, function, trackball, trackball_toggle]
 - p: [1, 4]
   k: Alt+ F4
   l: [base, trackball, trackball_toggle]
@@ -507,7 +549,7 @@ combos:
   l: [base, sym_num, navigation, mousekey, trackball, trackball_toggle]
 - p: [26, 28]
   k: DEL
-  l: [base, sym_num, trackball, trackball_toggle, navigation, number]
+  l: [base, sym_num, trackball, trackball_toggle, navigation, function]
 - p: [27, 26]
   k: ENTER
   l: [base, trackball, sym_num, trackball_toggle]
@@ -518,8 +560,8 @@ combos:
   k: {t: trackball_toggle, h: toggle}
   l: [base, trackball, trackball_toggle]
 - p: [24, 35]
-  k: {t: game, h: toggle}
-  l: [base, game]
+  k: {t: game2, h: toggle}
+  l: [base, game, game2]
 - p: [36, 37]
   k: {t: scroll, h: scroll}
   l: [base, trackball, trackball_toggle, scroll]
