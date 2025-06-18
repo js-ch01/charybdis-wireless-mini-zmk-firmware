@@ -500,20 +500,20 @@
         combo_escR {
             bindings = <&kp ESCAPE>;
             key-positions = <32 31>;
-            layers = <0 1 6 8 2 3>;
+            layers = <0 1 6 8 2 3 11>;
             layers = <0 1 7 8 2>;
         };
 
         combo_delR {
             bindings = <&kp DELETE>;
             key-positions = <31 33>;
-            layers = <0 1 6 8 3>;
+            layers = <0 1 6 8 3 11>;
         };
 
         combo_enterR {
             bindings = <&kp ENTER>;
             key-positions = <33 32>;
-            layers = <0 1 6 8 3>;
+            layers = <0 1 6 8 3 11>;
         };
 
         combo_sqtR {

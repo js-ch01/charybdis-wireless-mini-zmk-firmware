@@ -603,7 +603,7 @@ combos:
   l: [base, trackball, trackball_toggle]
 - p: [24, 35]
   k: {t: game2, h: toggle}
-  l: [base, game]
+  l: [base, game, game2]
 - p: [36, 37]
   k: {t: scroll, h: scroll}
   l: [base, trackball, trackball_toggle, scroll]
@@ -639,10 +639,10 @@ combos:
   l: [base, sym_num, mousekey, trackball_toggle, navigation]
 - p: [31, 33]
   k: DELETE
-  l: [base, sym_num, trackball, trackball_toggle, game]
+  l: [base, sym_num, trackball, trackball_toggle, game, game2]
 - p: [33, 32]
   k: ENTER
-  l: [base, sym_num, trackball, trackball_toggle, game]
+  l: [base, sym_num, trackball, trackball_toggle, game, game2]
 - p: [8, 19]
   k: '"'
   l: [base, sym_num, trackball, trackball_toggle]
