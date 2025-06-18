@@ -719,19 +719,19 @@
 
         game2 {
             bindings = <
-&kp N1        &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &kp U           &kp UP_ARROW    &kp O            &kp DELETE     &kp INSERT
-&kp N2        &kp A  &kp S  &kp D       &kp F         &kp G        &kp H       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END        &kp HOME
-&lt 13 LCTRL  &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &mkp LCLK       &kp COMMA       &kp PERIOD       &kp PAGE_DOWN  &kp PG_UP
-                            &lt 12 TAB  &kp LEFT_ALT  &kp SPACE    &lt 12 ESC  &kp LEFT_ALT
+&kp N1        &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &kp U           &kp UP_ARROW    &kp O            &kp DELETE  &kp INSERT
+&kp N2        &kp A  &kp S  &kp D       &kp F         &kp G        &kp H       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END     &kp HOME
+&lt 13 LCTRL  &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &mkp LCLK       &kp COMMA       &kp PERIOD       &kp SPACE   &kp PG_UP
+                            &lt 12 TAB  &kp LEFT_ALT  &mkp LCLK    &lt 12 ESC  &kp LEFT_ALT
             >;
         };
 
         game2_ {
             bindings = <
-&trans  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7    &trans  &trans  &kp I   &trans  &kp P     &kp C_VOLUME_UP
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp J   &kp K   &kp L   &kp SEMI  &kp C_VOL_DN
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &kp M   &trans  &trans  &kp FSLH  &kp K_MUTE
-                        &trans  &trans  &trans    &trans  &trans
+&trans  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7     &kp N8   &kp N9  &kp I   &trans  &kp P     &kp C_VOLUME_UP
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F11  &kp J   &kp K   &kp L   &kp SEMI  &kp C_VOL_DN
+&trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp F12  &kp M   &trans  &trans  &kp FSLH  &kp K_MUTE
+                        &trans  &trans  &trans     &trans   &trans
             >;
         };
 
