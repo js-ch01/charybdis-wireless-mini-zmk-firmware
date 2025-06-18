@@ -719,10 +719,10 @@
 
         game2 {
             bindings = <
-&kp N1       &kp Q  &kp W  &kp E         &kp R         &kp T        &kp Y       &kp U           &kp UP_ARROW    &kp O            &kp DELETE     &kp INSERT
-&kp N2       &kp A  &kp S  &kp D         &kp F         &kp G        &kp H       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END        &kp HOME
-&lt 4 LCTRL  &kp Z  &kp X  &kp C         &kp V         &kp B        &kp N       &mkp LCLK       &kp COMMA       &kp PERIOD       &kp PAGE_DOWN  &kp PG_UP
-                           &lt 12 GRAVE  &kp LEFT_ALT  &kp SPACE    &lt 12 TAB  &kp LEFT_ALT
+&kp N1       &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &kp U           &kp UP_ARROW    &kp O            &kp DELETE     &kp INSERT
+&kp N2       &kp A  &kp S  &kp D       &kp F         &kp G        &kp H       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END        &kp HOME
+&lt 4 LCTRL  &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &mkp LCLK       &kp COMMA       &kp PERIOD       &kp PAGE_DOWN  &kp PG_UP
+                           &lt 12 TAB  &kp LEFT_ALT  &kp SPACE    &lt 12 ESC  &kp LEFT_ALT
             >;
         };
 
