@@ -487,7 +487,7 @@ layers:
   - RIGHT
   - END
   - HOME
-  - {t: base, h: toggle}
+  - {t: LCTRL, h: number}
   - Z
   - X
   - C
@@ -500,10 +500,10 @@ layers:
   - PAGE DOWN
   - PG UP
   - {t: '`', h: game2_}
-  - SPACE
   - LEFT ALT
-  - {t: TAB, h: game2_}
   - SPACE
+  - {t: TAB, h: game2_}
+  - LEFT ALT
   game2_:
   - {t: ▽, type: trans}
   - '3'
