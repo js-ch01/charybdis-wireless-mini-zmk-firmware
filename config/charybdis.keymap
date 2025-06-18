@@ -716,5 +716,14 @@
                      &trans  &trans  &trans    &trans  &trans
             >;
         };
+
+        game2 {
+            bindings = <
+&kp N1  &kp Q  &kp W  &kp E        &kp R      &kp T           &kp Y  &kp U      &kp I      &kp O      &kp DELETE     &kp INSERT
+&kp N2  &kp A  &kp S  &kp D        &kp F      &kp G           &kp H  &kp J      &kp K      &kp L      &kp END        &kp HOME
+&kp N3  &kp Z  &kp X  &kp C        &kp V      &kp B           &kp N  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp PAGE_DOWN  &kp PG_UP
+                      &lt 4 GRAVE  &kp SPACE  &kp LEFT_ALT    &kp M  &kp SPACE
+            >;
+        };
     };
 };
