@@ -494,14 +494,14 @@ layers:
   - V
   - B
   - N
-  - L CLK
+  - {t: M, h: L CLK}
   - ','
   - .
-  - PAGE DOWN
+  - SPACE
   - PG UP
   - {t: TAB, h: game2_}
   - LEFT ALT
-  - SPACE
+  - L CLK
   - {t: ESC, h: game2_}
   - LEFT ALT
   game2_:
@@ -511,31 +511,31 @@ layers:
   - '5'
   - '6'
   - '7'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '8'
+  - '9'
   - I
   - {t: ▽, type: trans}
   - P
   - VOLUME UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - J
-  - K
-  - L
-  - ;
-  - VOL DN
   - {t: ▽, type: trans}
   - F1
   - F2
   - F3
   - F4
   - F5
+  - F11
+  - J
+  - K
+  - L
+  - ;
+  - VOL DN
   - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - DEV TOOLS
   - M
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
