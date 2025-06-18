@@ -487,7 +487,7 @@ layers:
   - RIGHT
   - END
   - HOME
-  - {t: LCTRL, h: game2_num}
+  - {t: base, h: toggle}
   - Z
   - X
   - C
@@ -495,9 +495,9 @@ layers:
   - B
   - N
   - {t: M, h: L CLK}
-  - ','
-  - .
   - SPACE
+  - {t: ., h: R CLK}
+  - {t: /, h: game2_num}
   - PG UP
   - {t: TAB, h: game2_}
   - LEFT ALT
@@ -547,41 +547,41 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   game2_num:
-  - Y
+  - {t: ▽, type: trans}
   - KP NUMLOCK
   - KP 7
   - KP 8
   - KP 9
-  - T
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '7'
   - '8'
   - '9'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - H
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 4
   - KP 5
   - KP 6
-  - G
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '4'
   - '5'
   - '6'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: N, type: held}
+  - {t: ▽, type: trans}
   - KP 0
   - KP 1
   - KP 2
   - KP 3
-  - B
+  - {t: ▽, type: trans}
   - SPACE
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - KP 0
   - {t: ▽, type: trans}

@@ -23,6 +23,7 @@
 #define LSCR 9
 #define LSCRH 10
 #define LGAME2 11
+#define LGAME2NUM 13
 
 //test
 
@@ -73,7 +74,7 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <LSCR LNUM>;
+        layers = <LSCR LNUM LGAME2NUM>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
