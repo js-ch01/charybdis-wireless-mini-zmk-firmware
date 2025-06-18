@@ -728,9 +728,9 @@
 
         game2_ {
             bindings = <
-&trans  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7    &trans  &trans  &kp I   &trans  &kp P     &kp LBKT
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp J   &kp K   &kp L   &kp SEMI  &kp APOS
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &kp M   &trans  &trans  &kp FSLH  &trans
+&trans  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7    &trans  &trans  &kp I   &trans  &kp P     &kp C_VOLUME_UP
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp J   &kp K   &kp L   &kp SEMI  &kp C_VOL_DN
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &kp M   &trans  &trans  &kp FSLH  &kp K_MUTE
                         &trans  &trans  &trans    &trans  &trans
             >;
         };

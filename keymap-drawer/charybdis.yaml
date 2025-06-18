@@ -471,7 +471,7 @@ layers:
   - T
   - Y
   - U
-  - I
+  - UP ARROW
   - O
   - DELETE
   - INSERT
@@ -482,12 +482,12 @@ layers:
   - F
   - G
   - H
-  - J
-  - K
-  - L
+  - LEFT
+  - DOWN ARROW
+  - RIGHT
   - END
   - HOME
-  - '3'
+  - {t: base, h: toggle}
   - Z
   - X
   - C
@@ -495,8 +495,8 @@ layers:
   - B
   - N
   - L CLK
-  - M CLK
-  - R CLK
+  - ','
+  - .
   - PAGE DOWN
   - PG UP
   - {t: '`', h: game2_}
@@ -506,6 +506,17 @@ layers:
   - SPACE
   game2_:
   - {t: ▽, type: trans}
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - I
+  - {t: ▽, type: trans}
+  - P
+  - VOLUME UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -513,34 +524,23 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - ;
+  - VOL DN
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: ▽, type: trans}
+  - M
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - /
+  - MUTE
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
