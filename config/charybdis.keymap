@@ -719,10 +719,10 @@
 
         game2 {
             bindings = <
-&kp N1       &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &kp U           &kp UP_ARROW    &kp O            &kp DELETE     &kp INSERT
-&kp N2       &kp A  &kp S  &kp D       &kp F         &kp G        &kp H       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END        &kp HOME
-&lt 4 LCTRL  &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &mkp LCLK       &kp COMMA       &kp PERIOD       &kp PAGE_DOWN  &kp PG_UP
-                           &lt 12 TAB  &kp LEFT_ALT  &kp SPACE    &lt 12 ESC  &kp LEFT_ALT
+&kp N1        &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &kp U           &kp UP_ARROW    &kp O            &kp DELETE     &kp INSERT
+&kp N2        &kp A  &kp S  &kp D       &kp F         &kp G        &kp H       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END        &kp HOME
+&lt 13 LCTRL  &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &mkp LCLK       &kp COMMA       &kp PERIOD       &kp PAGE_DOWN  &kp PG_UP
+                            &lt 12 TAB  &kp LEFT_ALT  &kp SPACE    &lt 12 ESC  &kp LEFT_ALT
             >;
         };
 
@@ -732,6 +732,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp J   &kp K   &kp L   &kp SEMI  &kp C_VOL_DN
 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &kp M   &trans  &trans  &kp FSLH  &kp K_MUTE
                         &trans  &trans  &trans    &trans  &trans
+            >;
+        };
+
+        game2_num {
+            bindings = <
+&kp Y  &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp T     &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
+&kp H  &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp G     &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
+&kp N  &kp KP_N0       &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp B     &kp SPACE  &kp N1  &kp N2  &kp N3  &trans  &trans
+                                        &kp KP_NUMBER_0  &trans           &trans    &trans     &kp N0
             >;
         };
     };

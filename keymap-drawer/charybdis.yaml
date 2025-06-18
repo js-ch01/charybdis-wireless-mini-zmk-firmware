@@ -487,7 +487,7 @@ layers:
   - RIGHT
   - END
   - HOME
-  - {t: LCTRL, h: number}
+  - {t: LCTRL, h: game2_num}
   - Z
   - X
   - C
@@ -546,6 +546,48 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  game2_num:
+  - Y
+  - KP NUMLOCK
+  - KP 7
+  - KP 8
+  - KP 9
+  - T
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - H
+  - {t: ▽, type: trans}
+  - KP 4
+  - KP 5
+  - KP 6
+  - G
+  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: N, type: held}
+  - KP 0
+  - KP 1
+  - KP 2
+  - KP 3
+  - B
+  - SPACE
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
 combos:
 - p: [16, 15]
   k: {t: (, h: '&parenthesis_lr'}
