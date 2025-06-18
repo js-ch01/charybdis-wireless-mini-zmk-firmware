@@ -432,7 +432,7 @@
         combo_toggle_game {
             bindings = <&tog 11>;
             key-positions = <24 35>;
-            layers = <0 3>;
+            layers = <0 3 11>;
         };
 
         combo_hold+tog_scroll {
