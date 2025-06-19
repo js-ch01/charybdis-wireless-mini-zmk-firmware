@@ -722,7 +722,7 @@
             bindings = <
 &kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &kp U              &kp UP_ARROW    &kp O                   &kp DELETE    &kp INSERT
 &kp N2  &kp A  &kp S  &kp D       &kp F         &kp G        &kp H       &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &kp END       &kp HOME
-&tog 0  &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 SLASH  &kp PG_UP
+&to 0   &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 SLASH  &kp COMMA
                       &lt 12 TAB  &kp LEFT_ALT  &mkp LCLK    &lt 12 ESC  &kp LEFT_ALT
             >;
         };

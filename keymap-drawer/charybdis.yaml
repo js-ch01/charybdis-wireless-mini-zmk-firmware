@@ -498,7 +498,7 @@ layers:
   - SPACE
   - {t: ., h: R CLK}
   - {t: /, h: game2_num}
-  - PG UP
+  - ','
   - {t: TAB, h: game2_}
   - LEFT ALT
   - L CLK
