@@ -25,7 +25,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LEFT WIN}
   - VOL DN
-  - LCTRL
+  - {t: game2, h: toggle}
   - {t: Z, h: number}
   - X
   - {t: C, h: scroll}
