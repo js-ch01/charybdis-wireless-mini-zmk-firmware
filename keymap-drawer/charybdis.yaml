@@ -497,22 +497,22 @@ layers:
   - {t: M, h: L CLK}
   - SPACE
   - {t: ., h: R CLK}
-  - {t: /, h: game2_num}
+  - {t: PAGE DOWN, h: game2_num}
   - ','
   - {t: TAB, h: game2_}
   - LEFT ALT
   - L CLK
   - {t: ESC, h: game2_}
-  - LEFT ALT
+  - LEFT SHIFT
   game2_:
   - {t: ▽, type: trans}
-  - '3'
-  - '4'
-  - '5'
   - '6'
   - '7'
   - '8'
   - '9'
+  - '0'
+  - '-'
+  - '='
   - I
   - {t: ▽, type: trans}
   - P
@@ -654,13 +654,13 @@ combos:
   l: [base, trackball, trackball_toggle, scroll_horizontal]
 - p: [16, 4]
   k: SPACE
-  l: [base, trackball, sym_num, trackball_toggle]
+  l: [base, trackball, sym_num, trackball_toggle, game2]
 - p: [2, 14]
   k: CAPS WORD
   l: [base, trackball, sym_num, trackball_toggle]
 - p: [7, 19]
   k: BACK SPACE
-  l: [base, sym_num, trackball, trackball_toggle]
+  l: [base, sym_num, trackball, trackball_toggle, game2]
 - p: [8, 20]
   k: TAB
   l: [base, sym_num, trackball, trackball_toggle]
@@ -697,3 +697,12 @@ combos:
 - p: [40, 39]
   k: {t: scroll, h: toggle}
   l: [base, trackball, trackball_toggle, scroll]
+- p: [27, 15]
+  k: '4'
+  l: [game2]
+- p: [14, 26]
+  k: '3'
+  l: [game2]
+- p: [16, 28]
+  k: '5'
+  l: [game2]
