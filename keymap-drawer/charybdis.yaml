@@ -498,14 +498,14 @@ layers:
   - SPACE
   - {t: ., h: R CLK}
   - {t: PAGE DOWN, h: game2_num}
-  - ','
+  - PAGE UP
   - {t: TAB, h: game2_}
   - LEFT ALT
   - L CLK
   - {t: ESC, h: game2_}
   - LEFT SHIFT
   game2_:
-  - {t: ▽, type: trans}
+  - '`'
   - '6'
   - '7'
   - '8'
@@ -514,10 +514,10 @@ layers:
   - '-'
   - '='
   - I
-  - {t: ▽, type: trans}
-  - P
+  - SCROLLLOCK
+  - \
   - VOLUME UP
-  - {t: ▽, type: trans}
+  - LCTRL
   - F1
   - F2
   - F3
@@ -536,10 +536,10 @@ layers:
   - F9
   - F10
   - DEV TOOLS
-  - M
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - /
+  - P
+  - '['
+  - ']'
+  - ''''
   - MUTE
   - {type: held}
   - {t: ▽, type: trans}
@@ -681,7 +681,7 @@ combos:
   l: [base, sym_num, trackball, trackball_toggle, navigation]
 - p: [31, 33]
   k: DELETE
-  l: [base, sym_num, trackball, trackball_toggle, game, game2]
+  l: [base, sym_num, trackball, trackball_toggle, game]
 - p: [33, 32]
   k: ENTER
   l: [base, sym_num, trackball, trackball_toggle, game, game2]
@@ -705,4 +705,7 @@ combos:
   l: [game2]
 - p: [16, 28]
   k: '5'
+  l: [game2]
+- p: [31, 33]
+  k: ','
   l: [game2]
