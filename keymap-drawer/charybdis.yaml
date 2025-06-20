@@ -583,9 +583,9 @@ layers:
   - '3'
   - {type: held}
   - {t: ▽, type: trans}
-  - KP 0
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - R CLK
+  - M CLK
+  - L CLK
   - {t: ▽, type: trans}
   - '0'
 combos:
