@@ -755,7 +755,7 @@
             bindings = <
 &kp GRAVE  &kp NUMBER_6  &kp N7  &kp NUMBER_8  &kp N9  &kp NUMBER_0    &kp MINUS  &kp EQUAL  &kp I             &kp PRINTSCREEN    &kp BACKSLASH  &kp C_VOLUME_UP
 &kp LCTRL  &kp F1        &kp F2  &kp F3        &kp F4  &kp F5          &kp F11    &kp J      &kp K             &kp L              &kp SEMI       &kp C_VOL_DN
-&trans     &kp F6        &kp F7  &kp F8        &kp F9  &kp F10         &kp F12    &kp P      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT        &kp C_MUTE
+&mkp RCLK  &kp F6        &kp F7  &kp F8        &kp F9  &kp F10         &kp F12    &kp P      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT        &kp C_MUTE
                                  &trans        &trans  &trans          &trans     &trans
             >;
         };

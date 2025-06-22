@@ -529,7 +529,7 @@ layers:
   - L
   - ;
   - VOL DN
-  - {t: ▽, type: trans}
+  - R CLK
   - F6
   - F7
   - F8
