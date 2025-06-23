@@ -564,6 +564,18 @@
             key-positions = <31 33>;
             layers = <11>;
         };
+
+        game_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <40 39>;
+            layers = <11>;
+        };
+
+        game_space {
+            bindings = <&kp SPACE>;
+            key-positions = <37 38>;
+            layers = <11>;
+        };
     };
 
     macros {

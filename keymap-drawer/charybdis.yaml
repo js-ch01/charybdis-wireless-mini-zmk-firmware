@@ -709,3 +709,9 @@ combos:
 - p: [31, 33]
   k: ','
   l: [game2]
+- p: [40, 39]
+  k: LEFT ALT
+  l: [game2]
+- p: [37, 38]
+  k: SPACE
+  l: [game2]
