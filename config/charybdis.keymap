@@ -576,6 +576,18 @@
             key-positions = <37 38>;
             layers = <11>;
         };
+
+        game_media_left {
+            bindings = <&kp F13>;
+            key-positions = <19 31>;
+            layers = <11>;
+        };
+
+        game_media_right {
+            bindings = <&kp F14>;
+            key-positions = <21 33>;
+            layers = <11>;
+        };
     };
 
     macros {

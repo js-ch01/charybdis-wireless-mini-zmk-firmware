@@ -715,3 +715,9 @@ combos:
 - p: [37, 38]
   k: SPACE
   l: [game2]
+- p: [19, 31]
+  k: F13
+  l: [game2]
+- p: [21, 33]
+  k: F14
+  l: [game2]
