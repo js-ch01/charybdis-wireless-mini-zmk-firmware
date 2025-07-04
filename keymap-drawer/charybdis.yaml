@@ -550,7 +550,7 @@ layers:
   - {t: ▽, type: trans}
   - KP NUMLOCK
   - KP 7
-  - KP 8
+  - Alt+ I
   - KP 9
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -561,9 +561,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP 4
-  - KP 5
-  - KP 6
+  - Ctl+ J
+  - Alt+ K
+  - Ctl+ L
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '4'
@@ -574,7 +574,7 @@ layers:
   - {t: ▽, type: trans}
   - KP 0
   - KP 1
-  - KP 2
+  - Alt+ ,
   - KP 3
   - {t: ▽, type: trans}
   - SPACE
@@ -716,8 +716,8 @@ combos:
   k: SPACE
   l: [game2]
 - p: [19, 31]
-  k: F13
+  k: Ctl+ J
   l: [game2]
 - p: [21, 33]
-  k: F14
+  k: Ctl+ L
   l: [game2]
