@@ -470,9 +470,9 @@ layers:
   - R
   - T
   - Y
-  - U
+  - '&skill'
   - UP ARROW
-  - O
+  - '&test'
   - DELETE
   - INSERT
   - '2'
@@ -512,9 +512,9 @@ layers:
   - '9'
   - '0'
   - '-'
-  - '='
+  - Y
   - I
-  - PRINT SCREEN
+  - O
   - \
   - VOLUME UP
   - LCTRL

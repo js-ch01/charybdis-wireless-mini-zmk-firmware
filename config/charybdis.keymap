@@ -662,6 +662,35 @@
 
             label = "DOUBLE_MINUS";
         };
+
+        skill: skill {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 100>,
+                <&kp A>,
+                <&macro_wait_time 200>,
+                <&kp W>,
+                <&macro_wait_time 400>,
+                <&kp E>,
+                <&macro_wait_time 400>,
+                <&kp R>,
+                <&macro_wait_time 500>,
+                <&kp T>;
+
+            label = "SKILL";
+        };
+
+        test: crumeso {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_ALT &kp D>,
+                <&macro_wait_time 600>,
+                <&kp LEFT_SHIFT>;
+
+            label = "CRUMESO";
+        };
     };
 
     keymap {
@@ -768,7 +797,7 @@
 
         game2 {
             bindings = <
-&kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &kp U              &kp UP_ARROW    &kp O                   &kp DELETE        &kp INSERT
+&kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &skill             &kp UP_ARROW    &test                   &kp DELETE        &kp INSERT
 &kp N2  &kp A  &kp S  &kp D       &kp F         &kp G        &kp H       &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &kp END           &kp HOME
 &to 0   &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
                       &lt 12 TAB  &kp LEFT_ALT  &mkp LCLK    &lt 12 ESC  &kp LEFT_SHIFT
@@ -777,9 +806,9 @@
 
         game2_ {
             bindings = <
-&kp GRAVE  &kp NUMBER_6  &kp N7  &kp NUMBER_8  &kp N9  &kp NUMBER_0    &kp MINUS  &kp EQUAL  &kp I             &kp PRINTSCREEN    &kp BACKSLASH  &kp C_VOLUME_UP
-&kp LCTRL  &kp F1        &kp F2  &kp F3        &kp F4  &kp F5          &kp F11    &kp J      &kp K             &kp L              &kp SEMI       &kp C_VOL_DN
-&mkp RCLK  &kp F6        &kp F7  &kp F8        &kp F9  &kp F10         &kp F12    &kp P      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT        &kp C_MUTE
+&kp GRAVE  &kp NUMBER_6  &kp N7  &kp NUMBER_8  &kp N9  &kp NUMBER_0    &kp MINUS  &kp Y   &kp I             &kp O              &kp BACKSLASH  &kp C_VOLUME_UP
+&kp LCTRL  &kp F1        &kp F2  &kp F3        &kp F4  &kp F5          &kp F11    &kp J   &kp K             &kp L              &kp SEMI       &kp C_VOL_DN
+&mkp RCLK  &kp F6        &kp F7  &kp F8        &kp F9  &kp F10         &kp F12    &kp P   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT        &kp C_MUTE
                                  &trans        &trans  &trans          &trans     &trans
             >;
         };
