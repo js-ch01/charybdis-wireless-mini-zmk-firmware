@@ -472,7 +472,7 @@ layers:
   - Y
   - '&awert'
   - UP ARROW
-  - '&d_sh'
+  - '&alt_alt_d_sh'
   - DELETE
   - INSERT
   - '2'
