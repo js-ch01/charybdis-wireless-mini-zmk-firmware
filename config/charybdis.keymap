@@ -698,7 +698,7 @@
                 <&kp LEFT_ALT>,
                 <&macro_wait_time 400>,
                 <&kp LEFT_ALT &kp D>,
-                <&macro_wait_time 450>,
+                <&macro_wait_time 250>,
                 <&kp LEFT_SHIFT>;
 
             label = "LEFT_ALT";
