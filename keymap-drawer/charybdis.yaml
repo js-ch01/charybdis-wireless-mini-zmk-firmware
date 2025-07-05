@@ -470,7 +470,7 @@ layers:
   - R
   - T
   - Y
-  - '&awert'
+  - '&d_sh'
   - UP ARROW
   - '&alt_alt_d_sh'
   - DELETE
@@ -609,7 +609,7 @@ layers:
   - {t: ▽, type: trans}
   - F
   - {t: ▽, type: trans}
-  - '&d_sh'
+  - '&awert'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
