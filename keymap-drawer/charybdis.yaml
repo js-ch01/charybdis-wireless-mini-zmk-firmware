@@ -595,7 +595,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Q
   - {t: ▽, type: trans}
   - '&up_d_sh'
   - {t: ▽, type: trans}
@@ -607,7 +607,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F
   - {t: ▽, type: trans}
   - '&alt_alt_d_sh'
   - {t: ▽, type: trans}
@@ -619,9 +619,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&s_sh'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&end_home_del'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

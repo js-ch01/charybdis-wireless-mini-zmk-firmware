@@ -735,6 +735,18 @@
 
             label = "AWERT";
         };
+
+        s_sh: s_sh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp S>,
+                <&macro_wait_time 300>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 300>;
+
+            label = "S_SH";
+        };
     };
 
     keymap {
@@ -868,9 +880,9 @@
 
         layer_14 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &up_d_sh       &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &alt_alt_d_sh  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp Q   &trans  &up_d_sh       &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F   &trans  &alt_alt_d_sh  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &s_sh   &trans  &end_home_del  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
         };
