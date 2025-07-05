@@ -710,11 +710,11 @@
             #binding-cells = <0>;
             bindings =
                 <&kp UP_ARROW>,
-                <&macro_wait_time 780>,
+                <&macro_wait_time 1011>,
                 <&kp LEFT_ALT>,
                 <&macro_wait_time 450>,
                 <&kp D &kp LEFT_SHIFT>,
-                <&macro_press>;
+                <&macro_wait_time 300>;
 
             label = "UP_D_SH";
         };
@@ -724,15 +724,15 @@
             #binding-cells = <0>;
             bindings =
                 <&kp UP_ARROW>,
-                <&macro_wait_time 700>,
+                <&macro_wait_time 1020>,
                 <&kp END>,
-                <&macro_wait_time 800>,
+                <&macro_wait_time 1050>,
                 <&kp UP_ARROW>,
-                <&macro_wait_time 650>,
+                <&macro_wait_time 1060>,
                 <&kp HOME>,
-                <&macro_wait_time 690>,
+                <&macro_wait_time 1010>,
                 <&kp UP_ARROW>,
-                <&macro_wait_time 710>,
+                <&macro_wait_time 1111>,
                 <&kp DELETE>;
 
             label = "AWERT";
