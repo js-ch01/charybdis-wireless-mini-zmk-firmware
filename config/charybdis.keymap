@@ -695,7 +695,7 @@
                 <&kp LEFT_ALT>,
                 <&macro_wait_time 360>,
                 <&kp LEFT_ALT &kp D>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 150>,
                 <&kp LEFT_SHIFT>;
 
             label = "LEFT_ALT";
@@ -720,7 +720,7 @@
                 <&kp END>,
                 <&macro_wait_time 1200>,
                 <&kp UP_ARROW>,
-                <&macro_wait_time 1060>,
+                <&macro_wait_time 1220>,
                 <&kp HOME>,
                 <&macro_wait_time 1010>,
                 <&kp UP_ARROW>,
