@@ -684,11 +684,7 @@
         d_sh: crumeso {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_ALT>,
-                <&macro_wait_time 450>,
-                <&kp D &kp LEFT_SHIFT>;
-
+            bindings = <&kp D &kp LEFT_SHIFT>;
             label = "CRUMESO";
         };
 
@@ -883,7 +879,7 @@
         layer_14 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp Q   &trans  &up_d_sh       &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp F   &trans  &alt_alt_d_sh  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F   &trans  &d_sh          &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &s_sh   &trans  &end_home_del  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;

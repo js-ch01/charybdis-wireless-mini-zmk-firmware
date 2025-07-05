@@ -609,7 +609,7 @@ layers:
   - {t: ▽, type: trans}
   - F
   - {t: ▽, type: trans}
-  - '&alt_alt_d_sh'
+  - '&d_sh'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
