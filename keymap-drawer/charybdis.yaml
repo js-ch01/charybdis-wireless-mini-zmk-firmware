@@ -470,9 +470,9 @@ layers:
   - R
   - T
   - Y
-  - '&skill'
+  - '&end_home_del'
   - UP ARROW
-  - '&test'
+  - '&d_sh'
   - DELETE
   - INSERT
   - '2'
@@ -597,6 +597,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&up_d_sh'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -608,8 +609,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&alt_alt_d_sh'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}

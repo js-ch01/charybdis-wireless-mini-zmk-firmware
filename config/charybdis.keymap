@@ -663,33 +663,77 @@
             label = "DOUBLE_MINUS";
         };
 
-        skill: skill {
+        awert: skill {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 100>,
                 <&kp A>,
                 <&macro_wait_time 200>,
                 <&kp W>,
-                <&macro_wait_time 400>,
+                <&macro_wait_time 300>,
                 <&kp E>,
-                <&macro_wait_time 400>,
+                <&macro_wait_time 350>,
                 <&kp R>,
-                <&macro_wait_time 500>,
+                <&macro_wait_time 380>,
                 <&kp T>;
 
             label = "SKILL";
         };
 
-        test: crumeso {
+        d_sh: crumeso {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_ALT &kp D>,
-                <&macro_wait_time 600>,
-                <&kp LEFT_SHIFT>;
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 450>,
+                <&kp D &kp LEFT_SHIFT>;
 
             label = "CRUMESO";
+        };
+
+        alt_alt_d_sh: left_alt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 400>,
+                <&kp LEFT_ALT &kp D>,
+                <&macro_wait_time 450>,
+                <&kp LEFT_SHIFT>;
+
+            label = "LEFT_ALT";
+        };
+
+        up_d_sh: up_d_sh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp UP_ARROW>,
+                <&macro_wait_time 400>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 450>,
+                <&kp D &kp LEFT_SHIFT>;
+
+            label = "UP_D_SH";
+        };
+
+        end_home_del: awert {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp UP_ARROW>,
+                <&macro_wait_time 400>,
+                <&kp END>,
+                <&macro_wait_time 500>,
+                <&kp UP_ARROW>,
+                <&macro_wait_time 400>,
+                <&kp HOME>,
+                <&macro_wait_time 380>,
+                <&kp UP_ARROW>,
+                <&macro_wait_time 430>,
+                <&kp DELETE>;
+
+            label = "AWERT";
         };
     };
 
@@ -797,7 +841,7 @@
 
         game2 {
             bindings = <
-&kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &skill             &kp UP_ARROW    &test                   &kp DELETE        &kp INSERT
+&kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &end_home_del      &kp UP_ARROW    &d_sh                   &kp DELETE        &kp INSERT
 &kp N2  &kp A  &kp S  &kp D       &kp F         &kp G        &kp H       &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
 &to 0   &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
                       &lt 12 TAB  &kp LEFT_ALT  &mkp LCLK    &lt 12 ESC  &kp LEFT_SHIFT
@@ -824,9 +868,9 @@
 
         layer_14 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &up_d_sh       &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &alt_alt_d_sh  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
         };
