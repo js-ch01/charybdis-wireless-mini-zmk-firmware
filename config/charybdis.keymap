@@ -720,7 +720,7 @@
                 <&kp END>,
                 <&macro_wait_time 1200>,
                 <&kp UP_ARROW>,
-                <&macro_wait_time 1220>,
+                <&macro_wait_time 1400>,
                 <&kp HOME>,
                 <&macro_wait_time 1010>,
                 <&kp UP_ARROW>,
