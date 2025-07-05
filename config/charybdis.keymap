@@ -717,6 +717,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&macro_tap_time 400>,
                 <&kp END>,
                 <&macro_wait_time 1200>,
                 <&kp UP_ARROW>,
