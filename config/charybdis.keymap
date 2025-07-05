@@ -675,7 +675,8 @@
                 <&macro_wait_time 350>,
                 <&kp R>,
                 <&macro_wait_time 380>,
-                <&kp T>;
+                <&kp T>,
+                <&macro_wait_time 200>;
 
             label = "SKILL";
         };
@@ -696,9 +697,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LEFT_ALT>,
-                <&macro_wait_time 400>,
+                <&macro_wait_time 330>,
                 <&kp LEFT_ALT &kp D>,
-                <&macro_wait_time 250>,
+                <&macro_wait_time 50>,
                 <&kp LEFT_SHIFT>;
 
             label = "LEFT_ALT";
@@ -712,7 +713,8 @@
                 <&macro_wait_time 780>,
                 <&kp LEFT_ALT>,
                 <&macro_wait_time 450>,
-                <&kp D &kp LEFT_SHIFT>;
+                <&kp D &kp LEFT_SHIFT>,
+                <&macro_press>;
 
             label = "UP_D_SH";
         };
