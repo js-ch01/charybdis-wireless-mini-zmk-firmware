@@ -709,7 +709,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp UP_ARROW>,
-                <&macro_wait_time 400>,
+                <&macro_wait_time 780>,
                 <&kp LEFT_ALT>,
                 <&macro_wait_time 450>,
                 <&kp D &kp LEFT_SHIFT>;
@@ -722,15 +722,15 @@
             #binding-cells = <0>;
             bindings =
                 <&kp UP_ARROW>,
-                <&macro_wait_time 400>,
+                <&macro_wait_time 700>,
                 <&kp END>,
-                <&macro_wait_time 500>,
+                <&macro_wait_time 800>,
                 <&kp UP_ARROW>,
-                <&macro_wait_time 400>,
+                <&macro_wait_time 650>,
                 <&kp HOME>,
-                <&macro_wait_time 380>,
+                <&macro_wait_time 690>,
                 <&kp UP_ARROW>,
-                <&macro_wait_time 430>,
+                <&macro_wait_time 710>,
                 <&kp DELETE>;
 
             label = "AWERT";
@@ -853,7 +853,7 @@
 
         game2 {
             bindings = <
-&kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &end_home_del      &kp UP_ARROW    &d_sh                   &kp DELETE        &kp INSERT
+&kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &awert             &kp UP_ARROW    &d_sh                   &kp DELETE        &kp INSERT
 &kp N2  &kp A  &kp S  &kp D       &kp F         &kp G        &kp H       &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
 &to 0   &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
                       &lt 12 TAB  &kp LEFT_ALT  &mkp LCLK    &lt 12 ESC  &kp LEFT_SHIFT
