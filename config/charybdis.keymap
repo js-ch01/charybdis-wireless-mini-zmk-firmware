@@ -431,18 +431,6 @@
             layers = <0 3 11>;
         };
 
-        combo_hold+tog_scroll {
-            bindings = <&ht_mo_tog 9 9>;
-            key-positions = <36 37>;
-            layers = <0 7 8 9>;
-        };
-
-        combo_hold+tog_scrollH {
-            bindings = <&ht_mo_tog 10 10>;
-            key-positions = <38 37>;
-            layers = <0 7 8 10>;
-        };
-
         combo_space {
             bindings = <&kp SPACE>;
             key-positions = <16 4>;
@@ -458,7 +446,7 @@
         combo_bspc {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 19>;
-            layers = <0 1 6 8>;
+            layers = <0 1 6 8 11>;
         };
 
         combo_tab {
@@ -556,6 +544,18 @@
         game_6 {
             bindings = <&kp NUMBER_6>;
             key-positions = <14 15>;
+            layers = <11>;
+        };
+
+        game_media_left {
+            bindings = <&kp LC(J)>;
+            key-positions = <19 31>;
+            layers = <11>;
+        };
+
+        game_media_right {
+            bindings = <&kp LC(K)>;
+            key-positions = <33 21>;
             layers = <11>;
         };
     };

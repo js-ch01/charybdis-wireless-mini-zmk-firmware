@@ -688,12 +688,6 @@ combos:
 - p: [24, 35]
   k: {t: game2, h: toggle}
   l: [base, game, game2]
-- p: [36, 37]
-  k: {t: scroll, h: scroll}
-  l: [base, trackball, trackball_toggle, scroll]
-- p: [38, 37]
-  k: {t: scroll_horizontal, h: scroll_horizontal}
-  l: [base, trackball, trackball_toggle, scroll_horizontal]
 - p: [16, 4]
   k: SPACE
   l: [base, trackball, sym_num, trackball_toggle, game2]
@@ -702,7 +696,7 @@ combos:
   l: [base, trackball, sym_num, trackball_toggle]
 - p: [7, 19]
   k: BACK SPACE
-  l: [base, sym_num, mousekey, trackball_toggle]
+  l: [base, sym_num, mousekey, trackball_toggle, game2]
 - p: [8, 20]
   k: TAB
   l: [base, sym_num, trackball, trackball_toggle]
@@ -750,4 +744,10 @@ combos:
   l: [game2]
 - p: [14, 15]
   k: '6'
+  l: [game2]
+- p: [19, 31]
+  k: Ctl+ J
+  l: [game2]
+- p: [33, 21]
+  k: Ctl+ K
   l: [game2]
