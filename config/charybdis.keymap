@@ -525,25 +525,25 @@
 
         game_3 {
             bindings = <&kp NUMBER_3>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             layers = <11>;
         };
 
         game_4 {
             bindings = <&kp NUMBER_4>;
-            key-positions = <2 3>;
+            key-positions = <3 4>;
             layers = <11>;
         };
 
         game_5 {
             bindings = <&kp NUMBER_5>;
-            key-positions = <13 14>;
+            key-positions = <14 15>;
             layers = <11>;
         };
 
         game_6 {
             bindings = <&kp NUMBER_6>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
             layers = <11>;
         };
 
