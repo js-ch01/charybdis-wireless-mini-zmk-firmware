@@ -693,9 +693,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LEFT_ALT>,
-                <&macro_wait_time 315>,
+                <&macro_wait_time 200>,
                 <&kp LEFT_ALT &kp D>,
-                <&macro_wait_time 150>,
+                <&macro_wait_time 300>,
                 <&kp LEFT_SHIFT>;
 
             label = "LEFT_ALT";
@@ -719,7 +719,7 @@
             bindings =
                 <&macro_tap_time 100>,
                 <&kp END>,
-                <&macro_wait_time 1200>,
+                <&macro_wait_time 1000>,
                 <&kp UP_ARROW>,
                 <&macro_wait_time 1400>,
                 <&kp HOME>,
