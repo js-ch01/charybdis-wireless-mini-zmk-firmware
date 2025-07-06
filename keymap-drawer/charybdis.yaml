@@ -502,7 +502,7 @@ layers:
   - {t: TAB, h: game2_}
   - LEFT ALT
   - L CLK
-  - {t: ESC, h: game2_}
+  - {t: LEFT ALT, h: game2_}
   - LEFT SHIFT
   game2_:
   - '`'
