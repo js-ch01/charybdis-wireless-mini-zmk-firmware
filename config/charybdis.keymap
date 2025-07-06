@@ -451,7 +451,7 @@
         combo_space {
             bindings = <&kp SPACE>;
             key-positions = <16 4>;
-            layers = <0 7 1 8>;
+            layers = <0 7 1 8 11>;
         };
 
         combo_caps {
@@ -463,7 +463,7 @@
         combo_bspc {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 19>;
-            layers = <0 1 7 8>;
+            layers = <0 1 6 8>;
         };
 
         combo_tab {
@@ -508,7 +508,7 @@
         combo_delR {
             bindings = <&kp DELETE>;
             key-positions = <31 33>;
-            layers = <0 1 7 8 3 11>;
+            layers = <0 1 6 8 3 11>;
         };
 
         combo_enterR {
@@ -538,7 +538,7 @@
         combo_scroll {
             bindings = <&tog 9>;
             key-positions = <40 39>;
-            layers = <0 7 8 9>;
+            layers = <0 6 8 9>;
         };
     };
 
@@ -614,6 +614,86 @@
 
             label = "DOUBLE_MINUS";
         };
+
+        awert: skill {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp A>,
+                <&macro_wait_time 200>,
+                <&kp W>,
+                <&macro_wait_time 390>,
+                <&kp E>,
+                <&macro_wait_time 380>,
+                <&kp R>,
+                <&macro_wait_time 380>,
+                <&kp T>,
+                <&macro_wait_time 200>;
+
+            label = "SKILL";
+        };
+
+        d_sh: crumeso {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp LEFT_SHIFT>;
+            label = "CRUMESO";
+        };
+
+        alt_alt_d_sh: left_alt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 200>,
+                <&kp LEFT_ALT &kp D>,
+                <&macro_wait_time 300>,
+                <&kp LEFT_SHIFT>;
+
+            label = "LEFT_ALT";
+        };
+
+        up_d_sh: up_d_sh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp UP_ARROW>,
+                <&macro_wait_time 800>,
+                <&kp D &kp LEFT_SHIFT>,
+                <&macro_wait_time 300>;
+
+            label = "UP_D_SH";
+        };
+
+        end_home_del: awert {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap_time 100>,
+                <&kp END>,
+                <&macro_wait_time 1000>,
+                <&kp UP_ARROW>,
+                <&macro_wait_time 1400>,
+                <&kp HOME>,
+                <&macro_wait_time 1010>,
+                <&kp UP_ARROW>,
+                <&macro_wait_time 1111>,
+                <&kp DELETE>;
+
+            label = "AWERT";
+        };
+
+        s_sh: s_sh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp S>,
+                <&macro_wait_time 300>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 300>;
+
+            label = "S_SH";
+        };
     };
 
     keymap {
@@ -622,7 +702,7 @@
         base_layer {
             bindings = <
 &kp ESC            &kp Q              &kp W              &kp E                  &kp R                      &kp T        &kp Y            &kp U                       &kp I                  &kp O                &kp P                      &kp C_VOL_UP
-&lt_mo_mkp 6 MCLK  &ht_hm LEFT_WIN A  &ht_hm LEFT_ALT S  &ht_hm LEFT_CONTROL D  &ht_hm_lshft LEFT_SHIFT F  &kp G        &kp H            &ht_hm_rshft RIGHT_SHIFT J  &ht_hm LEFT_CONTROL K  &ht_hm LEFT_ALT L    &ht_hm LEFT_WIN SEMICOLON  &kp C_VOL_DN
+&lt_mo_mkp 7 MCLK  &ht_hm LEFT_WIN A  &ht_hm LEFT_ALT S  &ht_hm LEFT_CONTROL D  &ht_hm_lshft LEFT_SHIFT F  &kp G        &kp H            &ht_hm_rshft RIGHT_SHIFT J  &ht_hm LEFT_CONTROL K  &ht_hm LEFT_ALT L    &ht_hm LEFT_WIN SEMICOLON  &kp C_VOL_DN
 &kp LCTRL          &lt 4 Z            &kp X              &lt 9 C                &lt 10 V                   &kp B        &kp N            &ht_mkp_kp LCLK M           &ht_mkp_kp MCLK COMMA  &ht_mkp_kp RCLK DOT  &lt 4 SLASH                &kp C_MUTE
                                                          &lt 5 TAB              &lt 1 BACKSPACE            &mkp LCLK    &lt 5 RIGHT_ALT  &lt 2 SPACE
             >;
@@ -720,28 +800,37 @@
 
         game2 {
             bindings = <
-&kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &kp U              &kp UP_ARROW    &kp O                   &kp DELETE    &kp INSERT
-&kp N2  &kp A  &kp S  &kp D       &kp F         &kp G        &kp H       &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &kp END       &kp HOME
-&tog 0  &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 SLASH  &kp PG_UP
-                      &lt 12 TAB  &kp LEFT_ALT  &mkp LCLK    &lt 12 ESC  &kp LEFT_ALT
+&kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y       &d_sh              &kp UP_ARROW    &alt_alt_d_sh           &kp DELETE        &kp INSERT
+&kp N2  &kp A  &kp S  &kp D       &kp F         &kp G        &kp H       &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
+&to 0   &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N       &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
+                      &lt 12 TAB  &kp LEFT_ALT  &mkp LCLK    &lt 12 ESC  &kp LEFT_SHIFT
             >;
         };
 
         game2_ {
             bindings = <
-&trans  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7     &kp N8   &kp N9  &kp I   &trans  &kp P     &kp C_VOLUME_UP
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F11  &kp J   &kp K   &kp L   &kp SEMI  &kp C_VOL_DN
-&trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp F12  &kp M   &trans  &trans  &kp FSLH  &kp K_MUTE
-                        &trans  &trans  &trans     &trans   &trans
+&kp GRAVE  &kp NUMBER_6  &kp N7  &kp NUMBER_8  &kp N9  &kp NUMBER_0    &kp MINUS  &kp U   &kp I             &kp O              &kp BACKSLASH  &kp C_VOLUME_UP
+&kp LCTRL  &kp F1        &kp F2  &kp F3        &kp F4  &kp F5          &kp F11    &kp J   &kp K             &kp L              &kp SEMI       &kp C_VOL_DN
+&mkp RCLK  &kp F6        &kp F7  &kp F8        &kp F9  &kp F10         &kp F12    &kp P   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT        &kp C_MUTE
+                                 &trans        &trans  &trans          &trans     &trans
             >;
         };
 
         game2_num {
             bindings = <
-&trans  &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans    &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans    &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &kp KP_N0       &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans    &kp SPACE  &kp N1  &kp N2  &kp N3  &trans  &trans
-                                         &kp KP_NUMBER_0  &trans           &trans    &trans     &kp N0
+&trans  &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp LA(I)      &kp KP_NUMBER_9  &trans       &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans          &kp LC(J)        &kp LA(K)      &kp LC(L)        &trans       &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &kp KP_N0       &kp KP_N1        &kp LA(COMMA)  &kp KP_NUMBER_3  &trans       &kp SPACE  &kp N1  &kp N2  &kp N3  &trans  &trans
+                                         &mkp RCLK      &mkp MCLK        &mkp LCLK    &trans     &kp N0
+            >;
+        };
+
+        layer_14 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp Q   &trans  &up_d_sh       &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F   &trans  &awert         &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &s_sh   &trans  &end_home_del  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
             >;
         };
     };
