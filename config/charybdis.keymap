@@ -24,7 +24,6 @@
 #define LSCRH 10
 #define LGAME2 11
 #define LGAME2NUM 13
-#define 6GAME2M 14
 
 &lt { quick-tap-ms = <220>; };
 
