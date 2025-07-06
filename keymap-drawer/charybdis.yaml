@@ -548,10 +548,10 @@ layers:
   - {t: ▽, type: trans}
   game2_num:
   - {t: ▽, type: trans}
-  - KP NUMLOCK
-  - KP 7
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Alt+ I
-  - KP 9
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '7'
@@ -572,10 +572,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP 0
-  - KP 1
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Alt+ ,
-  - KP 3
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SPACE
   - '1'
@@ -739,3 +739,15 @@ combos:
 - p: [40, 39]
   k: {t: scroll, h: toggle}
   l: [base, mousekey, trackball_toggle, scroll]
+- p: [1, 2]
+  k: '3'
+  l: [game2]
+- p: [2, 3]
+  k: '4'
+  l: [game2]
+- p: [13, 14]
+  k: '5'
+  l: [game2]
+- p: [14, 15]
+  k: '6'
+  l: [game2]

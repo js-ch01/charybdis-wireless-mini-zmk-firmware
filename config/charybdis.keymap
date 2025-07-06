@@ -534,6 +534,30 @@
             key-positions = <40 39>;
             layers = <0 6 8 9>;
         };
+
+        game_3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <1 2>;
+            layers = <11>;
+        };
+
+        game_4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <2 3>;
+            layers = <11>;
+        };
+
+        game_5 {
+            bindings = <&kp NUMBER_5>;
+            key-positions = <13 14>;
+            layers = <11>;
+        };
+
+        game_6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <14 15>;
+            layers = <11>;
+        };
     };
 
     macros {
@@ -812,10 +836,10 @@
 
         game2_num {
             bindings = <
-&trans  &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp LA(I)      &kp KP_NUMBER_9  &trans       &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans          &kp LC(J)        &kp LA(K)      &kp LC(L)        &trans       &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &kp KP_N0       &kp KP_N1        &kp LA(COMMA)  &kp KP_NUMBER_3  &trans       &kp SPACE  &kp N1  &kp N2  &kp N3  &trans  &trans
-                                         &mkp RCLK      &mkp MCLK        &mkp LCLK    &trans     &kp N0
+&trans  &trans  &trans     &kp LA(I)      &trans     &trans       &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &kp LC(J)  &kp LA(K)      &kp LC(L)  &trans       &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans     &kp LA(COMMA)  &trans     &trans       &kp SPACE  &kp N1  &kp N2  &kp N3  &trans  &trans
+                           &mkp RCLK      &mkp MCLK  &mkp LCLK    &trans     &kp N0
             >;
         };
 
