@@ -670,9 +670,9 @@
                 <&kp A>,
                 <&macro_wait_time 200>,
                 <&kp W>,
-                <&macro_wait_time 300>,
+                <&macro_wait_time 390>,
                 <&kp E>,
-                <&macro_wait_time 350>,
+                <&macro_wait_time 380>,
                 <&kp R>,
                 <&macro_wait_time 380>,
                 <&kp T>,
@@ -693,7 +693,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LEFT_ALT>,
-                <&macro_wait_time 360>,
+                <&macro_wait_time 315>,
                 <&kp LEFT_ALT &kp D>,
                 <&macro_wait_time 150>,
                 <&kp LEFT_SHIFT>;
@@ -717,7 +717,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap_time 400>,
+                <&macro_tap_time 100>,
                 <&kp END>,
                 <&macro_wait_time 1200>,
                 <&kp UP_ARROW>,
