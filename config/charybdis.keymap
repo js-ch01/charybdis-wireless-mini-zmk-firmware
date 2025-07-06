@@ -24,11 +24,7 @@
 #define LSCRH 10
 #define LGAME2 11
 #define LGAME2NUM 13
-
-//test
-
-&caps_word {
-};
+#define 6GAME2M 14
 
 &lt { quick-tap-ms = <220>; };
 
@@ -502,7 +498,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <32 31>;
             layers = <0 1 7 8 2 3 11>;
-            layers = <0 1 7 8 2>;
         };
 
         combo_delR {
