@@ -554,7 +554,7 @@
         };
 
         game_media_right {
-            bindings = <&kp LC(K)>;
+            bindings = <&kp LC(L)>;
             key-positions = <33 21>;
             layers = <11>;
         };
@@ -845,9 +845,9 @@
 
         layer_14 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp Q   &trans  &up_d_sh       &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp F   &trans  &awert         &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &s_sh   &trans  &end_home_del  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp Q   &trans  &up_d_sh  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F   &trans  &awert    &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &s_sh   &trans  &kp V     &end_home_del  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
         };

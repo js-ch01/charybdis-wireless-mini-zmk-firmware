@@ -621,8 +621,8 @@ layers:
   - {t: ▽, type: trans}
   - '&s_sh'
   - {t: ▽, type: trans}
+  - V
   - '&end_home_del'
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -749,5 +749,5 @@ combos:
   k: Ctl+ J
   l: [game2]
 - p: [33, 21]
-  k: Ctl+ K
+  k: Ctl+ L
   l: [game2]
