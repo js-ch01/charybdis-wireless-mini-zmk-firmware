@@ -637,15 +637,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp A>,
+                <&kp A &kp D>,
                 <&macro_wait_time 200>,
-                <&kp W>,
-                <&macro_wait_time 390>,
-                <&kp E>,
+                <&kp W &kp LEFT_SHIFT>,
+                <&macro_wait_time 400>,
+                <&kp E &kp D>,
                 <&macro_wait_time 380>,
-                <&kp R>,
-                <&macro_wait_time 380>,
-                <&kp T>,
+                <&kp R &kp LSHFT>,
+                <&macro_wait_time 320>,
+                <&kp T &kp D>,
                 <&macro_wait_time 200>;
 
             label = "SKILL";
