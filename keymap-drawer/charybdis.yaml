@@ -620,7 +620,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&s_sh'
-  - {t: ▽, type: trans}
+  - X
   - V
   - '&end_home_del'
   - {t: ▽, type: trans}

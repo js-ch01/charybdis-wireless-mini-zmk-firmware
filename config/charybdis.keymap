@@ -847,7 +847,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp Q   &trans  &up_d_sh  &trans         &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp F   &trans  &awert    &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &s_sh   &trans  &kp V     &end_home_del  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &s_sh   &kp X   &kp V     &end_home_del  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
         };
