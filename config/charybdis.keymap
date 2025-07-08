@@ -641,11 +641,11 @@
                 <&macro_wait_time 200>,
                 <&kp W &kp LEFT_SHIFT>,
                 <&macro_wait_time 400>,
-                <&kp E &kp D>,
+                <&kp E &kp D &kp RIGHT_ARROW>,
                 <&macro_wait_time 380>,
                 <&kp R &kp LSHFT>,
                 <&macro_wait_time 320>,
-                <&kp T &kp D>,
+                <&kp LEFT_ARROW &kp D>,
                 <&macro_wait_time 200>;
 
             label = "SKILL";
