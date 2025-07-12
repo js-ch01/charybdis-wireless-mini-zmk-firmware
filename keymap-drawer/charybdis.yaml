@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - VOL UP
-  - {t: M CLK, h: mousekey}
+  - {t: M CLK, h: trackball}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -265,7 +265,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - '&msc SCRL_UP'
   - MOVE L
   - MOVE D
@@ -307,7 +307,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -502,7 +502,7 @@ layers:
   - {t: TAB, h: game2_}
   - LEFT ALT
   - L CLK
-  - {t: ESC, h: game2_}
+  - {t: LEFT ALT, h: game2_}
   - LEFT SHIFT
   game2_:
   - '`'
@@ -548,10 +548,10 @@ layers:
   - {t: ▽, type: trans}
   game2_num:
   - {t: ▽, type: trans}
-  - KP NUMLOCK
-  - KP 7
-  - Alt+ I
-  - KP 9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+ I
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '7'
@@ -562,7 +562,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+ J
-  - Alt+ K
+  - Ctl+ K
   - Ctl+ L
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -572,10 +572,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP 0
-  - KP 1
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Alt+ ,
-  - KP 3
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SPACE
   - '1'
@@ -620,9 +620,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&s_sh'
-  - {t: ▽, type: trans}
+  - X
+  - V
   - '&end_home_del'
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -688,12 +688,6 @@ combos:
 - p: [24, 35]
   k: {t: game2, h: toggle}
   l: [base, game, game2]
-- p: [36, 37]
-  k: {t: scroll, h: scroll}
-  l: [base, trackball, trackball_toggle, scroll]
-- p: [38, 37]
-  k: {t: scroll_horizontal, h: scroll_horizontal}
-  l: [base, trackball, trackball_toggle, scroll_horizontal]
 - p: [16, 4]
   k: SPACE
   l: [base, trackball, sym_num, trackball_toggle, game2]
@@ -702,7 +696,7 @@ combos:
   l: [base, trackball, sym_num, trackball_toggle]
 - p: [7, 19]
   k: BACK SPACE
-  l: [base, sym_num, trackball, trackball_toggle, game2]
+  l: [base, sym_num, mousekey, trackball_toggle, game2]
 - p: [8, 20]
   k: TAB
   l: [base, sym_num, trackball, trackball_toggle]
@@ -720,10 +714,10 @@ combos:
   l: [base, trackball, trackball_toggle]
 - p: [32, 31]
   k: ESCAPE
-  l: [base, sym_num, trackball, trackball_toggle, navigation]
+  l: [base, sym_num, trackball, trackball_toggle, navigation, game, game2]
 - p: [31, 33]
   k: DELETE
-  l: [base, sym_num, trackball, trackball_toggle, game]
+  l: [base, sym_num, mousekey, trackball_toggle, game, game2]
 - p: [33, 32]
   k: ENTER
   l: [base, sym_num, trackball, trackball_toggle, game, game2]
@@ -738,28 +732,22 @@ combos:
   l: [base, sym_num, trackball, trackball_toggle]
 - p: [40, 39]
   k: {t: scroll, h: toggle}
-  l: [base, trackball, trackball_toggle, scroll]
-- p: [27, 15]
-  k: '4'
-  l: [game2]
-- p: [14, 26]
+  l: [base, mousekey, trackball_toggle, scroll]
+- p: [2, 3]
   k: '3'
   l: [game2]
-- p: [16, 28]
+- p: [3, 4]
+  k: '4'
+  l: [game2]
+- p: [14, 15]
   k: '5'
   l: [game2]
-- p: [31, 33]
-  k: ','
-  l: [game2]
-- p: [40, 39]
-  k: LEFT ALT
-  l: [game2]
-- p: [37, 38]
-  k: SPACE
+- p: [15, 16]
+  k: '6'
   l: [game2]
 - p: [19, 31]
   k: Ctl+ J
   l: [game2]
-- p: [21, 33]
+- p: [33, 21]
   k: Ctl+ L
   l: [game2]
