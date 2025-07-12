@@ -633,7 +633,7 @@
             label = "DOUBLE_MINUS";
         };
 
-        awert: skill {
+        left_d_sh_right_d_sh: skill {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -711,6 +711,13 @@
                 <&macro_wait_time 300>;
 
             label = "S_SH";
+        };
+
+        space: space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
+            label = "SPACE";
         };
     };
 
@@ -845,9 +852,9 @@
 
         layer_14 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp Q   &trans  &up_d_sh  &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp F   &trans  &awert    &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &s_sh   &kp X   &kp V     &end_home_del  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp Q   &trans  &up_d_sh               &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F   &trans  &left_d_sh_right_d_sh  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &s_sh   &kp X   &kp V                  &end_home_del  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
         };

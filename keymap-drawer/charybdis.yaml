@@ -609,7 +609,7 @@ layers:
   - {t: ▽, type: trans}
   - F
   - {t: ▽, type: trans}
-  - '&awert'
+  - '&left_d_sh_right_d_sh'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
