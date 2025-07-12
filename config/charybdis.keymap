@@ -638,15 +638,14 @@
             #binding-cells = <0>;
             bindings =
                 <&kp D>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 420>,
                 <&kp RIGHT_ARROW>,
                 <&macro_wait_time 400>,
                 <&kp LEFT_SHIFT &kp D>,
                 <&macro_wait_time 380>,
                 <&kp LEFT_ARROW>,
-                <&macro_wait_time 320>,
-                <&kp LSHFT &kp D>,
-                <&macro_wait_time 200>;
+                <&macro_wait_time 418>,
+                <&kp LSHFT>;
 
             label = "SKILL";
         };
