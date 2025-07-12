@@ -529,7 +529,7 @@ layers:
   - L
   - ;
   - VOL DN
-  - R CLK
+  - {t: ▽, type: trans}
   - F6
   - F7
   - F8
@@ -550,7 +550,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+ I
+  - Ctl+ I
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -562,7 +562,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+ J
-  - Alt+ K
+  - Ctl+ K
   - Ctl+ L
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -596,7 +596,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Q
-  - {t: ▽, type: trans}
+  - '&space'
   - '&up_d_sh'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -609,7 +609,7 @@ layers:
   - {t: ▽, type: trans}
   - F
   - {t: ▽, type: trans}
-  - '&awert'
+  - '&left_d_sh_right_d_sh'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
