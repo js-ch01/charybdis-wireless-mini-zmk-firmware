@@ -642,7 +642,7 @@
                 <&kp RIGHT_ARROW>,
                 <&macro_wait_time 400>,
                 <&kp LEFT_SHIFT &kp D>,
-                <&macro_wait_time 380>,
+                <&macro_wait_time 500>,
                 <&kp LEFT_ARROW>,
                 <&macro_wait_time 418>,
                 <&kp LSHFT>;
@@ -653,7 +653,12 @@
         d_sh: crumeso {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp D &kp LEFT_SHIFT>;
+            bindings =
+                <&kp D>,
+                <&macro_wait_time 200>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 210>;
+
             label = "CRUMESO";
         };
 
@@ -663,41 +668,11 @@
             bindings =
                 <&kp LEFT_ALT>,
                 <&macro_wait_time 200>,
-                <&kp LEFT_ALT &kp D>,
+                <&kp LEFT_ALT>,
                 <&macro_wait_time 300>,
-                <&kp LEFT_SHIFT>;
+                <&kp D &kp LEFT_SHIFT>;
 
             label = "LEFT_ALT";
-        };
-
-        up_d_sh: up_d_sh {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp UP_ARROW>,
-                <&macro_wait_time 800>,
-                <&kp D &kp LEFT_SHIFT>,
-                <&macro_wait_time 300>;
-
-            label = "UP_D_SH";
-        };
-
-        end_home_del: awert {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap_time 100>,
-                <&kp END>,
-                <&macro_wait_time 1000>,
-                <&kp UP_ARROW>,
-                <&macro_wait_time 1400>,
-                <&kp HOME>,
-                <&macro_wait_time 1010>,
-                <&kp UP_ARROW>,
-                <&macro_wait_time 1111>,
-                <&kp DELETE>;
-
-            label = "AWERT";
         };
 
         s_sh: s_sh {
@@ -717,6 +692,13 @@
             #binding-cells = <0>;
             bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
             label = "SPACE";
+        };
+
+        lrlr: lrlr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT &kp RIGHT &kp LEFT &kp RIGHT &kp LEFT_ARROW &kp RIGHT>;
+            label = "LRLR";
         };
     };
 
