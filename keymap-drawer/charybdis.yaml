@@ -596,8 +596,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Q
-  - '&space'
-  - '&up_d_sh'
+  - W
+  - E
+  - R
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -606,11 +607,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F
-  - {t: ▽, type: trans}
+  - A
+  - S
   - '&left_d_sh_right_d_sh'
-  - {t: ▽, type: trans}
+  - F
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -619,17 +619,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&s_sh'
+  - Z
   - X
+  - C
   - V
-  - '&end_home_del'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&lrlr'
+  - '&space'
 combos:
 - p: [16, 15]
   k: {t: (, h: '&parenthesis_lr'}

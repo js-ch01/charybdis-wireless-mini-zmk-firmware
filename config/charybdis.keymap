@@ -833,10 +833,10 @@
 
         layer_14 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp Q   &space  &up_d_sh               &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp F   &trans  &left_d_sh_right_d_sh  &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &s_sh   &kp X   &kp V                  &end_home_del  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp Q  &kp W   &kp E                  &kp R  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp A  &kp S   &left_d_sh_right_d_sh  &kp F  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp Z  &kp X   &kp C                  &kp V  &trans  &trans
+                        &trans  &trans  &trans    &lrlr  &space
             >;
         };
     };
