@@ -638,7 +638,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp D>,
-                <&macro_wait_time 420>,
+                <&macro_wait_time 580>,
                 <&kp RIGHT_ARROW>,
                 <&macro_wait_time 400>,
                 <&kp LEFT_SHIFT &kp D>,
