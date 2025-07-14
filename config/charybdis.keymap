@@ -642,7 +642,7 @@
                 <&kp RIGHT_ARROW>,
                 <&macro_wait_time 400>,
                 <&kp LEFT_SHIFT &kp D>,
-                <&macro_wait_time 500>,
+                <&macro_wait_time 620>,
                 <&kp LEFT_ARROW>,
                 <&macro_wait_time 418>,
                 <&kp LSHFT>;
