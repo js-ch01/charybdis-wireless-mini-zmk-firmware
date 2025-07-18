@@ -537,25 +537,13 @@
 
         game_5 {
             bindings = <&kp NUMBER_5>;
-            key-positions = <14 15>;
+            key-positions = <15 27>;
             layers = <11>;
         };
 
         game_6 {
             bindings = <&kp NUMBER_6>;
-            key-positions = <15 16>;
-            layers = <11>;
-        };
-
-        game_media_left {
-            bindings = <&kp LC(J)>;
-            key-positions = <19 31>;
-            layers = <11>;
-        };
-
-        game_media_right {
-            bindings = <&kp LC(L)>;
-            key-positions = <33 21>;
+            key-positions = <16 28>;
             layers = <11>;
         };
     };
@@ -641,11 +629,11 @@
                 <&macro_wait_time 1500>,
                 <&kp RIGHT_ARROW>,
                 <&macro_wait_time 400>,
-                <&kp LEFT_SHIFT &kp D>,
+                <&kp RIGHT_ARROW &kp LEFT_SHIFT &kp D>,
                 <&macro_wait_time 1700>,
                 <&kp LEFT_ARROW>,
                 <&macro_wait_time 418>,
-                <&kp LSHFT>;
+                <&kp LEFT_ARROW &kp LSHFT>;
 
             label = "SKILL";
         };
@@ -690,14 +678,14 @@
         space: space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
+            bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
             label = "SPACE";
         };
 
         lrlr: lrlr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT &kp RIGHT &kp LEFT &kp RIGHT &kp LEFT_ARROW &kp RIGHT>;
+            bindings = <&kp LEFT &kp RIGHT &kp LEFT &kp RIGHT &kp LEFT_ARROW &kp RIGHT &kp LEFT_ARROW &kp RIGHT_ARROW>;
             label = "LRLR";
         };
     };
