@@ -681,13 +681,6 @@
             bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
             label = "SPACE";
         };
-
-        lrlr: lrlr {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT &kp RIGHT &kp LEFT &kp RIGHT &kp LEFT_ARROW &kp RIGHT &kp LEFT_ARROW &kp RIGHT_ARROW>;
-            label = "LRLR";
-        };
     };
 
     keymap {
@@ -821,10 +814,10 @@
 
         layer_14 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp Q  &kp W   &kp E                  &kp R  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp A  &kp S   &left_d_sh_right_d_sh  &kp F  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp Z  &kp X   &kp C                  &kp V  &trans  &trans
-                        &trans  &trans  &trans    &lrlr  &space
+&trans  &trans    &trans     &trans    &trans     &trans    &kp Q  &kp W   &kp E                  &kp R  &trans  &trans
+&trans  &kp LEFT  &kp RIGHT  &kp LEFT  &kp RIGHT  &trans    &kp A  &kp S   &left_d_sh_right_d_sh  &kp F  &trans  &trans
+&trans  &trans    &trans     &trans    &trans     &trans    &kp Z  &kp X   &kp C                  &kp V  &trans  &trans
+                             &trans    &trans     &trans    &lrlr  &space
             >;
         };
     };
