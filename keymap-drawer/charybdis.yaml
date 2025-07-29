@@ -602,10 +602,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT
+  - RIGHT
+  - LEFT
+  - RIGHT
   - {t: ▽, type: trans}
   - A
   - S
@@ -628,7 +628,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&lrlr'
+  - {t: ▽, type: trans}
   - '&space'
 combos:
 - p: [16, 15]
