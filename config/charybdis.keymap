@@ -814,10 +814,10 @@
 
         layer_14 {
             bindings = <
-&trans  &trans  &alt_alt_d_sh   &kp UP_ARROW    &alt_alt_d_sh  &trans    &kp Q   &kp W   &kp E                  &kp R  &trans  &trans
-&trans  &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &trans    &kp A   &kp S   &left_d_sh_right_d_sh  &kp F  &trans  &trans
-&trans  &trans  &kp X           &trans          &trans         &trans    &kp Z   &kp X   &kp C                  &kp V  &trans  &trans
-                                &trans          &trans         &trans    &trans  &space
+&trans  &trans  &alt_alt_d_sh   &kp UP_ARROW    &alt_alt_d_sh  &kp DELETE    &kp Q   &kp W   &kp E                  &kp R  &trans  &trans
+&trans  &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END       &kp A   &kp S   &left_d_sh_right_d_sh  &kp F  &trans  &trans
+&trans  &trans  &trans          &trans          &trans         &kp HOME      &kp Z   &kp X   &kp C                  &kp V  &trans  &trans
+                                &trans          &trans         &trans        &trans  &space
             >;
         };
     };
