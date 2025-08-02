@@ -546,6 +546,12 @@
             key-positions = <16 28>;
             layers = <11>;
         };
+
+        toggle_left_hand {
+            bindings = <&tog 14>;
+            key-positions = <17 29>;
+            layers = <11 14>;
+        };
     };
 
     macros {
