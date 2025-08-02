@@ -591,9 +591,9 @@ layers:
   '14':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&alt_alt_d_sh'
+  - UP ARROW
+  - '&alt_alt_d_sh'
   - {t: ▽, type: trans}
   - Q
   - W
@@ -602,9 +602,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - A
   - LEFT
-  - RIGHT
-  - LEFT
+  - DOWN ARROW
   - RIGHT
   - {t: ▽, type: trans}
   - A
@@ -615,7 +615,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - X
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
