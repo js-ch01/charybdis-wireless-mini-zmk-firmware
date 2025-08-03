@@ -535,21 +535,9 @@
             layers = <11>;
         };
 
-        game_5 {
-            bindings = <&kp NUMBER_5>;
-            key-positions = <15 27>;
-            layers = <11>;
-        };
-
-        game_6 {
-            bindings = <&kp NUMBER_6>;
-            key-positions = <16 28>;
-            layers = <11>;
-        };
-
         toggle_left_hand {
             bindings = <&tog 14>;
-            key-positions = <17 29>;
+            key-positions = <16 28>;
             layers = <11 14>;
         };
     };
@@ -793,10 +781,10 @@
 
         game2 {
             bindings = <
-&kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y            &d_sh              &kp UP_ARROW    &alt_alt_d_sh           &kp DELETE        &kp INSERT
-&kp N2  &kp A  &kp S  &kp D       &kp F         &kp G        &kp H            &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
-&to 0   &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N            &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
-                      &lt 12 TAB  &kp LEFT_ALT  &mkp LCLK    &lt 12 LEFT_ALT  &kp LEFT_SHIFT
+&kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y                &alt_alt_d_sh      &kp UP_ARROW    &alt_alt_d_sh           &kp T             &kp INSERT
+&kp N2  &kp A  &kp S  &kp D       &kp F         &kp G        &kp H                &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
+&to 0   &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N                &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
+                      &lt 12 TAB  &kp LEFT_ALT  &mkp LCLK    &lt 12 LEFT_CONTROL  &kp LEFT_SHIFT
             >;
         };
 
@@ -820,9 +808,9 @@
 
         layer_14 {
             bindings = <
-&kp F   &trans  &alt_alt_d_sh   &kp UP_ARROW    &alt_alt_d_sh  &kp DELETE    &kp Q   &kp W   &kp E                  &kp R  &trans  &trans
-&kp E   &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END       &kp A   &kp S   &left_d_sh_right_d_sh  &kp F  &trans  &trans
-&trans  &kp R   &trans          &kp W           &trans         &kp HOME      &kp Z   &kp X   &kp C                  &kp V  &trans  &trans
+&kp F   &trans  &alt_alt_d_sh   &kp UP_ARROW    &alt_alt_d_sh  &kp DELETE    &kp Q   &kp W   &kp E  &kp R  &trans  &trans
+&kp E   &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END       &kp A   &kp S   &d_sh  &kp F  &trans  &trans
+&trans  &kp R   &trans          &kp W           &trans         &kp HOME      &kp Z   &kp X   &kp C  &kp V  &trans  &trans
                                 &kp N9          &trans         &trans        &trans  &space
             >;
         };

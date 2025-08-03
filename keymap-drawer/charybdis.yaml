@@ -470,10 +470,10 @@ layers:
   - R
   - T
   - Y
-  - '&d_sh'
+  - '&alt_alt_d_sh'
   - UP ARROW
   - '&alt_alt_d_sh'
-  - DELETE
+  - T
   - INSERT
   - '2'
   - A
@@ -502,7 +502,7 @@ layers:
   - {t: TAB, h: game2_}
   - LEFT ALT
   - L CLK
-  - {t: LEFT ALT, h: game2_}
+  - {t: LEFT CONTROL, h: game2_}
   - LEFT SHIFT
   game2_:
   - '`'
@@ -609,7 +609,7 @@ layers:
   - END
   - A
   - S
-  - '&left_d_sh_right_d_sh'
+  - '&d_sh'
   - F
   - {type: held}
   - {t: ▽, type: trans}
@@ -739,12 +739,6 @@ combos:
 - p: [3, 4]
   k: '4'
   l: [game2]
-- p: [15, 27]
-  k: '5'
-  l: [game2]
 - p: [16, 28]
-  k: '6'
-  l: [game2]
-- p: [17, 29]
   k: {t: '14', h: toggle}
   l: [game2, '14']
