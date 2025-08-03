@@ -589,7 +589,7 @@ layers:
   - {t: ▽, type: trans}
   - '0'
   '14':
-  - {t: ▽, type: trans}
+  - F
   - {t: ▽, type: trans}
   - '&alt_alt_d_sh'
   - UP ARROW
@@ -601,7 +601,7 @@ layers:
   - R
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - E
   - A
   - LEFT
   - DOWN ARROW
@@ -614,9 +614,9 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - R
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - W
   - {t: ▽, type: trans}
   - HOME
   - Z
@@ -625,7 +625,7 @@ layers:
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - game2
+  - '9'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
