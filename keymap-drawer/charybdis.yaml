@@ -552,7 +552,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+ I
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Alt+ R
   - {t: ▽, type: trans}
   - '7'
   - '8'
