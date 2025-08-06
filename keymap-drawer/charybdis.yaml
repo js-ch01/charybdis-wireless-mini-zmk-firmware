@@ -473,7 +473,7 @@ layers:
   - '&cc_d_sh'
   - UP ARROW
   - '&cc_d_sh'
-  - DELETE
+  - SPACE
   - INSERT
   - '2'
   - A
@@ -502,7 +502,7 @@ layers:
   - {t: TAB, h: game2_}
   - C
   - L CLK
-  - {t: LCTRL, h: game2_}
+  - {t: SCROLLLOCK, h: game2_}
   - LEFT SHIFT
   game2_:
   - '`'

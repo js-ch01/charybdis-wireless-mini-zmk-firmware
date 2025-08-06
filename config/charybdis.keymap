@@ -774,10 +774,10 @@
 
         game2 {
             bindings = <
-&kp N1  &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y         &cc_d_sh           &kp UP_ARROW    &cc_d_sh                &kp DELETE        &kp INSERT
-&kp N2  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H         &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
-&to 0   &kp Z  &kp X  &kp LEFT_ALT  &kp V  &kp B        &kp N         &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
-                      &lt 12 TAB    &kp C  &mkp LCLK    &lt 12 LCTRL  &kp LEFT_SHIFT
+&kp N1  &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y              &cc_d_sh           &kp UP_ARROW    &cc_d_sh                &kp SPACE         &kp INSERT
+&kp N2  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H              &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
+&to 0   &kp Z  &kp X  &kp LEFT_ALT  &kp V  &kp B        &kp N              &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
+                      &lt 12 TAB    &kp C  &mkp LCLK    &lt 12 SCROLLLOCK  &kp LEFT_SHIFT
             >;
         };
 
