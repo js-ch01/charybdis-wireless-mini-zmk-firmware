@@ -576,7 +576,7 @@ layers:
   - {t: ▽, type: trans}
   - Alt+ ,
   - {t: ▽, type: trans}
-  - Gui+ TAB
+  - Alt+ ENTER
   - SPACE
   - '1'
   - '2'
