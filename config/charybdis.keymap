@@ -774,10 +774,10 @@
 
         game2 {
             bindings = <
-&kp N1  &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y              &cc_d_sh           &kp UP_ARROW    &cc_d_sh                &kp SPACE         &kp INSERT
-&kp N2  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H              &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
-&to 0   &kp Z  &kp X  &kp LEFT_ALT  &kp V  &kp B        &kp N              &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
-                      &lt 12 TAB    &kp C  &mkp LCLK    &lt 12 SCROLLLOCK  &kp LEFT_SHIFT
+&kp N1  &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y              &cc_d_sh           &kp UP_ARROW    &cc_d_sh                &kp SPACE         &kp INSERT
+&kp N2  &kp A  &kp S  &kp D       &kp F  &kp G        &kp H              &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
+&to 0   &kp Z  &kp X  &kp LCTRL   &kp V  &kp B        &kp N              &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
+                      &lt 12 TAB  &kp C  &mkp LCLK    &lt 12 SCROLLLOCK  &kp LEFT_SHIFT
             >;
         };
 
@@ -794,7 +794,7 @@
             bindings = <
 &trans  &trans  &trans     &kp LC(I)      &trans     &kp LA(F9)     &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
 &trans  &trans  &kp LC(J)  &kp LC(K)      &kp LC(L)  &kp LA(TAB)    &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans     &kp LA(COMMA)  &trans     &trans         &kp SPACE  &kp N1  &kp N2  &kp N3  &trans  &trans
+&trans  &trans  &trans     &kp LA(COMMA)  &trans     &kp LG(TAB)    &kp SPACE  &kp N1  &kp N2  &kp N3  &trans  &trans
                            &mkp RCLK      &mkp MCLK  &mkp LCLK      &trans     &kp N0
             >;
         };
@@ -805,6 +805,15 @@
 &kp E   &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END       &kp A   &kp S   &d_sh         &kp F  &trans  &trans
 &trans  &kp R   &trans          &kp W           &trans     &kp HOME      &kp Z   &kp X   &kp LEFT_ALT  &kp V  &trans  &trans
                                 &kp N9          &trans     &trans        &trans  &trans
+            >;
+        };
+
+        layer_15 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
             >;
         };
     };
