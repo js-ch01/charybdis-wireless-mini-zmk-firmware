@@ -615,7 +615,7 @@
             label = "DOUBLE_MINUS";
         };
 
-        left_d_sh_right_d_sh: skill {
+        L_d_sh_R_d_sh: skill {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -644,13 +644,13 @@
             label = "CRUMESO";
         };
 
-        alt_alt_d_sh: left_alt {
+        cc_d_sh: left_alt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_ALT>,
+                <&kp C>,
                 <&macro_wait_time 200>,
-                <&kp LEFT_ALT>,
+                <&kp C>,
                 <&macro_wait_time 300>,
                 <&kp D &kp LEFT_SHIFT>;
 
@@ -667,13 +667,6 @@
                 <&macro_wait_time 300>;
 
             label = "S_SH";
-        };
-
-        space: space {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
-            label = "SPACE";
         };
     };
 
@@ -781,10 +774,10 @@
 
         game2 {
             bindings = <
-&kp N1  &kp Q  &kp W  &kp E       &kp R         &kp T        &kp Y                &alt_alt_d_sh      &kp UP_ARROW    &alt_alt_d_sh           &kp T             &kp INSERT
-&kp N2  &kp A  &kp S  &kp D       &kp F         &kp G        &kp H                &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
-&to 0   &kp Z  &kp X  &kp C       &kp V         &kp B        &kp N                &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
-                      &lt 12 TAB  &kp LEFT_ALT  &mkp LCLK    &lt 12 LEFT_CONTROL  &kp LEFT_SHIFT
+&kp N1  &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y         &cc_d_sh           &kp UP_ARROW    &cc_d_sh                &kp DELETE        &kp INSERT
+&kp N2  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H         &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
+&to 0   &kp Z  &kp X  &kp LEFT_ALT  &kp V  &kp B        &kp N         &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
+                      &lt 12 TAB    &kp C  &mkp LCLK    &lt 12 LCTRL  &kp LEFT_SHIFT
             >;
         };
 
@@ -799,19 +792,19 @@
 
         game2_num {
             bindings = <
-&trans  &trans  &trans     &kp LC(I)      &trans     &kp LG(LA(R))    &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &kp LC(J)  &kp LC(K)      &kp LC(L)  &trans           &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans     &kp LA(COMMA)  &trans     &trans           &kp SPACE  &kp N1  &kp N2  &kp N3  &trans  &trans
-                           &mkp RCLK      &mkp MCLK  &mkp LCLK        &trans     &kp N0
+&trans  &trans  &trans     &kp LC(I)      &trans     &kp LA(F9)     &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &kp LC(J)  &kp LC(K)      &kp LC(L)  &kp LA(TAB)    &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans     &kp LA(COMMA)  &trans     &trans         &kp SPACE  &kp N1  &kp N2  &kp N3  &trans  &trans
+                           &mkp RCLK      &mkp MCLK  &mkp LCLK      &trans     &kp N0
             >;
         };
 
         layer_14 {
             bindings = <
-&kp F   &trans  &alt_alt_d_sh   &kp UP_ARROW    &alt_alt_d_sh  &kp DELETE    &kp Q   &kp W   &kp E  &kp R  &trans  &trans
-&kp E   &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END       &kp A   &kp S   &d_sh  &kp F  &trans  &trans
-&trans  &kp R   &trans          &kp W           &trans         &kp HOME      &kp Z   &kp X   &kp C  &kp V  &trans  &trans
-                                &kp N9          &trans         &trans        &trans  &space
+&kp F   &trans  &cc_d_sh        &kp UP_ARROW    &cc_d_sh   &kp DELETE    &kp Q   &kp W   &kp E         &kp R  &trans  &trans
+&kp E   &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END       &kp A   &kp S   &d_sh         &kp F  &trans  &trans
+&trans  &kp R   &trans          &kp W           &trans     &kp HOME      &kp Z   &kp X   &kp LEFT_ALT  &kp V  &trans  &trans
+                                &kp N9          &trans     &trans        &trans  &trans
             >;
         };
     };

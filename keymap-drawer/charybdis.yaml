@@ -470,10 +470,10 @@ layers:
   - R
   - T
   - Y
-  - '&alt_alt_d_sh'
+  - '&cc_d_sh'
   - UP ARROW
-  - '&alt_alt_d_sh'
-  - T
+  - '&cc_d_sh'
+  - DELETE
   - INSERT
   - '2'
   - A
@@ -490,7 +490,7 @@ layers:
   - {t: base, h: toggle}
   - Z
   - X
-  - C
+  - LEFT ALT
   - V
   - B
   - N
@@ -500,9 +500,9 @@ layers:
   - {t: PAGE DOWN, h: game2_num}
   - PAGE UP
   - {t: TAB, h: game2_}
-  - LEFT ALT
+  - C
   - L CLK
-  - {t: LEFT CONTROL, h: game2_}
+  - {t: LCTRL, h: game2_}
   - LEFT SHIFT
   game2_:
   - '`'
@@ -552,7 +552,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+ I
   - {t: ▽, type: trans}
-  - Gui+Alt+ R
+  - Alt+ F9
   - {t: ▽, type: trans}
   - '7'
   - '8'
@@ -564,7 +564,7 @@ layers:
   - Ctl+ J
   - Ctl+ K
   - Ctl+ L
-  - {t: ▽, type: trans}
+  - Alt+ TAB
   - {t: ▽, type: trans}
   - '4'
   - '5'
@@ -591,9 +591,9 @@ layers:
   '14':
   - F
   - {t: ▽, type: trans}
-  - '&alt_alt_d_sh'
+  - '&cc_d_sh'
   - UP ARROW
-  - '&alt_alt_d_sh'
+  - '&cc_d_sh'
   - DELETE
   - Q
   - W
@@ -621,7 +621,7 @@ layers:
   - HOME
   - Z
   - X
-  - C
+  - LEFT ALT
   - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -629,7 +629,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&space'
+  - {t: ▽, type: trans}
 combos:
 - p: [16, 15]
   k: {t: (, h: '&parenthesis_lr'}
