@@ -792,8 +792,8 @@
 
         game2_num {
             bindings = <
-&trans  &trans  &trans     &kp LC(I)      &trans     &kp LA(F9)       &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &kp LC(J)  &kp LC(K)      &kp LC(L)  &kp LA(TAB)      &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans     &kp LA(I)      &trans     &kp LA(F9)       &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &kp LA(J)  &kp LA(K)      &kp LA(L)  &kp LA(TAB)      &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
 &trans  &trans  &trans     &kp LA(COMMA)  &trans     &kp LA(ENTER)    &kp SPACE  &kp N1  &kp N2  &kp N3  &trans  &trans
                            &mkp RCLK      &mkp MCLK  &mkp LCLK        &trans     &kp N0
             >;
@@ -805,15 +805,6 @@
 &kp E   &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END       &kp A   &kp S   &d_sh      &kp F  &trans  &trans
 &trans  &kp R   &trans          &kp W           &trans     &kp HOME      &kp Z   &kp X   &kp LCTRL  &kp V  &trans  &trans
                                 &kp N9          &trans     &trans        &trans  &trans
-            >;
-        };
-
-        layer_15 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
             >;
         };
     };

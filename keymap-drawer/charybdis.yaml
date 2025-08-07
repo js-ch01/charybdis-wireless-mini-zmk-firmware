@@ -473,7 +473,7 @@ layers:
   - '&cc_d_sh'
   - UP ARROW
   - '&cc_d_sh'
-  - SPACE
+  - LEFT ALT
   - INSERT
   - '2'
   - A
@@ -517,7 +517,7 @@ layers:
   - O
   - \
   - VOLUME UP
-  - LCTRL
+  - +
   - F1
   - F2
   - F3
@@ -550,7 +550,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ I
+  - Alt+ I
   - {t: ▽, type: trans}
   - Alt+ F9
   - {t: ▽, type: trans}
@@ -561,9 +561,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ J
-  - Ctl+ K
-  - Ctl+ L
+  - Alt+ J
+  - Alt+ K
+  - Alt+ L
   - Alt+ TAB
   - {t: ▽, type: trans}
   - '4'
@@ -626,48 +626,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '9'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '15':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
