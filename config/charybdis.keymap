@@ -774,7 +774,7 @@
 
         game2 {
             bindings = <
-&kp N1  &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y              &cc_d_sh           &kp UP_ARROW    &cc_d_sh                &kp SPACE         &kp INSERT
+&kp N1  &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y              &cc_d_sh           &kp UP_ARROW    &cc_d_sh                &kp LEFT_ALT      &kp INSERT
 &kp N2  &kp A  &kp S  &kp D       &kp F  &kp G        &kp H              &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
 &to 0   &kp Z  &kp X  &kp LCTRL   &kp V  &kp B        &kp N              &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
                       &lt 12 TAB  &kp C  &mkp LCLK    &lt 12 SCROLLLOCK  &kp LEFT_SHIFT
@@ -784,7 +784,7 @@
         game2_ {
             bindings = <
 &kp GRAVE  &kp NUMBER_6  &kp N7  &kp NUMBER_8  &kp N9  &kp NUMBER_0    &kp MINUS  &kp U   &kp I             &kp O              &kp BACKSLASH  &kp C_VOLUME_UP
-&kp LCTRL  &kp F1        &kp F2  &kp F3        &kp F4  &kp F5          &kp F11    &kp J   &kp K             &kp L              &kp SEMI       &kp C_VOL_DN
+&kp PLUS   &kp F1        &kp F2  &kp F3        &kp F4  &kp F5          &kp F11    &kp J   &kp K             &kp L              &kp SEMI       &kp C_VOL_DN
 &trans     &kp F6        &kp F7  &kp F8        &kp F9  &kp F10         &kp F12    &kp P   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT        &kp C_MUTE
                                  &trans        &trans  &trans          &trans     &trans
             >;
