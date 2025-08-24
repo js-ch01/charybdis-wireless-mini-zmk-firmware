@@ -615,23 +615,6 @@
             label = "DOUBLE_MINUS";
         };
 
-        L_d_sh_R_d_sh: skill {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp D>,
-                <&macro_wait_time 1500>,
-                <&kp RIGHT_ARROW>,
-                <&macro_wait_time 400>,
-                <&kp RIGHT_ARROW &kp LEFT_SHIFT &kp D>,
-                <&macro_wait_time 1700>,
-                <&kp LEFT_ARROW>,
-                <&macro_wait_time 418>,
-                <&kp LEFT_ARROW &kp LSHFT>;
-
-            label = "SKILL";
-        };
-
         d_sh: crumeso {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -804,7 +787,7 @@
 &kp F   &trans  &cc_d_sh        &kp UP_ARROW    &cc_d_sh   &kp DELETE    &kp Q   &kp W   &kp E      &kp R  &trans  &trans
 &kp E   &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END       &kp A   &kp S   &d_sh      &kp F  &trans  &trans
 &trans  &kp R   &trans          &kp W           &trans     &kp HOME      &kp Z   &kp X   &kp LCTRL  &kp V  &trans  &trans
-                                &kp N9          &trans     &trans        &trans  &trans
+                                &d_sh           &trans     &trans        &trans  &trans
             >;
         };
     };
