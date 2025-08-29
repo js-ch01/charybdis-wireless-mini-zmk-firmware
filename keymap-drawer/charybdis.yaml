@@ -742,3 +742,6 @@ combos:
 - p: [16, 28]
   k: {t: '14', h: toggle}
   l: [game2, '14']
+- p: [25, 26]
+  k: LEFT SHIFT
+  l: [game2, '14']
