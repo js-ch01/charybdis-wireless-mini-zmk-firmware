@@ -470,10 +470,10 @@ layers:
   - R
   - T
   - Y
-  - '&d_sh'
+  - '&cc_d_sh'
   - UP ARROW
-  - '&alt_alt_d_sh'
-  - DELETE
+  - '&cc_d_sh'
+  - LEFT ALT
   - INSERT
   - '2'
   - A
@@ -490,7 +490,7 @@ layers:
   - {t: base, h: toggle}
   - Z
   - X
-  - C
+  - LCTRL
   - V
   - B
   - N
@@ -500,9 +500,9 @@ layers:
   - {t: PAGE DOWN, h: game2_num}
   - PAGE UP
   - {t: TAB, h: game2_}
-  - LEFT ALT
+  - C
   - L CLK
-  - {t: LEFT ALT, h: game2_}
+  - {t: SCROLLLOCK, h: game2_}
   - LEFT SHIFT
   game2_:
   - '`'
@@ -517,7 +517,7 @@ layers:
   - O
   - \
   - VOLUME UP
-  - LCTRL
+  - +
   - F1
   - F2
   - F3
@@ -529,7 +529,7 @@ layers:
   - L
   - ;
   - VOL DN
-  - R CLK
+  - {t: ▽, type: trans}
   - F6
   - F7
   - F8
@@ -550,9 +550,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ I
+  - Alt+ I
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+ F9
   - {t: ▽, type: trans}
   - '7'
   - '8'
@@ -561,10 +561,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ J
-  - Ctl+ K
-  - Ctl+ L
-  - {t: ▽, type: trans}
+  - Alt+ J
+  - Alt+ K
+  - Alt+ L
+  - Alt+ TAB
   - {t: ▽, type: trans}
   - '4'
   - '5'
@@ -576,7 +576,7 @@ layers:
   - {t: ▽, type: trans}
   - Alt+ ,
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+ ENTER
   - SPACE
   - '1'
   - '2'
@@ -589,43 +589,43 @@ layers:
   - {t: ▽, type: trans}
   - '0'
   '14':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Q
-  - {t: ▽, type: trans}
-  - '&up_d_sh'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F
   - {t: ▽, type: trans}
-  - '&left_d_sh_right_d_sh'
+  - '&cc_d_sh'
+  - UP ARROW
+  - '&cc_d_sh'
+  - DELETE
+  - Q
+  - W
+  - E
+  - R
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - E
+  - A
+  - LEFT
+  - DOWN ARROW
+  - RIGHT
+  - END
+  - A
+  - S
+  - '&d_sh'
+  - F
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - R
   - {t: ▽, type: trans}
+  - W
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&s_sh'
+  - HOME
+  - Z
   - X
+  - LCTRL
   - V
-  - '&end_home_del'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&d_sh'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -739,15 +739,6 @@ combos:
 - p: [3, 4]
   k: '4'
   l: [game2]
-- p: [14, 15]
-  k: '5'
-  l: [game2]
-- p: [15, 16]
-  k: '6'
-  l: [game2]
-- p: [19, 31]
-  k: Ctl+ J
-  l: [game2]
-- p: [33, 21]
-  k: Ctl+ L
-  l: [game2]
+- p: [16, 28]
+  k: {t: '14', h: toggle}
+  l: [game2, '14']
