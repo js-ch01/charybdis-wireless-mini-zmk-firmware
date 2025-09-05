@@ -670,7 +670,7 @@
                 <&kp D>,
                 <&macro_wait_time 220>,
                 <&kp LEFT_SHIFT>,
-                <&macro_wait_time 450>;
+                <&macro_wait_time 2250>;
 
             label = "D_SH_LOO";
         };
