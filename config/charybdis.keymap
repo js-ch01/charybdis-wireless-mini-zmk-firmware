@@ -658,22 +658,6 @@
 
             label = "S_SH";
         };
-
-        d_sh_loo: d_sh_loo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp D>,
-                <&macro_wait_time 200>,
-                <&kp LEFT_SHIFT>,
-                <&macro_wait_time 210>,
-                <&kp D>,
-                <&macro_wait_time 220>,
-                <&kp LEFT_SHIFT>,
-                <&macro_wait_time 2250>;
-
-            label = "D_SH_LOO";
-        };
     };
 
     keymap {
