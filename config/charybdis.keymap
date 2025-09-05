@@ -807,10 +807,10 @@
 
         layer_14 {
             bindings = <
-&kp F   &trans  &cc_d_sh        &kp UP_ARROW    &cc_d_sh   &kp DELETE    &kp Q      &kp W   &kp E      &kp R  &trans  &trans
-&kp E   &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END       &kp A      &kp S   &d_sh      &kp F  &trans  &trans
-&trans  &kp R   &trans          &kp W           &trans     &kp HOME      &kp Z      &kp X   &kp LCTRL  &kp V  &trans  &trans
-                                &d_sh           &trans     &trans        &d_sh_loo  &trans
+&kp F   &trans  &cc_d_sh        &kp UP_ARROW    &cc_d_sh   &kp DELETE    &kp Q   &kp W   &kp E      &kp R  &d_sh_loo  &trans
+&kp E   &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END       &kp A   &kp S   &d_sh      &kp F  &trans     &trans
+&trans  &kp R   &trans          &kp W           &trans     &kp HOME      &kp Z   &kp X   &kp LCTRL  &kp V  &trans     &trans
+                                &d_sh           &trans     &trans        &trans  &trans
             >;
         };
     };
