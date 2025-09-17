@@ -472,7 +472,7 @@ layers:
   - Y
   - '&cc_d_sh'
   - UP ARROW
-  - '&cc_d_sh'
+  - '&sp'
   - LEFT ALT
   - INSERT
   - '2'

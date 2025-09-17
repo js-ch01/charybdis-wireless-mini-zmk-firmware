@@ -658,6 +658,13 @@
 
             label = "S_SH";
         };
+
+        sp: sp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
+            label = "SP";
+        };
     };
 
     keymap {
@@ -764,7 +771,7 @@
 
         game2 {
             bindings = <
-&kp N1  &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y              &cc_d_sh           &kp UP_ARROW    &cc_d_sh                &kp LEFT_ALT      &kp INSERT
+&kp N1  &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y              &cc_d_sh           &kp UP_ARROW    &sp                     &kp LEFT_ALT      &kp INSERT
 &kp N2  &kp A  &kp S  &kp D       &kp F  &kp G        &kp H              &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 14 END        &kp HOME
 &to 0   &kp Z  &kp X  &kp LCTRL   &kp V  &kp B        &kp N              &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 13 PAGE_DOWN  &kp PAGE_UP
                       &lt 12 TAB  &kp C  &mkp LCLK    &lt 12 SCROLLLOCK  &kp LEFT_SHIFT
