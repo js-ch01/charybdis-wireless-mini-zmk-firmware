@@ -473,7 +473,7 @@ layers:
   - '&cc_d_sh'
   - UP ARROW
   - '&sp'
-  - LEFT ALT
+  - C
   - INSERT
   - '2'
   - A
@@ -485,7 +485,7 @@ layers:
   - LEFT
   - DOWN ARROW
   - RIGHT
-  - {t: END, h: '14'}
+  - {t: END, h: Left}
   - HOME
   - {t: base, h: toggle}
   - Z
@@ -515,7 +515,7 @@ layers:
   - U
   - I
   - O
-  - \
+  - LALT
   - VOLUME UP
   - +
   - F1
@@ -588,7 +588,7 @@ layers:
   - L CLK
   - {t: ▽, type: trans}
   - '0'
-  '14':
+  Left:
   - F
   - {t: ▽, type: trans}
   - '&cc_d_sh'
@@ -672,13 +672,13 @@ combos:
   l: [base, trackball, trackball_toggle]
 - p: [28, 27]
   k: ESCAPE
-  l: [base, sym_num, navigation, mousekey, trackball, trackball_toggle]
+  l: [base, sym_num, navigation, mousekey, trackball, trackball_toggle, Left]
 - p: [26, 28]
   k: DEL
   l: [base, sym_num, trackball, trackball_toggle, navigation, number]
 - p: [27, 26]
   k: ENTER
-  l: [base, trackball, sym_num, trackball_toggle]
+  l: [base, trackball, sym_num, trackball_toggle, Left]
 - p: [3, 16]
   k: ''''
   l: [base, sym_num, trackball, trackball_toggle, navigation]
@@ -690,7 +690,7 @@ combos:
   l: [base, game, game2]
 - p: [16, 4]
   k: SPACE
-  l: [base, trackball, sym_num, trackball_toggle, game2]
+  l: [base, trackball, sym_num, trackball_toggle, game2, Left]
 - p: [2, 14]
   k: CAPS WORD
   l: [base, trackball, sym_num, trackball_toggle]
@@ -714,13 +714,13 @@ combos:
   l: [base, trackball, trackball_toggle]
 - p: [32, 31]
   k: ESCAPE
-  l: [base, sym_num, trackball, trackball_toggle, navigation, game, game2]
+  l: [base, sym_num, trackball, trackball_toggle, navigation, game, game2, Left]
 - p: [31, 33]
   k: DELETE
-  l: [base, sym_num, mousekey, trackball_toggle, game, game2]
+  l: [base, sym_num, mousekey, trackball_toggle, game, game2, Left]
 - p: [33, 32]
   k: ENTER
-  l: [base, sym_num, trackball, trackball_toggle, game, game2]
+  l: [base, sym_num, trackball, trackball_toggle, game, game2, Left]
 - p: [8, 19]
   k: '"'
   l: [base, sym_num, trackball, trackball_toggle]
@@ -740,8 +740,8 @@ combos:
   k: '4'
   l: [game2]
 - p: [16, 28]
-  k: {t: '14', h: toggle}
-  l: [game2, '14']
+  k: {t: Left, h: toggle}
+  l: [game2, Left]
 - p: [25, 26]
   k: LEFT SHIFT
-  l: [game2, '14']
+  l: [game2, Left]
