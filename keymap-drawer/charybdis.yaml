@@ -473,7 +473,7 @@ layers:
   - '&cc_d_sh'
   - UP ARROW
   - '&sp'
-  - C
+  - LEFT ALT
   - INSERT
   - '2'
   - A
@@ -597,10 +597,10 @@ layers:
   - DELETE
   - Q
   - W
-  - E
+  - {t: ▽, type: trans}
   - R
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - C
+  - E
   - E
   - A
   - LEFT
@@ -608,12 +608,12 @@ layers:
   - RIGHT
   - END
   - A
-  - S
-  - '&d_sh'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&d_sh', type: held}
   - F
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - R
   - {t: ▽, type: trans}
   - W
@@ -623,7 +623,7 @@ layers:
   - X
   - LCTRL
   - V
-  - {t: ▽, type: trans}
+  - S
   - {t: ▽, type: trans}
   - '&d_sh'
   - {t: ▽, type: trans}
@@ -744,4 +744,7 @@ combos:
   l: [game2, Left]
 - p: [25, 26]
   k: LEFT SHIFT
+  l: [game2, Left]
+- p: [3, 4]
+  k: .
   l: [game2, Left]
