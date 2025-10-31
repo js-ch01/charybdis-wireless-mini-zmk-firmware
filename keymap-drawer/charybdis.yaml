@@ -591,7 +591,7 @@ layers:
   Left:
   - F
   - {t: ▽, type: trans}
-  - '&cc_d_sh'
+  - D
   - UP ARROW
   - '&cc_d_sh'
   - DELETE
@@ -600,7 +600,7 @@ layers:
   - {t: ▽, type: trans}
   - R
   - C
-  - E
+  - DELETE
   - E
   - A
   - LEFT
@@ -612,7 +612,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '&d_sh', type: held}
-  - F
+  - END
   - ''
   - R
   - {t: ▽, type: trans}
@@ -623,12 +623,12 @@ layers:
   - X
   - LCTRL
   - V
-  - S
-  - {t: ▽, type: trans}
+  - {t: F, h: game2_num}
+  - HOME
   - '&d_sh'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+ ,
   - {t: ▽, type: trans}
 combos:
 - p: [16, 15]

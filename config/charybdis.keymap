@@ -804,10 +804,10 @@
 
         Left {
             bindings = <
-&kp F  &trans  &cc_d_sh        &kp UP_ARROW    &cc_d_sh   &kp DELETE    &kp Q   &kp W   &trans     &kp R   &kp C  &kp E
-&kp E  &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END       &kp A   &trans  &trans     &trans  &d_sh  &kp F
-&none  &kp R   &trans          &kp W           &trans     &kp HOME      &kp Z   &kp X   &kp LCTRL  &kp V   &kp S  &trans
-                               &d_sh           &trans     &trans        &trans  &trans
+&kp F  &trans  &kp D           &kp UP_ARROW    &cc_d_sh   &kp DELETE    &kp Q          &kp W   &trans     &kp R   &kp C     &kp DELETE
+&kp E  &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END       &kp A          &trans  &trans     &trans  &d_sh     &kp END
+&none  &kp R   &trans          &kp W           &trans     &kp HOME      &kp Z          &kp X   &kp LCTRL  &kp V   &lt 13 F  &kp HOME
+                               &d_sh           &trans     &trans        &kp LA(COMMA)  &trans
             >;
         };
     };
