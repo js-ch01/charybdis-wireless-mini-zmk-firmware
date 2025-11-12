@@ -546,6 +546,48 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Left:
+  - F
+  - {t: ▽, type: trans}
+  - Alt+ J
+  - UP ARROW
+  - Alt+ L
+  - DELETE
+  - Q
+  - W
+  - {t: ▽, type: trans}
+  - R
+  - C
+  - DELETE
+  - E
+  - A
+  - LEFT
+  - DOWN ARROW
+  - RIGHT
+  - END
+  - A
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&d_sh', type: held}
+  - END
+  - Alt+ .
+  - R
+  - {t: ▽, type: trans}
+  - W
+  - {t: ▽, type: trans}
+  - HOME
+  - Z
+  - X
+  - LCTRL
+  - V
+  - {t: F, h: game2_num}
+  - HOME
+  - '&d_sh'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+ ,
+  - {t: ▽, type: trans}
   game2_num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -588,48 +630,6 @@ layers:
   - L CLK
   - {t: ▽, type: trans}
   - '0'
-  Left:
-  - F
-  - {t: ▽, type: trans}
-  - D
-  - UP ARROW
-  - '&cc_d_sh'
-  - DELETE
-  - Q
-  - W
-  - {t: ▽, type: trans}
-  - R
-  - C
-  - DELETE
-  - E
-  - A
-  - LEFT
-  - DOWN ARROW
-  - RIGHT
-  - END
-  - A
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '&d_sh', type: held}
-  - END
-  - ''
-  - R
-  - {t: ▽, type: trans}
-  - W
-  - {t: ▽, type: trans}
-  - HOME
-  - Z
-  - X
-  - LCTRL
-  - V
-  - {t: F, h: game2_num}
-  - HOME
-  - '&d_sh'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+ ,
-  - {t: ▽, type: trans}
 combos:
 - p: [16, 15]
   k: {t: (, h: '&parenthesis_lr'}
