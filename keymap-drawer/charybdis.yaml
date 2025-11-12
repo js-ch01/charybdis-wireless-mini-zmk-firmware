@@ -571,7 +571,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: '&d_sh', type: held}
   - END
-  - Alt+ .
+  - Alt+ ,
   - R
   - {t: ▽, type: trans}
   - W
