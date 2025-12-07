@@ -547,7 +547,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Left:
-  - F
+  - '&td_f_7_8_9'
   - {t: ▽, type: trans}
   - Alt+ J
   - UP ARROW
