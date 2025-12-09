@@ -490,7 +490,7 @@ layers:
   - {t: base, h: toggle}
   - Z
   - X
-  - C
+  - LCTRL
   - V
   - B
   - N
