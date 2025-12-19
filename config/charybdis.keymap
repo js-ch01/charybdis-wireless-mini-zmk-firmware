@@ -534,13 +534,13 @@
         game_3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <2 3>;
-            layers = <11>;
+            layers = <13>;
         };
 
         game_4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <3 4>;
-            layers = <11>;
+            layers = <13>;
         };
 
         toggle_left_hand {
