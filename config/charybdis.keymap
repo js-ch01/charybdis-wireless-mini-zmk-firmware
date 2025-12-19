@@ -531,34 +531,34 @@
             layers = <0 6 8 9>;
         };
 
-        game_3 {
+        game_left_3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <2 3>;
             layers = <13>;
         };
 
-        game_4 {
+        game_left_4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <3 4>;
             layers = <13>;
         };
 
-        toggle_left_hand {
+        toggle_game_left {
             bindings = <&tog 13>;
             key-positions = <16 28>;
             layers = <11 13>;
         };
 
-        game_zx {
+        game_shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <25 26>;
+            key-positions = <26 27>;
             layers = <11 13>;
         };
 
         game_left_dot {
             bindings = <&kp DOT>;
-            key-positions = <3 4>;
-            layers = <11 13>;
+            key-positions = <27 28>;
+            layers = <13>;
         };
     };
 
