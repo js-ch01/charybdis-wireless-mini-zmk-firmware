@@ -786,7 +786,7 @@
             bindings = <
 &kp N1  &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y              &cc_d_sh           &kp UP_ARROW    &sp                     &kp LEFT_ALT      &kp INSERT
 &kp N2  &kp A  &kp S  &kp D       &kp F  &kp G        &kp H              &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 13 END        &kp HOME
-&to 0   &kp Z  &kp X  &kp LCTRL   &kp V  &kp B        &kp N              &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 14 PAGE_DOWN  &kp PAGE_UP
+&to 0   &kp Z  &kp X  &kp LCTRL   &kp V  &kp B        &kp N              &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 15 PAGE_DOWN  &kp PAGE_UP
                       &lt 12 TAB  &kp C  &mkp LCLK    &lt 12 SCROLLLOCK  &kp LEFT_SHIFT
             >;
         };
@@ -804,7 +804,7 @@
             bindings = <
 &td_f_7_8_9    &trans  &kp LA(J)       &kp UP_ARROW    &kp LA(L)  &kp DELETE    &kp Q          &kp W   &trans     &kp R   &kp C     &kp DELETE
 &kp HOME       &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp G         &kp A          &trans  &trans     &trans  &d_sh     &kp END
-&kp LA(COMMA)  &kp R   &trans          &kp W           &trans     &kp HOME      &kp Z          &kp X   &kp LCTRL  &kp V   &lt 14 F  &kp HOME
+&kp LA(COMMA)  &kp R   &trans          &kp W           &trans     &kp HOME      &kp Z          &kp X   &kp LCTRL  &kp V   &lt 15 F  &kp HOME
                                        &d_sh           &trans     &trans        &kp LA(COMMA)  &trans
             >;
         };
@@ -813,7 +813,7 @@
             bindings = <
 &kp F          &trans          &kp LA(J)       &kp UP_ARROW    &kp LA(L)  &kp DELETE    &kp Q          &kp W   &trans     &kp R   &kp C     &kp DELETE
 &kp PAGE_DOWN  &kp A           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp A         &kp A          &trans  &trans     &trans  &d_sh     &kp END
-&kp LA(COMMA)  &kp LEFT_SHIFT  &trans          &kp D           &trans     &kp HOME      &kp Z          &kp X   &kp LCTRL  &kp V   &lt 14 F  &kp HOME
+&kp LA(COMMA)  &kp LEFT_SHIFT  &trans          &kp D           &trans     &kp HOME      &kp Z          &kp X   &kp LCTRL  &kp V   &lt 15 F  &kp HOME
                                                &d_sh           &trans     &trans        &kp LA(COMMA)  &trans
             >;
         };
