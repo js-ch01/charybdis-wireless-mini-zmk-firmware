@@ -407,7 +407,7 @@
         combo_escL {
             bindings = <&kp ESCAPE>;
             key-positions = <28 27>;
-            layers = <0 1 2 6 7 8 13>;
+            layers = <0 1 2 6 7 8 13 14>;
         };
 
         combo_delL {
@@ -419,7 +419,7 @@
         combo_enterL {
             bindings = <&kp ENTER>;
             key-positions = <27 26>;
-            layers = <0 7 1 8 13>;
+            layers = <0 7 1 8 13 14>;
         };
 
         combo_sqtL {
@@ -443,7 +443,7 @@
         combo_space {
             bindings = <&kp SPACE>;
             key-positions = <16 4>;
-            layers = <0 7 1 8 11 13>;
+            layers = <0 7 1 8 11 13 14>;
         };
 
         combo_caps {
@@ -535,13 +535,13 @@
         game_left_3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <2 3>;
-            layers = <13>;
+            layers = <13 14>;
         };
 
         game_left_4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <3 4>;
-            layers = <13>;
+            layers = <13 14>;
         };
 
         toggle_game_left {
@@ -553,7 +553,7 @@
         game_shift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <26 25>;
-            layers = <11 13>;
+            layers = <11 13 14>;
         };
 
         toggle_14 {
