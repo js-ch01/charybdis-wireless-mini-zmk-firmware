@@ -24,7 +24,8 @@
 #define LSCRH 10
 #define LGAME2 11
 #define LGAME_LEFT 13
-#define LGAME2NUM 14
+#define LGAME_LEFT2 14
+#define LGAME2NUM 15
 
 &lt { quick-tap-ms = <220>; };
 
@@ -44,7 +45,7 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <LGAME LMSE LTRAC LGAME2 LGAME_LEFT>;
+        layers = <LGAME LMSE LTRAC LGAME2 LGAME_LEFT LGAME_LEFT2>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
