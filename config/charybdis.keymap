@@ -558,7 +558,7 @@
 
         toggle_14 {
             bindings = <&tog 14>;
-            key-positions = <17 29>;
+            key-positions = <29 28>;
             layers = <11 14>;
         };
     };
