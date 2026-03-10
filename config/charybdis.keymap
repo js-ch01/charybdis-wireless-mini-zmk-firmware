@@ -803,19 +803,19 @@
 
         Left {
             bindings = <
-&td_f_7_8_9    &trans  &kp LA(J)       &kp UP_ARROW    &kp LA(L)  &kp DELETE    &kp Q          &kp W              &trans     &kp R              &kp C     &kp DELETE
-&kp END        &kp A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp G         &kp A          &trans             &trans     &trans             &d_sh     &kp END
-&kp LA(COMMA)  &kp R   &trans          &kp W           &trans     &kp HOME      &kp Z          &ht_mkp_kp LCLK X  &kp LCTRL  &ht_mkp_kp RCLK V  &lt 15 F  &kp HOME
-                                       &d_sh           &trans     &trans        &kp LA(COMMA)  &trans
+&td_f_7_8_9    &kp Q  &kp LA(J)       &kp UP_ARROW    &kp LA(L)  &kp DELETE    &kp Q                 &kp W           &kp UP_ARROW    &kp R            &d_sh     &kp C_VOLUME_UP
+&kp END        &kp A  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp G         &kp H                 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C     &kp C_VOL_DN
+&kp LA(COMMA)  &kp R  &kp X           &kp W           &kp V      &kp HOME      &kp F12               &mkp LCLK       &mkp MCLK       &mkp RCLK        &lt 15 F  &kp C_MUTE
+                                      &d_sh           &kp C      &mkp LCLK     &kp LA(C_PLAY_PAUSE)  &kp LEFT_SHIFT
             >;
         };
 
         Left2 {
             bindings = <
-&kp F          &trans          &kp LA(J)       &kp UP_ARROW    &kp LA(L)  &kp DELETE    &kp Q          &kp W              &trans     &kp R              &kp C     &kp DELETE
-&kp PAGE_DOWN  &kp A           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp A         &kp A          &trans             &trans     &trans             &d_sh     &kp END
-&kp LA(COMMA)  &kp LEFT_SHIFT  &kp END         &kp D           &trans     &kp HOME      &kp Z          &ht_mkp_kp LCLK X  &kp LCTRL  &ht_mkp_kp RCLK V  &lt 15 F  &kp HOME
-                                               &d_sh           &trans     &trans        &kp LA(COMMA)  &trans
+&kp F          &kp Q           &kp LA(J)       &kp UP_ARROW    &kp LA(L)  &kp DELETE    &kp Q                 &kp W           &kp E      &kp R      &kp LEFT_ALT  &kp C_VOLUME_UP
+&kp PAGE_DOWN  &kp A           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp A         &kp H                 &kp S           &kp D      &kp F      &kp G         &kp C_VOL_DN
+&kp LA(COMMA)  &kp LEFT_SHIFT  &kp END         &kp D           &kp V      &kp HOME      &kp F12               &mkp LCLK       &mkp MCLK  &mkp RCLK  &lt 15 F      &kp C_MUTE
+                                               &d_sh           &kp C      &mkp LCLK     &kp LA(C_PLAY_PAUSE)  &kp LEFT_SHIFT
             >;
         };
 
