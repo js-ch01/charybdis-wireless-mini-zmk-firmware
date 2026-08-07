@@ -810,7 +810,7 @@
             >;
         };
 
-        Left2 {
+        Left2T {
             bindings = <
 &td_f_7_8_9    &kp Q           &kp LA(J)       &kp UP_ARROW    &kp LA(L)  &kp DELETE    &kp Q                 &kp DELETE      &kp UP_ARROW    &kp HOME         &kp C     &kp C_VOLUME_UP
 &kp END        &kp A           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp A         &kp A                 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END   &kp C_VOL_DN
