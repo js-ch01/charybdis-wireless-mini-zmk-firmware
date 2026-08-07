@@ -785,7 +785,7 @@
 
         game2 {
             bindings = <
-&kp N1  &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y              &cc_d_sh           &kp UP_ARROW    &sp                     &kp LEFT_ALT      &kp INSERT
+&kp N1  &kp Q  &kp W  &kp E       &kp R  &kp T        &kp Y              &cc_d_sh           &kp UP_ARROW    &kp SPACE               &kp LEFT_ALT      &kp INSERT
 &kp N2  &kp A  &kp S  &kp D       &kp F  &kp G        &kp H              &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW         &lt 13 END        &kp HOME
 &to 0   &kp Z  &kp X  &kp LCTRL   &kp V  &kp B        &kp N              &ht_mkp_kp LCLK M  &kp SPACE       &ht_mkp_kp RCLK PERIOD  &lt 15 PAGE_DOWN  &kp PAGE_UP
                       &lt 12 TAB  &kp C  &mkp LCLK    &lt 12 SCROLLLOCK  &kp LEFT_SHIFT
@@ -803,10 +803,10 @@
 
         Left {
             bindings = <
-&td_f_7_8_9    &kp Q  &kp LA(J)       &kp UP_ARROW    &kp LA(L)  &kp DELETE    &kp Q                 &kp W           &kp E      &kp R      &kp LEFT_ALT  &kp C_VOLUME_UP
-&kp END        &kp A  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp A         &kp H                 &kp S           &kp D      &kp F      &kp G         &kp C_VOL_DN
-&kp LA(COMMA)  &kp V  &kp X           &kp W           &kp R      &kp HOME      &kp F12               &mkp LCLK       &mkp MCLK  &mkp RCLK  &lt 15 F      &kp C_MUTE
-                                      &d_sh           &kp C      &mkp LCLK     &kp LA(C_PLAY_PAUSE)  &kp LEFT_SHIFT
+&td_f_7_8_9    &kp Q       &kp LA(J)       &kp UP_ARROW    &kp LA(L)  &kp DELETE    &kp Q                 &kp W           &kp UP_ARROW    &kp R            &kp LEFT_ALT  &kp C_VOLUME_UP
+&kp END        &kp A       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp A         &kp A                 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F         &kp C_VOL_DN
+&kp LA(COMMA)  &kp LSHIFT  &kp W           &kp D           &kp V      &kp HOME      &kp H                 &mkp LCLK       &mkp MCLK       &mkp RCLK        &lt 15 F      &kp C_MUTE
+                                           &d_sh           &kp C      &mkp LCLK     &kp LA(C_PLAY_PAUSE)  &kp LEFT_SHIFT
             >;
         };
 
