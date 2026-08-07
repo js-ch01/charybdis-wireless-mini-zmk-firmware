@@ -546,7 +546,7 @@
 
         toggle_game_left {
             bindings = <&tog 13>;
-            key-positions = <28 31 29 30>;
+            key-positions = <28 29>;
             layers = <11 13>;
         };
 
@@ -558,7 +558,19 @@
 
         toggle_14 {
             bindings = <&tog 14>;
-            key-positions = <28 31 19 16>;
+            key-positions = <28 16>;
+            layers = <11 14>;
+        };
+
+        toggle_game_left_r {
+            bindings = <&tog 13>;
+            key-positions = <30 31>;
+            layers = <11 13>;
+        };
+
+        toggle_game_left2_r {
+            bindings = <&tog 14>;
+            key-positions = <19>;
             layers = <11 14>;
         };
     };
@@ -821,7 +833,7 @@
 
         game2_num {
             bindings = <
-&trans  &trans  &trans     &kp LA(I)      &trans     &kp LA(F9)       &kp LA(J)  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans     &kp LA(I)      &trans     &kp LA(F9)       &kp LA(J)  &kp N7  &kp N8  &kp N9  &sp     &trans
 &trans  &trans  &kp LA(J)  &kp LA(K)      &kp LA(L)  &kp LA(TAB)      &kp LA(L)  &kp N4  &kp N5  &kp N6  &trans  &trans
 &trans  &trans  &trans     &kp LA(COMMA)  &trans     &kp LA(ENTER)    &kp SPACE  &kp N1  &kp N2  &kp N3  &trans  &trans
                            &mkp RCLK      &mkp MCLK  &mkp LCLK        &trans     &kp N0
