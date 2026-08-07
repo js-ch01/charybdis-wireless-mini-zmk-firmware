@@ -455,7 +455,7 @@
         combo_bspc {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 19>;
-            layers = <0 1 6 8 11>;
+            layers = <0 1 6 8 11 13 14>;
         };
 
         combo_tab {
@@ -546,7 +546,7 @@
 
         toggle_game_left {
             bindings = <&tog 13>;
-            key-positions = <16 28>;
+            key-positions = <16 28 19 31>;
             layers = <11 13>;
         };
 
@@ -558,7 +558,7 @@
 
         toggle_14 {
             bindings = <&tog 14>;
-            key-positions = <29 28>;
+            key-positions = <29 28 30 31>;
             layers = <11 14>;
         };
     };
